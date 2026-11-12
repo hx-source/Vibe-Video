@@ -4,6 +4,8 @@
 
 工程 README、docs/PROJECT-CONTRACT.md、docs/AUDIO-WORKFLOW.md 是接口的权威说明。初次使用检查依赖；缺少时 npm ci，随后 npx remotion browser ensure。默认不升级锁定依赖。
 
+音乐卡点项目另读工程 docs/MUSIC-WORKFLOW.md，使用 music:analyze、music:review、music:check；旧 rhythms 的显式 BPM 不代表已分析音乐。musicSync 为可选扩展，不改变引擎合约 0.1.0。
+
 ## 制作入口
 
 ```powershell
