@@ -42,3 +42,5 @@ review 是带画面的本机审片页，支持 A/B、分轨、逐帧、时间定
 - outputs/<项目>/<修订> 保存视频、字幕、音轨、manifest 和输入数据。交付可播放结果与对应源码位置。
 - 示例 audio-demo 首次使用先 npm run demo:assets；它是技术音色，不是默认生产配乐。
 - 不自动上传原始媒体或把每次修改都公开发布；仓库同步按用户当前授权范围执行。
+
+第二阶段接口见工程 docs/MUSIC-PHASE2.md：music:impact/apply/snapshot/status/accept/sound/palette/quality，验证命令 verify:music:phase2。历史对比、report 和 manifest 参数为工程根目录相对路径；analysis、overrides 和 proposal 为本期项目相对路径。

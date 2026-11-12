@@ -2,11 +2,21 @@
 
 ## 音乐驱动模式
 
-先锁定音乐与截取范围，按工程 docs/MUSIC-WORKFLOW.md 运行 music:analyze，保存 music-analysis.json；用 music:review 核对普通拍、重拍、半速/倍速、拍号和首拍，保存独立 music-overrides.json。变速音乐使用完整手工拍表。恒速候选的 confidence 是相关强度，重拍只是默认 4/4 假设；乐句、调性与乐器需人工判断。
+先锁定音乐与截取范围，按工程 docs/MUSIC-WORKFLOW.md 运行 music:analyze，保存 music-analysis.json；用 music:review 核对普通拍、重拍、半速/倍速、拍号和首拍，保存独立 music-overrides.json。变速音乐使用完整手工拍表。confidence 是相关强度，重拍默认只是 4/4 假设；第二阶段局部节奏、段落与调性窗口也只给候选，乐器仍需人工标注。
 
 配置 project.files.musicSync，建立事件、源拍序号、动作落点、音效和版本对应关系。截取、速度和偏移统一映射为成片帧；音效有起音时配置 soundOffset 与负事件偏移。运行 music:check 和 check 后先渲染 0–10 秒，核对节拍漂移、音画同步、音色冲突、密度、尾音及阅读时间。技术通过不代表已试听。
 
 收到反馈后分段推进；换音乐或改拍表后审查受影响事件，不批量更新版本绕过检查，不覆盖已认可输出。tone/kick 仅作简单候选；真实乐器质感使用有来源素材并混合试听。
+
+## 第二阶段编辑与验收
+
+详读工程 docs/MUSIC-PHASE2.md。用时间轴编辑逐拍表和段落；变速、停顿和弱节奏优先检查不确定区间。导出提案后用 music:impact 查看动作、字幕、音效与认可片段的变化，用 music:apply 应用一致且有效的候选。不要用手改 revision 代替影响预览。
+
+用 music:status / music:accept 保存每段 pending、needs-changes、approved 和版本依据；实际观看试听后才标记 listened。已认可片段变更后显示 needs-review，未受影响片段保留状态。
+
+用 sound 标签登记乐器、MIDI 音高、可听起点、峰后有效尾音、LUFS 与真峰值；music:sound 输出候选，不自动写资产索引。music:palette 根据标签和当前调性窗口推荐已登记素材，提供原音与固定音乐混合试听；uncertain 结果以试听为准。
+
+自动混音报告使用 FFmpeg 测量 LUFS/真峰值，比较动作窗口内合并音效与配乐的 RMS；这不是单个重叠音效的响度，也不代表可辨认性通过。duckingCandidates 不自动应用，选择后局部 A/B 比较。最终视频编码成功后另查 encoded-audio-quality.json。
 
 ## 选材顺序
 

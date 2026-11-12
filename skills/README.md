@@ -1,6 +1,6 @@
 # Skill 维护源
 
-knowledge-video 当前版本 2.1.0，默认适配 Remotion 工程 0.1.0。旧 Canvas 工程 0.3.0 通过显式 --root 或 KNOWLEDGE_VIDEO_ENGINE 选择，并使用独立的 legacy 参考说明。
+knowledge-video 当前版本 2.2.0，默认适配 Remotion 工程 0.1.0。旧 Canvas 工程 0.3.0 通过显式 --root 或 KNOWLEDGE_VIDEO_ENGINE 选择，并使用独立的 legacy 参考说明。
 
 定位脚本只读取文件，不安装或修改工程；未知版本、不完整目录和错误显式路径均失败，不通过替换版本号绕过检查。当前仓库中的工程可以从维护源相对位置发现，迁移到其他电脑时也可显式设置路径。
 
