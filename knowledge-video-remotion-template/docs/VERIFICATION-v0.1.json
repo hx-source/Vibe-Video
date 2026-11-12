@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-12",
+  "engineVersion": "0.1.0",
+  "skillVersion": "2.0.0",
+  "platform": "Windows / Node.js 24.15.0",
+  "automatedChecks": {
+    "browser": {
+      "evidence": "outputs/validation/browser-1794464237662/browser-report.json",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "tcp-layout-and-seeking",
+          "sampledTimes": 114
+        },
+        {
+          "name": "deterministic-backward-seek",
+          "width": 1136,
+          "height": 639,
+          "changedPixels": 15,
+          "maxChannelDifference": 1,
+          "passed": true
+        },
+        {
+          "name": "audio-ab-position-playback-loop-download",
+          "passed": true
+        }
+      ]
+    },
+    "integration": {
+      "evidence": "outputs/validation/integration-1794464401189/integration-report.json",
+      "status": "passed",
+      "checks": [
+        {
+          "name": "skill-discovery-new-project-dark-theme-image-960x540-24fps",
+          "passed": true,
+          "output": "outputs\\reuse-check-1794464401189\\full",
+          "negativeChecks": [
+            "wrong-engine",
+            "missing-audio-asset",
+            "duplicate-project"
+          ]
+        },
+        {
+          "name": "full-versus-clip-picture-and-sound",
+          "passed": true,
+          "pixels": {
+            "width": 1920,
+            "height": 1080,
+            "changedPixels": 0,
+            "maxChannelDifference": 0,
+            "passed": true
+          },
+          "correlation": 0.999993904891207,
+          "frames": 75,
+          "output": "outputs\\audio-demo\\clip-1794464401189"
+        }
+      ]
+    },
+    "studio": {
+      "evidence": "outputs/validation/studio-1794464531148/studio-report.json",
+      "status": "passed",
+      "checks": []
+    },
+    "audioVideo": {
+      "evidence": "outputs/audio-demo/audio-final-v2/manifest.json",
+      "status": "rendered-and-decoded",
+      "output": {
+        "file": "video.mp4",
+        "sha256": "6b8c35961de02a8d8d61699eec6ac7db9d9b6489050256253a1fd0b288fe714c",
+        "frames": 360,
+        "duration": 12,
+        "width": 1920,
+        "height": 1080
+      },
+      "audio": "needs-listening"
+    },
+    "tcpVideo": {
+      "evidence": "outputs/tcp-handshake/tcp-final-v1/manifest.json",
+      "status": "rendered-and-decoded",
+      "output": {
+        "file": "video.mp4",
+        "sha256": "4afacc0a6397a9755cdc7a57484ae3b61e051eb234f35e3f7e82374d102bc34c",
+        "frames": 2197,
+        "duration": 73.233333,
+        "width": 1920,
+        "height": 1080
+      },
+      "audio": "no-audio"
+    },
+    "unitTests": {
+      "passed": 15,
+      "command": "npm test"
+    },
+    "skill": {
+      "sourceValidation": "passed",
+      "defaultEngine": "remotion 0.1.0",
+      "explicitLegacy": "canvas 0.3.0",
+      "wrongPath": "rejected",
+      "installedFilesMatched": 7
+    }
+  },
+  "humanReview": {
+    "visuals": "Selected screenshots inspected; not a full editorial approval",
+    "audio": "not-listened"
+  },
+  "ci": "Workflow defined; no remote Actions run claimed"
+}

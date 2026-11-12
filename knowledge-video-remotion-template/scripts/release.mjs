@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {ROOT,json,sha,writeJson} from './files.mjs';
+const version=json(path.join(ROOT,'package.json')).version,repo=path.dirname(ROOT),output=path.join(ROOT,'releases',`knowledge-video-${version}.zip`);
+if(fs.existsSync(output))throw Error('Release exists; use a new version');
+const status=spawnSync('git',['status','--porcelain'],{cwd:repo,encoding:'utf8',windowsHide:true});
+if(status.status!==0||status.stdout.trim())throw Error('Commit the reviewed source before packaging a release');
+const result=spawnSync('git',['archive','--format=zip',`--output=${output}`,'HEAD'],{cwd:repo,encoding:'utf8',windowsHide:true});
+if(result.status!==0)throw Error(result.stderr);
+writeJson(path.join(ROOT,'releases',`knowledge-video-${version}.manifest.json`),{version,file:path.basename(output),sha256:sha(output),sourceCommit:spawnSync('git',['rev-parse','HEAD'],{cwd:repo,encoding:'utf8',windowsHide:true}).stdout.trim()});
+console.log(output);

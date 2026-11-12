@@ -1,0 +1,333 @@
+{
+  "from": "Canvas template 0.3.0 / project schema 1",
+  "speedApplied": 1.25,
+  "sourceDuration": 91.52,
+  "finalDuration": 73.216,
+  "sources": {
+    "project.json": "22704396406b0e4b2d2417ce4c18e2e5b73e1e722a8377bbc65e894f11168c26",
+    "captions.json": "a468d264fd80c825bd05536f6c6a44512cb0987e56a0aa60a8a4973fba5d1db6",
+    "events.json": "dc81d8b56d91f1e29e0b832251543be9e0552aee7713f4abec2c8837d67fac33"
+  },
+  "originalCaptions": [
+    {
+      "start": 0,
+      "end": 4,
+      "zh": "建立连接，为什么要问三次？",
+      "en": "Why does a connection need three messages?",
+      "scene": "opening",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 4,
+      "end": 8,
+      "zh": "结束连接，又为什么常分四步？",
+      "en": "Why does closing often take four steps?",
+      "scene": "opening",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 8,
+      "end": 12,
+      "zh": "TCP 的两个方向，各自有序号。",
+      "en": "Each direction has its own sequence numbers.",
+      "scene": "opening",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 12,
+      "end": 16.5,
+      "zh": "握手，是确认双方的序号起点。",
+      "en": "The handshake confirms both starting points.",
+      "scene": "opening",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 16.5,
+      "end": 21,
+      "zh": "有来有回，连接才有共同的起点。",
+      "en": "A shared beginning takes an exchange.",
+      "scene": "title",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 21,
+      "end": 25,
+      "zh": "① 客户端发 SYN：我的起点是 100。",
+      "en": "The client sends SYN with sequence number 100.",
+      "scene": "handshake",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 25,
+      "end": 29,
+      "zh": "② 服务端回 SYN + ACK：确认，并报出起点。",
+      "en": "The server acknowledges and sends its own SYN.",
+      "scene": "handshake",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 29,
+      "end": 33,
+      "zh": "③ 客户端回 ACK：你的起点，我也收到了。",
+      "en": "The client acknowledges the server's SYN.",
+      "scene": "handshake",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 33,
+      "end": 37,
+      "zh": "双方完成确认，连接建立。",
+      "en": "Both sides now reach ESTABLISHED.",
+      "scene": "handshake",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 37,
+      "end": 41.5,
+      "zh": "第三次，让服务端确认自己的 SYN 已被收到。",
+      "en": "The final ACK confirms receipt of the server's SYN.",
+      "scene": "handshake",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 41.5,
+      "end": 46,
+      "zh": "关闭连接，要分别结束两个发送方向。",
+      "en": "The two sending directions close independently.",
+      "scene": "duplex",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 46,
+      "end": 50.5,
+      "zh": "① 客户端发 FIN：我的数据发完了。",
+      "en": "The client sends FIN: no more data from me.",
+      "scene": "close",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 50.5,
+      "end": 55,
+      "zh": "② 服务端回 ACK：收到，但我未必发完。",
+      "en": "The server acknowledges, but may still have data.",
+      "scene": "close",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 55,
+      "end": 59,
+      "zh": "此时，服务端仍可发送，客户端仍可接收。",
+      "en": "The still-open direction can carry more data.",
+      "scene": "close",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 59,
+      "end": 63,
+      "zh": "③ 服务端发完后，也发送自己的 FIN。",
+      "en": "When finished, the server sends its own FIN.",
+      "scene": "close",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 63,
+      "end": 67,
+      "zh": "④ 客户端回 ACK，确认对方发送结束。",
+      "en": "The client acknowledges the server's FIN.",
+      "scene": "close",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 67,
+      "end": 71,
+      "zh": "主动关闭方还需 TIME_WAIT，等待 2MSL。",
+      "en": "The active closer waits for twice the MSL.",
+      "scene": "timewait",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 71,
+      "end": 75,
+      "zh": "末次 ACK 若丢失，还能再确认重传的 FIN。",
+      "en": "A retransmitted FIN can be acknowledged again.",
+      "scene": "timewait",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 75,
+      "end": 79,
+      "zh": "这段等待，也让旧连接的迟到报文退出网络。",
+      "en": "The wait also lets old segments expire.",
+      "scene": "timewait",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 79,
+      "end": 83,
+      "zh": "ACK 与 FIN 可以合并，不总是四个报文。",
+      "en": "ACK and FIN may share one segment.",
+      "scene": "summary",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 83,
+      "end": 87,
+      "zh": "握手确认起点，挥手分别关闭两个方向。",
+      "en": "Synchronize first; close each direction later.",
+      "scene": "takeaway",
+      "skipDefaultTransition": true
+    },
+    {
+      "start": 87,
+      "end": 91.52,
+      "zh": "让对话有起点，也让告别有回音。",
+      "en": "Begin in sync. End with acknowledgment.",
+      "scene": "ending",
+      "skipDefaultTransition": true
+    }
+  ],
+  "originalFlows": {
+    "handshake": {
+      "initial": {
+        "client": "CLOSED",
+        "server": "LISTEN"
+      },
+      "clientISN": 100,
+      "serverISN": 800,
+      "packets": [
+        {
+          "id": "syn",
+          "start": 21.4,
+          "arrive": 23.1,
+          "from": "client",
+          "flags": [
+            "SYN"
+          ],
+          "seq": 100,
+          "row": 430,
+          "label": "① SYN",
+          "detail": "seq = 100",
+          "sendState": "SYN_SENT",
+          "receiveState": "SYN_RECEIVED"
+        },
+        {
+          "id": "syn-ack",
+          "start": 25.3,
+          "arrive": 27.1,
+          "from": "server",
+          "flags": [
+            "SYN",
+            "ACK"
+          ],
+          "seq": 800,
+          "ack": 101,
+          "row": 565,
+          "label": "② SYN + ACK",
+          "detail": "seq = 800   ack = 101",
+          "sendState": "SYN_RECEIVED",
+          "receiveState": "ESTABLISHED"
+        },
+        {
+          "id": "ack",
+          "start": 29.4,
+          "arrive": 31.2,
+          "from": "client",
+          "flags": [
+            "ACK"
+          ],
+          "seq": 101,
+          "ack": 801,
+          "row": 700,
+          "label": "③ ACK",
+          "detail": "seq = 101   ack = 801",
+          "sendState": "ESTABLISHED",
+          "receiveState": "ESTABLISHED"
+        }
+      ]
+    },
+    "close": {
+      "initial": {
+        "client": "ESTABLISHED",
+        "server": "ESTABLISHED"
+      },
+      "packets": [
+        {
+          "id": "fin-client",
+          "start": 46.4,
+          "arrive": 48.2,
+          "from": "client",
+          "flags": [
+            "FIN",
+            "ACK"
+          ],
+          "seq": "u",
+          "row": 405,
+          "label": "① FIN + ACK",
+          "detail": "seq = u",
+          "sendState": "FIN_WAIT_1",
+          "receiveState": "CLOSE_WAIT"
+        },
+        {
+          "id": "ack-server",
+          "start": 50.9,
+          "arrive": 52.7,
+          "from": "server",
+          "flags": [
+            "ACK"
+          ],
+          "ack": "u+1",
+          "row": 487,
+          "label": "② ACK",
+          "detail": "ack = u + 1",
+          "receiveState": "FIN_WAIT_2"
+        },
+        {
+          "id": "remaining-data",
+          "start": 55.6,
+          "arrive": 57.5,
+          "from": "server",
+          "flags": [
+            "ACK"
+          ],
+          "row": 569,
+          "label": "剩余数据（示意）",
+          "detail": "仍可发送 → 仍可接收",
+          "data": true
+        },
+        {
+          "id": "fin-server",
+          "start": 59.4,
+          "arrive": 61.2,
+          "from": "server",
+          "flags": [
+            "FIN",
+            "ACK"
+          ],
+          "seq": "v",
+          "ack": "u+1",
+          "row": 651,
+          "label": "③ FIN + ACK",
+          "detail": "seq = v",
+          "sendState": "LAST_ACK",
+          "receiveState": "TIME_WAIT"
+        },
+        {
+          "id": "ack-client",
+          "start": 63.4,
+          "arrive": 65.2,
+          "from": "client",
+          "flags": [
+            "ACK"
+          ],
+          "ack": "v+1",
+          "row": 733,
+          "label": "④ ACK",
+          "detail": "ack = v + 1",
+          "receiveState": "CLOSED"
+        }
+      ]
+    }
+  },
+  "visualMatch": "reimplemented-not-pixel-identical",
+  "audio": "silent; original licensed audio not redistributed"
+}

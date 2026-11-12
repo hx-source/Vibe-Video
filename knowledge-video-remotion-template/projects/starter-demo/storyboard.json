@@ -1,0 +1,37 @@
+{
+  "segments": [
+    {
+      "id": "opening",
+      "durationSeconds": 12,
+      "intent": "提出问题，通过关系变化说明机制，最后形成结论",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 4,
+        "settle": 9,
+        "end": 12
+      },
+      "props": {
+        "title": "从问题到机制，再到结论",
+        "note": "示例结构：内容先行，音乐辅助表达",
+        "cards": [
+          {
+            "title": "提出问题",
+            "body": "明确观众需要理解什么",
+            "event": "intro"
+          },
+          {
+            "title": "展示机制",
+            "body": "用对象与关系的变化来解释",
+            "event": "reveal"
+          },
+          {
+            "title": "形成结论",
+            "body": "把观察与知识点对应起来",
+            "event": "settle"
+          }
+        ]
+      }
+    }
+  ]
+}

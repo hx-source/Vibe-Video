@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "id": "opening-question",
+      "segmentId": "opening",
+      "start": {
+        "event": "intro"
+      },
+      "end": {
+        "event": "reveal"
+      },
+      "text": "先提出问题，让观众知道要理解什么。"
+    },
+    {
+      "id": "opening-change",
+      "segmentId": "opening",
+      "start": {
+        "event": "reveal"
+      },
+      "end": {
+        "event": "settle"
+      },
+      "text": "用对象与关系的变化，展示机制怎样发生。"
+    },
+    {
+      "id": "opening-result",
+      "segmentId": "opening",
+      "start": {
+        "event": "settle"
+      },
+      "end": {
+        "event": "end"
+      },
+      "text": "变化完成后，把观察到的结果对应到结论。"
+    }
+  ]
+}

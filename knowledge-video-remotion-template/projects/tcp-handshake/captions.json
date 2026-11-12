@@ -1,0 +1,158 @@
+{
+  "items": [
+    {
+      "id": "opening-0",
+      "segmentId": "opening",
+      "start": 0,
+      "end": 3.2,
+      "text": "建立连接，为什么要问三次？"
+    },
+    {
+      "id": "opening-1",
+      "segmentId": "opening",
+      "start": 3.2,
+      "end": 6.4,
+      "text": "结束连接，又为什么常分四步？"
+    },
+    {
+      "id": "opening-2",
+      "segmentId": "opening",
+      "start": 6.4,
+      "end": 9.6,
+      "text": "TCP 的两个方向，各自有序号。"
+    },
+    {
+      "id": "opening-3",
+      "segmentId": "opening",
+      "start": 9.6,
+      "end": 13.2,
+      "text": "握手，是确认双方的序号起点。"
+    },
+    {
+      "id": "title-0",
+      "segmentId": "title",
+      "start": 0,
+      "end": 3.6,
+      "text": "有来有回，连接才有共同的起点。"
+    },
+    {
+      "id": "handshake-0",
+      "segmentId": "handshake",
+      "start": 0,
+      "end": 3.2,
+      "text": "① 客户端发 SYN：我的起点是 100。"
+    },
+    {
+      "id": "handshake-1",
+      "segmentId": "handshake",
+      "start": 3.2,
+      "end": 6.4,
+      "text": "② 服务端回 SYN + ACK：确认，并报出起点。"
+    },
+    {
+      "id": "handshake-2",
+      "segmentId": "handshake",
+      "start": 6.4,
+      "end": 9.6,
+      "text": "③ 客户端回 ACK：你的起点，我也收到了。"
+    },
+    {
+      "id": "handshake-3",
+      "segmentId": "handshake",
+      "start": 9.6,
+      "end": 12.8,
+      "text": "双方完成确认，连接建立。"
+    },
+    {
+      "id": "handshake-4",
+      "segmentId": "handshake",
+      "start": 12.8,
+      "end": 16.4,
+      "text": "第三次，让服务端确认自己的 SYN 已被收到。"
+    },
+    {
+      "id": "duplex-0",
+      "segmentId": "duplex",
+      "start": 0,
+      "end": 3.6,
+      "text": "关闭连接，要分别结束两个发送方向。"
+    },
+    {
+      "id": "close-0",
+      "segmentId": "close",
+      "start": 0,
+      "end": 3.6,
+      "text": "① 客户端发 FIN：我的数据发完了。"
+    },
+    {
+      "id": "close-1",
+      "segmentId": "close",
+      "start": 3.6,
+      "end": 7.2,
+      "text": "② 服务端回 ACK：收到，但我未必发完。"
+    },
+    {
+      "id": "close-2",
+      "segmentId": "close",
+      "start": 7.2,
+      "end": 10.4,
+      "text": "此时，服务端仍可发送，客户端仍可接收。"
+    },
+    {
+      "id": "close-3",
+      "segmentId": "close",
+      "start": 10.4,
+      "end": 13.6,
+      "text": "③ 服务端发完后，也发送自己的 FIN。"
+    },
+    {
+      "id": "close-4",
+      "segmentId": "close",
+      "start": 13.6,
+      "end": 16.8,
+      "text": "④ 客户端回 ACK，确认对方发送结束。"
+    },
+    {
+      "id": "timewait-0",
+      "segmentId": "timewait",
+      "start": 0,
+      "end": 3.2,
+      "text": "主动关闭方还需 TIME_WAIT，等待 2MSL。"
+    },
+    {
+      "id": "timewait-1",
+      "segmentId": "timewait",
+      "start": 3.2,
+      "end": 6.4,
+      "text": "末次 ACK 若丢失，还能再确认重传的 FIN。"
+    },
+    {
+      "id": "timewait-2",
+      "segmentId": "timewait",
+      "start": 6.4,
+      "end": 9.6,
+      "text": "这段等待，也让旧连接的迟到报文退出网络。"
+    },
+    {
+      "id": "summary-0",
+      "segmentId": "summary",
+      "start": 0,
+      "end": 3.2,
+      "text": "ACK 与 FIN 可以合并，不总是四个报文。"
+    },
+    {
+      "id": "takeaway-0",
+      "segmentId": "takeaway",
+      "start": 0,
+      "end": 3.2,
+      "text": "握手确认起点，挥手分别关闭两个方向。"
+    },
+    {
+      "id": "ending-0",
+      "segmentId": "ending",
+      "start": 0,
+      "end": 3.615999999999997,
+      "text": "让对话有起点，也让告别有回音。"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "segments": [
+    {
+      "id": "opening",
+      "durationSeconds": 13.2,
+      "intent": "建立与关闭，都需要有来有回",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 4.356,
+        "settle": 8.712,
+        "end": 13.2
+      },
+      "props": {
+        "title": "建立与关闭，都需要有来有回",
+        "cards": [
+          {
+            "title": "建立连接",
+            "body": "为什么通常需要三个报文？",
+            "event": "intro"
+          },
+          {
+            "title": "结束连接",
+            "body": "为什么又常常分成四步？",
+            "event": "reveal"
+          },
+          {
+            "title": "序号起点",
+            "body": "TCP 的两个方向各自计数",
+            "event": "settle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "title",
+      "durationSeconds": 3.6,
+      "intent": "连接的起点，是双方的共同确认",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 1.1880000000000002,
+        "settle": 2.3760000000000003,
+        "end": 3.6
+      },
+      "props": {
+        "title": "连接的起点，是双方的共同确认",
+        "cards": [
+          {
+            "title": "SYN",
+            "body": "告诉对方我的初始序号",
+            "event": "intro"
+          },
+          {
+            "title": "ACK",
+            "body": "确认对方的初始序号",
+            "event": "reveal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "handshake",
+      "durationSeconds": 16.4,
+      "intent": "三次握手：交换起点，分别确认",
+      "sceneType": "sequence",
+      "events": {
+        "intro": 0,
+        "reveal": 5.412,
+        "settle": 10.824,
+        "end": 16.4,
+        "syn-send": 0.31999999999999884,
+        "syn-arrive": 1.680000000000001,
+        "syn-ack-send": 3.4400000000000004,
+        "syn-ack-arrive": 4.880000000000001,
+        "ack-send": 6.719999999999999,
+        "ack-arrive": 8.16
+      },
+      "props": {
+        "title": "三次握手：交换起点，分别确认",
+        "nodes": [
+          {
+            "id": "client",
+            "label": "客户端",
+            "state": "CLOSED"
+          },
+          {
+            "id": "server",
+            "label": "服务端",
+            "state": "LISTEN"
+          }
+        ],
+        "messages": [
+          {
+            "id": "syn",
+            "from": "client",
+            "label": "① SYN",
+            "detail": "seq = 100",
+            "startEvent": "syn-send",
+            "endEvent": "syn-arrive",
+            "sendState": "SYN_SENT",
+            "receiveState": "SYN_RECEIVED"
+          },
+          {
+            "id": "syn-ack",
+            "from": "server",
+            "label": "② SYN + ACK",
+            "detail": "seq = 800   ack = 101",
+            "startEvent": "syn-ack-send",
+            "endEvent": "syn-ack-arrive",
+            "sendState": "SYN_RECEIVED",
+            "receiveState": "ESTABLISHED"
+          },
+          {
+            "id": "ack",
+            "from": "client",
+            "label": "③ ACK",
+            "detail": "seq = 101   ack = 801",
+            "startEvent": "ack-send",
+            "endEvent": "ack-arrive",
+            "sendState": "ESTABLISHED",
+            "receiveState": "ESTABLISHED"
+          }
+        ],
+        "note": "ACK 号表示下一期待序号；SYN 占一个序号"
+      }
+    },
+    {
+      "id": "duplex",
+      "durationSeconds": 3.6,
+      "intent": "两个发送方向，各自结束",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 1.1880000000000002,
+        "settle": 2.3760000000000003,
+        "end": 3.6
+      },
+      "props": {
+        "title": "两个发送方向，各自结束",
+        "cards": [
+          {
+            "title": "客户端 → 服务端",
+            "body": "发送结束，不再产生新数据",
+            "event": "intro"
+          },
+          {
+            "title": "服务端 → 客户端",
+            "body": "仍可发送尚未完成的数据",
+            "event": "reveal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "close",
+      "durationSeconds": 16.8,
+      "intent": "四次挥手：先结束一边，再结束另一边",
+      "sceneType": "sequence",
+      "events": {
+        "intro": 0,
+        "reveal": 5.5440000000000005,
+        "settle": 11.088000000000001,
+        "end": 16.8,
+        "fin-client-send": 0.31999999999999884,
+        "fin-client-arrive": 1.7600000000000022,
+        "ack-server-send": 3.919999999999999,
+        "ack-server-arrive": 5.360000000000002,
+        "remaining-data-send": 7.6800000000000015,
+        "remaining-data-arrive": 9.2,
+        "fin-server-send": 10.719999999999999,
+        "fin-server-arrive": 12.160000000000002,
+        "ack-client-send": 13.919999999999998,
+        "ack-client-arrive": 15.360000000000003
+      },
+      "props": {
+        "title": "四次挥手：先结束一边，再结束另一边",
+        "nodes": [
+          {
+            "id": "client",
+            "label": "客户端",
+            "state": "ESTABLISHED"
+          },
+          {
+            "id": "server",
+            "label": "服务端",
+            "state": "ESTABLISHED"
+          }
+        ],
+        "messages": [
+          {
+            "id": "fin-client",
+            "from": "client",
+            "label": "① FIN + ACK",
+            "detail": "seq = u",
+            "startEvent": "fin-client-send",
+            "endEvent": "fin-client-arrive",
+            "sendState": "FIN_WAIT_1",
+            "receiveState": "CLOSE_WAIT"
+          },
+          {
+            "id": "ack-server",
+            "from": "server",
+            "label": "② ACK",
+            "detail": "ack = u + 1",
+            "startEvent": "ack-server-send",
+            "endEvent": "ack-server-arrive",
+            "receiveState": "FIN_WAIT_2"
+          },
+          {
+            "id": "remaining-data",
+            "from": "server",
+            "label": "剩余数据（示意）",
+            "detail": "仍可发送 → 仍可接收",
+            "startEvent": "remaining-data-send",
+            "endEvent": "remaining-data-arrive",
+            "data": true
+          },
+          {
+            "id": "fin-server",
+            "from": "server",
+            "label": "③ FIN + ACK",
+            "detail": "seq = v",
+            "startEvent": "fin-server-send",
+            "endEvent": "fin-server-arrive",
+            "sendState": "LAST_ACK",
+            "receiveState": "TIME_WAIT"
+          },
+          {
+            "id": "ack-client",
+            "from": "client",
+            "label": "④ ACK",
+            "detail": "ack = v + 1",
+            "startEvent": "ack-client-send",
+            "endEvent": "ack-client-arrive",
+            "receiveState": "CLOSED"
+          }
+        ],
+        "note": "绿色一行是剩余数据示意，不是第五次挥手；FIN 占一个序号"
+      }
+    },
+    {
+      "id": "timewait",
+      "durationSeconds": 9.6,
+      "intent": "TIME_WAIT：为最后一次确认留出余地",
+      "sceneType": "cycle",
+      "events": {
+        "intro": 0,
+        "reveal": 3.168,
+        "settle": 6.336,
+        "end": 9.6
+      },
+      "props": {
+        "title": "TIME_WAIT：为最后一次确认留出余地",
+        "centerLabel": "2MSL",
+        "centerDetail": "时间压缩示意",
+        "steps": [
+          {
+            "label": "主动关闭方等待，保留连接状态",
+            "event": "intro"
+          },
+          {
+            "label": "假设末次 ACK 丢失：再次确认重传 FIN",
+            "event": "reveal"
+          },
+          {
+            "label": "等待也让旧连接报文退出网络",
+            "event": "settle"
+          }
+        ],
+        "note": "不把 MSL 固定为某个实现秒数；重传 FIN 场景是单独的假设分支"
+      }
+    },
+    {
+      "id": "summary",
+      "durationSeconds": 3.2,
+      "intent": "四次是典型过程，不是固定报文数",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 1.056,
+        "settle": 2.112,
+        "end": 3.2
+      },
+      "props": {
+        "title": "四次是典型过程，不是固定报文数",
+        "cards": [
+          {
+            "title": "典型关闭",
+            "body": "FIN → ACK → FIN → ACK",
+            "event": "intro"
+          },
+          {
+            "title": "可以合并",
+            "body": "确认 ACK 与自己的 FIN 可同段发送",
+            "event": "reveal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "takeaway",
+      "durationSeconds": 3.2,
+      "intent": "握手确认起点，挥手分别关闭",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 1.056,
+        "settle": 2.112,
+        "end": 3.2
+      },
+      "props": {
+        "title": "握手确认起点，挥手分别关闭",
+        "cards": [
+          {
+            "title": "建立",
+            "body": "同步两个方向的序号起点",
+            "event": "intro"
+          },
+          {
+            "title": "关闭",
+            "body": "分别结束两个方向的数据发送",
+            "event": "reveal"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ending",
+      "durationSeconds": 3.615999999999997,
+      "intent": "让对话有起点，也让告别有回音",
+      "sceneType": "cards",
+      "events": {
+        "intro": 0,
+        "reveal": 1.193279999999999,
+        "settle": 2.386559999999998,
+        "end": 3.615999999999997
+      },
+      "props": {
+        "title": "让对话有起点，也让告别有回音",
+        "cards": [
+          {
+            "title": "有来有回",
+            "body": "每个确认，都对应具体状态变化",
+            "event": "intro"
+          }
+        ]
+      }
+    }
+  ]
+}

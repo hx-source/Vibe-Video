@@ -28,6 +28,7 @@ Thumbs.db
 **/output/**
 **/public/prepared/**
 **/releases/*.zip
+**/releases/*.manifest.json
 
 # Raw media is opt-in; keep indexes and source notes in Git
 *.mp4

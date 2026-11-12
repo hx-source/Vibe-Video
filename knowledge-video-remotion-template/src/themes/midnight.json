@@ -1,0 +1,13 @@
+{
+  "id": "midnight",
+  "colors": {
+    "background": "#101c2d",
+    "text": "#ecf0f6",
+    "muted": "#a3b4c8",
+    "primary": "#60c8df",
+    "accent": "#f0af75",
+    "panel": "#1b2d43",
+    "line": "#354b65",
+    "success": "#82ccb0"
+  }
+}

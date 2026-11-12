@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.85,
+  "buses": {
+    "music": 1,
+    "start": 1,
+    "end": 1,
+    "transition": 1,
+    "process": 0.5,
+    "accent": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "source": "asset:reference-bed",
+      "sourceIn": 0,
+      "sourceOut": 12,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.8,
+      "fadeIn": 0,
+      "fadeOut": 0,
+      "role": "music"
+    }
+  ],
+  "cues": [
+    {
+      "id": "appearance",
+      "role": "start",
+      "kind": "tone",
+      "at": {
+        "event": "opening.intro"
+      },
+      "duration": 0.18,
+      "frequency": 523.251,
+      "gain": 0.08,
+      "purpose": "提示第一张内容卡片出现",
+      "musicFit": "采用与测试背景和声相关的短音；需混合试听"
+    },
+    {
+      "id": "reveal",
+      "role": "transition",
+      "kind": "tone",
+      "at": {
+        "event": "opening.reveal"
+      },
+      "duration": 0.15,
+      "frequency": 392,
+      "gain": 0.08,
+      "purpose": "提示机制解释展开",
+      "musicFit": "采用与测试背景和声相关的短音；需混合试听"
+    },
+    {
+      "id": "settle",
+      "role": "end",
+      "kind": "tone",
+      "at": {
+        "event": "opening.settle"
+      },
+      "duration": 0.24,
+      "frequency": 392,
+      "gain": 0.08,
+      "purpose": "提示变化完成并落定",
+      "musicFit": "采用与测试背景和声相关的短音；需混合试听"
+    },
+    {
+      "id": "optional-process",
+      "role": "process",
+      "kind": "tone",
+      "at": {
+        "event": "opening.reveal"
+      },
+      "duration": 1,
+      "frequency": 220,
+      "gain": 0.03,
+      "enabled": false,
+      "purpose": "仅在持续变化需要解释时启用",
+      "musicFit": "默认关闭，避免第二条旋律"
+    }
+  ],
+  "rhythms": [],
+  "ducking": [
+    {
+      "id": "arrival-space",
+      "at": {
+        "event": "opening.settle"
+      },
+      "attack": 0.12,
+      "hold": 0.15,
+      "release": 0.3,
+      "gain": 0.75
+    }
+  ]
+}

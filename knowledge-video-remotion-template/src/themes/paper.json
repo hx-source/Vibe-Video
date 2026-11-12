@@ -1,0 +1,13 @@
+{
+  "id": "paper",
+  "colors": {
+    "background": "#f1ebdf",
+    "text": "#302e2b",
+    "muted": "#817969",
+    "primary": "#446b76",
+    "accent": "#a44737",
+    "panel": "#faf7ef",
+    "line": "#d5cdbd",
+    "success": "#547565"
+  }
+}

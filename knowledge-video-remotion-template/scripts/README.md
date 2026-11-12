@@ -1,7 +1,5 @@
-# 本机工具
+# 本机制作工具
 
-当前只有 `check-scaffold.mjs`，检查目录和草案引用，不安装依赖、不启动服务器、不导出视频。
+cli.mjs 是操作入口；project/files 负责加载、路径与来源；prepare/arrange-audio/pcm 负责素材和声音；render/runtime 负责实际渲染和媒体检查；review-server 为审片提供本机服务。
 
-后续逐项增加：环境检查、项目创建与加载、正式配置校验、素材准备、混音与分轨、Studio 启动、片段/整片导出、来源清单及审片报告。
-
-实际实现后再向 package.json 添加对应命令；不要挂出会空跑并报告成功的预览或导出命令。FFmpeg 路径与音频算法迁移时验证，不直接依赖相邻旧工程的 node_modules。
+verify-browser 是真实浏览器检查；demo-assets 生成技术样本；migrate-tcp 显式转换旧案例；release 从已提交源码生成快照。详细命令见工程 README。

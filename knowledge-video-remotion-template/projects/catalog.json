@@ -1,1 +1,23 @@
-{ "schemaVersion": 1, "projects": [] }
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "starter-demo",
+      "path": "starter-demo",
+      "kind": "engineering-validation",
+      "status": "ready"
+    },
+    {
+      "id": "audio-demo",
+      "path": "audio-demo",
+      "kind": "engineering-validation",
+      "status": "needs-listening"
+    },
+    {
+      "id": "tcp-handshake",
+      "path": "tcp-handshake",
+      "kind": "topic-example",
+      "status": "migration-validation"
+    }
+  ]
+}

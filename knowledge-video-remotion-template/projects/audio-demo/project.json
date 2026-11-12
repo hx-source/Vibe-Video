@@ -1,0 +1,30 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "engineering-validation",
+  "id": "audio-demo",
+  "title": "声音验证 · 开始与结束",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "如何在连续配乐中表达开始和结束？",
+    "takeaway": "关键事件使用不同短音，过程音默认留白。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

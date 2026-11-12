@@ -56,7 +56,7 @@ try {
   assert.equal(audio.schemaVersion, 2);
   for (const field of ['clips', 'cues', 'rhythms', 'ducking']) assert.deepEqual(audio[field], []);
   console.log(`骨架检查通过：${required.length} 个职责目录，${jsonFiles.length} 个 JSON，模板引用及示例事件一致。`);
-  console.log('检查范围仅为当前骨架；Remotion 预览、混音、渲染和人工审片尚未验证。');
+  console.log('此命令只检查结构；运行与浏览器验证见 npm test、npm run verify:browser 和导出报告。');
 } catch (error) {
   console.error(`骨架检查失败：${error.message}`);
   process.exitCode = 1;

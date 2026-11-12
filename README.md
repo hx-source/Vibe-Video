@@ -1,70 +1,62 @@
 # Vibe Knowledge Video
 
-用于制作内容驱动的知识讲解动画，采用 **模板工程 + 项目配置 + Skill** 的组织方式，正在从 Canvas 制作流程迁移到 Remotion。
+内容驱动的知识讲解视频制作工程：**Remotion 模板工程 + 单期项目配置 + knowledge-video Skill**。
 
-**当前是工程骨架，不是可以直接生成视频的完整工具。**
+当前工程版本 **0.1.0**，Skill **2.0.0**。已经接通本地制作、预览、混音、带画面的审片与导出，保留旧 Canvas 工程 v0.3.0 的显式兼容入口。
 
-## 当前状态
+## 已有能力
 
-| 部分 | 版本 | 状态 |
-| --- | --- | --- |
-| Remotion 模板工程 | 0.1.0-alpha.0 | 目录、配置草案和骨架检查已完成；尚未安装 Remotion、React 或接通预览和导出 |
-| knowledge-video Skill | 1.0.0 | 保留已有维护源，仅适配旧 Canvas 工程 v0.3.0；尚未接入本仓库的新工程 |
-| 旧 Canvas 工程 | 0.3.0 | 本次未收录，用作本地迁移对照 |
+- 单期分镜、中文字幕、内容事件、素材索引与事实说明。
+- 卡片关系、双方消息时序、循环进度三类 React/SVG 场景。
+- 纸张和深色两套配色，随依赖安装的 Noto Sans SC 中文字体。
+- 连续背景音乐、按用途安排音效、独立音量与音乐避让。
+- Remotion Studio 预览、同画面 A/B 与分轨试听、逐帧和局部循环。
+- 新建项目、静帧、局部/整片 MP4、SRT、音轨和来源清单。
+- 时间、音频、协议状态测试，以及真实浏览器和视频解码检查。
 
-不要把当前 Skill 安装后即可制作 Remotion 视频作为本版本的能力。Skill 的旧工程定位规则和本机回退路径保留供迁移参考，不适用于其他电脑的默认安装。
+工程保证配置能被一致执行，不自动保证内容正确或声音好听。当前没有 AI 作曲、自动节拍检测、旁白或任意知识题材的一键成片。
 
-## 仓库结构
+## 开始
 
-```text
-knowledge-video-remotion-template/  新工程、配置模板、迁移设计与检查工具
-skills/knowledge-video/             Skill 维护源文件
-README.md                          项目入口与当前状态
-.gitignore                         本地文件和生成结果的排除规则
-.gitattributes                     文本换行规则
-```
-
-工程中的 `projects/` 保存各期内容，`templates/starter/` 提供空白配置。当前没有实际主题项目或已渲染影片。
-
-## 现在可以运行什么
-
-安装 Node.js 20 或更高版本后，在仓库根目录执行：
+使用 Node.js 22.12 或更新版本；当前验证环境是 Windows、Node.js 24。
 
 ```sh
 cd knowledge-video-remotion-template
-npm run check:scaffold
+npm ci
+npx remotion browser ensure
+npm run demo:assets
+npm run doctor -- --project starter-demo
+npm run preview -- --project starter-demo
 ```
 
-此命令只使用 Node.js 自带功能，不需要先安装第三方依赖。它检查目录、JSON、模板文件引用及示例事件关系，不代表画面、混音、视频导出或听感已经验证。
+首次安装需要联网；后续使用本地资源制作。依赖锁文件固定版本。素材和渲染结果默认不上传 GitHub。
 
-Remotion 运行依赖和锁文件将在下一阶段加入。目前没有可运行的 `dev` 或 `render` 命令。
+```sh
+npm run new -- --project my-topic --title "本期主题"
+npm run render -- --project tcp-handshake --segment handshake --name handshake-v1
+npm run review -- --project audio-demo --event opening.settle --compare audio-alternative.json
+```
 
-## 制作原则
+new 创建可渲染的静音结构，正式制作前需填写本期内容。旧 TCP 案例已经迁移为 73.233 秒/2197 帧的完整静音示例；音频演示另有 12 秒程序测试素材，不捆绑用户原音乐。
 
-- 先确定内容、必要解释和讲解时间，再参考音乐节拍设计动作。
-- 配乐保持连贯；开始、结束和转场音效服务于具体内容。
-- 同一用途可以使用不同声音，但要与当时的配乐和画面协调。
-- 过程音按需要启用，不要求每个动作都发声。
-- 公共能力放工程，单期选择放项目，制作方法放 Skill。
-- 自动检查和人工观看、试听分别记录，不把技术检查通过当作审美通过。
+## 目录与说明
 
-## 下一步
+| 目录 | 用途 |
+| --- | --- |
+| knowledge-video-remotion-template | 运行工程、单期模板、示例、工具和验证 |
+| skills/knowledge-video | Skill 维护源；默认调用新工程，显式指定时处理旧工程 |
+| .github/workflows | 配置、类型与单元测试工作流；不在云端自动发布影片 |
 
-按 [迁移清单](knowledge-video-remotion-template/docs/MIGRATION.md) 接通最小预览与导出，再逐项实现时间轴、画面、声音和审片。完成旧案例验证后更新 Skill 的兼容范围。
+- [工程操作手册](knowledge-video-remotion-template/README.md)
+- [各模块职责](knowledge-video-remotion-template/docs/ARCHITECTURE.md)
+- [逐项完成清单](knowledge-video-remotion-template/docs/MIGRATION.md)
+- [验证与限制](knowledge-video-remotion-template/docs/VERIFICATION-v0.1.md)
+- [Skill 说明](skills/README.md)
 
-相关说明：
+## 版本与素材管理
 
-- [工程总览](knowledge-video-remotion-template/README.md)
-- [工程架构](knowledge-video-remotion-template/docs/ARCHITECTURE.md)
-- [项目配置约定](knowledge-video-remotion-template/docs/PROJECT-CONTRACT.md)
-- [Skill 当前适用范围](skills/README.md)
+本仓库是工程和 Skill 的维护源。公共能力改工程，单期选择改项目，制作方法改 Skill。工程与 Skill 分别编号并记录兼容范围。
 
-## 版本和文件管理
+依赖、浏览器、缓存、原始媒体和每次生成的视频不加入源码历史。素材索引保存来源与授权说明；要共享原始媒体时，单独确认分享范围。发布工具可从已提交源码生成本地 ZIP 与校验清单，不自动发布 GitHub Release。
 
-- 这个仓库是后续工程与 Skill 维护源的统一位置；已安装 Skill 是运行副本。
-- 一次提交对应一个明确改动；较大的功能改造使用分支，验证后合并到 `main`。
-- 工程与 Skill 独立编号，发布时注明兼容关系；当前 alpha 版本只表示骨架阶段。
-- 上传源码、配置、文档、检查工具，以及安装阶段生成的依赖锁文件。
-- 不上传依赖目录、渲染浏览器、缓存、账号信息或每次生成的视频和混音。
-- 公共素材索引可以上传；原始媒体默认忽略，只按需要明确收录可以公开分发的样例，并保留来源说明。
-- 当前未附加源码开源许可证；第三方依赖和素材分别遵循其自身许可。
+当前未附加源码开源许可证；第三方依赖和素材分别遵循其自身许可。

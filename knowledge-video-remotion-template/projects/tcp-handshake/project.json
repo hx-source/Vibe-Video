@@ -1,0 +1,30 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "draft",
+  "id": "tcp-handshake",
+  "title": "有来有回 · TCP 三次握手与四次挥手",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "为什么通常三次握手、四次挥手？",
+    "takeaway": "握手同步序号起点，关闭分别结束两个发送方向。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

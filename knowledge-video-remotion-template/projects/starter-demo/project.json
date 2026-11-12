@@ -1,0 +1,30 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "engineering-validation",
+  "id": "starter-demo",
+  "title": "工程验证 · 内容先行",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "内容事件如何组织一段讲解？",
+    "takeaway": "先提出问题，再展示机制，最后对应结论。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}
