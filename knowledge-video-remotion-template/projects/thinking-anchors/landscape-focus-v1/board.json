@@ -1,0 +1,11 @@
+{
+  "id":"landscape-focus-decision",
+  "sceneType":"anchor-landscape-focus",
+  "video":{"width":1920,"height":1080,"fps":30},
+  "rangeSeconds":[24,38],
+  "durationSeconds":14,
+  "events":{"search":0.3,"history":2.4,"other":4.6,"compare":5.9,"conditions":6.7,"need":8.3,"budget":9.8,"choice":11.5},
+  "intent":"横屏以商品、可比价格与购买判断为主体；单个关注点连续变化，减少同屏文字",
+  "soundSource":"outputs/thinking-anchors/portrait-character-motion-v1/video.mp4",
+  "userApproved":false
+}

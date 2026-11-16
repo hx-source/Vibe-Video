@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "narration": false,
+    "captions": "zh-CN",
+    "targetDurationSeconds": 62
+  },
+  "topic": {
+    "title": "思考，快与慢：锚定效应",
+    "audience": "对认知心理学无专业背景的普通观众",
+    "question": "为什么先出现的数字，会影响后面的判断？",
+    "takeaway": "判断数值时，先建立独立估计，再检查外部证据。"
+  },
+  "research": {
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Tversky & Kahneman (1974), Judgment under Uncertainty: Heuristics and Biases",
+        "reference": "https://www.csc2.ncsu.edu/faculty/mpsingh/local/Social/f24/wrap/readings/Tversky%2BKahneman-heuristics-biases-1974.pdf"
+      },
+      {
+        "title": "Daniel Kahneman, Thinking, Fast and Slow (2011) — 主题书目",
+        "reference": "https://academic.macmillan.com/academictrade/9780374275631/thinkingfastandslow/"
+      }
+    ],
+    "boundaries": "原论文锚定段落和10/65→25%/45%已核实。商品价格及数轴轨迹均为教学示意；调整不足仅为一种解释；独立参照建议不保证消除偏差。详见facts.md。"
+  },
+  "outline": [
+    {
+      "segmentId": "price",
+      "point": "同样是 199 元，为什么感觉不同？"
+    },
+    {
+      "segmentId": "pull",
+      "point": "锚定效应：判断被起点拉住"
+    },
+    {
+      "segmentId": "experiment",
+      "point": "无关的数字，也能成为锚"
+    },
+    {
+      "segmentId": "reset",
+      "point": "给判断换一个起点"
+    },
+    {
+      "segmentId": "close",
+      "point": "先有自己的尺，再看别人的锚"
+    }
+  ],
+  "scenePlan": [
+    {
+      "segmentId": "price",
+      "purpose": "同样是 199 元，为什么感觉不同？",
+      "change": "同样的199元价格并列，右侧先出现划线999元，再显示价格感受差异。",
+      "sceneType": "anchoring"
+    },
+    {
+      "segmentId": "pull",
+      "purpose": "锚定效应：判断被起点拉住",
+      "change": "固定80锚点与数轴，估计点向锚点偏移，标记概念示意。",
+      "sceneType": "anchoring"
+    },
+    {
+      "segmentId": "experiment",
+      "purpose": "无关的数字，也能成为锚",
+      "change": "保留A双组图解；新B用转盘、人物、问题气泡和中位数揭示；新C用转盘装置与同尺度估计柱体。均沿用相同实验数据和完整成片时钟。",
+      "sceneType": "anchor-study"
+    },
+    {
+      "segmentId": "reset",
+      "purpose": "给判断换一个起点",
+      "change": "按顺序出现独立估计、外部证据、比较报价三个步骤。",
+      "sceneType": "anchoring"
+    },
+    {
+      "segmentId": "close",
+      "purpose": "先有自己的尺，再看别人的锚",
+      "change": "用同一个反思问题收束，提示寻找独立参照。",
+      "sceneType": "anchoring"
+    }
+  ],
+  "representative": {
+    "from": 25,
+    "to": 35,
+    "stillTime": 34.5,
+    "reason": "漫画方向优先验证转盘停下、比较气泡、统计结果揭示及落定，保留全片25–35秒时钟，不把中段动画或配乐重置到零。"
+  }
+}

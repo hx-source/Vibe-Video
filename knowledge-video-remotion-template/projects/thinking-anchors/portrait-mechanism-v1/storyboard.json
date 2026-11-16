@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "portrait-mechanism",
+  "sceneType": "anchor-portrait-mechanism",
+  "video": {"width": 1080, "height": 1920, "fps": 30},
+  "rangeSeconds": [12, 24],
+  "durationSeconds": 12,
+  "events": {"shift": 0.3, "recall": 0.9, "feel": 2.25, "compare": 5.3, "concept": 7.5, "question": 9.7},
+  "safeArea": {"left": 72, "top": 160, "right": 930, "bottom": 1560},
+  "captions": [
+    {"from": 0, "to": 2.25, "text": "最初看到的999，可能成为比较参照。"},
+    {"from": 2.25, "to": 5.3, "text": "拿999来比较，就容易觉得199省了800。"},
+    {"from": 5.3, "to": 7.5, "text": "199没变，和189比较又高了10元。"},
+    {"from": 7.5, "to": 9.7, "text": "锚定效应：最初的数字，可能成了参照。"},
+    {"from": 9.7, "to": 12, "text": "那该拿什么作比较依据？"}
+  ],
+  "scope": "沿用已认可竖屏开头，制作12–24秒机制段；后续继续讲减少锚定影响的方法"
+}

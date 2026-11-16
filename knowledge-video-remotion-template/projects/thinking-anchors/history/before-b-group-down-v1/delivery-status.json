@@ -1,0 +1,30 @@
+{
+  "state": "b-record-entries-candidate-ready",
+  "output": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "review": "outputs/thinking-anchors/b-record-entries-v1/review.html",
+  "storyboard": "outputs/thinking-anchors/full-motion-v1/storyboard.html",
+  "durationSeconds": 88,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 2640,
+  "style": "comic",
+  "music": "02_情感话题_故事讲述.m4a",
+  "fixedBottomExplanations": false,
+  "approvedSamplePreserved": true,
+  "fullFilmUserApproval": false,
+  "assistantHumanListening": "not-performed",
+  "previousOutput": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "preview": "outputs/thinking-anchors/b-record-entries-v1/preview.mp4",
+  "pictureUnchanged": true,
+  "soundCueCount": 7,
+  "formalAudioPlan": "audio-plan.json unchanged; audio-palette-b-record-entries-v1.json is the alternative",
+  "userSoundApproval": false,
+  "previousSoundCandidate": "outputs/thinking-anchors/action-sfx-v1",
+  "soundReview": "outputs/thinking-anchors/b-record-entries-v1/review.html",
+  "soundPaletteManifest": "outputs/thinking-anchors/b-record-entries-v1/manifest.json",
+  "candidateSoundAssetCount": 12,
+  "selectedSoundPalette": "B as preferred base; explainer candidate pending"
+}

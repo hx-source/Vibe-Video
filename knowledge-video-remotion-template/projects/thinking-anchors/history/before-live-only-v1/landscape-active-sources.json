@@ -1,0 +1,52 @@
+{
+  "revision": "landscape-used-v2",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-used-v2",
+  "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-used-v2/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-used-v2/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v9/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-reason-v1/Reason.tsx",
+  "note": "当前主入口0–70秒：认可的0–52秒源保持，52–70秒为新二手段，待反馈。后续出价与结尾旧源保留，尚未纳入新预览。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v6/Actor.tsx",
+  "usedEvidence": "projects/thinking-anchors/landscape-used-v2/Used.tsx",
+  "usedActor": "projects/thinking-anchors/landscape-used-v2/Actor.tsx",
+  "offer": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+  "offerActor": "projects/thinking-anchors/landscape-offer-v1/Actor.tsx",
+  "ending": "projects/thinking-anchors/landscape-final-v1/Ending.tsx",
+  "endingActor": "projects/thinking-anchors/landscape-ending-v1/Actor.tsx",
+  "audioPlan": "outputs/thinking-anchors/landscape-used-v2/audio-plan.json",
+  "finalVideo": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "host": "projects/thinking-anchors/landscape-opening-v6/Host.tsx",
+  "previewVideo": "outputs/thinking-anchors/landscape-used-v2/video.mp4",
+  "previewContinuity": "outputs/thinking-anchors/landscape-used-v2/continuity-0-70.mp4",
+  "beforeAfter": "projects/thinking-anchors/landscape-opening-v6/BeforeAfter.tsx",
+  "openingAudioPlan": "projects/thinking-anchors/landscape-opening-v9/audio-plan.json",
+  "reason": "projects/thinking-anchors/landscape-reason-v1/Reason.tsx",
+  "sourceScopeSeconds": [
+    0,
+    70
+  ],
+  "continuousChapter": "outputs/thinking-anchors/landscape-used-v2/audio/mix.wav",
+  "plannedNextSegment": {
+    "id": "used-offer",
+    "fromSeconds": 70,
+    "status": "retained-source-awaiting-continuation",
+    "sourceRangeSeconds": [
+      52,
+      64
+    ],
+    "source": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+    "purpose": "衔接参考成交区间和实物状况，解释有依据地出价与价格不合适可以不成交；后续长度待继续制作"
+  }
+}

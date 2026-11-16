@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "c-sparse-1",
+      "source": "asset:palette-glass-clue",
+      "role": "accent",
+      "at": 34.05,
+      "sourceIn": 0,
+      "sourceOut": 1.0755328798185941,
+      "gain": 0.7,
+      "fadeOut": 0.015,
+      "purpose": "发现第一条真实依据",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    },
+    {
+      "id": "c-sparse-2",
+      "source": "asset:palette-paper-long",
+      "role": "process",
+      "at": 37,
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "gain": 0.8,
+      "fadeOut": 0.015,
+      "purpose": "查成交记录，保留一次翻页",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+      "enabled": true
+    },
+    {
+      "id": "c-sparse-3",
+      "source": "asset:paper-slide-soft-v1",
+      "role": "process",
+      "at": 40,
+      "sourceIn": 0,
+      "sourceOut": 0.4,
+      "gain": 0.9,
+      "fadeOut": 0.015,
+      "purpose": "价格标签抽出归组，以短促柔和的纸张滑擦代替布料扫动",
+      "musicFit": "保持C方案的02配乐与其他三处音效；无额外音高或撞击层，低密度纸张材质候选待用户实际试听",
+      "enabled": true
+    },
+    {
+      "id": "c-sparse-4",
+      "source": "asset:palette-glass-finish",
+      "role": "end",
+      "at": 42,
+      "sourceIn": 0,
+      "sourceOut": 1.492267573696145,
+      "gain": 0.65,
+      "fadeOut": 0.015,
+      "purpose": "可比区间确定，保留自然衰减与短空间尾音",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

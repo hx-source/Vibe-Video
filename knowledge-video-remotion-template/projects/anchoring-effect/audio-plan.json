@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.7,
+  "buses": {
+    "music": 1,
+    "start": 1,
+    "end": 1,
+    "transition": 1,
+    "process": 0.5,
+    "accent": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:cognition-bed",
+      "sourceIn": 0,
+      "sourceOut": 62,
+      "at": 0,
+      "gain": 0.75,
+      "fadeIn": 0.35,
+      "fadeOut": 1.5
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

@@ -1,0 +1,43 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v3/review.html",
+  "output": "outputs/thinking-anchors/landscape-opening-v3/video.mp4",
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "新增直播间主播报价和买家从犹豫到心动的表现；0–24秒待反馈，附原后14秒检查衔接，旧74秒最终成片保留。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-opening-v3/continuity-0-38.mp4",
+  "revision": "landscape-opening-v3",
+  "revisionReason": "可以，就按这个直播间的开头调整0到24秒，把主播讲解和人物从犹豫到心动的变化表现出来，保持1920×1080横屏、漫画风格和02背景音乐，注意衔接后面的内容，做好后先给我看一下效果。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "opening-revision-preview",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-opening-v3/quality-review.md",
+  "finalExportAuthorized": false,
+  "assistantListening": "not-performed",
+  "contentApproved": true,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v1/video.mp4"
+}

@@ -1,0 +1,46 @@
+{
+  "specification": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        12
+      ],
+      "revision": "portrait-opening-v2",
+      "status": "approved",
+      "userApproved": true,
+      "approval": "portrait-opening-v2-acceptance.json",
+      "feedback": "现在目前看着还可以，可以继续制作了"
+    },
+    {
+      "id": "mechanism",
+      "rangeSeconds": [
+        12,
+        24
+      ],
+      "revision": "portrait-mechanism-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "review": "outputs/thinking-anchors/portrait-mechanism-v1/review.html"
+    }
+  ],
+  "currentSegment": "mechanism",
+  "currentReview": "outputs/thinking-anchors/portrait-mechanism-v1/review.html",
+  "continuityOutput": "outputs/thinking-anchors/portrait-mechanism-v1/continuity-0-24.mp4",
+  "remainingTopics": [
+    "找反证、核对可比价格、需求与预算",
+    "二手商品检查和成交核查",
+    "依据状况出价、可不成交",
+    "方法总结"
+  ],
+  "fullFilmApproval": false,
+  "fullFilmProduced": false
+}

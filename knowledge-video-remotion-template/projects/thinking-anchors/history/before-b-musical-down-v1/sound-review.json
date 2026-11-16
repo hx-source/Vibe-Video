@@ -1,0 +1,57 @@
+{
+  "previousCandidate": {
+    "plan": "audio-action-candidate.json",
+    "output": "outputs/thinking-anchors/action-sfx-v1",
+    "userApproval": "rejected",
+    "feedback": "所有的音效都太单调，类似蹦崩，内容和风格不符合"
+  },
+  "currentCandidate": {
+    "output": "outputs/thinking-anchors/b-nonpaper-down-v1",
+    "plans": [
+      "audio-palette-b-down-mechanical-v1.json",
+      "audio-palette-b-down-electronic-v1.json"
+    ],
+    "range": [
+      32,
+      46
+    ],
+    "review": "outputs/thinking-anchors/b-nonpaper-down-v1/review.html"
+  },
+  "pictureUnchanged": true,
+  "musicUnchangedAcrossCandidates": true,
+  "formalPlanUnchanged": true,
+  "humanListening": "not-performed",
+  "userApproval": "pending-nonpaper-sound-choice",
+  "feedback": {
+    "text": "短纸卡滑动与前面重复，需要其他音效",
+    "resolution": "同画面比较短机械滑扣和电子收拢短音，仅更换第9.2秒附近的归组声"
+  },
+  "feedbackHistory": [
+    {
+      "text": "第8秒附近的那个动画效果的音效不太合适，其他的还可以勉强接受",
+      "palette": "c-sparse",
+      "otherSounds": "tentatively-tolerated; do not polish or replace without further feedback"
+    },
+    {
+      "text": "总感觉不太符合这部分知识的讲解风格",
+      "base": "b-comic",
+      "preference": "保留B整体动作感，声音气质需要适合知识讲解"
+    },
+    {
+      "text": "第四秒放大镜到少配件那里没有音效吗？",
+      "interpretation": "在B知识讲解候选上补回轻微动作拟音，保持其余声音"
+    },
+    {
+      "text": "第5秒左右三条同款成色相近的记录逐个出现，音效感觉只有一个，应与三次出现相对应",
+      "resolution": "替换原滑动与翻页为三次独立短纸张声，不改画面与其他音效"
+    },
+    {
+      "text": "第9秒左右三个标签向下移动，音效不太合适",
+      "resolution": "去掉提前结束的短纸张声，改为8.85–10秒随整体下移速度变化的一次轻扫，保留落定轻响"
+    },
+    {
+      "text": "标签下移扫动声有空旷感，仍不合适",
+      "resolution": "换原速短纸张材质，保持主体与细节，不做拉伸或空间处理，配在9.2秒附近最明显的下移动作"
+    }
+  ]
+}

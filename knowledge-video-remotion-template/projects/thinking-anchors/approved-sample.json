@@ -1,0 +1,25 @@
+{
+  "userFeedback": "目前看可以",
+  "scope": "已交付sample-motion-v3十秒有声样片；允许沿该方向扩展全片",
+  "rangeSeconds": [
+    34,
+    44
+  ],
+  "record": {
+    "state": "approved",
+    "viewed": true,
+    "listened": true,
+    "note": "用户对刚交付的十秒有声动作表达版回复“目前看可以”，按当前上下文记录为该样片的整体认可，并继续制作全片；认可仅覆盖该十秒版本和范围，不替代全片验收。",
+    "createdAt": "2026-11-14T05:08:01.349Z",
+    "fingerprint": "30e4b85592c1ff2236fde8be02eeaec4b4cd002b4058cc9f4182254e07298af7",
+    "manifest": "outputs/thinking-anchors/sample-motion-v3/manifest.json",
+    "manifestSha256": "1c26e12e89a58f1f7ec1ceca37ac1a86c10dd53cb7efd25ead6e146023679621",
+    "videoSha256": "ce8f32432fd05f0653d285381d444b891d615ec9cf8bacf826cd535165839a99"
+  },
+  "approvedOutput": "outputs/thinking-anchors/sample-motion-v3",
+  "videoSha256": "ce8f32432fd05f0653d285381d444b891d615ec9cf8bacf826cd535165839a99",
+  "preserveScene": "scenes/AnchorEvidenceMotion.tsx",
+  "preserveSceneSha256": "c5d3d20d517d3f7cfc4047717e68be8099ad5f0db4722e981af58189aa373c6e",
+  "preserveArtSha256": "20bd8bf58a606784126f0413aac2365487200b3f19dc88d305a406341b3f9653",
+  "fullFilmApproved": false
+}

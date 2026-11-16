@@ -1,0 +1,22 @@
+{
+  "revision": "landscape-opening-v1",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-opening-v1",
+  "decision": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-focus-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-opening-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-opening-v1/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v1/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-opening-v1/Opening.tsx",
+  "note": "Opening.tsx使用全局0–719帧，包含开头与机制；24–38秒继续用原landscape-focus-v1/Decision.tsx和Actor.tsx。新开头待反馈。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v1/Actor.tsx"
+}

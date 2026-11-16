@@ -1,0 +1,26 @@
+{
+  "state": "action-sfx-candidate-ready-for-listening",
+  "output": "outputs/thinking-anchors/action-sfx-v1/video.mp4",
+  "review": "outputs/thinking-anchors/action-sfx-v1/review.html",
+  "storyboard": "outputs/thinking-anchors/full-motion-v1/storyboard.html",
+  "durationSeconds": 88,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 2640,
+  "style": "comic",
+  "music": "02_情感话题_故事讲述.m4a",
+  "fixedBottomExplanations": false,
+  "approvedSamplePreserved": true,
+  "fullFilmUserApproval": false,
+  "assistantHumanListening": "not-performed",
+  "previousOutput": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "preview": "outputs/thinking-anchors/action-sfx-v1/preview-after.mp4",
+  "pictureUnchanged": true,
+  "soundCueCount": 42,
+  "foleyAssetCount": 15,
+  "formalAudioPlan": "audio-plan.json unchanged; audio-action-candidate.json is the candidate",
+  "userSoundApproval": false
+}

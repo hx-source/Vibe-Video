@@ -1,0 +1,40 @@
+{
+  "bodyFile": "paper-single-swipe-v1.wav",
+  "bodyRange": [
+    0,
+    2
+  ],
+  "startRange": [
+    0,
+    0.055
+  ],
+  "endRange": [
+    2,
+    2.09
+  ],
+  "startContact": {
+    "peakDb": -13.360215691867756,
+    "rmsDb": -23.244649799933747
+  },
+  "endContact": {
+    "peakDb": -9.18092284252801,
+    "rmsDb": -18.96343725061953
+  },
+  "sourceContacts": [
+    {
+      "file": "bookPlace1.ogg",
+      "sha256": "26f3ce60fbde85b678b0ad7f6624d80535fe540d88232ad1e38e47a96662d977",
+      "sourceInSeconds": 0.056575963718820864,
+      "duration": 0.055,
+      "highpassHz": 500
+    },
+    {
+      "file": "bookPlace2.ogg",
+      "sha256": "831874e8fd142d4d0a03ff009f1f83966338a7878c0f6f38c613ae5b80dd731e",
+      "sourceInSeconds": 0.07698412698412699,
+      "duration": 0.09,
+      "highpassHz": 260
+    }
+  ],
+  "note": "Complete audition contains both contacts and the single swipe body; old separate glass end cue must be replaced, not doubled."
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "id": "landscape-opening-live",
+  "sceneType": "anchor-landscape-opening",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "durationSeconds": 24,
+  "events": {
+    "price": 0,
+    "reference": 4,
+    "delight": 8,
+    "reality": 12,
+    "explain": 17,
+    "topicLead": 19.2,
+    "term": 19.4,
+    "topicUnderline": 21,
+    "question": 22.4,
+    "match": 23.5
+  },
+  "captions": [
+    {
+      "from": 0,
+      "to": 4,
+      "text": "直播间里，一件199元的衣服，你本来觉得有点贵。"
+    },
+    {
+      "from": 4,
+      "to": 8,
+      "text": "主播说：原价999，今天只要199！"
+    },
+    {
+      "from": 8,
+      "to": 12,
+      "text": "听完主播的报价，你突然觉得好像挺划算。"
+    },
+    {
+      "from": 12,
+      "to": 17,
+      "text": "价格没变，判断变了。要付的仍然是199。"
+    },
+    {
+      "from": 17,
+      "to": 19.2,
+      "text": "你开始拿999，判断199值不值。"
+    },
+    {
+      "from": 19.2,
+      "to": 22.4,
+      "text": "今天我们讲《思考，快与慢》中的锚定效应。"
+    },
+    {
+      "from": 22.4,
+      "to": 24,
+      "text": "那判断贵不贵，到底该拿什么比？"
+    }
+  ],
+  "userApproved": false,
+  "contentApproved": true,
+  "noNarration": true,
+  "hook": "直播间里，越听越想买？",
+  "objectLabel": "一件衣服"
+}

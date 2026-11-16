@@ -19,6 +19,8 @@ npm run doctor -- --project starter-demo
 
 ## 常用操作
 
+统一当前版本、局部修订和完整/中段媒体对照使用 `npm run production -- ...`，见[制作管理入口](docs/PRODUCTION-WORKFLOW.md)。现支持snapshot冻结传递依赖，render实际应用已接入的JSON参数并联动局部检查，check复核视频与分轨。已有渲染、设计与音乐命令保持兼容；已启用项目以production-state.json为主记录，旧状态文件由它派生。
+
 ```sh
 npm run new -- --project my-topic --title "本期主题"
 npm run check -- --project my-topic
@@ -58,6 +60,9 @@ npm run check:scaffold
 npm run typecheck
 npm test
 npm run verify:browser
+npm run verify:production
+# 实际渲染参数化组件，新增非当前测试修订及独立试片：
+npm run verify:production:render
 ```
 
 浏览器检查覆盖跳帧、文字边界、同画面 A/B、播放位置、范围循环及审片记录下载。每次导出后检查尺寸、帧数、音轨存在及完整解码。人工观看和听感另记，自动报告不会代替它们。
@@ -71,3 +76,13 @@ npm run verify:browser
 - [Skill 接入](docs/SKILL-INTEGRATION.md)
 
 目前面向最长 600 秒的 16:9 二维视频，字幕单轨，无配音。新增表现形式须增加场景组件与校验；更换配色不等于已支持所有知识题材。预览与渲染依赖本机浏览器和媒体程序可以启动。
+
+## 音乐卡点制作
+
+新增 music:analyze、music:review、music:check，支持节拍候选、独立校正、事件对齐与十秒试片流程。详见 [音乐制作流程](docs/MUSIC-WORKFLOW.md)。旧项目不配置 musicSync 时保持原有行为。
+
+第二阶段增加局部跟拍、波形节拍编辑器、影响预览与安全应用、分段验收、调性与音效候选试听、LUFS/真峰值检查。见 [第二阶段操作说明](docs/MUSIC-PHASE2.md)。
+
+## 内容与视觉制作流程
+
+先确定规格、主题和资料，再通过同内容三种实际视觉示例选择或修改风格，最后用任意代表片段的十秒有声样片验证。支持局部参数调整、多轮提案与版本认可；详见 [视觉制作流程](docs/VISUAL-WORKFLOW.md)。

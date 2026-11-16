@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 2.05
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "b-comic-1",
+      "source": "asset:palette-metal-detail",
+      "role": "accent",
+      "at": 34,
+      "sourceIn": 0,
+      "sourceOut": 0.4458503401360544,
+      "gain": 0.65,
+      "fadeOut": 0.015,
+      "purpose": "放大镜检查时的细小物件轻响，避免用夸张疑问音替观众反应",
+      "musicFit": "使用已有非旋律性物件素材；固定02配乐，搭配效果待用户试听"
+    },
+    {
+      "id": "b-lens-accessory",
+      "source": "asset:palette-cloth-two",
+      "role": "process",
+      "enabled": true,
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.4
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "gain": 0.6,
+      "fadeIn": 0.025,
+      "fadeOut": 0.07,
+      "purpose": "放大镜移到少配件位置时的轻微滑擦，覆盖试片第4秒附近的移动与停稳",
+      "musicFit": "使用已有短布料摩擦素材作为手持物件移动拟音；保持02配乐与其余音效，实际可辨认性待用户试听"
+    },
+    {
+      "id": "b-record-row-1",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "gain": 1.15,
+      "fadeOut": 0.015,
+      "purpose": "成交记录A单独出现的短纸张轻响",
+      "musicFit": "同一纸张材质的三种短采样，分别跟随三条记录，不添加升调或额外撞击；02配乐保持原样，搭配待试听"
+    },
+    {
+      "id": "b-record-row-2",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.44000000000000006
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "gain": 1.3,
+      "fadeOut": 0.015,
+      "purpose": "成交记录B单独出现的短纸张轻响",
+      "musicFit": "同一纸张材质的三种短采样，分别跟随三条记录，不添加升调或额外撞击；02配乐保持原样，搭配待试听"
+    },
+    {
+      "id": "b-record-row-3",
+      "source": "asset:record-paper-3-v1",
+      "role": "accent",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.78
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.20931972789115647,
+      "gain": 0.95,
+      "fadeOut": 0.015,
+      "purpose": "成交记录C单独出现的短纸张轻响",
+      "musicFit": "同一纸张材质的三种短采样，分别跟随三条记录，不添加升调或额外撞击；02配乐保持原样，搭配待试听"
+    },
+    {
+      "id": "outline-draw",
+      "source": "asset:regroup-draw-v1",
+      "at": {
+        "event": "evidence.range",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.85,
+      "gain": 0.78,
+      "fadeIn": 0.002,
+      "fadeOut": 0.015,
+      "role": "process",
+      "enabled": true,
+      "purpose": "成交记录留在原位，一笔框出可比价格，再呈现区间。短铅笔录音只随框线绘制。",
+      "musicFit": "固定02背景音乐；短声仅配本版可见动作，无连续滑音或混响；听感待用户试听"
+    },
+    {
+      "id": "opening-quote",
+      "source": "asset:palette-paper-short",
+      "at": {
+        "event": "deal.offer",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.8,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "卖家报价气泡和纸质2000元标签出现，一次短翻纸声",
+      "musicFit": "保持02故事讲述配乐和既有音量；短翻纸、物件接触与界面声分别跟随具体动作，无持续滑音、旋律叠加或空间混响；实际搭配待用户试听"
+    },
+    {
+      "id": "opening-counter",
+      "source": "asset:opening-ui-contact-v1",
+      "at": {
+        "event": "deal.counter",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.1,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "买家提出1600元还价，一次短对话提示，保留阅读留白",
+      "musicFit": "保持02故事讲述配乐和既有音量；短翻纸、物件接触与界面声分别跟随具体动作，无持续滑音、旋律叠加或空间混响；实际搭配待用户试听"
+    },
+    {
+      "id": "opening-agreement",
+      "source": "asset:regroup-contact-v2",
+      "at": {
+        "event": "deal.counter",
+        "offset": 1.5
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.11,
+      "speed": 1,
+      "gain": 2.4,
+      "role": "end",
+      "fadeOut": 0.012,
+      "purpose": "卖家点头同意，1600元谈成价格标签落定，一次短接触声",
+      "musicFit": "保持02故事讲述配乐和既有音量；短翻纸、物件接触与界面声分别跟随具体动作，无持续滑音、旋律叠加或空间混响；实际搭配待用户试听"
+    },
+    {
+      "id": "opening-payment",
+      "source": "asset:palette-cloth-two",
+      "at": {
+        "event": "deal.celebrate",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.65,
+      "role": "transition",
+      "fadeOut": 0.012,
+      "purpose": "买家觉得省了400元并拿出待付款手机，配一次短物件滑擦",
+      "musicFit": "保持02故事讲述配乐和既有音量；短翻纸、物件接触与界面声分别跟随具体动作，无持续滑音、旋律叠加或空间混响；实际搭配待用户试听"
+    },
+    {
+      "id": "opening-pause",
+      "source": "asset:opening-ui-contact-v1",
+      "at": {
+        "event": "deal.question",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 0.85,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "付款界面转为先别付款、手指退回，用一次短界面轻响提示状态改变",
+      "musicFit": "保持02故事讲述配乐和既有音量；短翻纸、物件接触与界面声分别跟随具体动作，无持续滑音、旋律叠加或空间混响；实际搭配待用户试听"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

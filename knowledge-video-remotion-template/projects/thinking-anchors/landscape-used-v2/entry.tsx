@@ -1,0 +1,10 @@
+import React from 'react';
+import {OpeningChapter} from '../landscape-opening-v9/Opening';
+import {AnchorReason} from '../landscape-reason-v1/Reason';
+import {LiveDecision} from '../landscape-decision-v1/Decision';
+import {AnchorLandscapeUsed,validateUsed} from './Used';
+validateUsed();
+import {createRoot} from 'react-dom/client';
+import {flushSync} from 'react-dom';
+const root=createRoot(document.getElementById('root')!);
+(window as any).renderLandscape=(f:number)=>{if(!Number.isInteger(f)||f<0||f>=2100)throw Error('Frame outside0–2099');flushSync(()=>root.render(<div style={{width:1920,height:1080,overflow:'hidden',fontFamily:'"Noto Sans SC",sans-serif'}}>{f<600?<OpeningChapter frame={f}/>:f<1020?<AnchorReason frame={f-600}/>:f<1560?<LiveDecision frame={f-1020}/>:<AnchorLandscapeUsed frame={f-1560}/>}</div>));};

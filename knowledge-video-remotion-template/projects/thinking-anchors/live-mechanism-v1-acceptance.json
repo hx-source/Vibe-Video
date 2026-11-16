@@ -1,0 +1,16 @@
+{
+  "status": "user-approved",
+  "rangeSeconds": [
+    14,
+    24
+  ],
+  "revision": "live-mechanism-v1",
+  "preview": "outputs/thinking-anchors/live-mechanism-v1/video.mp4",
+  "videoSha256": "622a2c598d02df65c3caf3c8f07bc302336870dcadff4830e5a20435db5adfcf",
+  "continuity": "outputs/thinking-anchors/live-mechanism-v1/continuity-0-24.mp4",
+  "continuitySha256": "ff0f833957e1c52cf1d6845eab1aacbfe6700fa7e3000b991e25a412a672bc0b",
+  "feedback": "这部分可以，接下来继续制作24到32秒，注意衔接前面“该用什么作依据”的问题，讲清楚生活中怎么避免锚定效应。",
+  "userApproval": true,
+  "viewedAndListenedNotSeparatelyRecorded": true,
+  "scope": "Only the delivered 14–24s segment; does not approve the following segment or full film"
+}

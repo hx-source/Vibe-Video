@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "activeRound": 3,
+  "selectedId": "comic",
+  "rounds": [
+    {
+      "id": 1,
+      "createdAt": "2026-11-14T03:33:05.986Z",
+      "candidates": [
+        {
+          "id": "night",
+          "styleId": "night-story",
+          "label": "夜空叙事",
+          "rationale": "用人物与关系变化解释“为什么先出现的数字，会影响后面的判断？”，兼顾故事氛围和重点。"
+        },
+        {
+          "id": "clear",
+          "styleId": "clear-diagram",
+          "label": "清晰图解",
+          "rationale": "突出“为什么先出现的数字，会影响后面的判断？”中的步骤和状态，适合优先检验机制是否讲清楚。"
+        },
+        {
+          "id": "paper",
+          "styleId": "paper-sketch",
+          "label": "纸本手绘",
+          "rationale": "用纸本示意讲述“为什么先出现的数字，会影响后面的判断？”，弱化装饰，保留可读的关系变化。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "createdAt": "2026-11-14T03:33:34.505Z",
+      "candidates": [
+        {
+          "id": "night",
+          "styleId": "night-story",
+          "label": "A · 深蓝金色",
+          "rationale": "用深色背景托住数值，金色与珊瑚红区分两组，适合集中观看。当前实现为深色图解。",
+          "motion": "两组数字位置固定，估计条从零增长，结果落定；不新增人物或星空插画。"
+        },
+        {
+          "id": "clear",
+          "styleId": "clear-diagram",
+          "label": "B · 蓝白图解",
+          "rationale": "白底蓝红双组对照，突出实验流程与统计量，推荐用于本期机制讲解。",
+          "motion": "两组同步推进“先比较、再估计”，条形增长后保留25%和45%作比较。"
+        },
+        {
+          "id": "paper",
+          "styleId": "paper-sketch",
+          "label": "C · 暖纸红墨",
+          "rationale": "暖纸底配墨棕、朱红，适合书籍知识笔记的阅读感。当前实现为暖纸配色图解。",
+          "motion": "保留数字与条形的连续变化；当前不含手绘插画和纸张纹理。"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "createdAt": "2026-11-14T03:41:08.234Z",
+      "candidates": [
+        {
+          "id": "night",
+          "styleId": "night-story",
+          "label": "A · 深蓝金色",
+          "rationale": "用深色背景托住数值，金色与珊瑚红区分两组，适合集中观看。当前实现为深色图解。",
+          "motion": "两组数字位置固定，估计条从零增长，结果落定；不新增人物或星空插画。"
+        },
+        {
+          "id": "comic",
+          "styleId": "clear-diagram",
+          "label": "B · 漫画实验室",
+          "rationale": "用转盘、人物和对话气泡把实验变成可见的过程，粗线分格形成漫画节奏。",
+          "motion": "转盘转动后停在10或65；比较问题出现在气泡中，随后显现25%和45%的组内估计中位数。",
+          "overrides": {
+            "colors": {
+              "background": "#fff8e9",
+              "text": "#25252b",
+              "muted": "#666258",
+              "primary": "#25877e",
+              "accent": "#bc503e",
+              "panel": "#fffdf5",
+              "line": "#25252b",
+              "success": "#25877e"
+            },
+            "fontScale": 1,
+            "titleWeight": 700,
+            "lineWidth": 5,
+            "glow": false,
+            "texture": 0
+          }
+        },
+        {
+          "id": "isometric",
+          "styleId": "paper-sketch",
+          "label": "C · 等距立体展台",
+          "rationale": "把随机起点做成转盘装置，把两组估计做成同尺度立体柱，利用空间和高度对照结果。",
+          "motion": "转盘标记旋转后落定，连线连接到估计区，25%和45%的柱体按相同比例从同一基线长出。",
+          "overrides": {
+            "colors": {
+              "background": "#ece8f7",
+              "text": "#312746",
+              "muted": "#5e5677",
+              "primary": "#248a84",
+              "accent": "#7957c3",
+              "panel": "#f9f7ff",
+              "line": "#c8bfdf",
+              "success": "#248a84"
+            },
+            "fontScale": 1,
+            "titleWeight": 400,
+            "lineWidth": 2,
+            "glow": false,
+            "texture": 0
+          }
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "action": "new-round",
+      "round": 2,
+      "createdAt": "2026-11-14T03:33:34.507Z"
+    },
+    {
+      "action": "new-round",
+      "round": 3,
+      "createdAt": "2026-11-14T03:41:08.235Z"
+    },
+    {
+      "action": "select",
+      "round": 3,
+      "candidateId": "comic",
+      "note": "用户选择：选择新b漫画实验室",
+      "createdAt": "2026-11-14T03:45:28.096Z"
+    }
+  ]
+}

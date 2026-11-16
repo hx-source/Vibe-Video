@@ -1,0 +1,249 @@
+{
+  "rangeSeconds": [
+    32,
+    46
+  ],
+  "music": "02_情感话题_故事讲述.m4a",
+  "musicGain": 0.64,
+  "picture": "full-motion-v1/chapters/04-evidence.mp4",
+  "palettes": [
+    {
+      "id": "a-tactile",
+      "title": "生活拟音",
+      "audioPlan": "audio-palette-a-tactile.json",
+      "effects": 7,
+      "cues": [
+        {
+          "id": "a-tactile-1",
+          "source": "asset:palette-cloth-one",
+          "role": "process",
+          "at": 33.2,
+          "sourceIn": 0,
+          "sourceOut": 0.6610430839002267,
+          "gain": 0.85,
+          "fadeOut": 0.015,
+          "purpose": "放大镜开始检查商品，轻擦材质",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "a-tactile-2",
+          "source": "asset:palette-metal-detail",
+          "role": "accent",
+          "at": 34.05,
+          "sourceIn": 0,
+          "sourceOut": 0.4458503401360544,
+          "gain": 0.75,
+          "fadeOut": 0.015,
+          "purpose": "发现机器表面细节",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "a-tactile-3",
+          "source": "asset:palette-cloth-two",
+          "role": "transition",
+          "at": 35.35,
+          "sourceIn": 0,
+          "sourceOut": 0.4150793650793651,
+          "gain": 0.82,
+          "fadeOut": 0.015,
+          "purpose": "放大镜移向配件位置",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "a-tactile-4",
+          "source": "asset:palette-paper-long",
+          "role": "process",
+          "at": 37.0,
+          "sourceIn": 0,
+          "sourceOut": 0.43045351473922905,
+          "gain": 1.05,
+          "fadeOut": 0.015,
+          "purpose": "成交记录滑入并翻看",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "a-tactile-5",
+          "source": "asset:palette-paper-short",
+          "role": "accent",
+          "at": 37.68,
+          "sourceIn": 0,
+          "sourceOut": 0.23061224489795917,
+          "gain": 0.95,
+          "fadeOut": 0.015,
+          "purpose": "翻到另一张可比记录",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "a-tactile-6",
+          "source": "asset:palette-cloth-two",
+          "role": "process",
+          "at": 40.0,
+          "sourceIn": 0,
+          "sourceOut": 0.4150793650793651,
+          "gain": 0.9,
+          "fadeOut": 0.015,
+          "purpose": "价格标签从卡片抽出",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "a-tactile-7",
+          "source": "asset:palette-paper-short",
+          "role": "end",
+          "at": 42.0,
+          "sourceIn": 0,
+          "sourceOut": 0.23061224489795917,
+          "gain": 0.8,
+          "fadeOut": 0.015,
+          "purpose": "比较结果归组落定",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        }
+      ]
+    },
+    {
+      "id": "b-comic",
+      "title": "柔和漫画",
+      "audioPlan": "audio-palette-b-comic.json",
+      "effects": 6,
+      "cues": [
+        {
+          "id": "b-comic-1",
+          "source": "asset:palette-comic-question",
+          "role": "accent",
+          "at": 34.0,
+          "sourceIn": 0,
+          "sourceOut": 0.4906802721088435,
+          "gain": 0.68,
+          "fadeOut": 0.015,
+          "purpose": "发现瑕疵，冒出疑问",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "b-comic-2",
+          "source": "asset:palette-comic-creak",
+          "role": "accent",
+          "at": 35.45,
+          "sourceIn": 0,
+          "sourceOut": 0.6610430839002267,
+          "gain": 0.85,
+          "fadeOut": 0.015,
+          "purpose": "配件缺失时的轻微咯吱反应",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "b-comic-3",
+          "source": "asset:palette-comic-swipe",
+          "role": "process",
+          "at": 37.0,
+          "sourceIn": 0,
+          "sourceOut": 0.3843537414965986,
+          "gain": 0.82,
+          "fadeOut": 0.015,
+          "purpose": "手势滑看记录",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "b-comic-4",
+          "source": "asset:palette-paper-short",
+          "role": "accent",
+          "at": 37.68,
+          "sourceIn": 0,
+          "sourceOut": 0.23061224489795917,
+          "gain": 0.75,
+          "fadeOut": 0.015,
+          "purpose": "另一张记录翻出",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "b-comic-5",
+          "source": "asset:palette-comic-glide",
+          "role": "process",
+          "at": 40.1,
+          "sourceIn": 0,
+          "sourceOut": 0.74,
+          "gain": 0.56,
+          "fadeOut": 0.015,
+          "purpose": "价格标签升起并移动到比较线",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "b-comic-6",
+          "source": "asset:palette-glass-clue",
+          "role": "end",
+          "at": 42.0,
+          "sourceIn": 0,
+          "sourceOut": 1.0755328798185941,
+          "gain": 0.7,
+          "fadeOut": 0.015,
+          "purpose": "三笔价格完成归组",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        }
+      ]
+    },
+    {
+      "id": "c-sparse",
+      "title": "清脆留白",
+      "audioPlan": "audio-palette-c-sparse.json",
+      "effects": 4,
+      "cues": [
+        {
+          "id": "c-sparse-1",
+          "source": "asset:palette-glass-clue",
+          "role": "accent",
+          "at": 34.05,
+          "sourceIn": 0,
+          "sourceOut": 1.0755328798185941,
+          "gain": 0.7,
+          "fadeOut": 0.015,
+          "purpose": "发现第一条真实依据",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        },
+        {
+          "id": "c-sparse-2",
+          "source": "asset:palette-paper-long",
+          "role": "process",
+          "at": 37.0,
+          "sourceIn": 0,
+          "sourceOut": 0.43045351473922905,
+          "gain": 0.8,
+          "fadeOut": 0.015,
+          "purpose": "查成交记录，保留一次翻页",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "c-sparse-3",
+          "source": "asset:palette-quiet-sweep",
+          "role": "process",
+          "at": 40.0,
+          "sourceIn": 0,
+          "sourceOut": 0.4765759637188209,
+          "gain": 0.6,
+          "fadeOut": 0.015,
+          "purpose": "价格开始归组，仅留一次轻扫",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+          "enabled": true
+        },
+        {
+          "id": "c-sparse-4",
+          "source": "asset:palette-glass-finish",
+          "role": "end",
+          "at": 42.0,
+          "sourceIn": 0,
+          "sourceOut": 1.492267573696145,
+          "gain": 0.65,
+          "fadeOut": 0.015,
+          "purpose": "可比区间确定，保留自然衰减与短空间尾音",
+          "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+        }
+      ]
+    }
+  ],
+  "humanListening": "not-performed",
+  "userApproval": "pending",
+  "note": "三组音色和密度均为候选；未替换全片正式方案；不把合成滑音标为实录"
+}

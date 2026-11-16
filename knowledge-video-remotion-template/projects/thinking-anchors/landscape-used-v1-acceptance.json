@@ -1,0 +1,14 @@
+{
+  "revision": "landscape-used-v1",
+  "rangeSeconds": [
+    38,
+    52
+  ],
+  "status": "user-approved",
+  "feedback": "这部分可以，接下来继续制作52秒之后的内容，衔接前面的成交区间和商品状况，讲清楚怎么有依据地出价，以及价格不合适时可以不成交，继续保持横屏、漫画风格和02背景音乐。",
+  "userApproved": true,
+  "video": "outputs/thinking-anchors/landscape-used-v1/video.mp4",
+  "videoSha256": "a631b33f701a33f3bbc8f5aee1ba0eca98eca45a30c453df4bb604902b634f87",
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "仅认可38–52秒检查与成交核查段，授权继续出价与不成交；不推断新52–64秒已获认可。"
+}

@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "cognition-bed",
+      "path": "cognition.m4a",
+      "type": "audio",
+      "source": "用户指定：D:/Documents/dy/音频/01_认知科普_观点讲述.m4a",
+      "license": "用户提供，仅用于本次本地制作；未核实公开传播许可"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "revision": "portrait-opening-v2",
+  "rangeSeconds": [
+    0,
+    12
+  ],
+  "status": "user-approved",
+  "feedback": "现在目前看着还可以，可以继续制作了",
+  "video": "outputs/thinking-anchors/portrait-opening-v2/video.mp4",
+  "sha256": "33ed18692a74e54a652754a47c1cbcf171baa2abedbb772a977c9e09e6c46a92",
+  "userApproved": true,
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "仅认可当前竖屏开头并授权继续分段制作；不代表新机制段或整条视频已获认可"
+}

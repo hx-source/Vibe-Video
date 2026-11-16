@@ -1,0 +1,11 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import {flushSync} from 'react-dom';
+import {AnchorLandscapeOpening,validateOpening} from '../landscape-opening-v2/Opening';
+import {AnchorLandscapeFocus,validateLandscapeFocus} from '../landscape-focus-v1/Decision';
+import {AnchorLandscapeUsed,validateUsed} from '../landscape-used-v1/Used';
+import {offerScenes,validateOffer} from './Offer';
+import board from './board.json';
+validateOpening();validateLandscapeFocus();validateUsed();validateOffer();
+const Scene=offerScenes[board.sceneType as keyof typeof offerScenes],root=createRoot(document.getElementById('root')!);
+(window as any).renderLandscape=(f:number)=>{if(!Number.isInteger(f)||f<0||f>=1920)throw Error('Full frame outside 0–1919');flushSync(()=>root.render(<div style={{width:1920,height:1080,overflow:'hidden',fontFamily:'"Noto Sans SC",sans-serif'}}>{f<720?<AnchorLandscapeOpening frame={f}/>:f<1140?<AnchorLandscapeFocus frame={f-720}/>:f<1560?<AnchorLandscapeUsed frame={f-1140}/>:<Scene frame={f-1560}/>}</div>));};

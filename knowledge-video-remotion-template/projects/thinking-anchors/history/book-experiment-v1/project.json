@@ -1,0 +1,32 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "draft",
+  "id": "thinking-anchors",
+  "title": "思考，快与慢：锚定效应",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "为什么先出现的数字，会影响后面的判断？",
+    "takeaway": "判断数值时，先建立独立估计，再检查外部证据。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json",
+    "visualPlan": "visual-plan.json",
+    "productionPlan": "production-plan.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

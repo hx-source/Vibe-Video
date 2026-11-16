@@ -1,0 +1,29 @@
+{
+  "facts": {
+    "state": "source-checked",
+    "sources": "《思考，快与慢》Anchors章；2000反向思考研究；2001谈判关注点研究",
+    "boundaries": "生活案例为原创情境；金额为剧情设定，不伪装成实验数据或当前市场报价。查价、预算等为书中原则的生活化应用，不声称书中提供该购物操作清单；方法帮助减少影响，不保证消除所有偏差。"
+  },
+  "visual": {
+    "selected": "comic",
+    "scope": "已认可样片方向扩展至全片；保留evidence段落；全片待观看反馈",
+    "feedback": "用户：大字字幕和小字说明都要改",
+    "expression": "人物动作、表情、短对话和物件变化承担解释；本段无固定底部字幕和来源栏"
+  },
+  "audio": {
+    "state": "user-selected-needs-mix-listening",
+    "music": "D:/Documents/dy/音频/02_情感话题_故事讲述.m4a",
+    "humanListening": "not-performed"
+  },
+  "approval": {
+    "style": "用户：选择新b漫画实验室",
+    "contentDirection": "用户：可以（双案例、书中应对方法、75–90秒建议）",
+    "sampleApproved": true,
+    "sampleViewed": true,
+    "sampleListened": true,
+    "sampleFeedback": "目前看可以",
+    "sampleScope": "只覆盖已交付sample-motion-v3，完整片尚未验收",
+    "fullFilmApproved": false
+  },
+  "history": "原输入保留在history/book-experiment-v1，旧样片保留在outputs/thinking-anchors/sample-comic-v1"
+}

@@ -1,0 +1,50 @@
+{
+  "revision": "landscape-opening-v8",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-opening-v8",
+  "decision": "projects/thinking-anchors/landscape-final-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-final-v1/Actor.tsx",
+  "entry": null,
+  "composition": "projects/thinking-anchors/landscape-opening-v8/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v8/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-opening-v8/Opening.tsx",
+  "note": "当前入口只包含600帧的0–20秒第一段，包装v6相同画面；不包含旧20–22.4秒压缩解释。后续素材路径是保留参考，待下一段原因长度确定后重新放置。旧74秒final-v2保留。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v6/Actor.tsx",
+  "usedEvidence": "projects/thinking-anchors/landscape-final-v1/Used.tsx",
+  "usedActor": "projects/thinking-anchors/landscape-used-v1/Actor.tsx",
+  "offer": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+  "offerActor": "projects/thinking-anchors/landscape-offer-v1/Actor.tsx",
+  "ending": "projects/thinking-anchors/landscape-final-v1/Ending.tsx",
+  "endingActor": "projects/thinking-anchors/landscape-ending-v1/Actor.tsx",
+  "audioPlan": "projects/thinking-anchors/landscape-opening-v8/audio-plan.json",
+  "finalVideo": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "host": "projects/thinking-anchors/landscape-opening-v6/Host.tsx",
+  "previewVideo": "outputs/thinking-anchors/landscape-opening-v8/video.mp4",
+  "previewContinuity": null,
+  "beforeAfter": "projects/thinking-anchors/landscape-opening-v6/BeforeAfter.tsx",
+  "openingAudioPlan": "projects/thinking-anchors/landscape-opening-v8/audio-plan.json",
+  "reason": "projects/thinking-anchors/landscape-opening-v6/Reason.tsx",
+  "sourceScopeSeconds": [
+    0,
+    20
+  ],
+  "continuousChapter": "outputs/thinking-anchors/landscape-opening-v8/continuous-0-20.mp4",
+  "plannedNextSegment": {
+    "id": "anchor-reason",
+    "fromSeconds": 20,
+    "toSeconds": null,
+    "status": "planned",
+    "purpose": "解释为什么999成为比较起点，以及比999便宜不等于真实值得买",
+    "durationNotYetSet": true,
+    "followingMethodSourcesPreserved": true
+  }
+}

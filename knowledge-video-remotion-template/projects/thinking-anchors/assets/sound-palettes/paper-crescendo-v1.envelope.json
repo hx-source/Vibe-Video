@@ -1,0 +1,20 @@
+{
+  "duration": 3,
+  "previewRange": [
+    7,
+    10
+  ],
+  "entrySeconds": 0.2,
+  "releaseSeconds": 0.22,
+  "pressureBeforeRelease": [
+    0.34,
+    1.0
+  ],
+  "intendedPressureIncreaseDb": 9.370421659154896,
+  "filterCutoffHz": [
+    3000,
+    6200
+  ],
+  "design": "single light-to-firm progression, rounded exit; no repeated attacks or foreign accent layers",
+  "humanListening": "not-performed"
+}

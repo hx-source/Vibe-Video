@@ -1,0 +1,30 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "draft",
+  "id": "anchoring-effect",
+  "title": "锚定效应",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "第一个数字为什么会影响后续判断？",
+    "takeaway": "先独立估计，再用外部证据比较。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

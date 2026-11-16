@@ -1,0 +1,14 @@
+{
+  "revision": "landscape-decision-v1",
+  "rangeSeconds": [
+    34,
+    52
+  ],
+  "userApproved": true,
+  "feedback": "这部分可以，接下来继续制作52秒之后的二手砍价部分，注意和前面自然衔接，讲清楚怎么检查商品、查同款成交记录来判断价格，继续保持横屏漫画风格和02背景音乐，做好后先给我看一下。",
+  "scope": "明确认可34–52秒直播购物方法段，并授权继续52秒之后的二手段；不推断新段已认可",
+  "video": "outputs/thinking-anchors/landscape-decision-v1/video.mp4",
+  "videoSha256": "96d9612370717ba58bfc7eb48e3d14c3563b074236e696aded5fdaafdcd3687f",
+  "continuity": "outputs/thinking-anchors/landscape-decision-v1/continuity-0-52.mp4",
+  "assistantListening": "not-performed"
+}

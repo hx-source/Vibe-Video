@@ -1,0 +1,492 @@
+{
+  "baseFilm": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "videoChange": false,
+  "musicSourceChange": false,
+  "musicGainBefore": 0.88,
+  "musicGainCandidate": 0.64,
+  "effects": [
+    {
+      "id": "foley-01",
+      "event": "deal.offer",
+      "offset": 0.08,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "卖家报价气泡和价格贴纸出现",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-02",
+      "event": "deal.counter",
+      "offset": 0.08,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "买家还价气泡出现",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-03",
+      "event": "deal.celebrate",
+      "offset": 0.08,
+      "kind": "celebrate",
+      "role": "accent",
+      "purpose": "省400的庆祝与纸屑散开",
+      "duration": 0.45,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-04",
+      "event": "deal.question",
+      "offset": 0.02,
+      "kind": "brake-stop",
+      "role": "accent",
+      "purpose": "庆祝停止，人物惊讶并反问",
+      "duration": 0.36,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-05",
+      "event": "trap.anchor",
+      "offset": 0.08,
+      "kind": "soft-land",
+      "role": "accent",
+      "purpose": "2000元报价贴纸落到判断起点",
+      "duration": 0.3,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-06",
+      "event": "trap.thought",
+      "offset": 0.1,
+      "kind": "card-slide",
+      "role": "accent",
+      "purpose": "1600元标签与牵引线出现",
+      "duration": 0.48,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-07",
+      "event": "trap.pull",
+      "offset": 0.15,
+      "kind": "elastic-pull",
+      "role": "process",
+      "purpose": "判断标签被报价牵住；短持续声表示牵引过程",
+      "duration": 1.2,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-08",
+      "event": "trap.pull",
+      "offset": 1.6,
+      "kind": "wood-tap",
+      "role": "end",
+      "purpose": "牵引位置到达动画终点",
+      "duration": 0.22,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-09",
+      "event": "trap.result",
+      "offset": 0.15,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "锚定效应标签落定",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-10",
+      "event": "rewind.reset",
+      "offset": 0.02,
+      "kind": "rewind",
+      "role": "transition",
+      "purpose": "回退图标旋转，重新回到开价前",
+      "duration": 0.65,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-11",
+      "event": "rewind.ask",
+      "offset": 0.1,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "人物问报价依据",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-12",
+      "event": "rewind.target",
+      "offset": 0.12,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "书本与检查便签展开",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-13",
+      "event": "evidence.inspect",
+      "offset": 0.02,
+      "kind": "scan-brush",
+      "role": "process",
+      "purpose": "放大镜开始扫描商品；短摩擦声表示检查",
+      "duration": 0.48,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-14",
+      "event": "evidence.condition",
+      "offset": 0.06,
+      "kind": "discovery-tick",
+      "role": "accent",
+      "purpose": "发现机身磨损并出现标记",
+      "duration": 0.3,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-15",
+      "event": "evidence.accessory-check",
+      "offset": 0.03,
+      "kind": "scan-brush",
+      "role": "process",
+      "purpose": "放大镜移动到配件位置",
+      "duration": 0.48,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-16",
+      "event": "evidence.accessory-check",
+      "offset": 0.65,
+      "kind": "ui-tap",
+      "role": "accent",
+      "purpose": "发现配件缺失，红叉与人物反应对应",
+      "duration": 0.16,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-17",
+      "event": "evidence.records",
+      "offset": 0.02,
+      "kind": "card-slide",
+      "role": "accent",
+      "purpose": "手指滑动，成交记录进入",
+      "duration": 0.48,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-18",
+      "event": "evidence.records",
+      "offset": 0.2,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "第一张成交记录翻出",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-19",
+      "event": "evidence.records",
+      "offset": 0.54,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "第二张成交记录翻出",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-20",
+      "event": "evidence.records",
+      "offset": 0.88,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "第三张成交记录翻出",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-21",
+      "event": "evidence.range",
+      "offset": 0.15,
+      "kind": "card-drag",
+      "role": "process",
+      "purpose": "价格从记录取出，移动归组到比较线上",
+      "duration": 1.2,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-22",
+      "event": "evidence.settle",
+      "offset": 0.02,
+      "kind": "soft-land",
+      "role": "end",
+      "purpose": "可比成交区间归组完成",
+      "duration": 0.3,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-23",
+      "event": "reprice.reason",
+      "offset": 0.1,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "参考成交价格出现",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-24",
+      "event": "reprice.offer",
+      "offset": 0.08,
+      "kind": "card-drag",
+      "role": "process",
+      "purpose": "把1200元从比较区拖到自己的报价位置",
+      "duration": 1.2,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-25",
+      "event": "reprice.offer",
+      "offset": 1.3,
+      "kind": "soft-land",
+      "role": "end",
+      "purpose": "1200元报价完成移动并落定",
+      "duration": 0.3,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-26",
+      "event": "reprice.exit",
+      "offset": 0.12,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "保留换一家或不成交的选择",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-27",
+      "event": "shop.old",
+      "offset": 0.1,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "原价999标签出现",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-28",
+      "event": "shop.sale",
+      "offset": 0.12,
+      "kind": "soft-land",
+      "role": "accent",
+      "purpose": "199元到手价贴纸落下",
+      "duration": 0.3,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-29",
+      "event": "shop.joy",
+      "offset": 0.1,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "赶紧下单的对话出现，手指靠近付款区",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-30",
+      "event": "shop.pause",
+      "offset": 0.02,
+      "kind": "brake-stop",
+      "role": "accent",
+      "purpose": "手指收回，付款冲动暂停",
+      "duration": 0.36,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-31",
+      "event": "shop.pause",
+      "offset": 0.12,
+      "kind": "ui-tap",
+      "role": "accent",
+      "purpose": "暂停付款按钮改变状态；不是付款成功音",
+      "duration": 0.16,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-32",
+      "event": "compare.hide",
+      "offset": 0.03,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "收起原价数字",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-33",
+      "event": "compare.history",
+      "offset": 0.12,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "近期常态售价记录进入",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-34",
+      "event": "compare.others",
+      "offset": 0.1,
+      "kind": "card-drag",
+      "role": "process",
+      "purpose": "把本店199元标签移到实际价格比较区",
+      "duration": 1.2,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-35",
+      "event": "compare.others",
+      "offset": 0.16,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "其他店到手价进入比较",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-36",
+      "event": "compare.others",
+      "offset": 1.36,
+      "kind": "soft-land",
+      "role": "end",
+      "purpose": "价格在比较区落定",
+      "duration": 0.3,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-37",
+      "event": "compare.decision",
+      "offset": 0.12,
+      "kind": "paper-flip",
+      "role": "accent",
+      "purpose": "翻出预算和需求便签",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-38",
+      "event": "compare.settle",
+      "offset": 0.08,
+      "kind": "ui-tap",
+      "role": "end",
+      "purpose": "完成比较，回到自己的购买判断",
+      "duration": 0.16,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-39",
+      "event": "close.first",
+      "offset": 0.9,
+      "kind": "glass-tap",
+      "role": "end",
+      "purpose": "放大镜收进袋子",
+      "duration": 0.25,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-40",
+      "event": "close.second",
+      "offset": 0.9,
+      "kind": "paper-flip",
+      "role": "end",
+      "purpose": "反证记录收进袋子",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-41",
+      "event": "close.third",
+      "offset": 0.9,
+      "kind": "wood-tap",
+      "role": "end",
+      "purpose": "比较尺收进袋子",
+      "duration": 0.22,
+      "state": "candidate-needs-listening"
+    },
+    {
+      "id": "foley-42",
+      "event": "close.result",
+      "offset": 0.12,
+      "kind": "paper-pop",
+      "role": "accent",
+      "purpose": "书籍出处与结束对话出现",
+      "duration": 0.28,
+      "state": "candidate-needs-listening"
+    }
+  ],
+  "metrics": {
+    "paper-pop": {
+      "peakDb": -3.095482053716041,
+      "rmsDb": -17.881974809736946
+    },
+    "paper-flip": {
+      "peakDb": -3.1000235712952025,
+      "rmsDb": -16.25142668816532
+    },
+    "card-slide": {
+      "peakDb": -3.1018499902849888,
+      "rmsDb": -13.498547857891172
+    },
+    "card-drag": {
+      "peakDb": -3.097699984222093,
+      "rmsDb": -14.442839332727926
+    },
+    "elastic-pull": {
+      "peakDb": -3.096147521205941,
+      "rmsDb": -15.96389187400317
+    },
+    "wood-tap": {
+      "peakDb": -3.108300766078086,
+      "rmsDb": -18.490652949054706
+    },
+    "soft-land": {
+      "peakDb": -3.098495568333553,
+      "rmsDb": -18.20904801080307
+    },
+    "bag-drop": {
+      "peakDb": -3.086167205969594,
+      "rmsDb": -17.40597281287323
+    },
+    "ui-tap": {
+      "peakDb": -3.095825090162113,
+      "rmsDb": -18.384921158730435
+    },
+    "brake-stop": {
+      "peakDb": -3.0969059457892874,
+      "rmsDb": -16.27277269692375
+    },
+    "discovery-tick": {
+      "peakDb": -3.0958880045796637,
+      "rmsDb": -17.681538622737207
+    },
+    "glass-tap": {
+      "peakDb": -3.099347970788812,
+      "rmsDb": -18.866299564411392
+    },
+    "scan-brush": {
+      "peakDb": -3.0981819788057576,
+      "rmsDb": -14.271443284723768
+    },
+    "celebrate": {
+      "peakDb": -3.096656744064829,
+      "rmsDb": -18.6217355714677
+    },
+    "rewind": {
+      "peakDb": -3.0980426004478563,
+      "rmsDb": -15.471745099839511
+    }
+  },
+  "humanListening": "not-performed"
+}

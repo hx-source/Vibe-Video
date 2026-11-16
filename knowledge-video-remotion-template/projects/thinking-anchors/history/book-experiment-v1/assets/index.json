@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "anchors-bed",
+      "path": "cognition.m4a",
+      "type": "audio",
+      "source": "本地已有素材 D:/Documents/dy/音频/01_认知科普_观点讲述.m4a；本期制作助手选作待试听候选，并非用户已指定本期配乐",
+      "license": "沿用本地素材用于本期本地试片；未核实公开传播许可"
+    },
+    {
+      "id": "wheel-stop",
+      "path": "wheel-stop.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：转盘停止；不是配乐或AI作曲",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "muted-noise-click",
+        "pitches": [],
+        "durationSeconds": 0.13,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.1275,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "bubble-pop",
+      "path": "bubble-pop.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：比较气泡出现；不是配乐或AI作曲",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "soft-noise-pop",
+        "pitches": [],
+        "durationSeconds": 0.16,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.1575,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "result-land",
+      "path": "result-land.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：统计结果落定；不是配乐或AI作曲",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "soft-noise-tap",
+        "pitches": [],
+        "durationSeconds": 0.23,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.2275,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    }
+  ]
+}

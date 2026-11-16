@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "activeRound": 1,
+  "selectedId": null,
+  "rounds": [
+    {
+      "id": 1,
+      "createdAt": "2026-11-13T08:00:24.471Z",
+      "candidates": [
+        {
+          "id": "night",
+          "styleId": "night-story",
+          "label": "夜空叙事",
+          "rationale": "用人物与关系变化解释“先来的，就一定会被留下吗？”，兼顾故事氛围和重点。"
+        },
+        {
+          "id": "clear",
+          "styleId": "clear-diagram",
+          "label": "清晰图解",
+          "rationale": "突出“先来的，就一定会被留下吗？”中的步骤和状态，适合优先检验机制是否讲清楚。"
+        },
+        {
+          "id": "paper",
+          "styleId": "paper-sketch",
+          "label": "纸本手绘",
+          "rationale": "用纸本示意讲述“先来的，就一定会被留下吗？”，弱化装饰，保留可读的关系变化。"
+        }
+      ]
+    }
+  ],
+  "decisions": []
+}

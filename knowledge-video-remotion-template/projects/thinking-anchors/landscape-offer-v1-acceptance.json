@@ -1,0 +1,14 @@
+{
+  "revision": "landscape-offer-v1",
+  "rangeSeconds": [
+    52,
+    64
+  ],
+  "status": "user-approved",
+  "feedback": "这部分可以，接下来继续制作64秒之后的收尾，把直播间降价和二手砍价两个案例的方法总结清楚，保持横屏、漫画风格和02背景音乐，减少同屏文字，做好后先给我看一下效果。",
+  "userApproved": true,
+  "video": "outputs/thinking-anchors/landscape-offer-v1/video.mp4",
+  "videoSha256": "8dc3cbc77fcf4d4192b3901f9175dd439a395774ac60b099f79fde6bf1fe929f",
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "仅认可52–64秒出价与不成交段，授权制作总结预览；不推断新收尾或整片已获认可。"
+}

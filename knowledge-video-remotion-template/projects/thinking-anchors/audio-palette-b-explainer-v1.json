@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "b-comic-1",
+      "source": "asset:palette-metal-detail",
+      "role": "accent",
+      "at": 34,
+      "sourceIn": 0,
+      "sourceOut": 0.4458503401360544,
+      "gain": 0.65,
+      "fadeOut": 0.015,
+      "purpose": "放大镜检查时的细小物件轻响，避免用夸张疑问音替观众反应",
+      "musicFit": "使用已有非旋律性物件素材；固定02配乐，搭配效果待用户试听"
+    },
+    {
+      "id": "b-comic-3",
+      "source": "asset:palette-comic-swipe",
+      "role": "process",
+      "at": 37,
+      "sourceIn": 0,
+      "sourceOut": 0.3843537414965986,
+      "gain": 0.82,
+      "fadeOut": 0.015,
+      "purpose": "手势滑看记录",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+      "enabled": true
+    },
+    {
+      "id": "b-comic-4",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": 37.68,
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "gain": 0.75,
+      "fadeOut": 0.015,
+      "purpose": "另一张记录翻出",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    },
+    {
+      "id": "b-comic-5",
+      "source": "asset:paper-slide-soft-v1",
+      "role": "process",
+      "at": 40.1,
+      "sourceIn": 0,
+      "sourceOut": 0.4,
+      "gain": 0.9,
+      "fadeOut": 0.015,
+      "purpose": "价格标签开始归组时的短纸张滑擦，保留动作过程而不添加上扬滑音",
+      "musicFit": "无额外旋律；固定02配乐，纸张材质与画面配合待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "b-comic-6",
+      "source": "asset:palette-glass-clue",
+      "role": "end",
+      "at": 42,
+      "sourceIn": 0,
+      "sourceOut": 0.36,
+      "gain": 0.48,
+      "fadeOut": 0.1,
+      "purpose": "可比价格归组完成的轻响，缩短提示与空间尾音，避免过度强调成功情绪",
+      "musicFit": "保留原B的单次玻璃质感，缩短尾音；有音高部分不作调性已协调断言，待实际试听"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

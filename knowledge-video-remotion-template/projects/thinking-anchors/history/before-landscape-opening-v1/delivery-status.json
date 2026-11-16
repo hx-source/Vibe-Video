@@ -1,0 +1,252 @@
+{
+  "state": "final-complete-video-exported",
+  "revision": "final-v1",
+  "output": "outputs/thinking-anchors/final-v1/video.mp4",
+  "review": "outputs/thinking-anchors/final-v1/review.html",
+  "qualityReview": "outputs/thinking-anchors/final-v1/quality-review.md",
+  "captions": "outputs/thinking-anchors/final-v1/captions.srt",
+  "manifest": "outputs/thinking-anchors/final-v1/manifest.json",
+  "durationSeconds": 70,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 2100,
+  "style": "comic",
+  "music": "02_情感话题_故事讲述.m4a",
+  "audioPlan": "audio-ending-v1.json",
+  "musicFadeOutSeconds": [
+    68.5,
+    70
+  ],
+  "soundCueCount": 31,
+  "priorScenesPreserved": true,
+  "sourceMixPreserved": true,
+  "freshFullRender": true,
+  "endingUserApproved": true,
+  "endingApprovalRecord": "ending-v1-acceptance.json",
+  "fullFilmUserApproval": false,
+  "assistantHumanListening": "not-performed",
+  "technicalChecks": {
+    "version": "final-v1",
+    "video": "outputs/thinking-anchors/final-v1/video.mp4",
+    "duration": 70,
+    "frames": 2100,
+    "maxFrameTimestampErrorSeconds": 3.333333467026023e-7,
+    "blackIntervals": [],
+    "layoutSamples": 711,
+    "layoutProblems": 0,
+    "joins": [
+      {
+        "time": 14,
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "pass": true
+      },
+      {
+        "time": 24,
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "pass": true
+      },
+      {
+        "time": 32,
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "pass": true
+      },
+      {
+        "time": 46,
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "pass": true
+      },
+      {
+        "time": 58,
+        "changedPixels": 0,
+        "maxChannelDelta": 0,
+        "pass": true
+      }
+    ],
+    "soundCueCount": 31,
+    "encodedAudio": {
+      "integratedLufs": -18.36,
+      "truePeakDb": -2.15,
+      "loudnessRangeLu": 2.9,
+      "thresholdLufs": -28.4,
+      "method": "ffmpeg-loudnorm-input",
+      "silent": false
+    },
+    "sourceMixIdenticalToEndingV1": true,
+    "sourceScenesIdenticalToEndingV1": true,
+    "visualContactSheets": "inspected",
+    "assistantListening": "not-performed",
+    "contentChanges": "none; full master rendered from source with continuous audio",
+    "finalUserApproval": false
+  },
+  "previousPreview": "outputs/thinking-anchors/ending-v1/full-preview-70s.mp4",
+  "scope": "全片衔接、节奏及音效同步检查；最终完整视频导出",
+  "nextSegmentNeedsProduction": false,
+  "portraitOpeningPrototype": {
+    "state": "portrait-opening-user-approved",
+    "revision": "portrait-opening-v2",
+    "output": "outputs/thinking-anchors/portrait-opening-v2/video.mp4",
+    "review": "outputs/thinking-anchors/portrait-opening-v2/compare.html",
+    "storyboard": "outputs/thinking-anchors/portrait-opening-v2/storyboard.png",
+    "source": "projects/thinking-anchors/portrait-opening-v2",
+    "durationSeconds": 12,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "aspectRatio": "9:16",
+    "fps": 30,
+    "frames": 360,
+    "noNarration": true,
+    "music": "02_情感话题_故事讲述.m4a",
+    "musicSourceRange": [
+      0,
+      12
+    ],
+    "musicSpeed": 1,
+    "effects": 4,
+    "content": "购物场景内999→199→伸手想买→收手查另一家189→相差10元并重新判断",
+    "technicalChecks": {
+      "everyFrameVisualBounds": 360,
+      "textCollisions": 0,
+      "audioClippedSamples": 0,
+      "audioWarnings": [],
+      "encodedAudio": {
+        "integratedLufs": -18.62,
+        "truePeakDb": -3.18,
+        "loudnessRangeLu": 1.3,
+        "thresholdLufs": -28.62,
+        "method": "ffmpeg-loudnorm-input",
+        "silent": false
+      },
+      "browserPlayback": true,
+      "mainProjectAndFinalVideoPreserved": true
+    },
+    "userApproved": true,
+    "fullPortraitFilmProduced": false,
+    "assistantListening": "not-performed",
+    "musicBeatCalibration": "automatic candidate only; no human listening calibration",
+    "referenceStudy": "outputs/thinking-anchors/reference-study-v1/analysis.md",
+    "borrowedMethods": [
+      "场景层次与主体占幅",
+      "人物与购买动作交互",
+      "同一商品在屏幕内连续滑换",
+      "镜头推进与比较背景退后",
+      "价格关系线连续形成"
+    ],
+    "previousVersion": "outputs/thinking-anchors/portrait-opening-v1/video.mp4",
+    "comparison": {
+      "firstVersionSourcesUnchanged": true,
+      "firstVersionVideoUnchanged": true,
+      "mixPcmIdentical": true,
+      "musicPcmIdentical": true,
+      "effectsPcmIdentical": true,
+      "switchPreservesTime": true,
+      "referenceStudy": "outputs/thinking-anchors/reference-study-v1/analysis.md",
+      "studyMethod": "opening frames at 1s, complete-video keyframes at 8s, three transition windows at 0.2s; no complete manual playback or audio listening claimed"
+    },
+    "approvalRecord": "portrait-opening-v2-acceptance.json",
+    "userFeedback": "现在目前看着还可以，可以继续制作了"
+  },
+  "portraitProduction": {
+    "state": "portrait-decision-preview-ready",
+    "revision": "portrait-decision-v1",
+    "rangeSeconds": [
+      24,
+      38
+    ],
+    "output": "outputs/thinking-anchors/portrait-character-motion-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/portrait-character-motion-v1/continuity-0-38.mp4",
+    "review": "outputs/thinking-anchors/portrait-character-motion-v1/compare.html",
+    "durationSeconds": 14,
+    "continuousDurationSeconds": 38,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "music": "02_情感话题_故事讲述.m4a",
+    "newSoundCues": 8,
+    "noNarration": true,
+    "prior0to24UserApproved": true,
+    "mechanismApprovalRecord": "portrait-mechanism-v1-acceptance.json",
+    "prior0to24DecodedPixelsUnchanged": false,
+    "priorMixedPcmUnchangedUntilSeconds": 23.82,
+    "assistantListening": "not-performed",
+    "userApproved": false,
+    "fullFilmProduced": false,
+    "nextContent": "二手商品检查、核对可比成交、依据状况出价与不成交选择，再做方法总结",
+    "pictureRevision": "portrait-character-motion-v1",
+    "prior0to24ContentAndTimingPreserved": true,
+    "visualChanges": [
+      "remove left window decoration",
+      "event-driven character motion in seconds24–38"
+    ],
+    "audioPacketsUnchanged": true
+  },
+  "portraitVisualCorrection": {
+    "revision": "portrait-edge-cleanup-v1",
+    "reason": "用户指出左侧多出的背景窗框，统一移除",
+    "rangeSeconds": [
+      0,
+      38
+    ],
+    "output": "outputs/thinking-anchors/portrait-edge-cleanup-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/portrait-edge-cleanup-v1/continuity-0-38.mp4",
+    "review": "outputs/thinking-anchors/portrait-edge-cleanup-v1/review.html",
+    "sourceRoot": "projects/thinking-anchors/portrait-edge-cleanup-v1",
+    "all1140FramesWindowAbsent": true,
+    "otherSvgContentsUnchangedAt17Samples": true,
+    "audioPacketsUnchanged": true,
+    "userRequested": true,
+    "userApproved": false
+  },
+  "portraitCharacterMotion": {
+    "revision": "portrait-character-motion-v1",
+    "reason": "用户指出右下角人物动作少、呆滞，增加跟随内容的手势、视线和姿态",
+    "rangeSeconds": [
+      24,
+      38
+    ],
+    "output": "outputs/thinking-anchors/portrait-character-motion-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/portrait-character-motion-v1/continuity-0-38.mp4",
+    "review": "outputs/thinking-anchors/portrait-character-motion-v1/compare.html",
+    "sourceRoot": "projects/thinking-anchors/portrait-character-motion-v1",
+    "all1140FramesWindowAbsent": true,
+    "otherSvgContentsUnchangedAtSamples": 22,
+    "audioPacketsUnchanged": true,
+    "userRequested": true,
+    "userApproved": false
+  },
+  "currentFormat": "landscape",
+  "activeTrackingFile": "current-production.json",
+  "landscapeFocusProduction": {
+    "revision": "landscape-focus-v1",
+    "status": "preview-ready",
+    "rangeSeconds": [
+      24,
+      38
+    ],
+    "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+    "review": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspectRatio": "16:9",
+      "style": "comic",
+      "music": "02_情感话题_故事讲述.m4a",
+      "noNarration": true
+    },
+    "audioPacketsUnchanged": true,
+    "userRequested": true,
+    "userApproved": false,
+    "fullFilmProduced": false
+  }
+}

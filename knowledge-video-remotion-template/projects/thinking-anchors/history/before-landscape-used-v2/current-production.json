@@ -1,0 +1,65 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "decision",
+  "currentReview": "outputs/thinking-anchors/landscape-decision-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-decision-v1/video.mp4",
+  "rangeSeconds": [
+    34,
+    52
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": false,
+  "note": "当前新增34–52秒直播购物方法段，保留已认可前34秒画面与连续混音；另有前52秒连贯预览。新段待反馈，旧74秒最终版保留，新全片尚未完成。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-decision-v1/continuity-0-52.mp4",
+  "revision": "landscape-decision-v1",
+  "revisionReason": "这部分可以，接下来继续制作34秒之后的内容，衔接“该拿什么比”的问题，讲清楚在直播间购物时怎么通过查同款实际价格、结合自己的需求和预算来减少锚定效应的影响，保持横屏漫画风格和02背景音乐，做好后先给我看一下。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": false,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "segmented-revision-in-progress",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-decision-v1/quality-review.md",
+  "finalExportAuthorized": true,
+  "assistantListening": "not-performed",
+  "contentApproved": false,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "openingUserApproved": true,
+  "openingApproval": "landscape-opening-v9-acceptance.json",
+  "editRangeSeconds": [
+    34,
+    52
+  ],
+  "newFullFilmProduced": false,
+  "newFullFilmDurationSeconds": null,
+  "plannedNextSegment": {
+    "id": "used-evidence",
+    "fromSeconds": 52,
+    "status": "retained-source-awaiting-continuation",
+    "sourceRangeSeconds": [
+      38,
+      52
+    ],
+    "source": "projects/thinking-anchors/landscape-final-v1/Used.tsx",
+    "purpose": "将独立依据的原则转到二手商品，检查实物并查可比成交；后续长度与衔接待继续制作"
+  },
+  "contentDirectionApproved": true,
+  "prior0to34UserApproved": true,
+  "reasonApproval": "landscape-reason-v1-acceptance.json"
+}

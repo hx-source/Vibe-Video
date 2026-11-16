@@ -1,0 +1,230 @@
+{
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "userRequirement": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "visualPrinciples": [
+    "主体放大，保持漫画风格",
+    "价格记录逐个替换，避免堆叠",
+    "每个购买问题单独呈现",
+    "人物动作配合内容",
+    "保留02音乐与现有事件"
+  ],
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v5",
+      "status": "preview-ready",
+      "userApproved": false,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-v5-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v5/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v5/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v5/review.html",
+      "feedback": "对，就是这个意思。把12到17秒这部分调整一下，让画面明确表现同一件衣服，讲解前后都是199，只是从觉得贵变成觉得划算。保持现在的横屏漫画风格和02背景音乐，注意衔接后面的锚定效应点题，做好后先给我看一下。",
+      "finalOutput": null,
+      "finalSourceRevision": null,
+      "editRangeSeconds": [
+        12,
+        17
+      ]
+    },
+    {
+      "id": "decision",
+      "rangeSeconds": [
+        24,
+        38
+      ],
+      "revision": "landscape-focus-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+      "pictureSource": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+      "visualDirectionApproved": true,
+      "directionApproval": "landscape-focus-v1-direction-approval.json",
+      "audioListened": null,
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "used-evidence",
+      "rangeSeconds": [
+        38,
+        52
+      ],
+      "revision": "landscape-used-v1",
+      "status": "approved",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-used-v1/Used.tsx",
+      "output": "outputs/thinking-anchors/landscape-used-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-used-v1/review.html",
+      "approval": "landscape-used-v1-acceptance.json",
+      "feedback": "这部分可以，接下来继续制作52秒之后的内容，衔接前面的成交区间和商品状况，讲清楚怎么有依据地出价，以及价格不合适时可以不成交，继续保持横屏、漫画风格和02背景音乐。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "used-offer",
+      "rangeSeconds": [
+        52,
+        64
+      ],
+      "revision": "landscape-offer-v1",
+      "status": "approved",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-offer-v1/Offer.tsx",
+      "output": "outputs/thinking-anchors/landscape-offer-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-offer-v1/review.html",
+      "approval": "landscape-offer-v1-acceptance.json",
+      "feedback": "这部分可以，接下来继续制作64秒之后的收尾，把直播间降价和二手砍价两个案例的方法总结清楚，保持横屏、漫画风格和02背景音乐，减少同屏文字，做好后先给我看一下效果。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "closing",
+      "rangeSeconds": [
+        64,
+        74
+      ],
+      "revision": "landscape-ending-v1",
+      "status": "approved",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-ending-v1/Ending.tsx",
+      "output": "outputs/thinking-anchors/landscape-ending-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-ending-v1/review.html",
+      "approval": "landscape-ending-v1-acceptance.json",
+      "feedback": "这个收尾可以，接下来把整条74秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    }
+  ],
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v5/review.html",
+  "remainingTopics": [],
+  "fullFilmProduced": true,
+  "fullFilmApproval": false,
+  "legacyHorizontalFinalPreserved": "outputs/thinking-anchors/final-v1/video.mp4",
+  "portraitHistoryPreserved": "portrait-production.json",
+  "segmentHistory": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        12
+      ],
+      "status": "needs-landscape-layout",
+      "priorContentApproval": "portrait-opening-v2-acceptance.json",
+      "userApproved": false
+    },
+    {
+      "id": "mechanism",
+      "rangeSeconds": [
+        12,
+        24
+      ],
+      "status": "needs-landscape-layout",
+      "priorContentApproval": "portrait-mechanism-v1-acceptance.json",
+      "userApproved": false
+    }
+  ],
+  "continuityOutput": "outputs/thinking-anchors/landscape-opening-v5/continuity-0-38.mp4",
+  "revisionHistory": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v1",
+      "status": "needs-revision",
+      "userApproved": false,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v1/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v1/review.html",
+      "feedback": "开头未能立即交代讲解主题",
+      "feedbackRecord": "landscape-opening-v1-feedback.json"
+    },
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v2",
+      "status": "approved",
+      "userApproved": true,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-v2-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v2/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v2/review.html",
+      "approval": "landscape-opening-v2-acceptance.json",
+      "feedback": "这版开头可以，接下来继续制作38秒之后的二手砍价部分，注意和前面自然衔接，讲清楚怎么检查商品、查同款成交记录来判断价格，继续保持横屏、漫画风格和02背景音乐。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v1/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v3",
+      "status": "preview-ready",
+      "userApproved": false,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-v3-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v3/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v3/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v3/review.html",
+      "feedback": "可以，就按这个直播间的开头调整0到24秒，把主播讲解和人物从犹豫到心动的变化表现出来，保持1920×1080横屏、漫画风格和02背景音乐，注意衔接后面的内容，做好后先给我看一下效果。",
+      "finalOutput": null,
+      "finalSourceRevision": null
+    },
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v4",
+      "status": "approved",
+      "userApproved": true,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-v4-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v4/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v4/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v4/review.html",
+      "feedback": "可以",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-opening-v4",
+      "approval": "landscape-opening-v4-acceptance.json"
+    }
+  ],
+  "remainingReviews": [
+    "12–17秒同衣同价对照用户反馈"
+  ],
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "opening-revision-preview",
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "finalExportAuthorized": true,
+  "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "assistantListening": "not-performed",
+  "qualityReview": "outputs/thinking-anchors/landscape-opening-v5/quality-review.md",
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4"
+}

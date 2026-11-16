@@ -1,0 +1,19 @@
+{
+  "requestedChange": "让主播说的原价变成现成参照的身份转变更可见，增加一次贴合动作的短音效",
+  "scopeSeconds": [
+    0,
+    52
+  ],
+  "visualEditSeconds": [
+    22,
+    23.5
+  ],
+  "newSoundAt": 22.533333333333335,
+  "sourceMusicUnchanged": true,
+  "pricesAndItemUnchanged": true,
+  "otherSourceFramesUnchanged": true,
+  "secondhandExcluded": true,
+  "knowledgeContentChanged": false,
+  "assistantListening": "not-performed",
+  "userApproved": false
+}

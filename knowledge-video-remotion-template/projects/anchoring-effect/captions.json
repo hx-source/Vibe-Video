@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "id": "price-0",
+      "segmentId": "price",
+      "start": 0,
+      "end": 4,
+      "text": "一件商品卖 199 元，你觉得贵吗？"
+    },
+    {
+      "id": "price-1",
+      "segmentId": "price",
+      "start": 4,
+      "end": 8,
+      "text": "如果先看到“原价 999 元”，199 元就显得便宜了。"
+    },
+    {
+      "id": "price-2",
+      "segmentId": "price",
+      "start": 8,
+      "end": 12,
+      "text": "商品没有变，先出现的数字却改变了参照。"
+    },
+    {
+      "id": "pull-0",
+      "segmentId": "pull",
+      "start": 0,
+      "end": 4,
+      "text": "卡尼曼在《思考，快与慢》中讨论了锚定效应。"
+    },
+    {
+      "id": "pull-1",
+      "segmentId": "pull",
+      "start": 4,
+      "end": 8,
+      "text": "面对不确定的问题，人会受到先前数值的影响。"
+    },
+    {
+      "id": "pull-2",
+      "segmentId": "pull",
+      "start": 8,
+      "end": 12,
+      "text": "即使试着调整，最终判断仍可能偏向那个起点。"
+    },
+    {
+      "id": "experiment-0",
+      "segmentId": "experiment",
+      "start": 0,
+      "end": 4,
+      "text": "经典实验先让两组人看到随机数字：10 或 65。"
+    },
+    {
+      "id": "experiment-1",
+      "segmentId": "experiment",
+      "start": 4,
+      "end": 8,
+      "text": "再问：联合国成员中，非洲国家的比例比它高还是低？"
+    },
+    {
+      "id": "experiment-2",
+      "segmentId": "experiment",
+      "start": 8,
+      "end": 12,
+      "text": "随后给出估计，两组中位数分别为 25% 和 45%。"
+    },
+    {
+      "id": "experiment-3",
+      "segmentId": "experiment",
+      "start": 12,
+      "end": 16,
+      "text": "随机数字不提供答案，却把两组估计拉向不同方向。"
+    },
+    {
+      "id": "reset-0",
+      "segmentId": "reset",
+      "start": 0,
+      "end": 4.5,
+      "text": "遇到报价或折扣，先暂停一下。"
+    },
+    {
+      "id": "reset-1",
+      "segmentId": "reset",
+      "start": 4.5,
+      "end": 9,
+      "text": "在看对方的数字前，先写下自己的估计和依据。"
+    },
+    {
+      "id": "reset-2",
+      "segmentId": "reset",
+      "start": 9,
+      "end": 14,
+      "text": "再查同类价格，用独立信息判断值不值。"
+    },
+    {
+      "id": "close-0",
+      "segmentId": "close",
+      "start": 0,
+      "end": 4,
+      "text": "问自己：如果没见过那个数字，我会怎么判断？"
+    },
+    {
+      "id": "close-1",
+      "segmentId": "close",
+      "start": 4,
+      "end": 8,
+      "text": "先有自己的尺，再看别人的锚。"
+    }
+  ]
+}

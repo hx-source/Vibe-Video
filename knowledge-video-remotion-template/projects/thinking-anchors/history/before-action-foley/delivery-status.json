@@ -1,0 +1,19 @@
+{
+  "state": "full-film-rendered-awaiting-user-feedback",
+  "output": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "review": "outputs/thinking-anchors/full-motion-v1/review.html",
+  "storyboard": "outputs/thinking-anchors/full-motion-v1/storyboard.html",
+  "durationSeconds": 88,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 2640,
+  "style": "comic",
+  "music": "02_情感话题_故事讲述.m4a",
+  "fixedBottomExplanations": false,
+  "approvedSamplePreserved": true,
+  "fullFilmUserApproval": false,
+  "assistantHumanListening": "not-performed"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "retained-for-complete-preview",
+  "rangeSeconds": [
+    0,
+    58
+  ],
+  "preview": "outputs/thinking-anchors/used-offer-v1/video.mp4",
+  "videoSha256": "4fe703d5095c0e8c36e4f2e1ab65b32536a4f800b3a9d2a13b979867ea1a86b3",
+  "continuity": "outputs/thinking-anchors/used-offer-v1/continuity-0-58.mp4",
+  "continuitySha256": "0f53784376912af75128d33d4fc156b815633342f69b91052261005ef2fae0cb",
+  "feedback": "可以，那就继续制作58秒之后的收尾，把前面两个案例的方法总结清楚，做好后先给我看一下效果。",
+  "continuationAuthorized": true,
+  "separateApprovalOf46to58NotRecorded": true,
+  "fullFilmApproval": false
+}

@@ -1,0 +1,24 @@
+{
+  "segments": [
+    {
+      "id": "opening",
+      "durationSeconds": 10,
+      "intent": "用两人示例解释暂留、替换与继续邀请",
+      "sceneType": "moon-match",
+      "events": {
+        "enter": 0,
+        "preferences": 1,
+        "first": 2,
+        "challenger": 4,
+        "compare": 4.5,
+        "replace": 5.5,
+        "retry": 7,
+        "settle": 8.5
+      },
+      "props": {
+        "title": "月老的算法",
+        "layout": "fullbleed"
+      }
+    }
+  ]
+}

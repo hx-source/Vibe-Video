@@ -3,7 +3,8 @@ import path from 'node:path';
 import {bundle} from '@remotion/bundler';
 import {selectComposition,renderMedia,renderStill} from '@remotion/renderer';
 import {ROOT,sha,writeJson} from './files.mjs';
-import {browserPath,probe,decode} from './runtime.mjs';
+import {browserPath,probe,decode,binaries} from './runtime.mjs';
+import {measureLoudness,qualityAssessment} from './audio-quality.mjs';
 import {frameAt} from '../src/timeline/compile.mjs';
 export async function renderPrepared(prepared,options={}){
   const {data,output,manifest}=prepared;
@@ -26,6 +27,7 @@ export async function renderPrepared(prepared,options={}){
     if(!stream||stream.width!==data.project.video.width||stream.height!==data.project.video.height||Number(stream.nb_frames)!==data.range.durationInFrames)throw Error('Encoded video differs from requested dimensions/frame count');
     if(!data.audio.silent&&!info.streams.some(s=>s.codec_type==='audio'))throw Error('Expected audio stream missing');
     manifest.status='rendered-and-decoded';manifest.videoOutput={file:'video.mp4',sha256:sha(movie),frames:Number(stream.nb_frames),duration:Number(stream.duration),width:stream.width,height:stream.height};
+    if(!data.audio.silent){manifest.encodedAudioQuality=qualityAssessment(measureLoudness(movie,binaries().ffmpeg),[],manifest.audio[0].quality?.policy);writeJson(path.join(output,'encoded-audio-quality.json'),manifest.encodedAudioQuality);}
     writeJson(path.join(output,'probe.json'),info);
   }
   writeJson(path.join(output,'manifest.json'),manifest);return prepared;

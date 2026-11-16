@@ -1,0 +1,26 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "decision",
+  "currentReview": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+  "rangeSeconds": [
+    24,
+    38
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": false,
+  "note": "最新横屏要求取代竖屏规格；旧版本与认可保留。当前仅交付24–38秒横屏样片，0–24秒及后续段落待新布局制作，不将竖屏片段拼接为横屏成片。"
+}

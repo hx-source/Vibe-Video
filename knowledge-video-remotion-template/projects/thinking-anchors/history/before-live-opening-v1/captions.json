@@ -1,0 +1,158 @@
+{
+  "items": [
+    {
+      "id": "deal-0",
+      "segmentId": "deal",
+      "start": 0,
+      "end": 1,
+      "text": "二手咖啡机，卖家先报了一个价。"
+    },
+    {
+      "id": "deal-1",
+      "segmentId": "deal",
+      "start": 1,
+      "end": 5,
+      "text": "卖家开价2000元。"
+    },
+    {
+      "id": "deal-2",
+      "segmentId": "deal",
+      "start": 5,
+      "end": 8,
+      "text": "你还到1600元，卖家同意了。"
+    },
+    {
+      "id": "deal-3",
+      "segmentId": "deal",
+      "start": 8,
+      "end": 11,
+      "text": "觉得自己省了400元，正准备付款。"
+    },
+    {
+      "id": "deal-4",
+      "segmentId": "deal",
+      "start": 11,
+      "end": 14,
+      "text": "等等，它真的值2000元吗？"
+    },
+    {
+      "id": "trap-0",
+      "segmentId": "trap",
+      "start": 0,
+      "end": 5,
+      "text": "先出现的 2000 元，可能悄悄成了判断起点。"
+    },
+    {
+      "id": "trap-1",
+      "segmentId": "trap",
+      "start": 5,
+      "end": 10,
+      "text": "你一直想着“便宜了多少”，估计便容易围着它打转。"
+    },
+    {
+      "id": "rewind-0",
+      "segmentId": "rewind",
+      "start": 0,
+      "end": 4,
+      "text": "书中讨论的一个办法，是主动寻找反对锚点的理由。"
+    },
+    {
+      "id": "rewind-1",
+      "segmentId": "rewind",
+      "start": 4,
+      "end": 8,
+      "text": "回到这笔交易：有什么证据支持，或推翻 2000 元？"
+    },
+    {
+      "id": "evidence-0",
+      "segmentId": "evidence",
+      "start": 0,
+      "end": 4.666666666666667,
+      "text": "先检查：机身有磨损，配件也不齐。"
+    },
+    {
+      "id": "evidence-1",
+      "segmentId": "evidence",
+      "start": 4.666666666666667,
+      "end": 9.333333333333334,
+      "text": "再查同款、成色相近的实际成交记录。"
+    },
+    {
+      "id": "evidence-2",
+      "segmentId": "evidence",
+      "start": 9.333333333333334,
+      "end": 14,
+      "text": "这些证据，能帮你重新判断合理的价格范围。"
+    },
+    {
+      "id": "reprice-0",
+      "segmentId": "reprice",
+      "start": 0,
+      "end": 4,
+      "text": "例如，查到的成交记录多在 1100 到 1300 元。"
+    },
+    {
+      "id": "reprice-1",
+      "segmentId": "reprice",
+      "start": 4,
+      "end": 8,
+      "text": "把成色和配件算进去，再决定自己的报价。"
+    },
+    {
+      "id": "reprice-2",
+      "segmentId": "reprice",
+      "start": 8,
+      "end": 12,
+      "text": "报价明显偏离依据时，可以换一家或放弃交易。"
+    },
+    {
+      "id": "shop-0",
+      "segmentId": "shop",
+      "start": 0,
+      "end": 4,
+      "text": "网购时，同样卖 199 元，前面多了一个“原价 999”。"
+    },
+    {
+      "id": "shop-1",
+      "segmentId": "shop",
+      "start": 4,
+      "end": 8,
+      "text": "你可能马上觉得：这次便宜了好多！"
+    },
+    {
+      "id": "shop-2",
+      "segmentId": "shop",
+      "start": 8,
+      "end": 12,
+      "text": "先问一句：这个“原价”，有依据吗？"
+    },
+    {
+      "id": "compare-0",
+      "segmentId": "compare",
+      "start": 0,
+      "end": 4,
+      "text": "查近期常态售价，也比较同款其他店的到手价。"
+    },
+    {
+      "id": "compare-1",
+      "segmentId": "compare",
+      "start": 4,
+      "end": 8,
+      "text": "再结合自己的需要和预算，判断 199 元值不值。"
+    },
+    {
+      "id": "compare-2",
+      "segmentId": "compare",
+      "start": 8,
+      "end": 12,
+      "text": "这样，你就多了几条独立依据来做决定。"
+    },
+    {
+      "id": "close-0",
+      "segmentId": "close",
+      "start": 0,
+      "end": 6,
+      "text": "问依据，找反证，再比较。练习减少锚定的影响。"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "已交付24–38秒的横屏视觉方向，音频听感未单独记录",
+  "feedback": "这个横屏方向可以，把前面0到24秒也按现在的方式调整一下，减少同屏内容，突出价格和判断的变化，保持漫画风格和02背景音乐。",
+  "revision": "landscape-focus-v1",
+  "video": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+  "videoSha256": "9594e78e99c4528e13352277cf264576abb3b456e788704461d71a21315ff164",
+  "visualDirectionApproved": true,
+  "listened": null
+}

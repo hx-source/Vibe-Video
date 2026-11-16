@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 1.6,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "clips": [
+    {
+      "id": "moonlight-bed",
+      "role": "music",
+      "source": "asset:moonlight-score",
+      "sourceIn": 0,
+      "sourceOut": 10,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.8,
+      "fadeIn": 0.08,
+      "fadeOut": 0.65
+    },
+    {
+      "id": "sound-enter",
+      "role": "accent",
+      "source": "asset:match-enter",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.enter"
+      },
+      "gain": 0.23,
+      "fadeOut": 0.09,
+      "purpose": "人物与场景进入",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-preferences",
+      "role": "accent",
+      "source": "asset:match-preferences",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.preferences"
+      },
+      "gain": 0.23,
+      "fadeOut": 0.09,
+      "purpose": "偏好顺序出现",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-first",
+      "role": "accent",
+      "source": "asset:match-first",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.first"
+      },
+      "gain": 0.31,
+      "fadeOut": 0.09,
+      "purpose": "第一条邀请连线建立",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-challenger",
+      "role": "accent",
+      "source": "asset:match-challenger",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.challenger"
+      },
+      "gain": 0.23,
+      "fadeOut": 0.09,
+      "purpose": "第二位邀请者加入",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-compare",
+      "role": "accent",
+      "source": "asset:match-compare",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.compare"
+      },
+      "gain": 0.23,
+      "fadeOut": 0.09,
+      "purpose": "强调接收方偏好顺序",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-replace",
+      "role": "accent",
+      "source": "asset:match-replace",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.replace"
+      },
+      "gain": 0.31,
+      "fadeOut": 0.09,
+      "purpose": "原配对被替换",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-retry",
+      "role": "accent",
+      "source": "asset:match-retry",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.retry"
+      },
+      "gain": 0.23,
+      "fadeOut": 0.09,
+      "purpose": "落选者建立下一条邀请",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    },
+    {
+      "id": "sound-settle",
+      "role": "end",
+      "source": "asset:match-settle",
+      "sourceIn": 0,
+      "sourceOut": 0.95,
+      "at": {
+        "event": "opening.settle"
+      },
+      "gain": 0.31,
+      "fadeOut": 0.09,
+      "purpose": "机制结论落定",
+      "musicFit": "与固定D大调程序配乐共用音级，短起音和空间尾音；听感待用户验收"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": [
+    {
+      "id": "replace-space",
+      "at": {
+        "event": "opening.replace"
+      },
+      "attack": 0.08,
+      "hold": 0.18,
+      "release": 0.3,
+      "gain": 0.75
+    }
+  ]
+}

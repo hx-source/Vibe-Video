@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "used-evidence",
+  "sceneType": "anchor-landscape-used",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "rangeSeconds": [
+    52,
+    70
+  ],
+  "durationSeconds": 18,
+  "events": {
+    "switch": 0.3,
+    "test": 2,
+    "shutter": 2.8,
+    "inspect": 4.2,
+    "missing": 6.2,
+    "match": 8.2,
+    "condition": 8.55,
+    "parts": 8.9,
+    "sale1": 9.6,
+    "sale2": 11,
+    "sale3": 12.4,
+    "range": 13.8,
+    "compare": 15.3
+  },
+  "quote": 800,
+  "sales": [
+    620,
+    650,
+    680
+  ],
+  "captions": [
+    {
+      "from": 0,
+      "to": 2,
+      "text": "二手砍价，也先找依据。相机卖家开价800元。"
+    },
+    {
+      "from": 2,
+      "to": 4.2,
+      "text": "先试基本功能，能开机、能正常拍照。"
+    },
+    {
+      "from": 4.2,
+      "to": 6.2,
+      "text": "再检查外壳、镜头等实际状况，记下磨损。"
+    },
+    {
+      "from": 6.2,
+      "to": 8.2,
+      "text": "核对配件，这台相机缺充电器。"
+    },
+    {
+      "from": 8.2,
+      "to": 9.6,
+      "text": "查同款、成色和配件相近的已成交记录。"
+    },
+    {
+      "from": 9.6,
+      "to": 13.8,
+      "text": "三笔示例成交依次是620、650和680元。"
+    },
+    {
+      "from": 13.8,
+      "to": 15.3,
+      "text": "这组示例成交给出620到680元的参考区间。"
+    },
+    {
+      "from": 15.3,
+      "to": 18,
+      "text": "结合这台的磨损和配件，再判断800的开价。"
+    }
+  ],
+  "contentDirectionApproved": true,
+  "userApproved": false,
+  "noNarration": true
+}

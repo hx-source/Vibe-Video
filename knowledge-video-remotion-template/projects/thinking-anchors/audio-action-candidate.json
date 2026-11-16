@@ -1,0 +1,1140 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 0.9
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -9,
+    "maxEffectRelativeDb": 6
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "foley-01",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "deal.offer",
+        "offset": 0.08
+      },
+      "gain": 0.72,
+      "fadeOut": 0.014,
+      "purpose": "卖家报价气泡和价格贴纸出现",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-02",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "deal.counter",
+        "offset": 0.08
+      },
+      "gain": 0.72,
+      "fadeOut": 0.014,
+      "purpose": "买家还价气泡出现",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-03",
+      "role": "accent",
+      "source": "asset:foley-celebrate",
+      "sourceIn": 0,
+      "sourceOut": 0.45,
+      "at": {
+        "event": "deal.celebrate",
+        "offset": 0.08
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "省400的庆祝与纸屑散开",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-04",
+      "role": "accent",
+      "source": "asset:foley-brake-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.36,
+      "at": {
+        "event": "deal.question",
+        "offset": 0.02
+      },
+      "gain": 0.61,
+      "fadeOut": 0.014,
+      "purpose": "庆祝停止，人物惊讶并反问",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-05",
+      "role": "accent",
+      "source": "asset:foley-soft-land",
+      "sourceIn": 0,
+      "sourceOut": 0.3,
+      "at": {
+        "event": "trap.anchor",
+        "offset": 0.08
+      },
+      "gain": 0.76,
+      "fadeOut": 0.014,
+      "purpose": "2000元报价贴纸落到判断起点",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-06",
+      "role": "accent",
+      "source": "asset:foley-card-slide",
+      "sourceIn": 0,
+      "sourceOut": 0.48,
+      "at": {
+        "event": "trap.thought",
+        "offset": 0.1
+      },
+      "gain": 0.66,
+      "fadeOut": 0.014,
+      "purpose": "1600元标签与牵引线出现",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-07",
+      "role": "process",
+      "source": "asset:foley-elastic-pull",
+      "sourceIn": 0,
+      "sourceOut": 1.2,
+      "at": {
+        "event": "trap.pull",
+        "offset": 0.15
+      },
+      "gain": 0.72,
+      "fadeOut": 0.014,
+      "purpose": "判断标签被报价牵住；短持续声表示牵引过程",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "foley-08",
+      "role": "end",
+      "source": "asset:foley-wood-tap",
+      "sourceIn": 0,
+      "sourceOut": 0.22,
+      "at": {
+        "event": "trap.pull",
+        "offset": 1.6
+      },
+      "gain": 0.67,
+      "fadeOut": 0.014,
+      "purpose": "牵引位置到达动画终点",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-09",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "trap.result",
+        "offset": 0.15
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "锚定效应标签落定",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-10",
+      "role": "transition",
+      "source": "asset:foley-rewind",
+      "sourceIn": 0,
+      "sourceOut": 0.65,
+      "at": {
+        "event": "rewind.reset",
+        "offset": 0.02
+      },
+      "gain": 0.67,
+      "fadeOut": 0.014,
+      "purpose": "回退图标旋转，重新回到开价前",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-11",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "rewind.ask",
+        "offset": 0.1
+      },
+      "gain": 0.68,
+      "fadeOut": 0.014,
+      "purpose": "人物问报价依据",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-12",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "rewind.target",
+        "offset": 0.12
+      },
+      "gain": 0.69,
+      "fadeOut": 0.014,
+      "purpose": "书本与检查便签展开",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-13",
+      "role": "process",
+      "source": "asset:foley-scan-brush",
+      "sourceIn": 0,
+      "sourceOut": 0.48,
+      "at": {
+        "event": "evidence.inspect",
+        "offset": 0.02
+      },
+      "gain": 0.61,
+      "fadeOut": 0.014,
+      "purpose": "放大镜开始扫描商品；短摩擦声表示检查",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "foley-14",
+      "role": "accent",
+      "source": "asset:foley-discovery-tick",
+      "sourceIn": 0,
+      "sourceOut": 0.3,
+      "at": {
+        "event": "evidence.condition",
+        "offset": 0.06
+      },
+      "gain": 0.69,
+      "fadeOut": 0.014,
+      "purpose": "发现机身磨损并出现标记",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-15",
+      "role": "process",
+      "source": "asset:foley-scan-brush",
+      "sourceIn": 0,
+      "sourceOut": 0.48,
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.03
+      },
+      "gain": 0.57,
+      "fadeOut": 0.014,
+      "purpose": "放大镜移动到配件位置",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "foley-16",
+      "role": "accent",
+      "source": "asset:foley-ui-tap",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.65
+      },
+      "gain": 0.69,
+      "fadeOut": 0.014,
+      "purpose": "发现配件缺失，红叉与人物反应对应",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-17",
+      "role": "accent",
+      "source": "asset:foley-card-slide",
+      "sourceIn": 0,
+      "sourceOut": 0.48,
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.02
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "手指滑动，成交记录进入",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-18",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.2
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "第一张成交记录翻出",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-19",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.54
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "第二张成交记录翻出",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-20",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.88
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "第三张成交记录翻出",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-21",
+      "role": "process",
+      "source": "asset:foley-card-drag",
+      "sourceIn": 0,
+      "sourceOut": 1.2,
+      "at": {
+        "event": "evidence.range",
+        "offset": 0.15
+      },
+      "gain": 0.68,
+      "fadeOut": 0.014,
+      "purpose": "价格从记录取出，移动归组到比较线上",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "foley-22",
+      "role": "end",
+      "source": "asset:foley-soft-land",
+      "sourceIn": 0,
+      "sourceOut": 0.3,
+      "at": {
+        "event": "evidence.settle",
+        "offset": 0.02
+      },
+      "gain": 0.75,
+      "fadeOut": 0.014,
+      "purpose": "可比成交区间归组完成",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-23",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "reprice.reason",
+        "offset": 0.1
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "参考成交价格出现",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-24",
+      "role": "process",
+      "source": "asset:foley-card-drag",
+      "sourceIn": 0,
+      "sourceOut": 1.2,
+      "at": {
+        "event": "reprice.offer",
+        "offset": 0.08
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "把1200元从比较区拖到自己的报价位置",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "foley-25",
+      "role": "end",
+      "source": "asset:foley-soft-land",
+      "sourceIn": 0,
+      "sourceOut": 0.3,
+      "at": {
+        "event": "reprice.offer",
+        "offset": 1.3
+      },
+      "gain": 0.72,
+      "fadeOut": 0.014,
+      "purpose": "1200元报价完成移动并落定",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-26",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "reprice.exit",
+        "offset": 0.12
+      },
+      "gain": 0.61,
+      "fadeOut": 0.014,
+      "purpose": "保留换一家或不成交的选择",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-27",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "shop.old",
+        "offset": 0.1
+      },
+      "gain": 0.68,
+      "fadeOut": 0.014,
+      "purpose": "原价999标签出现",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-28",
+      "role": "accent",
+      "source": "asset:foley-soft-land",
+      "sourceIn": 0,
+      "sourceOut": 0.3,
+      "at": {
+        "event": "shop.sale",
+        "offset": 0.12
+      },
+      "gain": 0.75,
+      "fadeOut": 0.014,
+      "purpose": "199元到手价贴纸落下",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-29",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "shop.joy",
+        "offset": 0.1
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "赶紧下单的对话出现，手指靠近付款区",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-30",
+      "role": "accent",
+      "source": "asset:foley-brake-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.36,
+      "at": {
+        "event": "shop.pause",
+        "offset": 0.02
+      },
+      "gain": 0.66,
+      "fadeOut": 0.014,
+      "purpose": "手指收回，付款冲动暂停",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-31",
+      "role": "accent",
+      "source": "asset:foley-ui-tap",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "shop.pause",
+        "offset": 0.12
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "暂停付款按钮改变状态；不是付款成功音",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-32",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "compare.hide",
+        "offset": 0.03
+      },
+      "gain": 0.62,
+      "fadeOut": 0.014,
+      "purpose": "收起原价数字",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-33",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "compare.history",
+        "offset": 0.12
+      },
+      "gain": 0.67,
+      "fadeOut": 0.014,
+      "purpose": "近期常态售价记录进入",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-34",
+      "role": "process",
+      "source": "asset:foley-card-drag",
+      "sourceIn": 0,
+      "sourceOut": 1.2,
+      "at": {
+        "event": "compare.others",
+        "offset": 0.1
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "把本店199元标签移到实际价格比较区",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听",
+      "enabled": true
+    },
+    {
+      "id": "foley-35",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "compare.others",
+        "offset": 0.16
+      },
+      "gain": 0.63,
+      "fadeOut": 0.014,
+      "purpose": "其他店到手价进入比较",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-36",
+      "role": "end",
+      "source": "asset:foley-soft-land",
+      "sourceIn": 0,
+      "sourceOut": 0.3,
+      "at": {
+        "event": "compare.others",
+        "offset": 1.36
+      },
+      "gain": 0.7,
+      "fadeOut": 0.014,
+      "purpose": "价格在比较区落定",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-37",
+      "role": "accent",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "compare.decision",
+        "offset": 0.12
+      },
+      "gain": 0.64,
+      "fadeOut": 0.014,
+      "purpose": "翻出预算和需求便签",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-38",
+      "role": "end",
+      "source": "asset:foley-ui-tap",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "compare.settle",
+        "offset": 0.08
+      },
+      "gain": 0.68,
+      "fadeOut": 0.014,
+      "purpose": "完成比较，回到自己的购买判断",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-39",
+      "role": "end",
+      "source": "asset:foley-glass-tap",
+      "sourceIn": 0,
+      "sourceOut": 0.25,
+      "at": {
+        "event": "close.first",
+        "offset": 0.9
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "放大镜收进袋子",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-40",
+      "role": "end",
+      "source": "asset:foley-paper-flip",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "close.second",
+        "offset": 0.9
+      },
+      "gain": 0.65,
+      "fadeOut": 0.014,
+      "purpose": "反证记录收进袋子",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-41",
+      "role": "end",
+      "source": "asset:foley-wood-tap",
+      "sourceIn": 0,
+      "sourceOut": 0.22,
+      "at": {
+        "event": "close.third",
+        "offset": 0.9
+      },
+      "gain": 0.66,
+      "fadeOut": 0.014,
+      "purpose": "比较尺收进袋子",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    },
+    {
+      "id": "foley-42",
+      "role": "accent",
+      "source": "asset:foley-paper-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.28,
+      "at": {
+        "event": "close.result",
+        "offset": 0.12
+      },
+      "gain": 0.63,
+      "fadeOut": 0.014,
+      "purpose": "书籍出处与结束对话出现",
+      "musicFit": "非旋律性的纸张/物件/界面拟音，配合02连续配乐与局部避让；金属瞬态不作调性协调断言，实际混合听感待用户试听"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": [
+    {
+      "id": "foley-space-01",
+      "at": {
+        "event": "deal.offer",
+        "offset": 0.08
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-02",
+      "at": {
+        "event": "deal.counter",
+        "offset": 0.08
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-03",
+      "at": {
+        "event": "deal.celebrate",
+        "offset": 0.08
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-04",
+      "at": {
+        "event": "deal.question",
+        "offset": 0.02
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-05",
+      "at": {
+        "event": "trap.anchor",
+        "offset": 0.08
+      },
+      "attack": 0.045,
+      "hold": 0.3,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-06",
+      "at": {
+        "event": "trap.thought",
+        "offset": 0.1
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-07",
+      "at": {
+        "event": "trap.pull",
+        "offset": 0.15
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.76
+    },
+    {
+      "id": "foley-space-08",
+      "at": {
+        "event": "trap.pull",
+        "offset": 1.6
+      },
+      "attack": 0.045,
+      "hold": 0.22,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-09",
+      "at": {
+        "event": "trap.result",
+        "offset": 0.15
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-10",
+      "at": {
+        "event": "rewind.reset",
+        "offset": 0.02
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-11",
+      "at": {
+        "event": "rewind.ask",
+        "offset": 0.1
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-12",
+      "at": {
+        "event": "rewind.target",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-13",
+      "at": {
+        "event": "evidence.inspect",
+        "offset": 0.02
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.76
+    },
+    {
+      "id": "foley-space-14",
+      "at": {
+        "event": "evidence.condition",
+        "offset": 0.06
+      },
+      "attack": 0.045,
+      "hold": 0.3,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-15",
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.03
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.76
+    },
+    {
+      "id": "foley-space-16",
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.65
+      },
+      "attack": 0.045,
+      "hold": 0.16,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-17",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.02
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-18",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.2
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-19",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.54
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-20",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.88
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-21",
+      "at": {
+        "event": "evidence.range",
+        "offset": 0.15
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.76
+    },
+    {
+      "id": "foley-space-22",
+      "at": {
+        "event": "evidence.settle",
+        "offset": 0.02
+      },
+      "attack": 0.045,
+      "hold": 0.3,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-23",
+      "at": {
+        "event": "reprice.reason",
+        "offset": 0.1
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-24",
+      "at": {
+        "event": "reprice.offer",
+        "offset": 0.08
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.76
+    },
+    {
+      "id": "foley-space-25",
+      "at": {
+        "event": "reprice.offer",
+        "offset": 1.3
+      },
+      "attack": 0.045,
+      "hold": 0.3,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-26",
+      "at": {
+        "event": "reprice.exit",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-27",
+      "at": {
+        "event": "shop.old",
+        "offset": 0.1
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-28",
+      "at": {
+        "event": "shop.sale",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.3,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-29",
+      "at": {
+        "event": "shop.joy",
+        "offset": 0.1
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-30",
+      "at": {
+        "event": "shop.pause",
+        "offset": 0.02
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-31",
+      "at": {
+        "event": "shop.pause",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.16,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-32",
+      "at": {
+        "event": "compare.hide",
+        "offset": 0.03
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-33",
+      "at": {
+        "event": "compare.history",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-34",
+      "at": {
+        "event": "compare.others",
+        "offset": 0.1
+      },
+      "attack": 0.045,
+      "hold": 0.32,
+      "release": 0.22,
+      "gain": 0.76
+    },
+    {
+      "id": "foley-space-35",
+      "at": {
+        "event": "compare.others",
+        "offset": 0.16
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-36",
+      "at": {
+        "event": "compare.others",
+        "offset": 1.36
+      },
+      "attack": 0.045,
+      "hold": 0.3,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-37",
+      "at": {
+        "event": "compare.decision",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-38",
+      "at": {
+        "event": "compare.settle",
+        "offset": 0.08
+      },
+      "attack": 0.045,
+      "hold": 0.16,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-39",
+      "at": {
+        "event": "close.first",
+        "offset": 0.9
+      },
+      "attack": 0.045,
+      "hold": 0.25,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-40",
+      "at": {
+        "event": "close.second",
+        "offset": 0.9
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-41",
+      "at": {
+        "event": "close.third",
+        "offset": 0.9
+      },
+      "attack": 0.045,
+      "hold": 0.22,
+      "release": 0.22,
+      "gain": 0.68
+    },
+    {
+      "id": "foley-space-42",
+      "at": {
+        "event": "close.result",
+        "offset": 0.12
+      },
+      "attack": 0.045,
+      "hold": 0.28,
+      "release": 0.22,
+      "gain": 0.68
+    }
+  ]
+}

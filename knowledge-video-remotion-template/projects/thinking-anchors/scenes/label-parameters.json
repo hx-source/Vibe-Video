@@ -1,0 +1,65 @@
+{
+  "id": "landscape-anchor-reason",
+  "sceneType": "anchor-reason",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "rangeSeconds": [
+    20,
+    34
+  ],
+  "durationSeconds": 14,
+  "events": {
+    "switch": 0.3,
+    "anchor": 0.6,
+    "arrow": 1.05,
+    "label": 2,
+    "question": 4,
+    "judgment": 8,
+    "bridge": 11.5,
+    "match": 13.5
+  },
+  "captions": [
+    {
+      "from": 0,
+      "to": 4,
+      "text": "还没核对商品实际值多少，眼前的999先成了现成的比较起点。"
+    },
+    {
+      "from": 4,
+      "to": 8,
+      "text": "你开始关注比999便宜多少，而不是这件衣服到底值不值199。"
+    },
+    {
+      "from": 8,
+      "to": 11.5,
+      "text": "同样的199，在999的衬托下，就显得划算了。"
+    },
+    {
+      "from": 11.5,
+      "to": 14,
+      "text": "但比999便宜，不等于真的值得买。那该拿什么比？"
+    }
+  ],
+  "contentApproved": false,
+  "userApproved": false,
+  "noNarration": true,
+  "contentDirectionApproved": true,
+  "revision": "landscape-label-v1",
+  "editRangeSeconds": [
+    22,
+    23.5
+  ],
+  "labelAnimation": {
+    "from": 22,
+    "out": 22.2,
+    "turn": 22.4,
+    "settle": 22.733333333333334,
+    "returnFrom": 23.1,
+    "to": 23.5,
+    "soundAt": 22.533333333333335,
+    "fontSize": 50
+  }
+}

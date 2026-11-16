@@ -1,0 +1,79 @@
+{
+  "strategy": "Complete and review each segment, then join and review continuity",
+  "currentSegment": "reprice",
+  "segments": [
+    {
+      "id": "deal",
+      "from": 0,
+      "to": 14,
+      "status": "approved",
+      "revision": "opening-live-v2",
+      "userApproved": true,
+      "kind": "live-sale",
+      "feedback": "这个开头可以，接下来继续制作14到24秒的部分，注意和前面直播间降价的内容衔接起来。",
+      "approval": "D:\\Documents\\dy\\Vibe-Knowledge-Video\\knowledge-video-remotion-template\\projects\\thinking-anchors\\opening-live-v2-acceptance.json"
+    },
+    {
+      "id": "trap",
+      "from": 14,
+      "to": 24,
+      "status": "approved",
+      "note": "已承接同一直播间999/199；待用户观看试听",
+      "revision": "live-mechanism-v1",
+      "userApproved": true,
+      "feedback": "这部分可以，接下来继续制作24到32秒，注意衔接前面“该用什么作依据”的问题，讲清楚生活中怎么避免锚定效应。",
+      "approval": "live-mechanism-v1-acceptance.json"
+    },
+    {
+      "id": "rewind",
+      "from": 24,
+      "to": 32,
+      "status": "approved",
+      "revision": "live-decision-v2",
+      "userApproved": true,
+      "note": "已回答判断依据：找反证、查可比价、按需求预算决定；待用户反馈",
+      "feedback": "这部分可以，接下来继续制作32到46秒，注意从前面的直播间查价自然过渡到二手砍价，讲清楚怎么检查商品、查成交记录来减少锚定效应的影响。",
+      "approval": "live-decision-v2-acceptance.json"
+    },
+    {
+      "id": "evidence",
+      "from": 32,
+      "to": 46,
+      "status": "approved",
+      "revision": "used-evidence-v1",
+      "userApproved": true,
+      "note": "已由直播间查价桥接到二手咖啡机检查与成交核查；待用户反馈",
+      "feedback": "这部分可以，接下来继续制作46到58秒，注意衔接前面的成交区间和商品状况，讲清楚怎么依据这些信息出价，以及价格不合适时可以不成交。",
+      "approval": "used-evidence-v1-acceptance.json"
+    },
+    {
+      "id": "reprice",
+      "from": 46,
+      "to": 58,
+      "status": "preview-ready",
+      "revision": "used-offer-v1",
+      "userApproved": false,
+      "note": "结合成交与商品状况提出示例报价；卖家拒绝后保留不成交选择，待用户反馈"
+    },
+    {
+      "id": "shop",
+      "from": 58,
+      "to": 70,
+      "status": "existing-draft"
+    },
+    {
+      "id": "compare",
+      "from": 70,
+      "to": 82,
+      "status": "existing-draft"
+    },
+    {
+      "id": "close",
+      "from": 82,
+      "to": 88,
+      "status": "existing-draft"
+    }
+  ],
+  "fullFilmApproval": false,
+  "nextContinuityReview": "58秒以后需从保留替代选择继续衔接，仍待逐段制作。"
+}

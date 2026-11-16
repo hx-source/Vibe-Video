@@ -1,0 +1,10 @@
+import React from 'react';
+import {Composition,registerRoot,useCurrentFrame} from 'remotion';
+import '@fontsource/noto-sans-sc/400.css';
+import '@fontsource/noto-sans-sc/700.css';
+import {AnchorLandscapeOpening} from '../landscape-opening-v2/Opening';
+import {AnchorLandscapeFocus} from '../landscape-focus-v1/Decision';
+import {AnchorLandscapeUsed} from '../landscape-used-v1/Used';
+import {AnchorLandscapeOffer} from './Offer';
+const Film=()=>{const f=useCurrentFrame();return <div style={{width:1920,height:1080,fontFamily:'"Noto Sans SC",sans-serif'}}>{f<720?<AnchorLandscapeOpening frame={f}/>:f<1140?<AnchorLandscapeFocus frame={f-720}/>:f<1560?<AnchorLandscapeUsed frame={f-1140}/>:<AnchorLandscapeOffer frame={f-1560}/>}</div>;};
+registerRoot(()=> <Composition id="AnchorsLandscapeFirst64" component={Film} width={1920} height={1080} fps={30} durationInFrames={1920}/>);

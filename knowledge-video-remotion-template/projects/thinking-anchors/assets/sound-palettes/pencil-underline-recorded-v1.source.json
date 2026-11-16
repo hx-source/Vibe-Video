@@ -1,0 +1,23 @@
+{
+  "id": "802603",
+  "author": "JelloApocalypse",
+  "title": "Pencil - Drawing a Single Hard Line",
+  "page": "https://freesound.org/people/JelloApocalypse/sounds/802603/",
+  "download": "https://cdn.freesound.org/previews/802/802603_3501916-hq.mp3",
+  "format": "public HQ preview MP3",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sha256": "c9001f4b3ca7bf6a9333886526faf653e4708800403f1b1e98f400d6abaa3e5d",
+  "sourceInSeconds": 0.55,
+  "sourceOutSeconds": 0.79,
+  "linearGain": 2.457685857544828,
+  "processing": [
+    "180Hz highpass",
+    "7500Hz lowpass",
+    "linear gain",
+    "2ms entry fade",
+    "5ms exit fade"
+  ],
+  "durationSeconds": 0.24,
+  "humanListening": "not-performed"
+}

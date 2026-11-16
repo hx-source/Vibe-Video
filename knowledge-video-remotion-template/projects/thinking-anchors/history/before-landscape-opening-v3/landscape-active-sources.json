@@ -1,0 +1,30 @@
+{
+  "revision": "landscape-final-v1",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-final-v1",
+  "decision": "projects/thinking-anchors/landscape-final-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-final-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-final-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-final-v1/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+  "note": "最终74秒横屏入口。0–24沿用opening-v2；24–38为手腕修正副本；38–74为清理三处旧、新标题重叠的场景副本。所有原认可源码与输出保留。Root是画面入口，最终声音从原74秒预览AAC复制。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v2/Actor.tsx",
+  "usedEvidence": "projects/thinking-anchors/landscape-final-v1/Used.tsx",
+  "usedActor": "projects/thinking-anchors/landscape-used-v1/Actor.tsx",
+  "offer": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+  "offerActor": "projects/thinking-anchors/landscape-offer-v1/Actor.tsx",
+  "ending": "projects/thinking-anchors/landscape-final-v1/Ending.tsx",
+  "endingActor": "projects/thinking-anchors/landscape-ending-v1/Actor.tsx",
+  "audioPlan": "outputs/thinking-anchors/landscape-ending-v1/audio-plan.json",
+  "finalVideo": "outputs/thinking-anchors/landscape-final-v1/video.mp4"
+}

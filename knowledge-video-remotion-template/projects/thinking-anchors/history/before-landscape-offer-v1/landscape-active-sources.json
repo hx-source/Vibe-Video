@@ -1,0 +1,24 @@
+{
+  "revision": "landscape-used-v1",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-used-v1",
+  "decision": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-focus-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-used-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-used-v1/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+  "note": "0–719帧沿用已认可landscape-opening-v2，720–1139沿用landscape-focus-v1，1140–1559使用landscape-used-v1。后续从这份0–52秒入口继续。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v2/Actor.tsx",
+  "usedEvidence": "projects/thinking-anchors/landscape-used-v1/Used.tsx",
+  "usedActor": "projects/thinking-anchors/landscape-used-v1/Actor.tsx"
+}

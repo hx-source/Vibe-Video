@@ -1,0 +1,22 @@
+{
+  "id": "paper-slide-soft-v1",
+  "path": "sound-palettes/paper-slide-soft-v1.wav",
+  "type": "audio",
+  "source": "Kenney / RPG Audio / Audio/bookFlip1.ogg; https://kenney.nl/assets/rpg-audio; source SHA256=fa81ac2fedc8c641661b87e349630a36c9800e795e0c800e029214efdbe26a7d; excerpt 0.10–0.50s, band filtering, gentle level control and fades; no closing transient",
+  "license": "Creative Commons Zero, CC0; original License.txt retained in sound-palette-sources/rpg-audio",
+  "sound": {
+    "instrument": "paper-friction",
+    "pitches": [],
+    "durationSeconds": 0.4,
+    "tags": [
+      "paper",
+      "friction",
+      "soft",
+      "nonmelodic"
+    ],
+    "roles": [
+      "process",
+      "transition"
+    ]
+  }
+}

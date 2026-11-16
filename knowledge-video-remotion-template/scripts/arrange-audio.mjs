@@ -5,6 +5,7 @@ import {envelopeGain} from '../src/audio/content.mjs';
 import {compileAudioPlan,musicDuckGain} from '../src/audio/plan.mjs';
 import {inside,sha,writeJson} from './files.mjs';
 import {pcmWave} from './pcm.mjs';
+import {measureLoudness,relativeEffectLevels,qualityAssessment} from './audio-quality.mjs';
 
 export function buildArrangement(project,ffmpeg,options={}) {
   const {config,dir}=project;
@@ -50,7 +51,7 @@ export function buildArrangement(project,ffmpeg,options={}) {
   const encoded=pcmWave(mix,rate,plan.masterGain);
   fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,encoded.buffer);
   const out=options.directory||path.join(dir,'output');fs.mkdirSync(out,{recursive:true});
-  const roles={},stems={};
+  const roles={},stems={};let eventLevels=[];
   if(plan.schemaVersion===2){
     const effects=new Float64Array(n*2);
     for(const [role,samples] of roleMixes){
@@ -63,9 +64,12 @@ export function buildArrangement(project,ffmpeg,options={}) {
       if(!stems.music){fs.writeFileSync(path.join(out,'music.wav'),pcmWave(new Float64Array(n*2),rate).buffer);stems.music='music.wav';}
       fs.writeFileSync(path.join(out,'effects.wav'),pcmWave(effects,rate,plan.masterGain).buffer);stems.effects='effects.wav';
     }
+    eventLevels=relativeEffectLevels(plan,roleMixes.get('music')??new Float64Array(n*2),effects,rate);
   }
   const warnings=[...(plan.warnings||[])];
   if(encoded.peakDb!==null&&encoded.peakDb>-1)warnings.push({code:'low-headroom',message:'Peak is above -1 dBFS; review encoder headroom.'});
-  const report={mode:'content-arrangement',contentDuration:plan.duration,samples:n,sampleRate:rate,peakDb:encoded.peakDb,clippedSamples:0,inputs,plan,mixSha256:sha(output),...(plan.schemaVersion===2?{rmsDb:encoded.rmsDb,roles,stems,warnings,reviewStatus:'needs-listening'}:{})};
+  const quality=options.quality?qualityAssessment(measureLoudness(output,ffmpeg),eventLevels,project.audioPlan.qualityPolicy):null;
+  if(quality){warnings.push(...quality.warnings);writeJson(path.join(out,'audio-quality.json'),quality);}
+  const report={mode:'content-arrangement',contentDuration:plan.duration,samples:n,sampleRate:rate,peakDb:encoded.peakDb,clippedSamples:0,inputs,plan,mixSha256:sha(output),quality,...(plan.schemaVersion===2?{rmsDb:encoded.rmsDb,roles,stems,warnings,reviewStatus:'needs-listening'}:{})};
   writeJson(path.join(out,'audio-report.json'),report);return report;
 }

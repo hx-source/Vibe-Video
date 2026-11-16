@@ -1,0 +1,38 @@
+{
+  "previousCandidate": {
+    "plan": "audio-action-candidate.json",
+    "output": "outputs/thinking-anchors/action-sfx-v1",
+    "userApproval": "rejected",
+    "feedback": "所有的音效都太单调，类似蹦崩，内容和风格不符合"
+  },
+  "currentCandidate": {
+    "manifest": "sound-palette-candidates.json",
+    "output": "outputs/thinking-anchors/sound-palettes-v2",
+    "range": [
+      32,
+      46
+    ],
+    "palettes": [
+      {
+        "id": "a-tactile",
+        "title": "生活拟音",
+        "effects": 7
+      },
+      {
+        "id": "b-comic",
+        "title": "柔和漫画",
+        "effects": 6
+      },
+      {
+        "id": "c-sparse",
+        "title": "清脆留白",
+        "effects": 4
+      }
+    ]
+  },
+  "pictureUnchanged": true,
+  "musicUnchangedAcrossCandidates": true,
+  "formalPlanUnchanged": true,
+  "humanListening": "not-performed",
+  "userApproval": "pending"
+}

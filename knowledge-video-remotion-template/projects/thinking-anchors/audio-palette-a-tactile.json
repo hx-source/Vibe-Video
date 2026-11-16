@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "a-tactile-1",
+      "source": "asset:palette-cloth-one",
+      "role": "process",
+      "at": 33.2,
+      "sourceIn": 0,
+      "sourceOut": 0.6610430839002267,
+      "gain": 0.85,
+      "fadeOut": 0.015,
+      "purpose": "放大镜开始检查商品，轻擦材质",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+      "enabled": true
+    },
+    {
+      "id": "a-tactile-2",
+      "source": "asset:palette-metal-detail",
+      "role": "accent",
+      "at": 34.05,
+      "sourceIn": 0,
+      "sourceOut": 0.4458503401360544,
+      "gain": 0.75,
+      "fadeOut": 0.015,
+      "purpose": "发现机器表面细节",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    },
+    {
+      "id": "a-tactile-3",
+      "source": "asset:palette-cloth-two",
+      "role": "transition",
+      "at": 35.35,
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "gain": 0.82,
+      "fadeOut": 0.015,
+      "purpose": "放大镜移向配件位置",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    },
+    {
+      "id": "a-tactile-4",
+      "source": "asset:palette-paper-long",
+      "role": "process",
+      "at": 37.0,
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "gain": 1.05,
+      "fadeOut": 0.015,
+      "purpose": "成交记录滑入并翻看",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+      "enabled": true
+    },
+    {
+      "id": "a-tactile-5",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": 37.68,
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "gain": 0.95,
+      "fadeOut": 0.015,
+      "purpose": "翻到另一张可比记录",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    },
+    {
+      "id": "a-tactile-6",
+      "source": "asset:palette-cloth-two",
+      "role": "process",
+      "at": 40.0,
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "gain": 0.9,
+      "fadeOut": 0.015,
+      "purpose": "价格标签从卡片抽出",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言",
+      "enabled": true
+    },
+    {
+      "id": "a-tactile-7",
+      "source": "asset:palette-paper-short",
+      "role": "end",
+      "at": 42.0,
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "gain": 0.8,
+      "fadeOut": 0.015,
+      "purpose": "比较结果归组落定",
+      "musicFit": "固定02配乐、截取位置与音量；候选音色与有音高声音的搭配待实际试听，不作调性已协调的断言"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

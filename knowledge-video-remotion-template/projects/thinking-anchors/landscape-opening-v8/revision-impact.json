@@ -1,0 +1,26 @@
+{
+  "previousRevision": "landscape-opening-v7",
+  "scopeSeconds": [
+    18.98,
+    19.215
+  ],
+  "reason": "用户指出19秒锚定效应强调线音效未对上；上一版此处未配置划线声",
+  "visualBaseEvent": 18.8,
+  "visualOffset": 0.18,
+  "drawRange": [
+    18.98,
+    19.21
+  ],
+  "newClipRange": [
+    18.98,
+    19.215
+  ],
+  "singleStroke": true,
+  "frame524WordSettleUnchanged": true,
+  "musicUnchanged": true,
+  "all600PictureFramesUnchanged": true,
+  "durationSeconds": 20,
+  "nextReasonSegmentStillPlanned": true,
+  "assistantListening": "not-performed",
+  "newVideoApproved": false
+}

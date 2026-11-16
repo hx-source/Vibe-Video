@@ -1,0 +1,8 @@
+{
+  "bpm": 120,
+  "firstBeat": 0,
+  "beatsPerBar": 4,
+  "downbeatPhase": 0,
+  "reviewStatus": "score-derived-needs-listening",
+  "note": "The original build-assets.py score defines exact 120 BPM beats at n*0.5. Override derived from score, not a claim of listening approval."
+}

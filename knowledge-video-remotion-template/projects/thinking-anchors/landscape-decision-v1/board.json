@@ -1,0 +1,75 @@
+{
+  "id": "landscape-live-decision",
+  "sceneType": "anchor-live-decision",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "rangeSeconds": [
+    34,
+    52
+  ],
+  "durationSeconds": 18,
+  "events": {
+    "search": 0.3,
+    "history": 2,
+    "other": 4,
+    "compare": 5.6,
+    "conditions": 6.6,
+    "need": 9.1,
+    "budget": 11.6,
+    "choice": 14.3,
+    "recap": 16.5
+  },
+  "intent": "接该拿什么比，查同款实际到手价和可比条件，结合需求与事先预算，保留不买的选择",
+  "contentDirectionApproved": true,
+  "userApproved": false,
+  "captions": [
+    {
+      "from": 0,
+      "to": 0.3,
+      "text": "该拿什么比？"
+    },
+    {
+      "from": 0.3,
+      "to": 2,
+      "text": "先查同款实际到手价"
+    },
+    {
+      "from": 2,
+      "to": 4,
+      "text": "看看近期实际价格"
+    },
+    {
+      "from": 4,
+      "to": 6.6,
+      "text": "再比其他店实际到手价"
+    },
+    {
+      "from": 6.6,
+      "to": 9.1,
+      "text": "同款，还要核对运费和售后"
+    },
+    {
+      "from": 9.1,
+      "to": 11.6,
+      "text": "再问自己，现在用得上吗？"
+    },
+    {
+      "from": 11.6,
+      "to": 14.3,
+      "text": "优惠再大，也要看是否符合事先预算"
+    },
+    {
+      "from": 14.3,
+      "to": 16.5,
+      "text": "需求或预算不合适，可以先不买"
+    },
+    {
+      "from": 16.5,
+      "to": 18,
+      "text": "按实际价格、需求和预算判断"
+    }
+  ]
+}

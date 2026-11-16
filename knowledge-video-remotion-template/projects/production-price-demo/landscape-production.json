@@ -1,0 +1,37 @@
+{
+  "generatedFrom": "production-state.json",
+  "stateGeneration": 2,
+  "stateFingerprint": "a529fe69fab02d6bbecf4caa9d622dab6a1f9fa7975fa6e2707d9da2c6c5140d",
+  "currentRevision": "initial",
+  "currentStage": "preview-ready",
+  "segments": [
+    {
+      "id": "compare",
+      "rangeSeconds": [
+        0,
+        6
+      ]
+    }
+  ],
+  "excludedSegments": [],
+  "revisions": [
+    {
+      "id": "initial",
+      "parent": null,
+      "status": "preview-ready",
+      "editRangeSeconds": null,
+      "artifacts": {
+        "full": {
+          "file": "outputs/production-price-demo/production-compare-1794804169584/video.mp4",
+          "sha256": "b4ef3de49a219e9fa06fc9e937d0d91173b96531e734e03cee3caee5132a29ad",
+          "rangeSeconds": [
+            0,
+            6
+          ]
+        }
+      },
+      "approvals": []
+    }
+  ],
+  "legacyArchive": "projects/production-price-demo/production-history/legacy-before-init"
+}

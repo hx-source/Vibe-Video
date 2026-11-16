@@ -1,0 +1,19 @@
+{
+  "schemaVersion":1,
+  "id":"portrait-decision",
+  "sceneType":"anchor-portrait-decision",
+  "video":{"width":1080,"height":1920,"fps":30},
+  "rangeSeconds":[24,38],
+  "durationSeconds":14,
+  "events":{"search":0.3,"history":2.4,"other":4.6,"compare":5.9,"conditions":6.7,"need":8.3,"budget":9.8,"choice":11.5},
+  "safeArea":{"left":72,"top":160,"right":930,"bottom":1560},
+  "captions":[
+    {"from":0,"to":2.4,"text":"先找反证：有什么证据说明199也可能不便宜？"},
+    {"from":2.4,"to":4.6,"text":"查同款近期常态价，例：219。"},
+    {"from":4.6,"to":6.7,"text":"再查其他店实际到手价，例：189，相差10。"},
+    {"from":6.7,"to":8.3,"text":"确认同款，还要核对运费、售后等条件。"},
+    {"from":8.3,"to":9.8,"text":"查完价格，问自己：真的需要吗？"},
+    {"from":9.8,"to":11.5,"text":"预算合适吗？"},
+    {"from":11.5,"to":14,"text":"按自己的依据决定，也可以先不买。"}
+  ]
+}

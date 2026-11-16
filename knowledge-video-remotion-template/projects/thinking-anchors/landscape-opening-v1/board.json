@@ -1,0 +1,21 @@
+{
+  "schemaVersion":1,
+  "id":"landscape-opening",
+  "sceneType":"anchor-landscape-opening",
+  "video":{"width":1920,"height":1080,"fps":30},
+  "rangeSeconds":[0,24],
+  "durationSeconds":24,
+  "events":{"price":0,"reference":4,"delight":8,"reality":12,"explain":17,"term":20,"question":21,"match":23.5},
+  "captions":[
+    {"from":0,"to":4,"text":"199一件？有点贵。"},
+    {"from":4,"to":8,"text":"商家说：原价999，现在199！"},
+    {"from":8,"to":12,"text":"这么看，好像挺划算？"},
+    {"from":12,"to":17,"text":"可你要付的，一直都是199。"},
+    {"from":17,"to":20,"text":"你开始拿999，判断199值不值。"},
+    {"from":20,"to":21,"text":"这叫锚定效应。"},
+    {"from":21,"to":24,"text":"那判断贵不贵，到底该拿什么比？"}
+  ],
+  "userApproved":false,
+  "contentApproved":true,
+  "noNarration":true
+}

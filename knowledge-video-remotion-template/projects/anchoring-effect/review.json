@@ -1,0 +1,22 @@
+{
+  "facts": "Classic experimental figures checked against Tversky and Kahneman 1974; limitations in facts.md",
+  "visual": "Five keyframes visually inspected; thirteen frame positions checked for text overflow",
+  "audio": {
+    "clippedSamples": 0,
+    "peakDb": -3.138877236970953,
+    "humanListening": "not-performed"
+  },
+  "validation": {
+    "typecheck": "passed",
+    "unitTests": "15 passed",
+    "fullDecode": "passed",
+    "frames": 1860,
+    "resolution": "1920x1080",
+    "fps": 30,
+    "durationSeconds": 62,
+    "audioStream": "AAC present",
+    "standardBrowserSuite": "blocked by local navigation/connection failure; offline scene checks passed"
+  },
+  "output": "outputs/anchoring-effect/full-v1/video.mp4",
+  "renderMethod": "Project React scenes rendered offline using Playwright pipe and FFmpeg"
+}

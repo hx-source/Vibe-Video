@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "moonlight-score",
+      "path": "moonlight-score.wav",
+      "type": "audio",
+      "source": "Original deterministic score; build-assets.py; 120 BPM, D major",
+      "license": "Original procedural audio created for this project; no third-party samples"
+    },
+    {
+      "id": "match-enter",
+      "path": "enter.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          74
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-preferences",
+      "path": "preferences.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          78
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-first",
+      "path": "first.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          81
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-challenger",
+      "path": "challenger.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          78
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-compare",
+      "path": "compare.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          83
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-replace",
+      "path": "replace.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          81
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-retry",
+      "path": "retry.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          78
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "match-settle",
+      "path": "settle.wav",
+      "type": "audio",
+      "source": "Original soft bell; build-assets.py",
+      "license": "Original procedural audio; no third-party samples",
+      "sound": {
+        "instrument": "soft-bell",
+        "pitches": [
+          86
+        ],
+        "durationSeconds": 0.95,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.85,
+        "tags": [
+          "light",
+          "spacious"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition"
+        ]
+      }
+    }
+  ]
+}

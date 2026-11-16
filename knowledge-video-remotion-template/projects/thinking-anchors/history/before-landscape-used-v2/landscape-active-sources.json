@@ -1,0 +1,52 @@
+{
+  "revision": "landscape-decision-v1",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-decision-v1",
+  "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-decision-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-decision-v1/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v9/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-reason-v1/Reason.tsx",
+  "note": "当前主入口0–52秒：已认可0–34秒源保持，34–52秒为新方法段，待反馈。旧二手案例与结尾源保留，尚未纳入新预览；旧74秒最终版保留。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v6/Actor.tsx",
+  "usedEvidence": "projects/thinking-anchors/landscape-final-v1/Used.tsx",
+  "usedActor": "projects/thinking-anchors/landscape-used-v1/Actor.tsx",
+  "offer": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+  "offerActor": "projects/thinking-anchors/landscape-offer-v1/Actor.tsx",
+  "ending": "projects/thinking-anchors/landscape-final-v1/Ending.tsx",
+  "endingActor": "projects/thinking-anchors/landscape-ending-v1/Actor.tsx",
+  "audioPlan": "outputs/thinking-anchors/landscape-decision-v1/audio-plan.json",
+  "finalVideo": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "host": "projects/thinking-anchors/landscape-opening-v6/Host.tsx",
+  "previewVideo": "outputs/thinking-anchors/landscape-decision-v1/video.mp4",
+  "previewContinuity": "outputs/thinking-anchors/landscape-decision-v1/continuity-0-52.mp4",
+  "beforeAfter": "projects/thinking-anchors/landscape-opening-v6/BeforeAfter.tsx",
+  "openingAudioPlan": "projects/thinking-anchors/landscape-opening-v9/audio-plan.json",
+  "reason": "projects/thinking-anchors/landscape-reason-v1/Reason.tsx",
+  "sourceScopeSeconds": [
+    0,
+    52
+  ],
+  "continuousChapter": "outputs/thinking-anchors/landscape-decision-v1/audio/mix.wav",
+  "plannedNextSegment": {
+    "id": "used-evidence",
+    "fromSeconds": 52,
+    "status": "retained-source-awaiting-continuation",
+    "sourceRangeSeconds": [
+      38,
+      52
+    ],
+    "source": "projects/thinking-anchors/landscape-final-v1/Used.tsx",
+    "purpose": "将独立依据的原则转到二手商品，检查实物并查可比成交；后续长度与衔接待继续制作"
+  }
+}

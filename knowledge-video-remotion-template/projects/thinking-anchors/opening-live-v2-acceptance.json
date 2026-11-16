@@ -1,0 +1,14 @@
+{
+  "status": "user-approved",
+  "rangeSeconds": [
+    0,
+    14
+  ],
+  "revision": "opening-live-v2",
+  "preview": "outputs/thinking-anchors/opening-live-v2/video.mp4",
+  "videoSha256": "ff325b54fd22ba6a24d56593381eaac90eddf367124b51ed8da8a16c28de5a91",
+  "feedback": "这个开头可以，接下来继续制作14到24秒的部分，注意和前面直播间降价的内容衔接起来。",
+  "userApproval": true,
+  "viewedAndListenedNotSeparatelyRecorded": true,
+  "scope": "Only the delivered opening; does not approve the next segment or full film"
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "specification": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "narration": false,
+    "captions": "zh-CN",
+    "targetDurationSeconds": 10
+  },
+  "topic": {
+    "title": "月老的算法 · 十秒样片",
+    "audience": "希望直观看懂配对机制的普通观众",
+    "question": "先来的，就一定会被留下吗？",
+    "takeaway": "接收方暂留更喜欢的邀请者，落选者继续邀请。"
+  },
+  "research": {
+    "status": "provided-example",
+    "sources": [
+      {
+        "title": "本项目虚构偏好与演示边界",
+        "reference": "facts.md"
+      }
+    ],
+    "boundaries": "只用两位邀请者和两位接收者演示暂留、替换和再次邀请，不证明完整算法或现实关系结论。"
+  },
+  "outline": [
+    {
+      "segmentId": "opening",
+      "point": "用两人示例解释暂留、替换与继续邀请"
+    }
+  ],
+  "scenePlan": [
+    {
+      "segmentId": "opening",
+      "purpose": "用两人示例解释暂留、替换与继续邀请",
+      "change": "甲向小青连线并被暂留；乙提出邀请后，小青根据偏好改留乙；甲再向小桃连线。",
+      "sceneType": "moon-match"
+    }
+  ],
+  "representative": {
+    "from": 0,
+    "to": 10,
+    "stillTime": 5,
+    "reason": "展示暂留、比较、替换和再次邀请，检验人物与动态关系线"
+  }
+}

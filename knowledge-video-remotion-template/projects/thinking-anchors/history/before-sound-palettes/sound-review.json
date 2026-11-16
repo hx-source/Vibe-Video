@@ -1,0 +1,12 @@
+{
+  "userFeedback": "现在动画效果有了，但是目前只有背景音乐的音效，缺少根据动画而动的一些音效",
+  "findings": "原版15处提示，部分动作窗口比配乐低约10–13dB，缺少拖动、滑看、牵引和具体物件的声音",
+  "candidate": "audio-action-candidate.json",
+  "output": "outputs/thinking-anchors/action-sfx-v1",
+  "effects": 42,
+  "assets": 15,
+  "pictureUnchanged": true,
+  "checks": "原画面码流哈希一致、完整视频/试片解码通过、无PCM削波、响度与相对音量策略无告警，A/B分轨切换与循环播放通过",
+  "humanListening": "not-performed",
+  "userApproval": "pending"
+}

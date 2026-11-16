@@ -1,0 +1,21 @@
+{
+  "revision": "landscape-focus-v1",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-focus-v1",
+  "decision": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-focus-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-focus-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-focus-v1/Root.tsx",
+  "opening": null,
+  "mechanism": null,
+  "note": "新横屏动态聚焦布局；当前只实现24–38秒。其余片段待重排，不能直接从竖屏源文件拼接。"
+}

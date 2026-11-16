@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "narration": false,
+    "captions": "zh-CN",
+    "targetDurationSeconds": 70
+  },
+  "topic": {
+    "title": "你真的买便宜了吗？｜锚定效应",
+    "audience": "普通消费者，无心理学专业背景",
+    "question": "砍价成功和大幅打折，为什么仍可能买贵？",
+    "takeaway": "问报价依据，主动找反证，再用可比信息和自己的目标作判断。"
+  },
+  "research": {
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Daniel Kahneman, Thinking, Fast and Slow, chapter 11 Anchors；本PDF第133页的谈判与反向思考段落",
+        "reference": "https://cpcglobal.org/publications/Thinking%20Fast%20and%20Slow.pdf"
+      },
+      {
+        "title": "Mussweiler, Strack & Pfeiffer (2000), Overcoming the Inevitable Anchoring Effect",
+        "reference": "https://journals.sagepub.com/doi/10.1177/01461672002611010"
+      },
+      {
+        "title": "Galinsky & Mussweiler (2001), First offers as anchors",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/11642352/"
+      }
+    ],
+    "boundaries": "生活案例为原创情境；金额为剧情设定，不伪装成实验数据或当前市场报价。查价、预算等为书中原则的生活化应用，不声称书中提供该购物操作清单；方法帮助减少影响，不保证消除所有偏差。"
+  },
+  "outline": [
+    {
+      "segmentId": "deal",
+      "point": "直播间从999降到199，为什么会心动？"
+    },
+    {
+      "segmentId": "trap",
+      "point": "直播间里的999，怎样成为判断199的参照"
+    },
+    {
+      "segmentId": "rewind",
+      "point": "回答判断依据：主动找反证，查同款可比价，再按需求预算决定"
+    },
+    {
+      "segmentId": "evidence",
+      "point": "把直播间核查依据的方法用于二手砍价：检查成色配件，核对可比成交"
+    },
+    {
+      "segmentId": "reprice",
+      "point": "结合可比成交、磨损与配件说明自己的报价，谈不拢也可以不成交"
+    },
+    {
+      "segmentId": "close",
+      "point": "把两个案例归纳为问依据、找反证、比较可比信息、按需决定"
+    }
+  ],
+  "scenePlan": [
+    {
+      "segmentId": "deal",
+      "sceneType": "anchor-story-motion",
+      "purpose": "直播间从999降到199，为什么会心动？",
+      "change": "直播间同一件外套报价999→599→199；观众觉得少花800而准备下单，随后收回手指、遮住原价、查同款到手价。沿用漫画场内表达、无底部固定说明。"
+    },
+    {
+      "segmentId": "trap",
+      "sceneType": "anchor-story-motion",
+      "purpose": "直播间里的999，怎样成为判断199的参照",
+      "change": "承接已认可直播间末帧：同一衣服、主播、观众与遮住原价的界面继续存在；199保持不变，999作为脑中参照浮现，绘出999−199=800，再显示锚定效应并追问判断依据。"
+    },
+    {
+      "segmentId": "rewind",
+      "sceneType": "anchor-story-motion",
+      "purpose": "回答判断依据：主动找反证，查同款可比价，再按需求预算决定",
+      "change": "承接199贵不贵该用什么作依据：999参照退出，打开同款同条件查价界面；近期常态价219与他店到手价189逐条进入，189被圈出，与直播间199相差10元。最后按需求和预算作决定，不直接下单。价格为虚构示例；不把预算当公允价值，也不保证消除偏差。"
+    },
+    {
+      "segmentId": "evidence",
+      "sceneType": "anchor-evidence-motion",
+      "purpose": "把直播间核查依据的方法用于二手砍价：检查成色配件，核对可比成交",
+      "change": "先保持上一段末帧，再明确切到二手咖啡机与2000元开价；放大镜检查磨损和缺配件，三条同款成色相近成交1100/1200/1300逐个出现，再用框线圈定成交区间，结合成色配件重新谈价。沿用既有漫画与圈定区间方案，增加案例桥接并按新动作重排声音。"
+    },
+    {
+      "segmentId": "reprice",
+      "sceneType": "anchor-story-motion",
+      "purpose": "结合可比成交、磨损与配件说明自己的报价，谈不拢也可以不成交",
+      "change": "保持上段末帧后，重组1100–1300成交参考与磨损、缺配件两项依据；买家说明理由并提出1200示例报价，卖家不接受，买家收回报价，显示换一家或不买的选择。1200是剧情中的目标报价，不是取中点、按缺陷扣款的估值公式；没有付款成交。"
+    },
+    {
+      "segmentId": "close",
+      "sceneType": "anchor-story-motion",
+      "purpose": "把两个案例归纳为问依据、找反证、比较可比信息、按需决定",
+      "change": "保持58秒前最后画面，再并排回看直播间原价/到手价和二手开价/成交区间，四步方法按问依据、找反证、比可比价、按需决定依次点亮，最后两张案例卡退场，书本与结语出现；配乐在最后1.5秒淡出。"
+    }
+  ],
+  "representative": {
+    "from": 34,
+    "to": 44,
+    "stillTime": 43,
+    "reason": "同一34–44秒范围验证底部说明转为人物行动：发现商品问题、滑看成交记录、把价格归到比较线上；音乐保持全片时钟。"
+  }
+}

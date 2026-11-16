@@ -1,0 +1,22 @@
+{
+  "revision": "landscape-opening-v7",
+  "feedback": "可以，或者你可以先将20秒左右结束，然后将后面的内容作为下一段内容进行展示不是更好吗？",
+  "structureAgreed": true,
+  "scope": [
+    0,
+    20
+  ],
+  "productionAuthorized": true,
+  "soundFeedback": "17秒的音效是不是没有对上呢?",
+  "newVideoApproved": false,
+  "nextSegment": {
+    "id": "anchor-reason",
+    "fromSeconds": 20,
+    "toSeconds": null,
+    "status": "planned",
+    "purpose": "解释为什么999成为比较起点，以及比999便宜不等于真实值得买",
+    "durationNotYetSet": true,
+    "followingMethodSourcesPreserved": true
+  },
+  "assistantListening": "not-performed"
+}

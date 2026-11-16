@@ -1,0 +1,79 @@
+{
+  "previousCandidate": {
+    "plan": "audio-action-candidate.json",
+    "output": "outputs/thinking-anchors/action-sfx-v1",
+    "userApproval": "rejected",
+    "feedback": "所有的音效都太单调，类似蹦崩，内容和风格不符合"
+  },
+  "currentCandidate": {
+    "plan": "audio-palette-b-paper-full-motion-v1.json",
+    "output": "outputs/thinking-anchors/b-paper-full-motion-v1",
+    "range": [
+      32,
+      46
+    ],
+    "review": "outputs/thinking-anchors/b-paper-full-motion-v1/review.html"
+  },
+  "pictureUnchanged": true,
+  "musicUnchangedAcrossCandidates": true,
+  "formalPlanUnchanged": true,
+  "humanListening": "not-performed",
+  "userApproval": "selected-paper-material; continuous-version-pending",
+  "feedback": {
+    "text": "摩擦声感觉从中间加进来，需要从头到尾的一个音效",
+    "resolution": "以明确选定的短纸卡材质延续连续摩擦，8–10秒覆盖完整标签移动，保留其他声音"
+  },
+  "feedbackHistory": [
+    {
+      "text": "第8秒附近的那个动画效果的音效不太合适，其他的还可以勉强接受",
+      "palette": "c-sparse",
+      "otherSounds": "tentatively-tolerated; do not polish or replace without further feedback"
+    },
+    {
+      "text": "总感觉不太符合这部分知识的讲解风格",
+      "base": "b-comic",
+      "preference": "保留B整体动作感，声音气质需要适合知识讲解"
+    },
+    {
+      "text": "第四秒放大镜到少配件那里没有音效吗？",
+      "interpretation": "在B知识讲解候选上补回轻微动作拟音，保持其余声音"
+    },
+    {
+      "text": "第5秒左右三条同款成色相近的记录逐个出现，音效感觉只有一个，应与三次出现相对应",
+      "resolution": "替换原滑动与翻页为三次独立短纸张声，不改画面与其他音效"
+    },
+    {
+      "text": "第9秒左右三个标签向下移动，音效不太合适",
+      "resolution": "去掉提前结束的短纸张声，改为8.85–10秒随整体下移速度变化的一次轻扫，保留落定轻响"
+    },
+    {
+      "text": "标签下移扫动声有空旷感，仍不合适",
+      "resolution": "换原速短纸张材质，保持主体与细节，不做拉伸或空间处理，配在9.2秒附近最明显的下移动作"
+    },
+    {
+      "text": "短纸卡滑动与前面重复，需要其他音效",
+      "resolution": "同画面比较短机械滑扣和电子收拢短音，仅更换第9.2秒附近的归组声"
+    },
+    {
+      "text": "有没有其他平滑的音乐，然后展现这个动态的变化",
+      "interpretation": "局部标签下移动作使用短动作配乐，沿用明确指定的02主配乐",
+      "resolution": "两种原创合成乐音：柔和连续下行滑音与圆润下行琶音，先做混合试听"
+    },
+    {
+      "text": "用户明确选择短纸卡摩擦（此前说与前面重复的那版），认为比后续音乐化尝试合适",
+      "selectedCue": "b-comic-5",
+      "selectedSource": "asset:group-down-dry-v1",
+      "decision": "restore exact existing short dry paper candidate, with no further processing"
+    }
+  ],
+  "localSelection": {
+    "cue": "b-comic-5",
+    "source": "asset:group-down-dry-v1",
+    "previewSeconds": [
+      9.2,
+      9.630453514739228
+    ],
+    "status": "user-selected-to-retain",
+    "scope": "this movement cue only; full-film sound approval not implied"
+  }
+}

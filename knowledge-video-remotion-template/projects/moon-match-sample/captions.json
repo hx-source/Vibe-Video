@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "caption-1",
+      "segmentId": "opening",
+      "start": 0,
+      "end": 2,
+      "text": "两人都想先邀请小青。"
+    },
+    {
+      "id": "caption-2",
+      "segmentId": "opening",
+      "start": 2,
+      "end": 4,
+      "text": "甲先到，小青暂时留下甲。"
+    },
+    {
+      "id": "caption-3",
+      "segmentId": "opening",
+      "start": 4,
+      "end": 7,
+      "text": "乙来了：小青更喜欢乙，于是换掉甲。"
+    },
+    {
+      "id": "caption-4",
+      "segmentId": "opening",
+      "start": 7,
+      "end": 8.5,
+      "text": "甲继续邀请下一位。"
+    },
+    {
+      "id": "caption-5",
+      "segmentId": "opening",
+      "start": 8.5,
+      "end": 10,
+      "text": "暂留最喜欢的，落选者继续。"
+    }
+  ]
+}

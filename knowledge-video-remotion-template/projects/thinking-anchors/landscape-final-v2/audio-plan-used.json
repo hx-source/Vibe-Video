@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 1,
+    "maxProcessSeconds": 1
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "at": 0,
+      "sourceIn": 0,
+      "sourceOut": 74,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.2
+    },
+    {
+      "id": "hook-price",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "opening.price",
+        "offset": 0.2
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.25,
+      "fadeOut": 0.012,
+      "purpose": "199价格标签进入并落定",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-reference",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "opening.reference",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.7,
+      "fadeOut": 0.012,
+      "purpose": "商家原价999纸签翻出",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-delight",
+      "source": "asset:regroup-contact-v2",
+      "role": "accent",
+      "at": {
+        "event": "opening.delight",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.11,
+      "speed": 1,
+      "gain": 1.7,
+      "fadeOut": 0.012,
+      "purpose": "人物心动，向商品伸手",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-reality",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "opening.reality",
+        "offset": 0.32
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.85,
+      "fadeOut": 0.012,
+      "purpose": "199付款金额下方划线强调，实际付款未变",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-explain",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "opening.explain",
+        "offset": 0.14
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "999作为脑中的参照重新出现",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-question",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "opening.topicUnderline",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "概念点题中锚定效应下方强调线落定",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "decision-search",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.search",
+        "offset": 0.3
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.6,
+      "fadeOut": 0.012,
+      "purpose": "进入查同款价格的搜索界面",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-history",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.history",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "speed": 1,
+      "gain": 1.15,
+      "fadeOut": 0.012,
+      "purpose": "近期常态价219记录出现",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-other",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.other",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442178,
+      "speed": 1,
+      "gain": 1.3,
+      "fadeOut": 0.012,
+      "purpose": "其他店到手价189记录接替进入",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-compare",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.compare",
+        "offset": 0.15
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.9,
+      "fadeOut": 0.012,
+      "purpose": "圈定可比报价并形成比较线",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-conditions",
+      "source": "asset:palette-cloth-two",
+      "role": "transition",
+      "at": {
+        "event": "decision.conditions",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.5,
+      "fadeOut": 0.012,
+      "purpose": "同款、运费、售后作为一组核对条件进入",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-need",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "decision.need",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.7,
+      "fadeOut": 0.012,
+      "purpose": "价格记录收起，需求问题进入",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-budget",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "decision.budget",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.65,
+      "fadeOut": 0.012,
+      "purpose": "预算问题随后出现",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "decision-choice",
+      "source": "asset:regroup-contact-v2",
+      "role": "end",
+      "at": {
+        "event": "decision.choice",
+        "offset": 0.2
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.11,
+      "speed": 1,
+      "gain": 2.1,
+      "fadeOut": 0.012,
+      "purpose": "先不急着买的选择落定，人物收手",
+      "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+    },
+    {
+      "id": "used-quote",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "used.switch",
+        "offset": 0.2
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "二手报价800进入",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-inspect",
+      "source": "asset:palette-cloth-two",
+      "role": "accent",
+      "at": {
+        "event": "used.inspect",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.45,
+      "fadeOut": 0.012,
+      "purpose": "放大镜检查外壳磨损",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-missing",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "used.missing",
+        "offset": 0.12
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 0.8,
+      "fadeOut": 0.012,
+      "purpose": "标出缺少充电器",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-match",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "used.match",
+        "offset": 0.06
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "同款条件出现",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-condition",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "used.condition",
+        "offset": 0.06
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "成色相近条件出现",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-parts",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "used.parts",
+        "offset": 0.06
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.35,
+      "fadeOut": 0.012,
+      "purpose": "配件相近条件出现",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-sale1",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "used.sale1",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "speed": 1,
+      "gain": 0.9,
+      "fadeOut": 0.012,
+      "purpose": "第一笔已成交620记录进入",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-sale2",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "used.sale2",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "speed": 1,
+      "gain": 0.9,
+      "fadeOut": 0.012,
+      "purpose": "第二笔已成交650记录接替",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-sale3",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "used.sale3",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "第三笔已成交680记录接替",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "used-range",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "used.range",
+        "offset": 0.14
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "成交参考区间下方划线形成",
+      "musicFit": "02音乐原素材0–52秒原速延续，音量与原前段相同；本段短纸张、接触、检查和铅笔声跟随物件与记录，不新增旋律或持续过程音。听感待实际看片确认。"
+    },
+    {
+      "id": "offer-reference",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "offer.switch",
+        "offset": 0.15
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "speed": 1,
+      "gain": 0.7,
+      "fadeOut": 0.012,
+      "purpose": "成交区间收拢到报价依据位置",
+      "musicFit": "沿用02原素材0–64秒原速和原音量；短纸张、接触及铅笔声分别对应整理依据、递出报价、拒绝、收回和保留选择，不添加旋律或持续过程声。真实听感待看片确认。"
+    },
+    {
+      "id": "offer-reasons",
+      "source": "asset:palette-cloth-two",
+      "role": "accent",
+      "at": {
+        "event": "offer.reasons",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.4,
+      "fadeOut": 0.012,
+      "purpose": "回顾商品磨损及缺配件",
+      "musicFit": "沿用02原素材0–64秒原速和原音量；短纸张、接触及铅笔声分别对应整理依据、递出报价、拒绝、收回和保留选择，不添加旋律或持续过程声。真实听感待看片确认。"
+    },
+    {
+      "id": "offer-proposal",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "offer.offer",
+        "offset": 0.15
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "speed": 1,
+      "gain": 0.9,
+      "fadeOut": 0.012,
+      "purpose": "630示例报价从买家侧递出",
+      "musicFit": "沿用02原素材0–64秒原速和原音量；短纸张、接触及铅笔声分别对应整理依据、递出报价、拒绝、收回和保留选择，不添加旋律或持续过程声。真实听感待看片确认。"
+    },
+    {
+      "id": "offer-refusal",
+      "source": "asset:regroup-contact-v2",
+      "role": "accent",
+      "at": {
+        "event": "offer.refusal",
+        "offset": 0.12
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.11,
+      "speed": 1,
+      "gain": 2.1,
+      "fadeOut": 0.012,
+      "purpose": "卖家拒绝信息落定",
+      "musicFit": "沿用02原素材0–64秒原速和原音量；短纸张、接触及铅笔声分别对应整理依据、递出报价、拒绝、收回和保留选择，不添加旋律或持续过程声。真实听感待看片确认。"
+    },
+    {
+      "id": "offer-withdraw",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "offer.withdraw",
+        "offset": 0.12
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "买家收回报价，一次短纸张声",
+      "musicFit": "沿用02原素材0–64秒原速和原音量；短纸张、接触及铅笔声分别对应整理依据、递出报价、拒绝、收回和保留选择，不添加旋律或持续过程声。真实听感待看片确认。"
+    },
+    {
+      "id": "offer-choice",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "offer.choice",
+        "offset": 0.15
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "再看看也可以的结论下划线形成",
+      "musicFit": "沿用02原素材0–64秒原速和原音量；短纸张、接触及铅笔声分别对应整理依据、递出报价、拒绝、收回和保留选择，不添加旋律或持续过程声。真实听感待看片确认。"
+    },
+    {
+      "id": "ending-live",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "ending.live",
+        "offset": 0.12
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "直播间同款到手价比较进入",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-conditions",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "ending.conditions",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "speed": 1,
+      "gain": 0.7,
+      "fadeOut": 0.012,
+      "purpose": "同款同条件关系落定",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-used",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "ending.used",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "由衣服回到二手相机",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-inspect",
+      "source": "asset:palette-cloth-two",
+      "role": "accent",
+      "at": {
+        "event": "ending.inspect",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.45,
+      "fadeOut": 0.012,
+      "purpose": "放大镜回顾成色配件检查",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-records",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "ending.records",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "speed": 1,
+      "gain": 0.9,
+      "fadeOut": 0.012,
+      "purpose": "可比的已成交记录进入",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-decision",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "ending.decision",
+        "offset": 0.15
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "回到自己的需求判断",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-budget",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "ending.budget",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "speed": 1,
+      "gain": 0.7,
+      "fadeOut": 0.012,
+      "purpose": "钱包进入，提醒预算",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    },
+    {
+      "id": "ending-choice",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "ending.choice",
+        "offset": 0.12
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "也可以不买下划线形成，保留选择",
+      "musicFit": "沿用02原素材0–74秒原速和前段音量，尾部1.2秒渐出；短纸张、检查和铅笔声只帮助回顾可比价格、商品状况和决策，不增加第二旋律或持续过程声。听感待实际看片确认。"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

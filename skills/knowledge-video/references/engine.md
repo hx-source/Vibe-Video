@@ -1,5 +1,7 @@
 # Remotion 工程调用 · 0.1.0
 
+统一当前版本、局部修订和新旧媒体对照可使用 `npm run production -- ...`；已启用的项目优先读 [修改与版本入口](production.md)，完整接口见工程 `docs/PRODUCTION-WORKFLOW.md`。这是已有渲染及音乐工具之上的制作管理入口，不改变原项目合约。
+
 先运行本 Skill 的 scripts/locate_engine.py，以返回的 engineRoot 为命令工作目录。显式 --root 优先于环境变量，错误路径立即失败。默认查找 Remotion；旧 Canvas 须显式指定并改读 legacy.md。
 
 工程 README、docs/PROJECT-CONTRACT.md、docs/AUDIO-WORKFLOW.md 是接口的权威说明。初次使用检查依赖；缺少时 npm ci，随后 npx remotion browser ensure。默认不升级锁定依赖。

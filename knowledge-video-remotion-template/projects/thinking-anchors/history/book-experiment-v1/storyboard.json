@@ -1,0 +1,83 @@
+{
+  "segments": [
+    {
+      "id": "price",
+      "durationSeconds": 12,
+      "intent": "同样是 199 元，为什么感觉不同？",
+      "sceneType": "anchoring",
+      "events": {
+        "reveal": 0.5,
+        "result": 4
+      },
+      "props": {
+        "title": "同样是 199 元，为什么感觉不同？",
+        "mode": "price",
+        "note": "商品价格为虚构示例"
+      }
+    },
+    {
+      "id": "pull",
+      "durationSeconds": 12,
+      "intent": "锚定效应：判断被起点拉住",
+      "sceneType": "anchoring",
+      "events": {
+        "reveal": 0.5,
+        "result": 4
+      },
+      "props": {
+        "title": "锚定效应：判断被起点拉住",
+        "mode": "pull",
+        "note": "数轴为概念示意；调整不足只是锚定的一种解释"
+      }
+    },
+    {
+      "id": "experiment",
+      "durationSeconds": 16,
+      "intent": "无关的数字，也能成为锚",
+      "sceneType": "anchor-study",
+      "events": {
+        "reveal": 0.5,
+        "result": 4,
+        "wheel-stop": 3,
+        "compare": 4,
+        "estimate": 8,
+        "estimate-settle": 9.2
+      },
+      "props": {
+        "title": "无关的数字，也能成为锚",
+        "mode": "experiment",
+        "note": "Tversky & Kahneman · Science · 1974｜组内估计中位数"
+      }
+    },
+    {
+      "id": "reset",
+      "durationSeconds": 14,
+      "intent": "给判断换一个起点",
+      "sceneType": "anchoring",
+      "events": {
+        "reveal": 0.5,
+        "result": 4
+      },
+      "props": {
+        "title": "给判断换一个起点",
+        "mode": "reset",
+        "note": "实用建议，不保证消除偏差"
+      }
+    },
+    {
+      "id": "close",
+      "durationSeconds": 8,
+      "intent": "先有自己的尺，再看别人的锚",
+      "sceneType": "anchoring",
+      "events": {
+        "reveal": 0.5,
+        "result": 4
+      },
+      "props": {
+        "title": "先有自己的尺，再看别人的锚",
+        "mode": "close",
+        "note": "《思考，快与慢》· 锚定效应"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v4/review.html",
+  "output": "outputs/thinking-anchors/landscape-opening-v4/video.mp4",
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "保留已认可的前段，在19.2–22.4秒集中突出书名与锚定效应；0–24秒新版待反馈，附原后14秒检查衔接，旧74秒最终成片保留。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-opening-v4/continuity-0-38.mp4",
+  "revision": "landscape-opening-v4",
+  "revisionReason": "前面部分可以。在20秒左右引进了锚定效应这个概念，但是我们这个时候是不是要重点突出锚定效应，这个是我们重要讲解的一个重点，但现在的突出效果不是很明显。 或者我们可以在这里加上一段“今天我们讲解思考快与慢中的锚定效应”",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "opening-revision-preview",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-opening-v4/quality-review.md",
+  "finalExportAuthorized": false,
+  "assistantListening": "not-performed",
+  "contentApproved": true,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v1/video.mp4"
+}

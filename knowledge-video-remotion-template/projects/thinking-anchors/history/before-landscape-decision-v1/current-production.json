@@ -1,0 +1,63 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "anchor-reason",
+  "currentReview": "outputs/thinking-anchors/landscape-reason-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-reason-v1/video.mp4",
+  "rangeSeconds": [
+    20,
+    34
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "新增20–34秒原因讲解，保留已认可前20秒画面与混音，并生成前34秒连贯预览。新段待反馈，旧74秒成片及后续方法源码保留。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-reason-v1/continuity-0-34.mp4",
+  "revision": "landscape-reason-v1",
+  "revisionReason": "这次音效可以了，接下来继续制作20秒之后的内容，讲清楚为什么999会成为参照，让同样的199显得划算。保持横屏漫画风格和02背景音乐，做好后先给我看一下。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "segmented-revision-in-progress",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-reason-v1/quality-review.md",
+  "finalExportAuthorized": true,
+  "assistantListening": "not-performed",
+  "contentApproved": true,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "openingUserApproved": true,
+  "openingApproval": "landscape-opening-v9-acceptance.json",
+  "editRangeSeconds": [
+    20,
+    34
+  ],
+  "newFullFilmProduced": false,
+  "newFullFilmDurationSeconds": null,
+  "plannedNextSegment": {
+    "id": "decision",
+    "fromSeconds": 34,
+    "proposedToSeconds": 48,
+    "status": "retained-source-awaiting-continuation",
+    "sourceRangeSeconds": [
+      24,
+      38
+    ],
+    "source": "projects/thinking-anchors/landscape-final-v1/Decision.tsx",
+    "purpose": "回答该拿什么比，查同款同条件实际到手价，再看需求预算"
+  }
+}

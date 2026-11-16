@@ -1,0 +1,119 @@
+{
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "userRequirement": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "visualPrinciples": [
+    "主体放大，保持漫画风格",
+    "价格记录逐个替换，避免堆叠",
+    "每个购买问题单独呈现",
+    "人物动作配合内容",
+    "保留02音乐与现有事件"
+  ],
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v2",
+      "status": "approved",
+      "userApproved": true,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-v2-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v2/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v2/review.html",
+      "approval": "landscape-opening-v2-acceptance.json",
+      "feedback": "这版开头可以，接下来继续制作38秒之后的二手砍价部分，注意和前面自然衔接，讲清楚怎么检查商品、查同款成交记录来判断价格，继续保持横屏、漫画风格和02背景音乐。"
+    },
+    {
+      "id": "decision",
+      "rangeSeconds": [
+        24,
+        38
+      ],
+      "revision": "landscape-focus-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+      "pictureSource": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+      "visualDirectionApproved": true,
+      "directionApproval": "landscape-focus-v1-direction-approval.json",
+      "audioListened": null
+    },
+    {
+      "id": "used-evidence",
+      "rangeSeconds": [
+        38,
+        52
+      ],
+      "revision": "landscape-used-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "pictureSource": "projects/thinking-anchors/landscape-used-v1/Used.tsx",
+      "output": "outputs/thinking-anchors/landscape-used-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-used-v1/review.html"
+    }
+  ],
+  "currentSegment": "used-evidence",
+  "currentReview": "outputs/thinking-anchors/landscape-used-v1/review.html",
+  "remainingTopics": [
+    "依据状况出价、保留不成交选择",
+    "两个案例的方法总结"
+  ],
+  "fullFilmProduced": false,
+  "fullFilmApproval": false,
+  "legacyHorizontalFinalPreserved": "outputs/thinking-anchors/final-v1/video.mp4",
+  "portraitHistoryPreserved": "portrait-production.json",
+  "segmentHistory": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        12
+      ],
+      "status": "needs-landscape-layout",
+      "priorContentApproval": "portrait-opening-v2-acceptance.json",
+      "userApproved": false
+    },
+    {
+      "id": "mechanism",
+      "rangeSeconds": [
+        12,
+        24
+      ],
+      "status": "needs-landscape-layout",
+      "priorContentApproval": "portrait-mechanism-v1-acceptance.json",
+      "userApproved": false
+    }
+  ],
+  "continuityOutput": "outputs/thinking-anchors/landscape-used-v1/continuity-0-52.mp4",
+  "revisionHistory": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v1",
+      "status": "needs-revision",
+      "userApproved": false,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v1/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v1/review.html",
+      "feedback": "开头未能立即交代讲解主题",
+      "feedbackRecord": "landscape-opening-v1-feedback.json"
+    }
+  ]
+}

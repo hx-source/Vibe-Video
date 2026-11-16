@@ -18,6 +18,24 @@
       "path": "tcp-handshake",
       "kind": "topic-example",
       "status": "migration-validation"
+    },
+    {
+      "id": "anchoring-effect",
+      "path": "anchoring-effect",
+      "kind": "topic",
+      "status": "draft"
+    },
+    {
+      "id": "moon-match-sample",
+      "path": "moon-match-sample",
+      "kind": "topic",
+      "status": "draft"
+    },
+    {
+      "id": "thinking-anchors",
+      "path": "thinking-anchors",
+      "kind": "topic",
+      "status": "draft"
     }
   ]
 }

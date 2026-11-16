@@ -1,0 +1,22 @@
+{
+  "revision": "landscape-opening-v2",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-opening-v2",
+  "decision": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-focus-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-opening-v2/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-opening-v2/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-opening-v2/Opening.tsx",
+  "note": "新版Opening.tsx使用0–719帧，首帧提出199没变为何想买的问题并补充对象、判断短句；720–1139继续原landscape-focus-v1场景。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v2/Actor.tsx"
+}

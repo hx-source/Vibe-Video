@@ -1,0 +1,152 @@
+{
+  "segments": [
+    {
+      "id": "deal",
+      "durationSeconds": 14,
+      "intent": "直播间从999降到199，为什么会心动？",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.3,
+        "offer": 1,
+        "counter": 5,
+        "celebrate": 8,
+        "question": 11,
+        "drop": 1.8,
+        "sale": 3.6,
+        "pay": 4.8,
+        "reach": 7,
+        "pause": 10,
+        "cover": 10.5,
+        "compare": 11.3
+      },
+      "props": {
+        "title": "从999降到199，你心动了吗？",
+        "mode": "deal",
+        "note": "生活情境为原创示例｜金额虚构",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "trap",
+      "durationSeconds": 10,
+      "intent": "直播间里的999，怎样成为判断199的参照",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.3,
+        "anchor": 1.2,
+        "thought": 3.5,
+        "pull": 6,
+        "result": 8,
+        "shift": 0.3,
+        "recall": 1.2,
+        "compare": 3.2,
+        "name": 6.2,
+        "question": 7.3
+      },
+      "props": {
+        "title": "199便宜吗，你在和谁比较？",
+        "mode": "trap",
+        "note": "《思考，快与慢》· 锚定效应｜机制示意",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "rewind",
+      "durationSeconds": 8,
+      "intent": "回答判断依据：主动找反证，查同款可比价，再按需求预算决定",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.2,
+        "reset": 1,
+        "ask": 3,
+        "target": 5.5,
+        "search": 0.3,
+        "history": 1.25,
+        "other": 2.55,
+        "compare": 3.25,
+        "decision": 5.3
+      },
+      "props": {
+        "title": "别只看降价，先查可比价格",
+        "mode": "rewind",
+        "note": "书中原则：寻找反对锚点的理由｜概念转述",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "evidence",
+      "durationSeconds": 14,
+      "intent": "把直播间核查依据的方法用于二手砍价：检查成色配件，核对可比成交",
+      "sceneType": "anchor-evidence-motion",
+      "events": {
+        "reveal": 0.2,
+        "inspect": 2.05,
+        "condition": 2.7,
+        "records": 5.6,
+        "range": 8.8,
+        "settle": 10.8,
+        "accessory-check": 4,
+        "case-bridge": 0.3,
+        "case-ready": 1.8
+      },
+      "props": {
+        "title": "二手砍价，也先找依据",
+        "mode": "evidence",
+        "note": "反向思考的生活化应用｜商品与成交记录均为剧情设定",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "reprice",
+      "durationSeconds": 12,
+      "intent": "结合可比成交、磨损与配件说明自己的报价，谈不拢也可以不成交",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.2,
+        "reason": 1,
+        "offer": 3.1,
+        "reply": 6,
+        "exit": 9.5,
+        "basis": 0.3,
+        "leave": 8.5,
+        "choice": 9.1
+      },
+      "props": {
+        "title": "依据讲清楚，价格不合适就不成交",
+        "mode": "reprice",
+        "note": "价格比较为生活化应用｜方法帮助减少影响，不保证消除偏差",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "close",
+      "durationSeconds": 12,
+      "intent": "把两个案例归纳为问依据、找反证、比较可比信息、按需决定",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.2,
+        "first": 0.5,
+        "second": 2,
+        "third": 3.5,
+        "result": 4.5,
+        "ask": 0.3,
+        "counter": 2,
+        "compare": 3.7,
+        "decide": 5.4,
+        "takeaway": 7
+      },
+      "props": {
+        "title": "先找依据，再做决定",
+        "mode": "close",
+        "note": "《思考，快与慢》锚定相关原则的生活化应用；方法帮助减少影响",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    }
+  ]
+}

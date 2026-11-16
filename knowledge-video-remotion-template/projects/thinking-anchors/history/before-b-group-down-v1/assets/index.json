@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "anchors-bed",
+      "path": "storytelling.m4a",
+      "type": "audio",
+      "source": "用户明确指定 D:/Documents/dy/音频/02_情感话题_故事讲述.m4a",
+      "license": "用户提供用于本期本地制作；公开传播权未核实"
+    },
+    {
+      "id": "wheel-stop",
+      "path": "wheel-stop.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：转盘停止；不是配乐或AI作曲",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "muted-noise-click",
+        "pitches": [],
+        "durationSeconds": 0.13,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.1275,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "bubble-pop",
+      "path": "bubble-pop.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：比较气泡出现；不是配乐或AI作曲",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "soft-noise-pop",
+        "pitches": [],
+        "durationSeconds": 0.16,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.1575,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "result-land",
+      "path": "result-land.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：统计结果落定；不是配乐或AI作曲",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "soft-noise-tap",
+        "pitches": [],
+        "durationSeconds": 0.23,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.2275,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "foley-paper-pop",
+      "path": "action-foley/paper-pop.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "paper-pop",
+        "pitches": [],
+        "durationSeconds": 0.28,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.2,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-paper-flip",
+      "path": "action-foley/paper-flip.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "paper-flip",
+        "pitches": [],
+        "durationSeconds": 0.28,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.2,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-card-slide",
+      "path": "action-foley/card-slide.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "card-slide",
+        "pitches": [],
+        "durationSeconds": 0.48,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.39999999999999997,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-card-drag",
+      "path": "action-foley/card-drag.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "card-drag",
+        "pitches": [],
+        "durationSeconds": 1.2,
+        "attackSeconds": 0.004,
+        "tailSeconds": 1.1199999999999999,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-elastic-pull",
+      "path": "action-foley/elastic-pull.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "elastic-pull",
+        "pitches": [],
+        "durationSeconds": 1.2,
+        "attackSeconds": 0.004,
+        "tailSeconds": 1.1199999999999999,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-wood-tap",
+      "path": "action-foley/wood-tap.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "wood-tap",
+        "pitches": [],
+        "durationSeconds": 0.22,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.14,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-soft-land",
+      "path": "action-foley/soft-land.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "soft-land",
+        "pitches": [],
+        "durationSeconds": 0.3,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.21999999999999997,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-bag-drop",
+      "path": "action-foley/bag-drop.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "bag-drop",
+        "pitches": [],
+        "durationSeconds": 0.31,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.22999999999999998,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-ui-tap",
+      "path": "action-foley/ui-tap.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "ui-tap",
+        "pitches": [],
+        "durationSeconds": 0.16,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.08,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-brake-stop",
+      "path": "action-foley/brake-stop.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "brake-stop",
+        "pitches": [],
+        "durationSeconds": 0.36,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.27999999999999997,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-discovery-tick",
+      "path": "action-foley/discovery-tick.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "discovery-tick",
+        "pitches": [],
+        "durationSeconds": 0.3,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.21999999999999997,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-glass-tap",
+      "path": "action-foley/glass-tap.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "glass-tap",
+        "pitches": [],
+        "durationSeconds": 0.25,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.16999999999999998,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-scan-brush",
+      "path": "action-foley/scan-brush.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "scan-brush",
+        "pitches": [],
+        "durationSeconds": 0.48,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.39999999999999997,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-celebrate",
+      "path": "action-foley/celebrate.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "celebrate",
+        "pitches": [],
+        "durationSeconds": 0.45,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.37,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "foley-rewind",
+      "path": "action-foley/rewind.wav",
+      "type": "audio",
+      "source": "本期build-action-foley.py原创程序拟音；不是实录，也不是AI作曲",
+      "license": "本期原创，无第三方采样",
+      "sound": {
+        "instrument": "rewind",
+        "pitches": [],
+        "durationSeconds": 0.65,
+        "attackSeconds": 0.004,
+        "tailSeconds": 0.5700000000000001,
+        "tags": [
+          "original",
+          "cartoon",
+          "action-foley",
+          "percussive"
+        ],
+        "roles": [
+          "accent",
+          "start",
+          "end",
+          "transition",
+          "process"
+        ]
+      }
+    },
+    {
+      "id": "palette-cloth-one",
+      "path": "sound-palettes/cloth-one.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/cloth1.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=ddb93a3671233f95da0e0b10367f082f7eb42fa6caaddcf776410aa8833c747d; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "cloth-friction",
+        "pitches": [],
+        "durationSeconds": 0.6610430839002267,
+        "tags": [
+          "cloth",
+          "friction",
+          "nonmelodic"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-cloth-two",
+      "path": "sound-palettes/cloth-two.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/cloth2.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=8a7451193c38bc05483aec25dd193e163a15d44cf7fff04ac7912573231b0201; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "cloth-friction",
+        "pitches": [],
+        "durationSeconds": 0.4150793650793651,
+        "tags": [
+          "cloth",
+          "friction",
+          "nonmelodic"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-paper-long",
+      "path": "sound-palettes/paper-long.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/bookFlip2.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=3409042acbfaebc24c1a6327dc073e36f9250841712e96c5040da566a97df73c; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "paper-page",
+        "pitches": [],
+        "durationSeconds": 0.43045351473922905,
+        "tags": [
+          "paper",
+          "page",
+          "texture"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-paper-short",
+      "path": "sound-palettes/paper-short.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/bookFlip3.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=c85db5dceb3f1df073e960630277eaa88a5afda0477c1ddd68dad707621767be; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "paper-page",
+        "pitches": [],
+        "durationSeconds": 0.23061224489795917,
+        "tags": [
+          "paper",
+          "page",
+          "texture"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-metal-detail",
+      "path": "sound-palettes/metal-detail.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/metalClick.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=9851a69d0c613e13bceef08060ecc4148f098ef487927cbebe270d642398a3b3; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "small-metal",
+        "pitches": [],
+        "durationSeconds": 0.4458503401360544,
+        "tags": [
+          "metal",
+          "object",
+          "detail"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-comic-creak",
+      "path": "sound-palettes/comic-creak.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/creak1.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=8a346186fd297254248cab8e8117060a52a5cf2a84f603153a762108550ea95e; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "creaking-object",
+        "pitches": [],
+        "durationSeconds": 0.6610430839002267,
+        "tags": [
+          "creak",
+          "comic",
+          "texture"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-comic-question",
+      "path": "sound-palettes/comic-question.wav",
+      "type": "audio",
+      "source": "Kenney / interface-sounds / Audio/question_001.ogg; https://kenney.nl/assets/interface-sounds; original SHA256=abb8f9e4eb2071491b0b15f84ee302386b1847609310c1b000ae174639a6cc5a; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "interface-question",
+        "pitches": [],
+        "durationSeconds": 0.4906802721088435,
+        "tags": [
+          "question",
+          "comic",
+          "pitched"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-comic-swipe",
+      "path": "sound-palettes/comic-swipe.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/cloth4.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=e7ab9a6c4466dea874196c61f59bf1da05cfe58748f42fadd695d441a154a99b; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "cloth-sweep",
+        "pitches": [],
+        "durationSeconds": 0.3843537414965986,
+        "tags": [
+          "cloth",
+          "sweep",
+          "motion"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-glass-clue",
+      "path": "sound-palettes/glass-clue.wav",
+      "type": "audio",
+      "source": "Kenney / interface-sounds / Audio/glass_001.ogg; https://kenney.nl/assets/interface-sounds; original SHA256=183eebee20eb0a532b0b85104d139cbf2673eb66d95c3cc733ac9ea98362e7e8; added short delay tail; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "glass-like-interface",
+        "pitches": [],
+        "durationSeconds": 1.0755328798185941,
+        "tags": [
+          "glass",
+          "clue",
+          "sparse"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-glass-finish",
+      "path": "sound-palettes/glass-finish.wav",
+      "type": "audio",
+      "source": "Kenney / interface-sounds / Audio/glass_004.ogg; https://kenney.nl/assets/interface-sounds; original SHA256=2379b58f953e3d86982aa8cddcae763022c6258e9820171bf905ce58b4e97766; added short delay tail; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "glass-like-interface",
+        "pitches": [],
+        "durationSeconds": 1.492267573696145,
+        "tags": [
+          "glass",
+          "tail",
+          "sparse"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-quiet-sweep",
+      "path": "sound-palettes/quiet-sweep.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/cloth3.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=a48632d17a4f1416541d261a32a31612e01267144c407fa3ecab3ff410f0085b; active-RMS gain and gentle peak control",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "cloth-sweep",
+        "pitches": [],
+        "durationSeconds": 0.4765759637188209,
+        "tags": [
+          "cloth",
+          "sweep",
+          "sparse"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "palette-comic-glide",
+      "path": "sound-palettes/comic-glide.wav",
+      "type": "audio",
+      "source": "本期 build-sound-palettes.py 原创连续滑音合成；不是录音素材",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "continuous-whistle",
+        "pitches": [],
+        "durationSeconds": 0.74,
+        "tags": [
+          "whistle",
+          "glide",
+          "synthetic",
+          "comic"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "paper-slide-soft-v1",
+      "path": "sound-palettes/paper-slide-soft-v1.wav",
+      "type": "audio",
+      "source": "Kenney / RPG Audio / Audio/bookFlip1.ogg; https://kenney.nl/assets/rpg-audio; source SHA256=fa81ac2fedc8c641661b87e349630a36c9800e795e0c800e029214efdbe26a7d; excerpt 0.10–0.50s, band filtering, gentle level control and fades; no closing transient",
+      "license": "Creative Commons Zero, CC0; original License.txt retained in sound-palette-sources/rpg-audio",
+      "sound": {
+        "instrument": "paper-friction",
+        "pitches": [],
+        "durationSeconds": 0.4,
+        "tags": [
+          "paper",
+          "friction",
+          "soft",
+          "nonmelodic"
+        ],
+        "roles": [
+          "process",
+          "transition"
+        ]
+      }
+    },
+    {
+      "id": "record-paper-1-v1",
+      "path": "sound-palettes/record-paper-1-v1.wav",
+      "type": "audio",
+      "source": "Kenney / RPG Audio / Audio/bookFlip2.ogg; https://kenney.nl/assets/rpg-audio; excerpt 0.04–0.24s; band-filtered, levelled and faded; source SHA256=3409042acbfaebc24c1a6327dc073e36f9250841712e96c5040da566a97df73c",
+      "license": "Creative Commons Zero, CC0; source License.txt retained locally",
+      "sound": {
+        "instrument": "short-paper-friction",
+        "pitches": [],
+        "durationSeconds": 0.2,
+        "tags": [
+          "paper",
+          "short",
+          "dry",
+          "nonmelodic"
+        ],
+        "roles": [
+          "accent",
+          "start"
+        ]
+      }
+    },
+    {
+      "id": "record-paper-2-v1",
+      "path": "sound-palettes/record-paper-2-v1.wav",
+      "type": "audio",
+      "source": "Kenney / RPG Audio / Audio/bookFlip3.ogg; https://kenney.nl/assets/rpg-audio; excerpt 0.015–0.195s; band-filtered, levelled and faded; source SHA256=c85db5dceb3f1df073e960630277eaa88a5afda0477c1ddd68dad707621767be",
+      "license": "Creative Commons Zero, CC0; source License.txt retained locally",
+      "sound": {
+        "instrument": "short-paper-friction",
+        "pitches": [],
+        "durationSeconds": 0.18034013605442176,
+        "tags": [
+          "paper",
+          "short",
+          "dry",
+          "nonmelodic"
+        ],
+        "roles": [
+          "accent",
+          "start"
+        ]
+      }
+    },
+    {
+      "id": "record-paper-3-v1",
+      "path": "sound-palettes/record-paper-3-v1.wav",
+      "type": "audio",
+      "source": "Kenney / RPG Audio / Audio/bookFlip1.ogg; https://kenney.nl/assets/rpg-audio; excerpt 0.28–0.48s; band-filtered, levelled and faded; source SHA256=fa81ac2fedc8c641661b87e349630a36c9800e795e0c800e029214efdbe26a7d",
+      "license": "Creative Commons Zero, CC0; source License.txt retained locally",
+      "sound": {
+        "instrument": "short-paper-friction",
+        "pitches": [],
+        "durationSeconds": 0.20931972789115647,
+        "tags": [
+          "paper",
+          "short",
+          "dry",
+          "nonmelodic"
+        ],
+        "roles": [
+          "accent",
+          "start"
+        ]
+      }
+    }
+  ]
+}

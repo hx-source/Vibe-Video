@@ -1,0 +1,149 @@
+{
+  "segments": [
+    {
+      "id": "deal",
+      "durationSeconds": 14,
+      "intent": "砍掉 400 元，真的省了吗？",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.3,
+        "offer": 1,
+        "counter": 5,
+        "celebrate": 8,
+        "question": 11
+      },
+      "props": {
+        "title": "砍掉 400 元，真的省了吗？",
+        "mode": "deal",
+        "note": "生活情境为原创示例｜金额虚构"
+      }
+    },
+    {
+      "id": "trap",
+      "durationSeconds": 10,
+      "intent": "第一个数字，成了你的起点",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.3,
+        "anchor": 1.2,
+        "thought": 3.5,
+        "pull": 6,
+        "result": 8
+      },
+      "props": {
+        "title": "第一个数字，成了你的起点",
+        "mode": "trap",
+        "note": "《思考，快与慢》· 锚定效应｜机制示意"
+      }
+    },
+    {
+      "id": "rewind",
+      "durationSeconds": 8,
+      "intent": "换一种谈法，再来一次",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.2,
+        "reset": 1,
+        "ask": 3,
+        "target": 5.5
+      },
+      "props": {
+        "title": "换一种谈法，再来一次",
+        "mode": "rewind",
+        "note": "书中原则：寻找反对锚点的理由｜概念转述"
+      }
+    },
+    {
+      "id": "evidence",
+      "durationSeconds": 14,
+      "intent": "先找不支持这个报价的证据",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.2,
+        "inspect": 1.2,
+        "condition": 2,
+        "records": 5,
+        "range": 8,
+        "settle": 10
+      },
+      "props": {
+        "title": "先找不支持这个报价的证据",
+        "mode": "evidence",
+        "note": "反向思考的生活化应用｜商品与成交记录均为剧情设定"
+      }
+    },
+    {
+      "id": "reprice",
+      "durationSeconds": 12,
+      "intent": "按查到的依据出价",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.2,
+        "reason": 1,
+        "offer": 4,
+        "reply": 7,
+        "exit": 9.5
+      },
+      "props": {
+        "title": "按查到的依据出价",
+        "mode": "reprice",
+        "note": "价格比较为生活化应用｜方法帮助减少影响，不保证消除偏差"
+      }
+    },
+    {
+      "id": "shop",
+      "durationSeconds": 12,
+      "intent": "“原价 999”，让 199 显得便宜",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.3,
+        "old": 1,
+        "sale": 3,
+        "joy": 5,
+        "pause": 8
+      },
+      "props": {
+        "title": "“原价 999”，让 199 显得便宜",
+        "mode": "shop",
+        "note": "生活情境为原创示例｜划线价不自动证明商品价值"
+      }
+    },
+    {
+      "id": "compare",
+      "durationSeconds": 12,
+      "intent": "把折扣，换成真实价格来比",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.3,
+        "hide": 1,
+        "history": 3,
+        "others": 5,
+        "decision": 8,
+        "settle": 10
+      },
+      "props": {
+        "title": "把折扣，换成真实价格来比",
+        "mode": "compare",
+        "note": "查价、预算为书中原则的生活化应用｜金额虚构"
+      }
+    },
+    {
+      "id": "close",
+      "durationSeconds": 6,
+      "intent": "下一次，先检查那个数字",
+      "sceneType": "anchor-life",
+      "events": {
+        "reveal": 0.2,
+        "first": 0.5,
+        "second": 2,
+        "third": 3.5,
+        "result": 4.5
+      },
+      "props": {
+        "title": "下一次，先检查那个数字",
+        "mode": "close",
+        "note": "依据《思考，快与慢》锚定相关讨论改编"
+      }
+    }
+  ]
+}

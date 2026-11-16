@@ -1,0 +1,64 @@
+{
+  "state": "portrait-opening-prototype-ready-for-review",
+  "revision": "portrait-opening-v2",
+  "output": "outputs/thinking-anchors/portrait-opening-v2/video.mp4",
+  "review": "outputs/thinking-anchors/portrait-opening-v2/compare.html",
+  "storyboard": "outputs/thinking-anchors/portrait-opening-v2/storyboard.png",
+  "source": "projects/thinking-anchors/portrait-opening-v2",
+  "durationSeconds": 12,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "aspectRatio": "9:16",
+  "fps": 30,
+  "frames": 360,
+  "noNarration": true,
+  "music": "02_情感话题_故事讲述.m4a",
+  "musicSourceRange": [
+    0,
+    12
+  ],
+  "musicSpeed": 1,
+  "effects": 4,
+  "content": "购物场景内999→199→伸手想买→收手查另一家189→相差10元并重新判断",
+  "technicalChecks": {
+    "everyFrameVisualBounds": 360,
+    "textCollisions": 0,
+    "audioClippedSamples": 0,
+    "audioWarnings": [],
+    "encodedAudio": {
+      "integratedLufs": -18.62,
+      "truePeakDb": -3.18,
+      "loudnessRangeLu": 1.3,
+      "thresholdLufs": -28.62,
+      "method": "ffmpeg-loudnorm-input",
+      "silent": false
+    },
+    "browserPlayback": true,
+    "mainProjectAndFinalVideoPreserved": true
+  },
+  "userApproved": false,
+  "fullPortraitFilmProduced": false,
+  "assistantListening": "not-performed",
+  "musicBeatCalibration": "automatic candidate only; no human listening calibration",
+  "referenceStudy": "outputs/thinking-anchors/reference-study-v1/analysis.md",
+  "borrowedMethods": [
+    "场景层次与主体占幅",
+    "人物与购买动作交互",
+    "同一商品在屏幕内连续滑换",
+    "镜头推进与比较背景退后",
+    "价格关系线连续形成"
+  ],
+  "previousVersion": "outputs/thinking-anchors/portrait-opening-v1/video.mp4",
+  "comparison": {
+    "firstVersionSourcesUnchanged": true,
+    "firstVersionVideoUnchanged": true,
+    "mixPcmIdentical": true,
+    "musicPcmIdentical": true,
+    "effectsPcmIdentical": true,
+    "switchPreservesTime": true,
+    "referenceStudy": "outputs/thinking-anchors/reference-study-v1/analysis.md",
+    "studyMethod": "opening frames at 1s, complete-video keyframes at 8s, three transition windows at 0.2s; no complete manual playback or audio listening claimed"
+  }
+}

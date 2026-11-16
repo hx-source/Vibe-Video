@@ -1,0 +1,33 @@
+{
+  "scope": [
+    19.2,
+    22.4
+  ],
+  "previousRevision": "landscape-opening-v3",
+  "preservedPictureRanges": [
+    [
+      0,
+      19.2
+    ],
+    [
+      23.5,
+      38
+    ]
+  ],
+  "durationSeconds": 24,
+  "topicLeadAt": 19.2,
+  "mainTermAt": 19.4,
+  "mainTermFullyVisibleAt": 19.65,
+  "questionAt": 22.4,
+  "musicChanged": false,
+  "encodedAudioChanged": false,
+  "soundRebinding": {
+    "id": "hook-question",
+    "previousEvent": "opening.question",
+    "newEvent": "opening.topicUnderline",
+    "absoluteAt": 21.18,
+    "sourceAndGainUnchanged": true
+  },
+  "newVideoUserApproved": false,
+  "assistantListening": "not-performed"
+}

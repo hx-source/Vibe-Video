@@ -1,0 +1,19 @@
+{
+ "schemaVersion":1,
+ "id":"used-evidence",
+ "sceneType":"anchor-landscape-used",
+ "video":{"width":1920,"height":1080,"fps":30},
+ "rangeSeconds":[38,52],"durationSeconds":14,
+ "events":{"switch":0.3,"inspect":2,"missing":3.5,"match":5,"condition":5.35,"parts":5.7,"sale1":6.3,"sale2":7.5,"sale3":8.7,"range":10,"compare":11.3},
+ "quote":800,"sales":[620,650,680],
+ "captions":[
+  {"from":0,"to":2,"text":"二手交易也一样。一台二手相机，卖家开价800。"},
+  {"from":2,"to":3.5,"text":"先检查商品：外壳有磨损。"},
+  {"from":3.5,"to":5,"text":"还缺充电器，要记下配件情况。"},
+  {"from":5,"to":6.3,"text":"查同款、成色及配件相近的实际成交，不只看挂牌价。"},
+  {"from":6.3,"to":10,"text":"三笔示例成交依次为620、650、680。"},
+  {"from":10,"to":11.3,"text":"这组示例的成交参考区间为620到680。"},
+  {"from":11.3,"to":14,"text":"开价800高于这组参考，还要结合本机状况，带着依据再谈价。"}
+ ],
+ "userApproved":false
+}

@@ -1,0 +1,14 @@
+{
+  "revision": "landscape-ending-v1",
+  "rangeSeconds": [
+    64,
+    74
+  ],
+  "status": "user-approved",
+  "feedback": "这个收尾可以，接下来把整条74秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+  "userApproved": true,
+  "video": "outputs/thinking-anchors/landscape-ending-v1/video.mp4",
+  "videoSha256": "9d9c9cd6067bc6616c5995d93eb8a84df2731622bf68f220d8cd1b1a7f86a123",
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "用户认可64–74秒收尾，并明确授权74秒整片统一检查和最终导出；不推断最终新文件已被用户完整观看或试听。"
+}

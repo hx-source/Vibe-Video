@@ -1,0 +1,368 @@
+{
+  "strategy": "Complete and review each segment, then join and review continuity",
+  "currentSegment": null,
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v4",
+      "status": "approved",
+      "userApproved": true,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-v4-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v4/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v4/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v4/review.html",
+      "feedback": "可以",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-opening-v4",
+      "approval": "landscape-opening-v4-acceptance.json"
+    },
+    {
+      "id": "decision",
+      "rangeSeconds": [
+        24,
+        38
+      ],
+      "revision": "landscape-focus-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+      "pictureSource": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+      "visualDirectionApproved": true,
+      "directionApproval": "landscape-focus-v1-direction-approval.json",
+      "audioListened": null,
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "used-evidence",
+      "rangeSeconds": [
+        38,
+        52
+      ],
+      "revision": "landscape-used-v1",
+      "status": "approved",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-used-v1/Used.tsx",
+      "output": "outputs/thinking-anchors/landscape-used-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-used-v1/review.html",
+      "approval": "landscape-used-v1-acceptance.json",
+      "feedback": "这部分可以，接下来继续制作52秒之后的内容，衔接前面的成交区间和商品状况，讲清楚怎么有依据地出价，以及价格不合适时可以不成交，继续保持横屏、漫画风格和02背景音乐。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "used-offer",
+      "rangeSeconds": [
+        52,
+        64
+      ],
+      "revision": "landscape-offer-v1",
+      "status": "approved",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-offer-v1/Offer.tsx",
+      "output": "outputs/thinking-anchors/landscape-offer-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-offer-v1/review.html",
+      "approval": "landscape-offer-v1-acceptance.json",
+      "feedback": "这部分可以，接下来继续制作64秒之后的收尾，把直播间降价和二手砍价两个案例的方法总结清楚，保持横屏、漫画风格和02背景音乐，减少同屏文字，做好后先给我看一下效果。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    },
+    {
+      "id": "closing",
+      "rangeSeconds": [
+        64,
+        74
+      ],
+      "revision": "landscape-ending-v1",
+      "status": "approved",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-ending-v1/Ending.tsx",
+      "output": "outputs/thinking-anchors/landscape-ending-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-ending-v1/review.html",
+      "approval": "landscape-ending-v1-acceptance.json",
+      "feedback": "这个收尾可以，接下来把整条74秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1"
+    }
+  ],
+  "fullFilmApproval": false,
+  "nextContinuityReview": "已合入认可开头，74秒新版完整导出与技术复查完成；未记录人工试听",
+  "retiredDraftSegments": [
+    {
+      "id": "shop",
+      "from": 58,
+      "to": 70,
+      "status": "existing-draft"
+    },
+    {
+      "id": "compare",
+      "from": 70,
+      "to": 82,
+      "status": "existing-draft"
+    },
+    {
+      "id": "close",
+      "from": 82,
+      "to": 88,
+      "status": "existing-draft"
+    }
+  ],
+  "fullDurationSeconds": 70,
+  "fullContentDraftReady": true,
+  "finalExport": {
+    "state": "final-complete-video-exported",
+    "revision": "landscape-final-v2",
+    "output": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+    "review": "outputs/thinking-anchors/landscape-final-v2/review.html",
+    "qualityReview": "outputs/thinking-anchors/landscape-final-v2/quality-review.md",
+    "manifest": "outputs/thinking-anchors/landscape-final-v2/manifest.json",
+    "captions": "outputs/thinking-anchors/landscape-final-v2/captions.srt",
+    "durationSeconds": 74,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "frames": 2220,
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "audioPlan": "projects/thinking-anchors/landscape-final-v2/audio-plan-used.json",
+    "sourceMixPreserved": true,
+    "soundCueCount": 38,
+    "openingUserApproved": true,
+    "openingApproval": "landscape-opening-v4-acceptance.json",
+    "fullFilmUserApproval": false,
+    "assistantHumanListening": "not-performed",
+    "technicalChecks": {
+      "videoSha256": "d91ae85468e7e5fff46485f0b2ff6890e9b9f30d42231e7256515dba86928c6e",
+      "durationSeconds": 74,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 2220,
+      "fullDecodePassed": true,
+      "maxFrameTimestampError": 3.333333467026023e-7,
+      "approvedOpening720PixelsUnchanged": true,
+      "following1500PixelsUnchanged": true,
+      "pixelHashes": {
+        "opening": "SHA256=6df4f959561853af7d9c5ac1f096847c71689a686c4410cee0aa96ad85de395e",
+        "following": "SHA256=3244f732a7a22c1c54a30e36ea76b260d862f5c967173701476af6fcb8b17a83"
+      },
+      "audio": {
+        "integratedLufs": -18.32,
+        "truePeakDb": -2.4,
+        "loudnessRangeLu": 3.2,
+        "thresholdLufs": -28.34,
+        "method": "ffmpeg-loudnorm-input",
+        "silent": false,
+        "encodedPacketsUnchanged": true,
+        "audioHash": "SHA256=119f8c60fcd5393bc790fe2f09fb34b4129f12d4476e7e467d6dd65dc3309124",
+        "assistantListening": "not-performed"
+      },
+      "sourceVisualReviews": {
+        "opening": "outputs/thinking-anchors/landscape-opening-v4/visual-checks.json",
+        "following": "outputs/thinking-anchors/landscape-final-v1/audit/source-visual-review.json"
+      },
+      "browserFullPlayback": {
+        "passed": true,
+        "videoSha256": "d91ae85468e7e5fff46485f0b2ff6890e9b9f30d42231e7256515dba86928c6e",
+        "playedFromStartToEnd": true,
+        "playbackRate": 1,
+        "testMuted": true,
+        "navigationWorks": true
+      },
+      "assistantListening": "not-performed",
+      "encodedConceptAnd24SecondTransitionInspected": true
+    },
+    "previousFinal": "outputs/thinking-anchors/landscape-final-v1/video.mp4",
+    "videoSha256": "d91ae85468e7e5fff46485f0b2ff6890e9b9f30d42231e7256515dba86928c6e",
+    "externalPublication": false
+  },
+  "portraitOpeningPrototype": {
+    "revision": "portrait-opening-v2",
+    "rangeSeconds": [
+      0,
+      12
+    ],
+    "status": "approved",
+    "output": "outputs/thinking-anchors/portrait-opening-v2/video.mp4",
+    "userApproved": true,
+    "scope": "独立竖屏开头；未改写原横屏分段的认可记录",
+    "approval": "portrait-opening-v2-acceptance.json"
+  },
+  "portraitProduction": {
+    "trackingFile": "portrait-production.json",
+    "currentSegment": "decision",
+    "rangeSeconds": [
+      24,
+      38
+    ],
+    "status": "preview-ready",
+    "output": "outputs/thinking-anchors/portrait-character-motion-v1/continuity-0-38.mp4",
+    "visualRevision": "portrait-character-motion-v1",
+    "review": "outputs/thinking-anchors/portrait-character-motion-v1/compare.html"
+  },
+  "currentFormat": "landscape",
+  "activeTrackingFile": "current-production.json",
+  "landscapeFocusProduction": {
+    "revision": "landscape-focus-v1",
+    "status": "preview-ready",
+    "rangeSeconds": [
+      24,
+      38
+    ],
+    "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+    "review": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspectRatio": "16:9",
+      "style": "comic",
+      "music": "02_情感话题_故事讲述.m4a",
+      "noNarration": true
+    },
+    "audioPacketsUnchanged": true,
+    "userRequested": true,
+    "userApproved": false,
+    "fullFilmProduced": false
+  },
+  "landscapeOpeningProduction": {
+    "revision": "landscape-opening-v2",
+    "status": "approved",
+    "rangeSeconds": [
+      0,
+      24
+    ],
+    "output": "outputs/thinking-anchors/landscape-opening-v2/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/landscape-opening-v2/continuity-0-38.mp4",
+    "review": "outputs/thinking-anchors/landscape-opening-v2/review.html",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspectRatio": "16:9",
+      "style": "comic",
+      "music": "02_情感话题_故事讲述.m4a",
+      "noNarration": true
+    },
+    "hook": "199没变，怎么突然就想买了？",
+    "objectLabel": "一件衣服",
+    "price199Fixed": true,
+    "audioPacketsUnchanged": true,
+    "following24to38DecodedPixelsUnchanged": true,
+    "contentApproved": true,
+    "userApproved": true,
+    "fullFilmProduced": false,
+    "assistantListening": "not-performed",
+    "approval": "landscape-opening-v2-acceptance.json"
+  },
+  "landscapeUsedProduction": {
+    "revision": "landscape-used-v1",
+    "status": "approved",
+    "rangeSeconds": [
+      38,
+      52
+    ],
+    "output": "outputs/thinking-anchors/landscape-used-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/landscape-used-v1/continuity-0-52.mp4",
+    "review": "outputs/thinking-anchors/landscape-used-v1/review.html",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspectRatio": "16:9",
+      "style": "comic",
+      "music": "02_情感话题_故事讲述.m4a",
+      "noNarration": true
+    },
+    "prior0to24UserApproved": true,
+    "prior0to38DecodedPixelsUnchanged": true,
+    "priorMixPcmUnchangedUntilSeconds": 37.82,
+    "removedPreviewFade": [
+      37.82,
+      38
+    ],
+    "userApproved": true,
+    "fullFilmProduced": false,
+    "assistantListening": "not-performed",
+    "approval": "landscape-used-v1-acceptance.json"
+  },
+  "landscapeOfferProduction": {
+    "revision": "landscape-offer-v1",
+    "status": "approved",
+    "rangeSeconds": [
+      52,
+      64
+    ],
+    "output": "outputs/thinking-anchors/landscape-offer-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/landscape-offer-v1/continuity-0-64.mp4",
+    "review": "outputs/thinking-anchors/landscape-offer-v1/review.html",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspectRatio": "16:9",
+      "style": "comic",
+      "music": "02_情感话题_故事讲述.m4a",
+      "noNarration": true
+    },
+    "prior38to52UserApproved": true,
+    "prior0to52DecodedPixelsUnchanged": true,
+    "priorMixPcmUnchangedUntilSeconds": 51.82,
+    "removedPreviewFade": [
+      51.82,
+      52
+    ],
+    "userApproved": true,
+    "fullFilmProduced": false,
+    "assistantListening": "not-performed",
+    "approval": "landscape-offer-v1-acceptance.json"
+  },
+  "landscapeEndingProduction": {
+    "revision": "landscape-ending-v1",
+    "status": "preview-ready",
+    "rangeSeconds": [
+      64,
+      74
+    ],
+    "output": "outputs/thinking-anchors/landscape-ending-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/landscape-ending-v1/continuity-0-74.mp4",
+    "review": "outputs/thinking-anchors/landscape-ending-v1/review.html",
+    "video": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "aspectRatio": "16:9",
+      "style": "comic",
+      "music": "02_情感话题_故事讲述.m4a",
+      "noNarration": true
+    },
+    "prior52to64UserApproved": true,
+    "prior0to64DecodedPixelsUnchanged": true,
+    "priorMixPcmUnchangedUntilSeconds": 63.82,
+    "removedPreviewFade": [
+      63.82,
+      64
+    ],
+    "endingFade": [
+      72.8,
+      74
+    ],
+    "userApproved": false,
+    "fullContentDraftReady": true,
+    "fullPreviewProduced": true,
+    "fullFilmProduced": true,
+    "fullFilmStatus": "preview",
+    "fullFilmApproval": false,
+    "finalExportProduced": false,
+    "assistantListening": "not-performed"
+  },
+  "legacySegmentLedgerPreservedAt": "history/before-landscape-final-v1/segment-production.json"
+}

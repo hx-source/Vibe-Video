@@ -1,0 +1,21 @@
+{
+  "generatedFrom": "production-state.json",
+  "stateGeneration": 19,
+  "stateFingerprint": "5d5b76a78af9d25979786123e2e4c793763f7b20f8b92859d12a34dbc1cb4867",
+  "revision": "landscape-live-final-v1",
+  "sourceScopeSeconds": [
+    0,
+    52
+  ],
+  "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+  "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+  "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+  "audioPlan": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+  "board": "projects/thinking-anchors/landscape-label-v1/board.json",
+  "finalVideo": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+  "previewVideo": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+  "currentReview": "outputs/thinking-anchors/landscape-live-final-v1/review.html",
+  "plannedNextSegment": null
+}

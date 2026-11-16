@@ -1,0 +1,47 @@
+{
+  "previousRevision": "landscape-opening-v8",
+  "userConfirmation": "对的",
+  "scopeSeconds": [
+    [
+      17,
+      18
+    ],
+    [
+      18.98,
+      19.22
+    ]
+  ],
+  "changes": [
+    {
+      "at": 17,
+      "purpose": "界面切入",
+      "source": "palette-quiet-sweep",
+      "sourceRange": [
+        0.03,
+        0.28
+      ],
+      "duration": 0.25,
+      "gain": 0.45
+    },
+    {
+      "at": 18.98,
+      "purpose": "单次画强调线",
+      "source": "palette-paper-long",
+      "previousUse": "v8中17秒原纸张声",
+      "sourceRange": [
+        0,
+        0.23
+      ],
+      "duration": 0.23,
+      "speed": 1,
+      "gain": 0.6,
+      "replaces": "pencil-underline-recorded-v1"
+    }
+  ],
+  "pictureFramesUnchanged": 600,
+  "musicUnchanged": true,
+  "durationSeconds": 20,
+  "nextReasonSegmentPlanned": true,
+  "newVideoApproved": false,
+  "assistantListening": "not-performed"
+}

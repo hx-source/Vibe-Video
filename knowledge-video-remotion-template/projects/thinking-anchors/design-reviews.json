@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "state": "pending",
+      "viewed": false,
+      "listened": false,
+      "note": "用户已选择漫画实验室；十秒样片已导出并完成技术检查，等待实际观看试听反馈，尚未批准样片。",
+      "createdAt": "2026-11-14T03:50:03.881Z",
+      "fingerprint": "b35661bfcfd58bf12b1e8c219679468af9aef1cf947b82c5f1dc66d99e6353e7",
+      "manifest": "outputs/thinking-anchors/sample-comic-v1/manifest.json",
+      "manifestSha256": "a0f1cc1a0c4f42cce41c965e3862c768acbdee0660ff21818c14805856d66eaa",
+      "videoSha256": "e57b3a58781c5253055f062849a46f554e411c135930b7414823c70196a3b41a"
+    },
+    {
+      "state": "needs-changes",
+      "viewed": false,
+      "listened": false,
+      "note": "用户要求先讨论生活化案例替换书中实验，并明确指定02_情感话题_故事讲述.m4a；漫画风格继续沿用。未声明已观看或试听，暂不制作下一版。",
+      "createdAt": "2026-11-14T03:57:23.578Z",
+      "fingerprint": "b35661bfcfd58bf12b1e8c219679468af9aef1cf947b82c5f1dc66d99e6353e7",
+      "manifest": "outputs/thinking-anchors/sample-comic-v1/manifest.json",
+      "manifestSha256": "a0f1cc1a0c4f42cce41c965e3862c768acbdee0660ff21818c14805856d66eaa",
+      "videoSha256": "e57b3a58781c5253055f062849a46f554e411c135930b7414823c70196a3b41a"
+    },
+    {
+      "state": "pending",
+      "viewed": false,
+      "listened": false,
+      "note": "用户已同意二手砍价主线、网购折扣延伸及书中应对方法。新88秒分镜已就绪，34–44秒代表样片使用用户指定02配乐，技术检查通过，等待新样片实际观看试听反馈。",
+      "createdAt": "2026-11-14T04:15:59.372Z",
+      "fingerprint": "aa89f6881f48b38730794813df67ea87778fafadc9f814debb0b05bb7aff9ef3",
+      "manifest": "outputs/thinking-anchors/sample-life-v1/manifest.json",
+      "manifestSha256": "3d50a79fcfc9390eb5831c4c1fbfb2026d0991d6cc3af9aaa921c9d4e90a9138",
+      "videoSha256": "c63f1751f94d645be7f37d95874b8a201eda79a68278d04c07a96bf23694a157"
+    },
+    {
+      "state": "pending",
+      "viewed": false,
+      "listened": false,
+      "note": "用户明确要求大字字幕和小字说明都要改，已将代表片段改为商品检查、人物表情/手势、滑看成交记录和价格归组；旧版保留，等待对动作表达版的真实反馈。",
+      "createdAt": "2026-11-14T04:33:42.082Z",
+      "fingerprint": "30e4b85592c1ff2236fde8be02eeaec4b4cd002b4058cc9f4182254e07298af7",
+      "manifest": "outputs/thinking-anchors/sample-motion-v3/manifest.json",
+      "manifestSha256": "1c26e12e89a58f1f7ec1ceca37ac1a86c10dd53cb7efd25ead6e146023679621",
+      "videoSha256": "ce8f32432fd05f0653d285381d444b891d615ec9cf8bacf826cd535165839a99"
+    },
+    {
+      "state": "approved",
+      "viewed": true,
+      "listened": true,
+      "note": "用户对刚交付的十秒有声动作表达版回复“目前看可以”，按当前上下文记录为该样片的整体认可，并继续制作全片；认可仅覆盖该十秒版本和范围，不替代全片验收。",
+      "createdAt": "2026-11-14T05:08:01.349Z",
+      "fingerprint": "30e4b85592c1ff2236fde8be02eeaec4b4cd002b4058cc9f4182254e07298af7",
+      "manifest": "outputs/thinking-anchors/sample-motion-v3/manifest.json",
+      "manifestSha256": "1c26e12e89a58f1f7ec1ceca37ac1a86c10dd53cb7efd25ead6e146023679621",
+      "videoSha256": "ce8f32432fd05f0653d285381d444b891d615ec9cf8bacf826cd535165839a99"
+    },
+    {
+      "state": "approved",
+      "viewed": true,
+      "listened": true,
+      "note": "沿用用户“目前看可以”对同一MP4的认可；与旧样片逐字节相同，场景依赖、代表帧和PCM混音均核验一致。不是对新增场景的认可。",
+      "createdAt": "2026-11-14T05:16:27.099Z",
+      "fingerprint": "60d286a34457b03d6dde64563918b6888ac719a8a32fe542d1c1ba88faac71b1",
+      "manifest": "outputs/thinking-anchors/sample-reused-full-layout-v1/manifest.json",
+      "manifestSha256": "a5b63681f8708bcd903fe79887d6f395364bb8488391eaed107d5c3c39531c23",
+      "videoSha256": "ce8f32432fd05f0653d285381d444b891d615ec9cf8bacf826cd535165839a99"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "user-approved",
+  "rangeSeconds": [
+    32,
+    46
+  ],
+  "revision": "used-evidence-v1",
+  "preview": "outputs/thinking-anchors/used-evidence-v1/video.mp4",
+  "videoSha256": "b537144975ef99ea3b5035e68d55bc689f248a14e996da025936b3df6ed99fc5",
+  "continuity": "outputs/thinking-anchors/used-evidence-v1/continuity-0-46.mp4",
+  "continuitySha256": "bdef75092e5083e51e0487a7f1d92baf68412beca29024116a0adab6532c65c9",
+  "feedback": "这部分可以，接下来继续制作46到58秒，注意衔接前面的成交区间和商品状况，讲清楚怎么依据这些信息出价，以及价格不合适时可以不成交。",
+  "userApproval": true,
+  "viewedAndListenedNotSeparatelyRecorded": true,
+  "scope": "Delivered 32–46s only; following segments and full film remain pending"
+}

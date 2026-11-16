@@ -1,0 +1,19 @@
+{
+  "revision": "landscape-opening-v6",
+  "feedback": "对的，按照这个顺序进行修改",
+  "scope": [
+    17,
+    22.4
+  ],
+  "contentApproved": true,
+  "productionAuthorized": true,
+  "confirmedOrder": [
+    "生活现象",
+    "同衣同价判断变化",
+    "点题锚定效应",
+    "解释999成为参照",
+    "该拿什么比"
+  ],
+  "newVideoApproved": false,
+  "assistantListening": "not-performed"
+}

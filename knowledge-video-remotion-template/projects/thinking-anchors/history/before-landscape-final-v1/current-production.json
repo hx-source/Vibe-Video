@@ -1,0 +1,37 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "closing",
+  "currentReview": "outputs/thinking-anchors/landscape-ending-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-ending-v1/video.mp4",
+  "rangeSeconds": [
+    64,
+    74
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "新增10秒收尾，依次回顾直播间可比到手价、二手验商品及查成交、需求预算与可不买；完整74秒内容预览已生成，收尾和整片待反馈，尚未作为最终定稿。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-ending-v1/continuity-0-74.mp4",
+  "revision": "landscape-ending-v1",
+  "revisionReason": "这部分可以，接下来继续制作64秒之后的收尾，把直播间降价和二手砍价两个案例的方法总结清楚，保持横屏、漫画风格和02背景音乐，减少同屏文字，做好后先给我看一下效果。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "preview",
+  "fullFilmApproval": false,
+  "finalExportProduced": false
+}

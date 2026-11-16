@@ -1,0 +1,49 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v5/review.html",
+  "output": "outputs/thinking-anchors/landscape-opening-v5/video.mp4",
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "仅修改12–17秒同衣同价与判断前后对照；保留19.2–22.4秒概念点题及原02音轨。新版24秒及38秒衔接预览待反馈，旧74秒最终视频保留。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-opening-v5/continuity-0-38.mp4",
+  "revision": "landscape-opening-v5",
+  "revisionReason": "对，就是这个意思。把12到17秒这部分调整一下，让画面明确表现同一件衣服，讲解前后都是199，只是从觉得贵变成觉得划算。保持现在的横屏漫画风格和02背景音乐，注意衔接后面的锚定效应点题，做好后先给我看一下。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "opening-revision-preview",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-opening-v5/quality-review.md",
+  "finalExportAuthorized": true,
+  "assistantListening": "not-performed",
+  "contentApproved": true,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "openingUserApproved": false,
+  "openingApproval": null,
+  "editRangeSeconds": [
+    12,
+    17
+  ]
+}

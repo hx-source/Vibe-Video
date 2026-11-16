@@ -1,0 +1,27 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-opening-v1/video.mp4",
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": false,
+  "note": "已按确认内容完成0–24秒横屏开头，并与保留的24–38秒横屏方法段连贯。新开头待反馈；后续38秒以后仍待制作。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-opening-v1/continuity-0-38.mp4"
+}

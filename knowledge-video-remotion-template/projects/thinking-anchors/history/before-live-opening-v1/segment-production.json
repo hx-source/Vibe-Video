@@ -1,0 +1,57 @@
+{
+  "strategy": "Complete and review each segment, then join and review continuity",
+  "currentSegment": "deal",
+  "segments": [
+    {
+      "id": "deal",
+      "from": 0,
+      "to": 14,
+      "status": "preview-ready",
+      "revision": "opening-v4",
+      "userApproved": false
+    },
+    {
+      "id": "trap",
+      "from": 14,
+      "to": 24,
+      "status": "existing-draft"
+    },
+    {
+      "id": "rewind",
+      "from": 24,
+      "to": 32,
+      "status": "existing-draft"
+    },
+    {
+      "id": "evidence",
+      "from": 32,
+      "to": 46,
+      "status": "prior-local-revision-preserved"
+    },
+    {
+      "id": "reprice",
+      "from": 46,
+      "to": 58,
+      "status": "existing-draft"
+    },
+    {
+      "id": "shop",
+      "from": 58,
+      "to": 70,
+      "status": "existing-draft"
+    },
+    {
+      "id": "compare",
+      "from": 70,
+      "to": 82,
+      "status": "existing-draft"
+    },
+    {
+      "id": "close",
+      "from": 82,
+      "to": 88,
+      "status": "existing-draft"
+    }
+  ],
+  "fullFilmApproval": false
+}

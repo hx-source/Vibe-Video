@@ -1,0 +1,31 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "used-offer",
+  "currentReview": "outputs/thinking-anchors/landscape-offer-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-offer-v1/video.mp4",
+  "rangeSeconds": [
+    52,
+    64
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": false,
+  "note": "新增说明依据、630示例出价、卖家拒绝后收回报价和再看看。前52秒画面保留，音乐连续延长至64秒；新片段待反馈，仍需总结收尾。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-offer-v1/continuity-0-64.mp4",
+  "revision": "landscape-offer-v1",
+  "revisionReason": "这部分可以，接下来继续制作52秒之后的内容，衔接前面的成交区间和商品状况，讲清楚怎么有依据地出价，以及价格不合适时可以不成交，继续保持横屏、漫画风格和02背景音乐。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true
+}

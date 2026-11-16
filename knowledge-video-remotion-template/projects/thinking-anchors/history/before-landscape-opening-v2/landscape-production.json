@@ -1,0 +1,86 @@
+{
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "userRequirement": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "visualPrinciples": [
+    "主体放大，保持漫画风格",
+    "价格记录逐个替换，避免堆叠",
+    "每个购买问题单独呈现",
+    "人物动作配合内容",
+    "保留02音乐与现有事件"
+  ],
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        24
+      ],
+      "revision": "landscape-opening-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "contentApproved": true,
+      "contentApproval": "landscape-opening-content-approval.json",
+      "pictureSource": "projects/thinking-anchors/landscape-opening-v1/Opening.tsx",
+      "output": "outputs/thinking-anchors/landscape-opening-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-opening-v1/review.html"
+    },
+    {
+      "id": "decision",
+      "rangeSeconds": [
+        24,
+        38
+      ],
+      "revision": "landscape-focus-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "output": "outputs/thinking-anchors/landscape-focus-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-focus-v1/review.html",
+      "pictureSource": "projects/thinking-anchors/landscape-focus-v1/Decision.tsx",
+      "visualDirectionApproved": true,
+      "directionApproval": "landscape-focus-v1-direction-approval.json",
+      "audioListened": null
+    }
+  ],
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v1/review.html",
+  "remainingTopics": [
+    "二手商品检查和成交核查",
+    "依据状况出价、可不成交",
+    "方法总结"
+  ],
+  "fullFilmProduced": false,
+  "fullFilmApproval": false,
+  "legacyHorizontalFinalPreserved": "outputs/thinking-anchors/final-v1/video.mp4",
+  "portraitHistoryPreserved": "portrait-production.json",
+  "segmentHistory": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        12
+      ],
+      "status": "needs-landscape-layout",
+      "priorContentApproval": "portrait-opening-v2-acceptance.json",
+      "userApproved": false
+    },
+    {
+      "id": "mechanism",
+      "rangeSeconds": [
+        12,
+        24
+      ],
+      "status": "needs-landscape-layout",
+      "priorContentApproval": "portrait-mechanism-v1-acceptance.json",
+      "userApproved": false
+    }
+  ],
+  "continuityOutput": "outputs/thinking-anchors/landscape-opening-v1/continuity-0-38.mp4"
+}

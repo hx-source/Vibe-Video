@@ -1,0 +1,16 @@
+{
+  "userRequest": "先暂时保留A，然后B和C的话进行更换其他的风格类型",
+  "state": "retained-for-comparison",
+  "candidate": {
+    "id": "night",
+    "styleId": "night-story",
+    "label": "A · 深蓝金色",
+    "rationale": "用深色背景托住数值，金色与珊瑚红区分两组，适合集中观看。当前实现为深色图解。",
+    "motion": "两组数字位置固定，估计条从零增长，结果落定；不新增人物或星空插画。"
+  },
+  "fromRound": 2,
+  "originalImage": "outputs/thinking-anchors/styles-offline-v1/night/frame-1035.png",
+  "sha256": "082156295dcfd88962d77142485c659d79eff1dd1f6f2fd21ce16205ff3cdde5",
+  "finalSelection": false,
+  "sampleApproved": false
+}

@@ -1,0 +1,60 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "opening",
+  "currentReview": "outputs/thinking-anchors/landscape-opening-v9/review.html",
+  "output": "outputs/thinking-anchors/landscape-opening-v9/video.mp4",
+  "rangeSeconds": [
+    0,
+    20
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "按用户确认重新分配两处声音：17秒短掠过转场，19秒原17秒纸张声单次刷线。20秒画面与02音乐保持，原因仍留下一段。新版待反馈。",
+  "continuityOutput": null,
+  "revision": "landscape-opening-v9",
+  "revisionReason": "对的",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "segmented-revision-in-progress",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-opening-v9/quality-review.md",
+  "finalExportAuthorized": true,
+  "assistantListening": "not-performed",
+  "contentApproved": true,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "openingUserApproved": false,
+  "openingApproval": null,
+  "editRangeSeconds": [
+    17,
+    19.22
+  ],
+  "newFullFilmProduced": false,
+  "newFullFilmDurationSeconds": null,
+  "plannedNextSegment": {
+    "id": "anchor-reason",
+    "fromSeconds": 20,
+    "toSeconds": null,
+    "status": "planned",
+    "purpose": "解释为什么999成为比较起点，以及比999便宜不等于真实值得买",
+    "durationNotYetSet": true,
+    "followingMethodSourcesPreserved": true
+  }
+}

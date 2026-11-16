@@ -1,0 +1,62 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {pathToFileURL} from 'node:url';
+import {chromium} from 'playwright';
+import {ROOT,json,sha,writeJson} from '../../../scripts/files.mjs';
+import {binaries,run} from '../../../scripts/runtime.mjs';
+const revision='landscape-opening-v3',topic=path.join(ROOT,'projects/thinking-anchors'),local=path.join(topic,revision),relative='outputs/thinking-anchors/'+revision,out=path.join(ROOT,relative),audit=path.join(out,'audit');
+const manifest=json(path.join(out,'manifest.json')),visual=json(path.join(out,'visual-checks.json'));
+if(!visual.all720FramesPrice199Fixed||!visual.lastOpeningSvgEqualsFirstDecisionSvg||!visual.decision420DecodedFramesIdentical)throw Error('Visual checks incomplete');
+const finalMovie=path.join(ROOT,'outputs/thinking-anchors/landscape-final-v1/video.mp4'),finalHash=sha(finalMovie);
+if(finalHash!==json(path.join(ROOT,'outputs/thinking-anchors/landscape-final-v1/manifest.json')).video.sha256)throw Error('Previous final changed');
+for(const file of manifest.files)if(sha(path.join(out,file.file))!==file.sha256)throw Error('Preview changed');
+for(const f of [60,165,285,375,555,719,720])run(binaries().ffmpeg,['-v','error','-n','-ss',String(f/30),'-i',path.join(out,'continuity-0-38.mp4'),'-frames:v','1',path.join(audit,'encoded-'+f+'.png')]);
+const html=`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>直播间开头 · 0–24秒新版</title><style>body{margin:24px auto;max-width:1152px;padding:0 20px 40px;background:#fff8e9;color:#25252b;font:17px/1.7 system-ui}h1{font-size:27px}video{display:block;width:100%;aspect-ratio:16/9;border:3px solid #25252b;border-radius:12px;box-sizing:border-box}button{font:inherit;padding:8px 14px;margin:6px 5px 6px 0;border:2px solid #25252b;border-radius:8px;background:#e3f4ec;cursor:pointer}a{color:#246c62}.note{color:#676157;font-size:15px}</style><h1>直播间开头 · 0–24秒新版</h1><p>主播报出“原价999，今天199”，买家从犹豫变成心动。199价格保持原位，再点出“价格没变，判断变了”，接向后面的查价方法。</p><video id="film" src="video.mp4" poster="poster.png" controls playsinline preload="metadata"></video><div><button data-src="video.mp4">新版开头24秒</button><button data-src="continuity-0-38.mp4">看前38秒衔接</button><button data-src="../landscape-opening-v2/video.mp4">对照上一版开头</button><button data-time="0">从头播放</button><button data-time="4">主播报价</button><button data-time="8">买家心动</button><button data-time="12">判断变化</button><button data-time="21">该拿什么比</button><button id="join">看24秒交接</button></div><p class="note">1920×1080横屏 · 30帧/秒 · 漫画风格 · 02背景音乐。用口型、动作与短对话呈现主播讲解，沿用无旁白方式。</p><p><a href="video.mp4" download="锚定效应_直播间开头_24秒.mp4">下载新版开头</a> · <a href="continuity-0-38.mp4">打开38秒衔接版</a> · <a href="captions.srt">可选字幕</a> · <a href="quality-review.md">检查记录</a></p><p class="note">新版待你观看反馈。原74秒最终视频已保留；24–38秒画面沿用手腕修复版。配乐与短音效保持原版，已作技术核对，助手未进行人工试听。</p><script>const v=document.getElementById('film');async function switchClip(src,t){v.pause();v.src=src;await new Promise(r=>v.addEventListener('loadedmetadata',r,{once:true}));v.currentTime=Math.min(t,v.duration-.05);await v.play();}document.querySelectorAll('[data-src]').forEach(b=>b.onclick=()=>switchClip(b.dataset.src,v.currentTime));document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{v.currentTime=Number(b.dataset.time);v.play();});document.getElementById('join').onclick=()=>switchClip('continuity-0-38.mp4',22);</script></html>`;
+fs.writeFileSync(path.join(out,'review.html'),html);
+const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--autoplay-policy=no-user-gesture-required']});
+let playback;
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});await page.goto(pathToFileURL(path.join(out,'review.html')).href);await page.waitForFunction(()=>document.querySelector('video').readyState>=2);
+ const spec=await page.locator('video').evaluate(v=>({duration:v.duration,width:v.videoWidth,height:v.videoHeight}));if(spec.duration!==24||spec.width!==1920||spec.height!==1080)throw Error('Browser media specification mismatch');
+ await page.locator('video').evaluate(async v=>{v.muted=true;v.currentTime=0;v.playbackRate=1;await v.play();});const samples=[],start=Date.now();
+ while(true){await page.waitForTimeout(1000);const s=await page.locator('video').evaluate(v=>({time:v.currentTime,ended:v.ended,error:v.error?.code??null,droppedFrames:v.getVideoPlaybackQuality().droppedVideoFrames}));samples.push(s);if(s.error)throw Error('Preview playback error');if(s.ended)break;if(Date.now()-start>40000)throw Error('Preview playback timeout');}
+ await page.locator('#join').click();await page.waitForFunction(()=>document.querySelector('video').duration===38&&document.querySelector('video').currentTime>22);
+ const seeks=[];for(const t of [23.95,24.05,31.4,37.8]){await page.locator('video').evaluate(async(v,t)=>{v.pause();await new Promise(r=>{v.addEventListener('seeked',r,{once:true});v.currentTime=t;});},t);seeks.push(await page.locator('video').evaluate(v=>({time:v.currentTime,error:v.error?.code??null})));}if(seeks.some(s=>s.error))throw Error('Continuity seek failed');
+ await page.locator('[data-src="../landscape-opening-v2/video.mp4"]').click();await page.waitForFunction(()=>document.querySelector('video').duration===24);await page.locator('[data-src="video.mp4"]').click();await page.waitForFunction(()=>document.querySelector('video').readyState>=2);await page.locator('video').evaluate(v=>v.pause());
+ playback={videoSha256:sha(path.join(out,'video.mp4')),...spec,playedFromStartToEnd:true,playbackRate:1,testMuted:true,samples,continuitySeeks:seeks,comparisonButtonsWork:true,assistantListening:'not-performed'};writeJson(path.join(audit,'browser-playback.json'),playback);
+}finally{await browser.close();}
+const feedback='可以，就按这个直播间的开头调整0到24秒，把主播讲解和人物从犹豫到心动的变化表现出来，保持1920×1080横屏、漫画风格和02背景音乐，注意衔接后面的内容，做好后先给我看一下效果。';
+writeJson(path.join(topic,'landscape-opening-v3-content-approval.json'),{revision,feedback,contentApproved:true,productionAuthorized:true,videoUserApproved:false,scope:[0,24],assistantListening:'not-performed'});
+const quality={revision,rangeSeconds:[0,24],resolution:[1920,1080],fps:30,frames:720,continuityFrames:1140,allFramesPrice199GeometryUnchanged:true,allFramesTextInsideCanvas:true,lastOpeningSvgEqualsFirstDecisionSvg:true,following24to38DecodedPixelsUnchanged:true,audioPacketsUnchanged:true,encodedAudio:manifest.files.map(f=>({file:f.file,...f.encodedAudioQuality})),eventTimesUnchanged:json(path.join(local,'revision-impact.json')).eventsAfter,browserPlayback:playback,manualEncodedFrameReview:'pending',assistantListening:'not-performed',previousFinalPreserved:{file:'outputs/thinking-anchors/landscape-final-v1/video.mp4',sha256:finalHash},userVideoApproved:false};writeJson(path.join(out,'quality-review.json'),quality);
+fs.writeFileSync(path.join(out,'quality-review.md'),`# 直播间开头0–24秒预览检查
+
+1920×1080、30fps、720帧；附前38秒1140帧衔接预览。主题为原价参照影响对199现价的判断，金额为虚构示意，不代表所有主播讲解都属于锚定效应。
+
+全720帧文字边界与199价格几何位置检查通过；23.5秒衔接到后段首帧，24秒前后SVG一致。38秒衔接文件的24–38秒与原最终版手腕已修复画面逐帧像素哈希一致，未恢复旧断腕问题。源关键画面已查看；最终编码关键帧另存audit。
+
+两份文件完整解码、帧数与时间戳检查通过。新版24秒已以1倍速静音完整播放，检查38秒文件跨段定位和上一版对照按钮。浏览器测试不等于人工试听。
+
+02音乐、短音效和4、8、12、17、20、21秒事件保持；最终两份AAC音轨分别与原0–24、0–38秒预览数据包完全一致。24秒片段${manifest.files[0].encodedAudioQuality.integratedLufs} LUFS、真峰值${manifest.files[0].encodedAudioQuality.truePeakDb} dBTP；38秒衔接片段${manifest.files[1].encodedAudioQuality.integratedLufs} LUFS、真峰值${manifest.files[1].encodedAudioQuality.truePeakDb} dBTP。未增加人声，主播用口型、手势及短气泡表达，助手未实际听音。
+
+原74秒最终成片与认可源码保留。新版仅为开头修改预览，待用户反馈；未宣称已完成新74秒最终输出或用户试听验收。入口可组合后续74秒原有场景，Root为画面入口，声音需独立接入；勿误用旧70秒默认项目。来源沿用上级facts与本修订facts.md。
+`);
+const history=path.join(topic,'history/before-landscape-opening-v3');fs.mkdirSync(history,{recursive:true});for(const file of ['current-production.json','landscape-production.json','landscape-active-sources.json','delivery-status.json','README.md'])if(!fs.existsSync(path.join(history,file)))fs.copyFileSync(path.join(topic,file),path.join(history,file));
+const current=json(path.join(topic,'current-production.json'));Object.assign(current,{revision,currentSegment:'opening',currentStage:'preview-ready',rangeSeconds:[0,24],output:relative+'/video.mp4',currentReview:relative+'/review.html',continuityOutput:relative+'/continuity-0-38.mp4',qualityReview:relative+'/quality-review.md',userApproved:false,contentApproved:true,revisionReason:feedback,fullFilmStatus:'opening-revision-preview',finalExportProduced:false,finalExportAuthorized:false,previousFinal:'outputs/thinking-anchors/landscape-final-v1/video.mp4',note:'新增直播间主播报价和买家从犹豫到心动的表现；0–24秒待反馈，附原后14秒检查衔接，旧74秒最终成片保留。'});writeJson(path.join(topic,'current-production.json'),current);
+const ledger=json(path.join(topic,'landscape-production.json')),opening=ledger.segments.find(s=>s.id==='opening');ledger.revisionHistory.push({...opening});Object.assign(opening,{revision,status:'preview-ready',userApproved:false,contentApproved:true,contentApproval:'landscape-opening-v3-content-approval.json',pictureSource:'projects/thinking-anchors/'+revision+'/Opening.tsx',output:relative+'/video.mp4',review:relative+'/review.html',feedback,finalSourceRevision:null,finalOutput:null});delete opening.approval;
+Object.assign(ledger,{currentSegment:'opening',currentStage:'preview-ready',currentReview:relative+'/review.html',continuityOutput:relative+'/continuity-0-38.mp4',remainingReviews:['新版0–24秒直播间开头用户反馈'],fullFilmStatus:'opening-revision-preview',finalExportProduced:false,finalExportAuthorized:false,previousFinal:ledger.finalOutput});writeJson(path.join(topic,'landscape-production.json'),ledger);
+const active=json(path.join(topic,'landscape-active-sources.json'));Object.assign(active,{revision,sourceRoot:'projects/thinking-anchors/'+revision,opening:'projects/thinking-anchors/'+revision+'/Opening.tsx',mechanism:'projects/thinking-anchors/'+revision+'/Opening.tsx',openingActor:'projects/thinking-anchors/'+revision+'/Actor.tsx',host:'projects/thinking-anchors/'+revision+'/Host.tsx',entry:'projects/thinking-anchors/'+revision+'/entry.tsx',composition:'projects/thinking-anchors/'+revision+'/Root.tsx',previewVideo:relative+'/video.mp4',previewContinuity:relative+'/continuity-0-38.mp4',finalVideo:'outputs/thinking-anchors/landscape-final-v1/video.mp4',note:'0–24为新的直播间开头，尚待反馈；24–74继续引用landscape-final-v1修正场景。完整74秒画面入口已接好，本次只导出24秒及38秒衔接预览，旧最终成片保留。Root不包含音轨，沿用原音频时间。'});writeJson(path.join(topic,'landscape-active-sources.json'),active);
+const delivery=json(path.join(topic,'delivery-status.json'));delivery.activeTrackingFile='current-production.json';delivery.currentRevision=revision;delivery.currentState='opening-revision-preview-ready';delivery.landscapeOpeningRevision={revision,rangeSeconds:[0,24],output:relative+'/video.mp4',continuityOutput:relative+'/continuity-0-38.mp4',review:relative+'/review.html',userApproved:false,contentApproved:true,previousFinalPreserved:true};writeJson(path.join(topic,'delivery-status.json'),delivery);
+const readme=path.join(topic,'README.md');fs.writeFileSync(readme,`## 当前修改：直播间开头0–24秒预览
+
+增加屏幕内的主播和屏幕外的买家：199嫌贵→主播说原价999、今天199→买家心动→价格未变、判断改变→该拿什么比。1920×1080横屏、漫画风格、02音乐与原短音效保留，无旁白，以口型、动作和短对话表达。新版待用户反馈。
+
+- [新版24秒](../../${relative}/video.mp4)
+- [前38秒衔接预览](../../${relative}/continuity-0-38.mp4)
+- [审片、对照与下载](../../${relative}/review.html)
+
+24–38秒保留原最终版手腕修复画面。旧74秒成片仍保存，以下最终交付及待反馈描述对应各自历史版本；当前以current-production.json为准。助手未实际听音。
+
+`+fs.readFileSync(readme,'utf8'));
+manifest.renderTimeSources=manifest.sources;manifest.sourceEntryNote='After picture rendering, Root/entry were extended from the identical first38s component dispatch to the remaining final-v1 scenes; opening components and following Decision rendering unchanged.';
+manifest.sources=Object.fromEntries(fs.readdirSync(local).filter(f=>/\.(tsx|json|mjs|md)$/.test(f)).map(f=>[f,sha(path.join(local,f))]));manifest.status='preview-ready';manifest.browserPlayback='audit/browser-playback.json';manifest.qualityReview='quality-review.json';manifest.previousFinalPreserved={file:'outputs/thinking-anchors/landscape-final-v1/video.mp4',sha256:finalHash};writeJson(path.join(out,'manifest.json'),manifest);
+console.log(JSON.stringify({status:'preview-ready',output:out,browserFull24SecondPlayback:true,following24to38DecodedPixelsUnchanged:true,assistantListening:'not-performed'}));

@@ -1,0 +1,14 @@
+{
+  "status": "user-approved",
+  "revision": "ending-v1",
+  "rangeSeconds": [
+    58,
+    70
+  ],
+  "preview": "outputs/thinking-anchors/ending-v1/video.mp4",
+  "videoSha256": "843d6547c2fae1929aa0a76094ffa069a797898ae960569e48d764fc7c6cbb34",
+  "feedback": "这个收尾可以，接下来把整条视频的前后衔接、节奏和音效统一检查一下，导出最终完整视频。",
+  "userApproval": true,
+  "viewedAndListenedNotSeparatelyRecorded": true,
+  "scope": "58–70 second ending accepted; whole-film continuity review and final export authorized; no separate full-film listening approval inferred"
+}

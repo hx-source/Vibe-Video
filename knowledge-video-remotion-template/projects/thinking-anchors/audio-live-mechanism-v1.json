@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 2.05
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "b-comic-1",
+      "source": "asset:palette-metal-detail",
+      "role": "accent",
+      "at": 34,
+      "sourceIn": 0,
+      "sourceOut": 0.4458503401360544,
+      "gain": 0.65,
+      "fadeOut": 0.015,
+      "purpose": "放大镜检查时的细小物件轻响，避免用夸张疑问音替观众反应",
+      "musicFit": "使用已有非旋律性物件素材；固定02配乐，搭配效果待用户试听"
+    },
+    {
+      "id": "b-lens-accessory",
+      "source": "asset:palette-cloth-two",
+      "role": "process",
+      "enabled": true,
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.4
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "gain": 0.6,
+      "fadeIn": 0.025,
+      "fadeOut": 0.07,
+      "purpose": "放大镜移到少配件位置时的轻微滑擦，覆盖试片第4秒附近的移动与停稳",
+      "musicFit": "使用已有短布料摩擦素材作为手持物件移动拟音；保持02配乐与其余音效，实际可辨认性待用户试听"
+    },
+    {
+      "id": "b-record-row-1",
+      "source": "asset:record-paper-1-v1",
+      "role": "accent",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.2,
+      "gain": 1.15,
+      "fadeOut": 0.015,
+      "purpose": "成交记录A单独出现的短纸张轻响",
+      "musicFit": "同一纸张材质的三种短采样，分别跟随三条记录，不添加升调或额外撞击；02配乐保持原样，搭配待试听"
+    },
+    {
+      "id": "b-record-row-2",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.44000000000000006
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442176,
+      "gain": 1.3,
+      "fadeOut": 0.015,
+      "purpose": "成交记录B单独出现的短纸张轻响",
+      "musicFit": "同一纸张材质的三种短采样，分别跟随三条记录，不添加升调或额外撞击；02配乐保持原样，搭配待试听"
+    },
+    {
+      "id": "b-record-row-3",
+      "source": "asset:record-paper-3-v1",
+      "role": "accent",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.78
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.20931972789115647,
+      "gain": 0.95,
+      "fadeOut": 0.015,
+      "purpose": "成交记录C单独出现的短纸张轻响",
+      "musicFit": "同一纸张材质的三种短采样，分别跟随三条记录，不添加升调或额外撞击；02配乐保持原样，搭配待试听"
+    },
+    {
+      "id": "outline-draw",
+      "source": "asset:regroup-draw-v1",
+      "at": {
+        "event": "evidence.range",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.85,
+      "gain": 0.78,
+      "fadeIn": 0.002,
+      "fadeOut": 0.015,
+      "role": "process",
+      "enabled": true,
+      "purpose": "成交记录留在原位，一笔框出可比价格，再呈现区间。短铅笔录音只随框线绘制。",
+      "musicFit": "固定02背景音乐；短声仅配本版可见动作，无连续滑音或混响；听感待用户试听"
+    },
+    {
+      "id": "live-quote",
+      "source": "asset:palette-paper-short",
+      "at": 0.08,
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "role": "start",
+      "fadeOut": 0.012,
+      "purpose": "首屏展示主播报价999，短纸质标签声；原音乐开头较安静，采用较低增益",
+      "musicFit": "保留02故事讲述音乐0–88秒原速、gain0.64；短纸张、界面和物件声跟随可见动作，无新增旋律、连续扫动或混响；实际混合听感待用户反馈"
+    },
+    {
+      "id": "live-drop",
+      "source": "asset:opening-ui-contact-v1",
+      "at": 1.85,
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 2,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "报价从999切为599，配一次短界面声",
+      "musicFit": "保留02故事讲述音乐0–88秒原速、gain0.64；短纸张、界面和物件声跟随可见动作，无新增旋律、连续扫动或混响；实际混合听感待用户反馈"
+    },
+    {
+      "id": "live-sale",
+      "source": "asset:palette-paper-long",
+      "at": 3.68,
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.7,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "199元价格卡切入，与前一段短界面声形成区分",
+      "musicFit": "保留02故事讲述音乐0–88秒原速、gain0.64；短纸张、界面和物件声跟随可见动作，无新增旋律、连续扫动或混响；实际混合听感待用户反馈"
+    },
+    {
+      "id": "live-payment",
+      "source": "asset:palette-cloth-two",
+      "at": 4.88,
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.65,
+      "role": "transition",
+      "fadeOut": 0.012,
+      "purpose": "下单界面出现，短物件滑动声对应界面进入",
+      "musicFit": "保留02故事讲述音乐0–88秒原速、gain0.64；短纸张、界面和物件声跟随可见动作，无新增旋律、连续扫动或混响；实际混合听感待用户反馈"
+    },
+    {
+      "id": "live-pause",
+      "source": "asset:opening-ui-contact-v1",
+      "at": 10.08,
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.5,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "观众停住下单手指，按钮转为先查价格",
+      "musicFit": "保留02故事讲述音乐0–88秒原速、gain0.64；短纸张、界面和物件声跟随可见动作，无新增旋律、连续扫动或混响；实际混合听感待用户反馈"
+    },
+    {
+      "id": "live-cover",
+      "source": "asset:palette-paper-short",
+      "at": 10.64,
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.8,
+      "role": "transition",
+      "fadeOut": 0.012,
+      "purpose": "纸片遮住999元标注原价，短声落在遮挡动作的中段",
+      "musicFit": "保留02故事讲述音乐0–88秒原速、gain0.64；短纸张、界面和物件声跟随可见动作，无新增旋律、连续扫动或混响；实际混合听感待用户反馈"
+    },
+    {
+      "id": "mechanism-shift",
+      "source": "asset:palette-cloth-two",
+      "at": {
+        "event": "trap.shift",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "speed": 1,
+      "gain": 0.6,
+      "role": "transition",
+      "fadeOut": 0.012,
+      "purpose": "下单面板缩为保持199元的实际价格卡，短物件移动声",
+      "musicFit": "02背景音乐按全片原时钟继续，保持用户认可的0–14秒PCM；物件、纸张、绘线和落定短声分别对应动作，不铺持续滑音；实际搭配待用户试听"
+    },
+    {
+      "id": "mechanism-recall",
+      "source": "asset:palette-paper-short",
+      "at": {
+        "event": "trap.recall",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.75,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "脑中999元参照卡浮现，一次短纸张声",
+      "musicFit": "02背景音乐按全片原时钟继续，保持用户认可的0–14秒PCM；物件、纸张、绘线和落定短声分别对应动作，不铺持续滑音；实际搭配待用户试听"
+    },
+    {
+      "id": "mechanism-comparison",
+      "source": "asset:pencil-underline-recorded-v1",
+      "at": {
+        "event": "trap.compare",
+        "offset": 0.05
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.9,
+      "role": "accent",
+      "fadeOut": 0.012,
+      "purpose": "999−199=800的比较线绘出，真实短铅笔声跟随绘线",
+      "musicFit": "02背景音乐按全片原时钟继续，保持用户认可的0–14秒PCM；物件、纸张、绘线和落定短声分别对应动作，不铺持续滑音；实际搭配待用户试听"
+    },
+    {
+      "id": "mechanism-name",
+      "source": "asset:regroup-contact-v2",
+      "at": {
+        "event": "trap.name",
+        "offset": 0.3
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.11,
+      "speed": 1,
+      "gain": 2.4,
+      "role": "end",
+      "fadeOut": 0.012,
+      "purpose": "锚定效应标签落定，一次短接触声",
+      "musicFit": "02背景音乐按全片原时钟继续，保持用户认可的0–14秒PCM；物件、纸张、绘线和落定短声分别对应动作，不铺持续滑音；实际搭配待用户试听"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

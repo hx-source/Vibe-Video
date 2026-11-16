@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "analysis": "music-analysis.json",
+  "overrides": "music-overrides.json",
+  "music": {
+    "clipId": "moonlight-bed",
+    "sourceIn": 0,
+    "sourceOut": 10,
+    "at": 0,
+    "speed": 1
+  },
+  "requiredEvents": [
+    "opening.enter",
+    "opening.preferences",
+    "opening.first",
+    "opening.challenger",
+    "opening.compare",
+    "opening.replace",
+    "opening.retry",
+    "opening.settle"
+  ],
+  "actions": [
+    {
+      "event": "opening.enter",
+      "beat": 0,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-enter",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.preferences",
+      "beat": 2,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-preferences",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.first",
+      "beat": 4,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-first",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.challenger",
+      "beat": 8,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-challenger",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.compare",
+      "beat": 9,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-compare",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.replace",
+      "beat": 11,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-replace",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.retry",
+      "beat": 14,
+      "landmark": "start",
+      "key": true,
+      "soundId": "sound-retry",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    },
+    {
+      "event": "opening.settle",
+      "beat": 17,
+      "landmark": "settle",
+      "key": true,
+      "soundId": "sound-settle",
+      "soundOffset": 0,
+      "revision": "4b253f86622c0a960f52133f824eee402701519303bff3ea73f0d80cebbeb983"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "state": "regroup-motion-and-sound-options-ready",
+  "output": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "review": "outputs/thinking-anchors/regroup-motion-v1/review.html",
+  "storyboard": "outputs/thinking-anchors/full-motion-v1/storyboard.html",
+  "durationSeconds": 88,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 2640,
+  "style": "comic",
+  "music": "02_情感话题_故事讲述.m4a",
+  "fixedBottomExplanations": false,
+  "approvedSamplePreserved": true,
+  "fullFilmUserApproval": false,
+  "assistantHumanListening": "not-performed",
+  "previousOutput": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "preview": "outputs/thinking-anchors/regroup-motion-v1/outline/preview.mp4",
+  "pictureUnchanged": false,
+  "soundCueCount": 6,
+  "formalAudioPlan": "audio-plan.json unchanged; three audio-regroup-*-v1.json alternatives",
+  "userSoundApproval": false,
+  "previousSoundCandidate": "outputs/thinking-anchors/action-sfx-v1",
+  "soundReview": "outputs/thinking-anchors/b-pencil-follow-through-v1/review.html",
+  "soundPaletteManifest": "outputs/thinking-anchors/b-pencil-follow-through-v1/manifest.json",
+  "candidateSoundAssetCount": 12,
+  "selectedSoundPalette": "B as preferred base; explainer candidate pending",
+  "selectedMotionSound": null,
+  "selectedMotionPlan": null,
+  "userMotionCueSelection": false,
+  "changedPicture": "Only evidence chapter from local 8s onward: three regroup alternatives; final speech stays on left to preserve evidence visibility",
+  "musicUnchanged": true,
+  "unrelatedCuesUnchanged": true,
+  "selectedRegroupVariant": null,
+  "regroupChoicePending": true,
+  "regroupAlternatives": [
+    {
+      "id": "ruler",
+      "label": "A · 三点落尺",
+      "description": "三个价格逐个落到同一把尺上，再标出区间。三个短接触音对应落点。"
+    },
+    {
+      "id": "outline",
+      "label": "B · 圈定区间",
+      "description": "成交记录留在原位，一笔框出可比价格，再呈现区间。短铅笔录音只随框线绘制。"
+    },
+    {
+      "id": "summary",
+      "label": "C · 合拢成卡",
+      "description": "三个价格汇入同一张汇总卡，区间接着出现。一次短翻纸声对应汇入动作。"
+    }
+  ]
+}

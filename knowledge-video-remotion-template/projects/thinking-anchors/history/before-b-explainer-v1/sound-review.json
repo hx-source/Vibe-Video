@@ -1,0 +1,28 @@
+{
+  "previousCandidate": {
+    "plan": "audio-action-candidate.json",
+    "output": "outputs/thinking-anchors/action-sfx-v1",
+    "userApproval": "rejected",
+    "feedback": "所有的音效都太单调，类似蹦崩，内容和风格不符合"
+  },
+  "currentCandidate": {
+    "plan": "audio-palette-c-price-slide-v1.json",
+    "output": "outputs/thinking-anchors/c-price-slide-v1",
+    "range": [
+      32,
+      46
+    ],
+    "changedCue": "c-sparse-3",
+    "review": "outputs/thinking-anchors/c-price-slide-v1/review.html"
+  },
+  "pictureUnchanged": true,
+  "musicUnchangedAcrossCandidates": true,
+  "formalPlanUnchanged": true,
+  "humanListening": "not-performed",
+  "userApproval": "pending-single-cue-review",
+  "feedback": {
+    "text": "第8秒附近的那个动画效果的音效不太合适，其他的还可以勉强接受",
+    "palette": "c-sparse",
+    "otherSounds": "tentatively-tolerated; do not polish or replace without further feedback"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "feedback": "对，就是这个意思。把23秒左右“主播说的原价”变成“现成参照”的过程做得更明显一些，加上贴合动作的短音效，保持横屏漫画风格和02背景音乐，其他部分保留，做好后先给我看一下。",
+  "revision": "landscape-label-v1",
+  "authorizedEditSeconds": [
+    22,
+    23.5
+  ],
+  "scopeSeconds": [
+    0,
+    52
+  ],
+  "secondhandExcluded": true,
+  "previousScopeDecision": "live-only-v1-scope-decision.json",
+  "userApproved": false,
+  "assistantListening": "not-performed"
+}

@@ -1,0 +1,33 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "draft",
+  "id": "moon-match-sample",
+  "title": "月老的算法 · 十秒样片",
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "midnight",
+  "content": {
+    "question": "先来的，就一定会被留下吗？",
+    "takeaway": "接收方暂留更喜欢的邀请者，落选者继续邀请。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json",
+    "musicSync": "music-sync.json",
+    "visualPlan": "visual-plan.json",
+    "productionPlan": "production-plan.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

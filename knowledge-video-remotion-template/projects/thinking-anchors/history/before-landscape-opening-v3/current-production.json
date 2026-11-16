@@ -1,0 +1,41 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": null,
+  "currentReview": "outputs/thinking-anchors/landscape-final-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-final-v1/video.mp4",
+  "rangeSeconds": [
+    0,
+    74
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": true,
+  "note": "完成74秒整片统一复查、手腕连接和三处转场清理；原02音轨完整保留。实际最终文件已全长解码与浏览器完整播放测试，未进行人工试听。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-final-v1/video.mp4",
+  "revision": "landscape-final-v1",
+  "revisionReason": "这个收尾可以，接下来把整条74秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": true,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "final-exported",
+  "fullFilmApproval": false,
+  "finalExportProduced": true,
+  "currentStage": "final-exported",
+  "qualityReview": "outputs/thinking-anchors/landscape-final-v1/quality-review.md",
+  "finalExportAuthorized": true,
+  "assistantListening": "not-performed"
+}

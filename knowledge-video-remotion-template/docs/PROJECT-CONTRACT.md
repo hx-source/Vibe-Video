@@ -4,6 +4,8 @@
 
 ## 文件
 
+可选制作管理扩展使用production-state.json保存当前版本、局部修改范围和媒体反馈；它不替代本合约的分镜、字幕或音频计划。启用后current-production等状态视图自动生成，接口见[制作管理流程](PRODUCTION-WORKFLOW.md)。
+
 | 文件 | 职责 |
 | --- | --- |
 | project.json | contract、contractVersion、templateVersion、id、title、video、timelineBasis、themeId、files |
@@ -22,6 +24,8 @@
 片段包含 id、durationSeconds、intent、sceneType、events、props。events 是局部秒数，完整事件名为 `片段id.事件id`。例如 opening.reveal。
 
 字幕 start/end 可以是本段秒数，也可以是 `{ "event": "reveal", "offset": 0 }`。区间左闭右开，允许留白，不允许重叠、零帧字幕或越界。全片时长由片段相加得到。
+
+场景可选 `props.captionPlacement` 为 `bottom`（默认）或 `scene`。`scene` 表示由该场景用短对话或场内文字表达信息，公共组件不再叠加底部字幕；原字幕数据仍用于可选 SRT 导出。`layout: fullbleed` 同时由场景负责标题与说明排版。该选项不自动把字幕转换成动画，必须实现对应场景。
 
 ## 已实现的场景
 

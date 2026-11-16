@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "id": "price-0",
+      "segmentId": "price",
+      "start": 0,
+      "end": 4,
+      "text": "一件商品卖 199 元，你觉得贵吗？"
+    },
+    {
+      "id": "price-1",
+      "segmentId": "price",
+      "start": 4,
+      "end": 8,
+      "text": "如果先看到“原价 999 元”，199 元也许就显得便宜。"
+    },
+    {
+      "id": "price-2",
+      "segmentId": "price",
+      "start": 8,
+      "end": 12,
+      "text": "商品没变，先出现的数字却给了你一个参照。"
+    },
+    {
+      "id": "pull-0",
+      "segmentId": "pull",
+      "start": 0,
+      "end": 4,
+      "text": "《思考，快与慢》把这种影响称为锚定效应。"
+    },
+    {
+      "id": "pull-1",
+      "segmentId": "pull",
+      "start": 4,
+      "end": 8,
+      "text": "估计一个未知数值时，先前的数字可能成为锚。"
+    },
+    {
+      "id": "pull-2",
+      "segmentId": "pull",
+      "start": 8,
+      "end": 12,
+      "text": "一种解释是：人从锚点出发调整，却调整得不够。"
+    },
+    {
+      "id": "experiment-0",
+      "segmentId": "experiment",
+      "start": 0,
+      "end": 4,
+      "text": "经典实验中，两组人分别看到转盘数字 10 或 65。"
+    },
+    {
+      "id": "experiment-1",
+      "segmentId": "experiment",
+      "start": 4,
+      "end": 8,
+      "text": "先比较：非洲国家占联合国成员的比例，比它高还是低？"
+    },
+    {
+      "id": "experiment-2",
+      "segmentId": "experiment",
+      "start": 8,
+      "end": 12,
+      "text": "再给出估计：两组中位数分别是 25% 和 45%。"
+    },
+    {
+      "id": "experiment-3",
+      "segmentId": "experiment",
+      "start": 12,
+      "end": 16,
+      "text": "数字与问题无关，两组的估计却偏向了各自的锚。"
+    },
+    {
+      "id": "reset-0",
+      "segmentId": "reset",
+      "start": 0,
+      "end": 4.5,
+      "text": "遇到报价或折扣，可以先给自己留一点判断空间。"
+    },
+    {
+      "id": "reset-1",
+      "segmentId": "reset",
+      "start": 4.5,
+      "end": 9,
+      "text": "在看报价前，写下自己的估计，以及估计的依据。"
+    },
+    {
+      "id": "reset-2",
+      "segmentId": "reset",
+      "start": 9,
+      "end": 14,
+      "text": "再查同类价格，别只凭“便宜了多少”判断值不值。"
+    },
+    {
+      "id": "close-0",
+      "segmentId": "close",
+      "start": 0,
+      "end": 4,
+      "text": "问自己：如果没见过那个数字，我会怎么判断？"
+    },
+    {
+      "id": "close-1",
+      "segmentId": "close",
+      "start": 4,
+      "end": 8,
+      "text": "先找到独立参照，再判断眼前的数字。"
+    }
+  ]
+}

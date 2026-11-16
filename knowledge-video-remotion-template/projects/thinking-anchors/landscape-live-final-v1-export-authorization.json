@@ -1,0 +1,15 @@
+{
+  "request": "接下来把这条52秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+  "revision": "landscape-live-final-v1",
+  "scopeSeconds": [
+    0,
+    52
+  ],
+  "exportAuthorized": true,
+  "exportProduced": true,
+  "finalVideo": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+  "videoSha256": "df29d34712a7e6d081c3c7dbfe3c0ffa409fe97696364c2d90aa031d88b4770d",
+  "wholeFilmUserApproval": false,
+  "assistantListening": "not-performed",
+  "externalPublication": false
+}

@@ -1,0 +1,14 @@
+{
+  "id": "production-components-v1-1794804040025",
+  "reason": "验证冻结依赖、参数化标签及统一局部渲染；不替换已交付成片",
+  "rangeSeconds": [
+    22,
+    23.5
+  ],
+  "contextSeconds": 1,
+  "sources": {
+    "entry": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+    "reason": "projects/thinking-anchors/scenes/LiveReason.tsx",
+    "board": "projects/thinking-anchors/scenes/label-parameters.json"
+  }
+}

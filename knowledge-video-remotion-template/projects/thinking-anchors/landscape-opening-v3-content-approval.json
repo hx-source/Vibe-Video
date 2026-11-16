@@ -1,0 +1,12 @@
+{
+  "revision": "landscape-opening-v3",
+  "feedback": "可以，就按这个直播间的开头调整0到24秒，把主播讲解和人物从犹豫到心动的变化表现出来，保持1920×1080横屏、漫画风格和02背景音乐，注意衔接后面的内容，做好后先给我看一下效果。",
+  "contentApproved": true,
+  "productionAuthorized": true,
+  "videoUserApproved": false,
+  "scope": [
+    0,
+    24
+  ],
+  "assistantListening": "not-performed"
+}

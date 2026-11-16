@@ -1,0 +1,27 @@
+{
+  "revision": "landscape-live-final-v1",
+  "durationSeconds": 52,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 1560,
+  "scope": "live-shopping-only",
+  "visualEntry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+  "visualComposition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+  "sourcePicture": "outputs/thinking-anchors/landscape-label-v1/full-picture.mp4",
+  "sourceVideo": "outputs/thinking-anchors/landscape-label-v1/video.mp4",
+  "sourceVideoSha256": "bd48c36dd4cdf0e459eab4d47f8eb05d40d5ff8b2ea19cddf29319f054b4e598",
+  "audioPlan": "audio-plan.json",
+  "music": "02_情感话题_故事讲述.m4a",
+  "endingFadeSeconds": [
+    50.8,
+    52
+  ],
+  "visualChanges": false,
+  "existingSoundChanges": false,
+  "secondhandExcluded": true,
+  "exportAuthorized": true,
+  "authorization": "接下来把这条52秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+  "wholeFilmUserApproval": false,
+  "assistantListening": "not-performed"
+}

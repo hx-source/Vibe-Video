@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 0.5
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 62,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.41,
+      "fadeIn": 0.35,
+      "fadeOut": 1.5
+    },
+    {
+      "id": "action-wheel-stop",
+      "role": "accent",
+      "source": "asset:wheel-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.13,
+      "at": {
+        "event": "experiment.wheel-stop"
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "转盘旋转在数字10和65处停止，一次合并提示对应两组同步动作",
+      "musicFit": "短、非旋律性原创瞬态，避免形成第二旋律；与固定01素材的实际混音听感待用户试听"
+    },
+    {
+      "id": "action-bubble-pop",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "experiment.compare",
+        "offset": 0.1
+      },
+      "gain": 0.6,
+      "fadeOut": 0.012,
+      "purpose": "比较问题气泡开始出现；音效略晚0.10秒以对应气泡已可见",
+      "musicFit": "短、非旋律性原创瞬态，避免形成第二旋律；与固定01素材的实际混音听感待用户试听"
+    },
+    {
+      "id": "action-result-land",
+      "role": "end",
+      "source": "asset:result-land",
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "at": {
+        "event": "experiment.estimate-settle"
+      },
+      "gain": 0.64,
+      "fadeOut": 0.012,
+      "purpose": "25%和45%的组内估计中位数显现并完成位移，在落定时提示",
+      "musicFit": "短、非旋律性原创瞬态，避免形成第二旋律；与固定01素材的实际混音听感待用户试听"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": [
+    {
+      "id": "space-wheel",
+      "at": {
+        "event": "experiment.wheel-stop"
+      },
+      "attack": 0.04,
+      "hold": 0.1,
+      "release": 0.16,
+      "gain": 0.76
+    },
+    {
+      "id": "space-bubble",
+      "at": {
+        "event": "experiment.compare",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.1,
+      "release": 0.18,
+      "gain": 0.76
+    },
+    {
+      "id": "space-result",
+      "at": {
+        "event": "experiment.estimate-settle"
+      },
+      "attack": 0.05,
+      "hold": 0.15,
+      "release": 0.25,
+      "gain": 0.72
+    }
+  ]
+}

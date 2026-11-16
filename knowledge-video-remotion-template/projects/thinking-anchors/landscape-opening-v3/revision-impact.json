@@ -1,0 +1,39 @@
+{
+  "scope": [
+    0,
+    24
+  ],
+  "reason": "用户授权添加直播间主播讲解与买家从犹豫到心动的变化",
+  "eventsBefore": {
+    "price": 0,
+    "reference": 4,
+    "delight": 8,
+    "reality": 12,
+    "explain": 17,
+    "term": 20,
+    "question": 21,
+    "match": 23.5
+  },
+  "eventsAfter": {
+    "price": 0,
+    "reference": 4,
+    "delight": 8,
+    "reality": 12,
+    "explain": 17,
+    "term": 20,
+    "question": 21,
+    "match": 23.5
+  },
+  "musicChanged": false,
+  "effectsChanged": false,
+  "captionsChanged": true,
+  "followingPictureChanged": false,
+  "previewContinuation": [
+    24,
+    38
+  ],
+  "followingPictureSource": "outputs/thinking-anchors/landscape-final-v1/audit/corrected-24-38-picture.mp4",
+  "previousFinalPreserved": "outputs/thinking-anchors/landscape-final-v1/video.mp4",
+  "newVideoUserApproved": false,
+  "assistantListening": "not-performed"
+}

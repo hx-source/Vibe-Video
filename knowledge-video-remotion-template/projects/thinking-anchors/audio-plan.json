@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "end": 1,
+    "start": 1,
+    "transition": 1,
+    "process": 0.5
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "sourceIn": 0,
+      "sourceOut": 88,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.88,
+      "fadeIn": 0.45,
+      "fadeOut": 1.8
+    },
+    {
+      "id": "action-1",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "deal.offer",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "卖家报价气泡出现",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-2",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "deal.counter",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "买家还价气泡出现",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-3",
+      "role": "accent",
+      "source": "asset:wheel-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.13,
+      "at": {
+        "event": "deal.question",
+        "offset": 0.05
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "庆祝暂停并提出价格依据疑问",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-4",
+      "role": "accent",
+      "source": "asset:wheel-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.13,
+      "at": {
+        "event": "rewind.reset",
+        "offset": 0
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "回到报价起点，启动重新检查",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-5",
+      "role": "accent",
+      "source": "asset:wheel-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.13,
+      "at": {
+        "event": "evidence.condition",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "磨损与配件缺失标记出现",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-6",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "可比较的成交记录进入",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-7",
+      "role": "end",
+      "source": "asset:result-land",
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "at": {
+        "event": "evidence.settle",
+        "offset": 0
+      },
+      "gain": 0.62,
+      "fadeOut": 0.012,
+      "purpose": "有证据的价格区间落定",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-8",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "reprice.offer",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "提出依据成色与成交记录的报价",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-9",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "shop.old",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "划线价出现",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-10",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "shop.sale",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "到手价出现",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-11",
+      "role": "accent",
+      "source": "asset:wheel-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.13,
+      "at": {
+        "event": "shop.pause",
+        "offset": 0
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "暂停付款，检查原价依据",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-12",
+      "role": "accent",
+      "source": "asset:bubble-pop",
+      "sourceIn": 0,
+      "sourceOut": 0.16,
+      "at": {
+        "event": "compare.others",
+        "offset": 0.1
+      },
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "其他店到手价进入比较",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-13",
+      "role": "end",
+      "source": "asset:result-land",
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "at": {
+        "event": "compare.settle",
+        "offset": 0
+      },
+      "gain": 0.62,
+      "fadeOut": 0.012,
+      "purpose": "结合需求与预算的判断落定",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-14",
+      "role": "end",
+      "source": "asset:result-land",
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "at": {
+        "event": "close.result",
+        "offset": 0
+      },
+      "gain": 0.62,
+      "fadeOut": 0.012,
+      "purpose": "三个应对动作收束",
+      "musicFit": "与用户指定02音乐混合的短非旋律原创瞬态；轻微避让，实际听感待用户试听"
+    },
+    {
+      "id": "action-missing-accessory",
+      "role": "accent",
+      "source": "asset:wheel-stop",
+      "sourceIn": 0,
+      "sourceOut": 0.13,
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.1
+      },
+      "gain": 0.5,
+      "fadeOut": 0.012,
+      "purpose": "放大镜扫到缺失配件，人物发现问题",
+      "musicFit": "沿用本期短非旋律瞬态，配02音乐；新增一个具体发现动作，听感待确认"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": [
+    {
+      "id": "space-1",
+      "at": {
+        "event": "deal.offer",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-2",
+      "at": {
+        "event": "deal.counter",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-3",
+      "at": {
+        "event": "deal.question",
+        "offset": 0.05
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-4",
+      "at": {
+        "event": "rewind.reset",
+        "offset": 0
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-5",
+      "at": {
+        "event": "evidence.condition",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-6",
+      "at": {
+        "event": "evidence.records",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-7",
+      "at": {
+        "event": "evidence.settle",
+        "offset": 0
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-8",
+      "at": {
+        "event": "reprice.offer",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-9",
+      "at": {
+        "event": "shop.old",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-10",
+      "at": {
+        "event": "shop.sale",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-11",
+      "at": {
+        "event": "shop.pause",
+        "offset": 0
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-12",
+      "at": {
+        "event": "compare.others",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-13",
+      "at": {
+        "event": "compare.settle",
+        "offset": 0
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-14",
+      "at": {
+        "event": "close.result",
+        "offset": 0
+      },
+      "attack": 0.04,
+      "hold": 0.13,
+      "release": 0.22,
+      "gain": 0.78
+    },
+    {
+      "id": "space-missing-accessory",
+      "at": {
+        "event": "evidence.accessory-check",
+        "offset": 0.1
+      },
+      "attack": 0.04,
+      "hold": 0.1,
+      "release": 0.18,
+      "gain": 0.8
+    }
+  ]
+}

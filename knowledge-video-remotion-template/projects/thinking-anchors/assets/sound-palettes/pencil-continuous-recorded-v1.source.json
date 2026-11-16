@@ -1,0 +1,23 @@
+{
+  "id": "809934",
+  "author": "Trtle.T",
+  "title": "Freesound - Pencil stroke long by Trtle.T",
+  "page": "https://freesound.org/people/Trtle.T/sounds/809934/",
+  "download": "https://cdn.freesound.org/previews/809/809934_13513689-hq.mp3",
+  "format": "public HQ preview MP3",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sha256": "1ebf6ce32e0e4b76db59e64999175d076f425654acfcf82b6c3eb958b13467f3",
+  "sourceInSeconds": 2.5,
+  "sourceOutSeconds": 4.5,
+  "durationSeconds": 2,
+  "processing": [
+    "native-speed continuous excerpt",
+    "180–7500Hz band limiting",
+    "transient compression",
+    "gain and peak control",
+    "modest pressure rise",
+    "45/100ms edge fades"
+  ],
+  "humanListening": "not-performed"
+}

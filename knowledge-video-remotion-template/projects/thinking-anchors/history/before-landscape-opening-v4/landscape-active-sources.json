@@ -1,0 +1,33 @@
+{
+  "revision": "landscape-opening-v3",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-opening-v3",
+  "decision": "projects/thinking-anchors/landscape-final-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-final-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-opening-v3/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-opening-v3/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v3/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-opening-v3/Opening.tsx",
+  "note": "0–24为新的直播间开头，尚待反馈；24–74继续引用landscape-final-v1修正场景。完整74秒画面入口已接好，本次只导出24秒及38秒衔接预览，旧最终成片保留。Root不包含音轨，沿用原音频时间。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v3/Actor.tsx",
+  "usedEvidence": "projects/thinking-anchors/landscape-final-v1/Used.tsx",
+  "usedActor": "projects/thinking-anchors/landscape-used-v1/Actor.tsx",
+  "offer": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+  "offerActor": "projects/thinking-anchors/landscape-offer-v1/Actor.tsx",
+  "ending": "projects/thinking-anchors/landscape-final-v1/Ending.tsx",
+  "endingActor": "projects/thinking-anchors/landscape-ending-v1/Actor.tsx",
+  "audioPlan": "outputs/thinking-anchors/landscape-ending-v1/audio-plan.json",
+  "finalVideo": "outputs/thinking-anchors/landscape-final-v1/video.mp4",
+  "host": "projects/thinking-anchors/landscape-opening-v3/Host.tsx",
+  "previewVideo": "outputs/thinking-anchors/landscape-opening-v3/video.mp4",
+  "previewContinuity": "outputs/thinking-anchors/landscape-opening-v3/continuity-0-38.mp4"
+}

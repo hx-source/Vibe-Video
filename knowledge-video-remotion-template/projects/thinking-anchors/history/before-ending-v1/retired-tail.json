@@ -1,0 +1,66 @@
+{
+  "reason": "网购折扣案例已移到开头；按用户同意的方案在58秒后直接总结，完整试看片改为70秒",
+  "segments": [
+    {
+      "id": "shop",
+      "durationSeconds": 12,
+      "intent": "“原价 999”，让 199 显得便宜",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.3,
+        "old": 1,
+        "sale": 3,
+        "joy": 5,
+        "pause": 8
+      },
+      "props": {
+        "title": "“原价 999”，让 199 显得便宜",
+        "mode": "shop",
+        "note": "生活情境为原创示例｜划线价不自动证明商品价值",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "compare",
+      "durationSeconds": 12,
+      "intent": "把折扣，换成真实价格来比",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.3,
+        "hide": 1,
+        "history": 3,
+        "others": 5,
+        "decision": 8,
+        "settle": 10
+      },
+      "props": {
+        "title": "把折扣，换成真实价格来比",
+        "mode": "compare",
+        "note": "查价、预算为书中原则的生活化应用｜金额虚构",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    },
+    {
+      "id": "close",
+      "durationSeconds": 6,
+      "intent": "下一次，先检查那个数字",
+      "sceneType": "anchor-story-motion",
+      "events": {
+        "reveal": 0.2,
+        "first": 0.5,
+        "second": 2,
+        "third": 3.5,
+        "result": 4.5
+      },
+      "props": {
+        "title": "下一次，先检查那个数字",
+        "mode": "close",
+        "note": "依据《思考，快与慢》锚定相关讨论改编",
+        "layout": "fullbleed",
+        "captionPlacement": "scene"
+      }
+    }
+  ]
+}

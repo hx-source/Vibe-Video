@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "narration": false,
+    "captions": "zh-CN",
+    "targetDurationSeconds": 88
+  },
+  "topic": {
+    "title": "你真的买便宜了吗？｜锚定效应",
+    "audience": "普通消费者，无心理学专业背景",
+    "question": "砍价成功和大幅打折，为什么仍可能买贵？",
+    "takeaway": "问报价依据，主动找反证，再用可比信息和自己的目标作判断。"
+  },
+  "research": {
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Daniel Kahneman, Thinking, Fast and Slow, chapter 11 Anchors；本PDF第133页的谈判与反向思考段落",
+        "reference": "https://cpcglobal.org/publications/Thinking%20Fast%20and%20Slow.pdf"
+      },
+      {
+        "title": "Mussweiler, Strack & Pfeiffer (2000), Overcoming the Inevitable Anchoring Effect",
+        "reference": "https://journals.sagepub.com/doi/10.1177/01461672002611010"
+      },
+      {
+        "title": "Galinsky & Mussweiler (2001), First offers as anchors",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/11642352/"
+      }
+    ],
+    "boundaries": "生活案例为原创情境；金额为剧情设定，不伪装成实验数据或当前市场报价。查价、预算等为书中原则的生活化应用，不声称书中提供该购物操作清单；方法帮助减少影响，不保证消除所有偏差。"
+  },
+  "outline": [
+    {
+      "segmentId": "deal",
+      "point": "直播间从999降到199，为什么会心动？"
+    },
+    {
+      "segmentId": "trap",
+      "point": "直播间里的999，怎样成为判断199的参照"
+    },
+    {
+      "segmentId": "rewind",
+      "point": "换一种谈法，再来一次"
+    },
+    {
+      "segmentId": "evidence",
+      "point": "先找不支持这个报价的证据"
+    },
+    {
+      "segmentId": "reprice",
+      "point": "按查到的依据出价"
+    },
+    {
+      "segmentId": "shop",
+      "point": "“原价 999”，让 199 显得便宜"
+    },
+    {
+      "segmentId": "compare",
+      "point": "把折扣，换成真实价格来比"
+    },
+    {
+      "segmentId": "close",
+      "point": "下一次，先检查那个数字"
+    }
+  ],
+  "scenePlan": [
+    {
+      "segmentId": "deal",
+      "sceneType": "anchor-story-motion",
+      "purpose": "直播间从999降到199，为什么会心动？",
+      "change": "直播间同一件外套报价999→599→199；观众觉得少花800而准备下单，随后收回手指、遮住原价、查同款到手价。沿用漫画场内表达、无底部固定说明。"
+    },
+    {
+      "segmentId": "trap",
+      "sceneType": "anchor-story-motion",
+      "purpose": "直播间里的999，怎样成为判断199的参照",
+      "change": "承接已认可直播间末帧：同一衣服、主播、观众与遮住原价的界面继续存在；199保持不变，999作为脑中参照浮现，绘出999−199=800，再显示锚定效应并追问判断依据。"
+    },
+    {
+      "segmentId": "rewind",
+      "sceneType": "anchor-story-motion",
+      "purpose": "换一种谈法，再来一次",
+      "change": "按已认可动作表达方向扩展：对话倒回开价前，买家取出检查清单，提出对报价依据的疑问。 固定底部说明改为人物短对话和物件变化，原解释文字保留为可选SRT。"
+    },
+    {
+      "segmentId": "evidence",
+      "sceneType": "anchor-evidence-motion",
+      "purpose": "先找不支持这个报价的证据",
+      "change": "底部大字字幕和小字说明改为人物动作与场内表达：放大镜移动检查、发现磨损和缺少配件、人物表情/手势、滑看成交记录、三个价格从记录中取出归到比较线，人物形成新判断。保留已认可代表片段的动作、时间和混音，扩展其余场景。"
+    },
+    {
+      "segmentId": "reprice",
+      "sceneType": "anchor-story-motion",
+      "purpose": "按查到的依据出价",
+      "change": "按已认可动作表达方向扩展：买家展示成色和成交依据，再提出1200元的剧情报价；显示另一家和离开交易的选择。 固定底部说明改为人物短对话和物件变化，原解释文字保留为可选SRT。"
+    },
+    {
+      "segmentId": "shop",
+      "sceneType": "anchor-story-motion",
+      "purpose": "“原价 999”，让 199 显得便宜",
+      "change": "按已认可动作表达方向扩展：同一外套先出现999划线价，再出现199到手价；买家暂停，检查原价依据。 固定底部说明改为人物短对话和物件变化，原解释文字保留为可选SRT。"
+    },
+    {
+      "segmentId": "compare",
+      "sceneType": "anchor-story-motion",
+      "purpose": "把折扣，换成真实价格来比",
+      "change": "按已认可动作表达方向扩展：收起划线价，改看剧情中的近期常态价与其他店到手价；再和需求、预算比较。 固定底部说明改为人物短对话和物件变化，原解释文字保留为可选SRT。"
+    },
+    {
+      "segmentId": "close",
+      "sceneType": "anchor-story-motion",
+      "purpose": "下一次，先检查那个数字",
+      "change": "按已认可动作表达方向扩展：把问依据、找反证、再比较三个动作落成便签，人物带着清单离开。 固定底部说明改为人物短对话和物件变化，原解释文字保留为可选SRT。"
+    }
+  ],
+  "representative": {
+    "from": 34,
+    "to": 44,
+    "stillTime": 43,
+    "reason": "同一34–44秒范围验证底部说明转为人物行动：发现商品问题、滑看成交记录、把价格归到比较线上；音乐保持全片时钟。"
+  }
+}

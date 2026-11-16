@@ -1,0 +1,33 @@
+{
+  "scope": [
+    0,
+    20
+  ],
+  "reason": "用户确认20秒左右结束第一段，为什么另作下一段；同时修复17秒音画落点",
+  "pictureSource": "landscape-opening-v6",
+  "pictureFramesUnchanged": 600,
+  "oldCueAt": 17.14,
+  "newCueAt": 17.42888888888889,
+  "sourcePeakOffset": 0.03777777777777778,
+  "targetVisualFrame": 524,
+  "targetPeakAt": 17.466666666666665,
+  "musicSource": "02_情感话题_故事讲述.m4a",
+  "musicSpeed": 1,
+  "continuousMusicRange": [
+    0,
+    20
+  ],
+  "previewFade": [
+    19.82,
+    20
+  ],
+  "nextSegment": {
+    "startsAt": 20,
+    "status": "planned",
+    "purpose": "解释为什么999成为比较起点，以及比999便宜不等于实际值得买",
+    "duration": "待下一段内容制作后确定"
+  },
+  "current74SecondFinalPreserved": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "newVideoApproved": false,
+  "assistantListening": "not-performed"
+}

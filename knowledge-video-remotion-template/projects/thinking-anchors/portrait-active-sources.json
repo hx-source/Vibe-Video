@@ -1,0 +1,11 @@
+{
+  "visualRevision": "portrait-character-motion-v1",
+  "root": "projects/thinking-anchors/portrait-character-motion-v1",
+  "opening": "projects/thinking-anchors/portrait-edge-cleanup-v1/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/portrait-edge-cleanup-v1/Mechanism.tsx",
+  "decision": "projects/thinking-anchors/portrait-character-motion-v1/Decision.tsx",
+  "entry": "projects/thinking-anchors/portrait-character-motion-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/portrait-character-motion-v1/Root.tsx",
+  "note": "0–24秒继续用去窗框版本；24–38秒使用人物动作增强版。后续从此映射衔接；历史版本保留。",
+  "actor": "projects/thinking-anchors/portrait-character-motion-v1/Actor.tsx"
+}

@@ -1,0 +1,14 @@
+{
+  "revision": "landscape-opening-v2",
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "status": "user-approved",
+  "feedback": "这版开头可以，接下来继续制作38秒之后的二手砍价部分，注意和前面自然衔接，讲清楚怎么检查商品、查同款成交记录来判断价格，继续保持横屏、漫画风格和02背景音乐。",
+  "userApproved": true,
+  "video": "outputs/thinking-anchors/landscape-opening-v2/video.mp4",
+  "videoSha256": "91cc64398baf05444e8724ca351e9cd96ffa9e019a54f03a0bd3603b26c510ac",
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "仅认可该版0–24秒开头，授权继续38秒后二手案例；不推断新38–52秒已获认可。"
+}

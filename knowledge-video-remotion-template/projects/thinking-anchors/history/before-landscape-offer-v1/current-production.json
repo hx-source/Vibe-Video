@@ -1,0 +1,30 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "used-evidence",
+  "currentReview": "outputs/thinking-anchors/landscape-used-v1/review.html",
+  "output": "outputs/thinking-anchors/landscape-used-v1/video.mp4",
+  "rangeSeconds": [
+    38,
+    52
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": false,
+  "note": "新增二手相机检查、匹配真实成交与参考区间；前38秒画面保留，音乐连续延长至52秒，新片段待反馈。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-used-v1/continuity-0-52.mp4",
+  "revision": "landscape-used-v1",
+  "revisionReason": "这版开头可以，接下来继续制作38秒之后的二手砍价部分，注意和前面自然衔接，讲清楚怎么检查商品、查同款成交记录来判断价格，继续保持横屏、漫画风格和02背景音乐。",
+  "prior0to24UserApproved": true
+}

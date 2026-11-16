@@ -1,0 +1,475 @@
+{
+  "audioPlan": {
+    "schemaVersion": 2,
+    "sampleRate": 44100,
+    "masterGain": 0.9,
+    "buses": {
+      "music": 1,
+      "accent": 1,
+      "end": 1,
+      "start": 1,
+      "transition": 1,
+      "process": 1
+    },
+    "reviewPolicy": {
+      "maxConcurrentEffects": 2,
+      "maxProcessSeconds": 2.05
+    },
+    "qualityPolicy": {
+      "targetLufs": -18,
+      "lufsTolerance": 3,
+      "maxTruePeakDb": -1,
+      "minEffectRelativeDb": -12,
+      "maxEffectRelativeDb": 8
+    },
+    "clips": [
+      {
+        "id": "continuous-bed",
+        "role": "music",
+        "source": "asset:anchors-bed",
+        "sourceIn": 0,
+        "sourceOut": 70,
+        "at": 0,
+        "speed": 1,
+        "gain": 0.64,
+        "fadeIn": 0.45,
+        "fadeOut": 1.5
+      },
+      {
+        "id": "used-record-2",
+        "source": "asset:record-paper-2-v1",
+        "at": {
+          "event": "evidence.records",
+          "offset": 0.44
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.18034013605442178,
+        "speed": 1,
+        "gain": 1.3,
+        "role": "accent",
+        "enabled": true,
+        "fadeOut": 0.012,
+        "purpose": "成交记录B单独出现",
+        "musicFit": "02配乐按全片原时钟继续，0–32秒已认可混音保持；沿用此前检查与记录的物件/纸张音色，分别跟随镜头检查、三条记录和一次绘框，不叠持续滑音或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "used-record-3",
+        "source": "asset:record-paper-3-v1",
+        "at": {
+          "event": "evidence.records",
+          "offset": 0.78
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.20931972789115647,
+        "speed": 1,
+        "gain": 0.95,
+        "role": "accent",
+        "enabled": true,
+        "fadeOut": 0.012,
+        "purpose": "成交记录C单独出现",
+        "musicFit": "02配乐按全片原时钟继续，0–32秒已认可混音保持；沿用此前检查与记录的物件/纸张音色，分别跟随镜头检查、三条记录和一次绘框，不叠持续滑音或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "used-range",
+        "source": "asset:regroup-draw-v1",
+        "at": {
+          "event": "evidence.range",
+          "offset": 0.1
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.85,
+        "speed": 1,
+        "gain": 0.78,
+        "role": "process",
+        "enabled": true,
+        "fadeOut": 0.012,
+        "purpose": "框线圈定三条成交记录价格，短铅笔录音跟随实际绘框",
+        "musicFit": "02配乐按全片原时钟继续，0–32秒已认可混音保持；沿用此前检查与记录的物件/纸张音色，分别跟随镜头检查、三条记录和一次绘框，不叠持续滑音或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "offer-basis",
+        "source": "asset:palette-paper-short",
+        "at": {
+          "event": "reprice.basis",
+          "offset": 0.1
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.23061224489795917,
+        "speed": 1,
+        "gain": 0.75,
+        "role": "accent",
+        "fadeOut": 0.012,
+        "purpose": "把已查成交区间与商品状况放在报价依据卡上",
+        "musicFit": "保持02配乐全片原速与时钟、已认可0–46秒混音；纸张、短界面、物件撤回与轻接触分别配具体动作，无新旋律、长扫动或混响；实际听感待反馈"
+      },
+      {
+        "id": "offer-proposal",
+        "source": "asset:palette-paper-long",
+        "at": {
+          "event": "reprice.offer",
+          "offset": 0.1
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.43045351473922905,
+        "speed": 1,
+        "gain": 0.7,
+        "role": "accent",
+        "fadeOut": 0.012,
+        "purpose": "1200元示例报价卡出现，短纸张声跟随展开",
+        "musicFit": "保持02配乐全片原速与时钟、已认可0–46秒混音；纸张、短界面、物件撤回与轻接触分别配具体动作，无新旋律、长扫动或混响；实际听感待反馈"
+      },
+      {
+        "id": "offer-reply",
+        "source": "asset:opening-ui-contact-v1",
+        "at": {
+          "event": "reprice.reply",
+          "offset": 0.1
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.095,
+        "speed": 1,
+        "gain": 1.8,
+        "role": "accent",
+        "fadeOut": 0.012,
+        "purpose": "卖家回复这个价不卖，一次短消息提示",
+        "musicFit": "保持02配乐全片原速与时钟、已认可0–46秒混音；纸张、短界面、物件撤回与轻接触分别配具体动作，无新旋律、长扫动或混响；实际听感待反馈"
+      },
+      {
+        "id": "offer-withdraw",
+        "source": "asset:palette-cloth-two",
+        "at": {
+          "event": "reprice.leave",
+          "offset": 0.12
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.4150793650793651,
+        "speed": 1,
+        "gain": 0.55,
+        "role": "transition",
+        "fadeOut": 0.012,
+        "purpose": "买家收回报价卡，短物件声跟随退出动作",
+        "musicFit": "保持02配乐全片原速与时钟、已认可0–46秒混音；纸张、短界面、物件撤回与轻接触分别配具体动作，无新旋律、长扫动或混响；实际听感待反馈"
+      },
+      {
+        "id": "offer-closed",
+        "source": "asset:regroup-contact-v2",
+        "at": {
+          "event": "reprice.leave",
+          "offset": 0.8
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.11,
+        "speed": 1,
+        "gain": 2.1,
+        "role": "end",
+        "fadeOut": 0.012,
+        "purpose": "这次不成交状态落定，保留换一家或不买的选择",
+        "musicFit": "保持02配乐全片原速与时钟、已认可0–46秒混音；纸张、短界面、物件撤回与轻接触分别配具体动作，无新旋律、长扫动或混响；实际听感待反馈"
+      },
+      {
+        "id": "ending-recap",
+        "source": "asset:palette-cloth-two",
+        "at": {
+          "event": "close.ask",
+          "offset": 0.1
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.4150793650793651,
+        "speed": 1,
+        "gain": 0.5,
+        "role": "transition",
+        "fadeOut": 0.012,
+        "purpose": "两张生活案例回顾卡进入",
+        "musicFit": "02配乐保持原速、起点和前58秒混音；只在结尾68.5–70秒淡出。短声跟随回顾、查证、绘线、决定和收卡，不叠旋律或持续过程声，听感待反馈"
+      },
+      {
+        "id": "ending-counter",
+        "source": "asset:record-paper-1-v1",
+        "at": {
+          "event": "close.counter",
+          "offset": 0.08
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.2,
+        "speed": 1,
+        "gain": 1,
+        "role": "accent",
+        "fadeOut": 0.012,
+        "purpose": "查证信息出现，回扣主动找反证",
+        "musicFit": "02配乐保持原速、起点和前58秒混音；只在结尾68.5–70秒淡出。短声跟随回顾、查证、绘线、决定和收卡，不叠旋律或持续过程声，听感待反馈"
+      },
+      {
+        "id": "ending-compare",
+        "source": "asset:pencil-underline-recorded-v1",
+        "at": {
+          "event": "close.compare",
+          "offset": 0.05
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.235,
+        "speed": 1,
+        "gain": 0.9,
+        "role": "accent",
+        "fadeOut": 0.012,
+        "purpose": "同款到手价和可比成交信息下方比较线绘出",
+        "musicFit": "02配乐保持原速、起点和前58秒混音；只在结尾68.5–70秒淡出。短声跟随回顾、查证、绘线、决定和收卡，不叠旋律或持续过程声，听感待反馈"
+      },
+      {
+        "id": "ending-decision",
+        "source": "asset:opening-ui-contact-v1",
+        "at": {
+          "event": "close.decide",
+          "offset": 0.08
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.095,
+        "speed": 1,
+        "gain": 1.6,
+        "role": "accent",
+        "fadeOut": 0.012,
+        "purpose": "需求、预算与可以不买的选择卡出现",
+        "musicFit": "02配乐保持原速、起点和前58秒混音；只在结尾68.5–70秒淡出。短声跟随回顾、查证、绘线、决定和收卡，不叠旋律或持续过程声，听感待反馈"
+      },
+      {
+        "id": "ending-takeaway",
+        "source": "asset:palette-paper-short",
+        "at": {
+          "event": "close.takeaway",
+          "offset": 0.35
+        },
+        "sourceIn": 0,
+        "sourceOut": 0.23061224489795917,
+        "speed": 1,
+        "gain": 0.6,
+        "role": "transition",
+        "fadeOut": 0.012,
+        "purpose": "案例卡收起，书本和结语进入，留出结尾阅读时间",
+        "musicFit": "02配乐保持原速、起点和前58秒混音；只在结尾68.5–70秒淡出。短声跟随回顾、查证、绘线、决定和收卡，不叠旋律或持续过程声，听感待反馈"
+      },
+      {
+        "id": "portrait-sale",
+        "role": "accent",
+        "source": "asset:palette-paper-short",
+        "at": 1.7966666666666666,
+        "sourceIn": 0,
+        "sourceOut": 0.23061224489795917,
+        "speed": 1,
+        "gain": 0.75,
+        "fadeOut": 0.012,
+        "purpose": "199在999缩小后进入，一次短纸张声跟随主价格展开",
+        "musicFit": "保留02原素材0–12秒、原速、gain0.64；四个短声音只对应价格揭示、心动、另一家报价和比较线，无持续扫动或额外旋律；候选听感需用户看片确认"
+      },
+      {
+        "id": "portrait-delight",
+        "role": "accent",
+        "source": "asset:opening-ui-contact-v1",
+        "at": 3.2866666666666666,
+        "sourceIn": 0,
+        "sourceOut": 0.095,
+        "speed": 1,
+        "gain": 1.4,
+        "fadeOut": 0.012,
+        "purpose": "省了800的想法膨胀，轻短提示对应心动",
+        "musicFit": "保留02原素材0–12秒、原速、gain0.64；四个短声音只对应价格揭示、心动、另一家报价和比较线，无持续扫动或额外旋律；候选听感需用户看片确认"
+      },
+      {
+        "id": "portrait-other",
+        "role": "accent",
+        "source": "asset:palette-paper-long",
+        "at": 6.413333333333333,
+        "sourceIn": 0,
+        "sourceOut": 0.43045351473922905,
+        "speed": 1,
+        "gain": 0.7,
+        "fadeOut": 0.012,
+        "purpose": "同款同条件189进入，一次纸张声强调新证据",
+        "musicFit": "保留02原素材0–12秒、原速、gain0.64；四个短声音只对应价格揭示、心动、另一家报价和比较线，无持续扫动或额外旋律；候选听感需用户看片确认"
+      },
+      {
+        "id": "portrait-compare",
+        "role": "accent",
+        "source": "asset:pencil-underline-recorded-v1",
+        "at": 9.62,
+        "sourceIn": 0,
+        "sourceOut": 0.235,
+        "speed": 1,
+        "gain": 0.9,
+        "fadeOut": 0.012,
+        "purpose": "199与189下方比较线画出，短铅笔声跟随绘线",
+        "musicFit": "保留02原素材0–12秒、原速、gain0.64；四个短声音只对应价格揭示、心动、另一家报价和比较线，无持续扫动或额外旋律；候选听感需用户看片确认"
+      },
+      {
+        "id": "mechanism-shift",
+        "source": "asset:palette-cloth-two",
+        "role": "transition",
+        "at": 12.38,
+        "sourceIn": 0,
+        "sourceOut": 0.4150793650793651,
+        "speed": 1,
+        "gain": 0.5,
+        "fadeOut": 0.012,
+        "purpose": "上一幕比较结果转入判断参照，价格牌开始移动",
+        "musicFit": "沿用02原素材0–24秒原速与音量；开头四个音效保留。物件切换、参照出现、心动、绘线、概念落定各一短声，不叠持续扫动或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "mechanism-recall",
+        "source": "asset:palette-paper-short",
+        "role": "accent",
+        "at": 13,
+        "sourceIn": 0,
+        "sourceOut": 0.23061224489795917,
+        "speed": 1,
+        "gain": 0.75,
+        "fadeOut": 0.012,
+        "purpose": "脑中最初报价999出现",
+        "musicFit": "沿用02原素材0–24秒原速与音量；开头四个音效保留。物件切换、参照出现、心动、绘线、概念落定各一短声，不叠持续扫动或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "mechanism-feel",
+        "source": "asset:opening-ui-contact-v1",
+        "role": "accent",
+        "at": 14.37,
+        "sourceIn": 0,
+        "sourceOut": 0.095,
+        "speed": 1,
+        "gain": 1.4,
+        "fadeOut": 0.012,
+        "purpose": "感觉省了800的主观判断出现",
+        "musicFit": "沿用02原素材0–24秒原速与音量；开头四个音效保留。物件切换、参照出现、心动、绘线、概念落定各一短声，不叠持续扫动或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "mechanism-compare",
+        "source": "asset:pencil-underline-recorded-v1",
+        "role": "accent",
+        "at": 17.470000000000002,
+        "sourceIn": 0,
+        "sourceOut": 0.235,
+        "speed": 1,
+        "gain": 0.9,
+        "fadeOut": 0.012,
+        "purpose": "199与189比较线绘出",
+        "musicFit": "沿用02原素材0–24秒原速与音量；开头四个音效保留。物件切换、参照出现、心动、绘线、概念落定各一短声，不叠持续扫动或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "mechanism-concept",
+        "source": "asset:regroup-contact-v2",
+        "role": "end",
+        "at": 19.75,
+        "sourceIn": 0,
+        "sourceOut": 0.11,
+        "speed": 1,
+        "gain": 2.4,
+        "fadeOut": 0.012,
+        "purpose": "锚定效应概念出现与落定",
+        "musicFit": "沿用02原素材0–24秒原速与音量；开头四个音效保留。物件切换、参照出现、心动、绘线、概念落定各一短声，不叠持续扫动或新旋律；实际听感待用户反馈"
+      },
+      {
+        "id": "decision-search",
+        "source": "asset:opening-ui-contact-v1",
+        "role": "accent",
+        "at": 24.6,
+        "sourceIn": 0,
+        "sourceOut": 0.095,
+        "speed": 1,
+        "gain": 1.6,
+        "fadeOut": 0.012,
+        "purpose": "进入查同款价格的搜索界面",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-history",
+        "source": "asset:record-paper-1-v1",
+        "role": "accent",
+        "at": 26.5,
+        "sourceIn": 0,
+        "sourceOut": 0.2,
+        "speed": 1,
+        "gain": 1.15,
+        "fadeOut": 0.012,
+        "purpose": "近期常态价219记录出现",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-other",
+        "source": "asset:record-paper-2-v1",
+        "role": "accent",
+        "at": 28.68,
+        "sourceIn": 0,
+        "sourceOut": 0.18034013605442178,
+        "speed": 1,
+        "gain": 1.3,
+        "fadeOut": 0.012,
+        "purpose": "其他店到手价189记录接替进入",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-compare",
+        "source": "asset:pencil-underline-recorded-v1",
+        "role": "accent",
+        "at": 30.049999999999997,
+        "sourceIn": 0,
+        "sourceOut": 0.235,
+        "speed": 1,
+        "gain": 0.9,
+        "fadeOut": 0.012,
+        "purpose": "圈定可比报价并形成比较线",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-conditions",
+        "source": "asset:palette-cloth-two",
+        "role": "transition",
+        "at": 30.779999999999998,
+        "sourceIn": 0,
+        "sourceOut": 0.4150793650793651,
+        "speed": 1,
+        "gain": 0.5,
+        "fadeOut": 0.012,
+        "purpose": "同款、运费、售后作为一组核对条件进入",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-need",
+        "source": "asset:palette-paper-long",
+        "role": "accent",
+        "at": 32.4,
+        "sourceIn": 0,
+        "sourceOut": 0.43045351473922905,
+        "speed": 1,
+        "gain": 0.7,
+        "fadeOut": 0.012,
+        "purpose": "价格记录收起，需求问题进入",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-budget",
+        "source": "asset:palette-paper-short",
+        "role": "accent",
+        "at": 33.879999999999995,
+        "sourceIn": 0,
+        "sourceOut": 0.23061224489795917,
+        "speed": 1,
+        "gain": 0.65,
+        "fadeOut": 0.012,
+        "purpose": "预算问题随后出现",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      },
+      {
+        "id": "decision-choice",
+        "source": "asset:regroup-contact-v2",
+        "role": "end",
+        "at": 35.7,
+        "sourceIn": 0,
+        "sourceOut": 0.11,
+        "speed": 1,
+        "gain": 2.1,
+        "fadeOut": 0.012,
+        "purpose": "先不急着买的选择落定，人物收手",
+        "musicFit": "沿用02原素材0–38秒原速与音量，前24秒动作声保留；短界面、纸张、铅笔和物件声配合核查与选择动作，无持续扫动和额外旋律；实际听感待反馈"
+      }
+    ],
+    "cues": [],
+    "rhythms": [],
+    "ducking": []
+  }
+}

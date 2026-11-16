@@ -1,0 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {ROOT,json,writeJson} from '../../scripts/files.mjs';
+const topic=path.join(ROOT,'projects/thinking-anchors'),local=path.join(topic,'landscape-label-v1'),out=path.join(ROOT,'outputs/thinking-anchors/landscape-label-v1');
+if(fs.existsSync(local)||fs.existsSync(out))throw Error('Revision exists');fs.mkdirSync(local,{recursive:true});fs.mkdirSync(path.join(out,'audit'),{recursive:true});
+const replace=(s,a,b)=>{if(!s.includes(a))throw Error('Replacement missing');return s.replace(a,b);};
+const board=json(path.join(topic,'landscape-reason-v1/board.json'));board.revision='landscape-label-v1';board.editRangeSeconds=[22,23.5];board.labelAnimation={from:22,out:22.2,turn:22.4,settle:22.733333333333334,returnFrom:23.1,to:23.5,soundAt:22.533333333333335};board.userApproved=false;board.contentDirectionApproved=true;writeJson(path.join(local,'board.json'),board);
+let core=fs.readFileSync(path.join(topic,'landscape-reason-v1/Reason.tsx'),'utf8');core=replace(core,'export function AnchorReason','export function RevisedReason');core=replace(core,' const stage=t<e.question',` const outLabel=ease((t-2.2)/.2),reveal=ease((t-2.4)/(10/30)),settle=Math.max(0,Math.min(1,(t-2.4)/.45)),returning=ease((t-3.1)/.4),badgeScale=(.7+.3*reveal+.12*Math.sin(Math.PI*settle))*(1-returning)+returning;
+ const colorMix=(a:number,b:number)=>Math.round(mix(a,b,returning)).toString(16).padStart(2,'0'),labelColor='#'+colorMix(32,163)+colorMix(123,77)+colorMix(114,60);
+ const stage=t<e.question`);
+core=replace(core,`   <Text x={-131} y={13} size={label>.5?38:32} color="#a34d3c">{label>.5?'现成参照':'主播说的原价'}</Text>`,`   <g data-label-out opacity={1-outLabel} transform={\`translate(-131 \${-22*outLabel}) rotate(\${-5*outLabel}) scale(1 \${1-.85*outLabel})\`}><Text x={0} y={13} size={32} color="#a34d3c">主播说的原价</Text></g>
+   <g data-label-in opacity={reveal} transform={\`translate(-131 \${18*(1-reveal)}) scale(\${badgeScale})\`}>
+    <rect x="-116" y="-48" width="232" height="96" rx="15" fill="#d7f3e8" stroke="#207b72" strokeWidth="4" opacity={1-returning}/>
+    <Text x={0} y={13} size={mix(50,38,returning)} color={labelColor}>现成参照</Text>
+   </g>
+   <g data-label-focus opacity={Math.sin(Math.PI*Math.min(1,Math.max(0,(t-2.4)/.7)))*(1-returning)} stroke="#207b72" strokeWidth="5" strokeLinecap="round"><path d="M-257 -64 l-17 -16 M-267 -28 h-22 M-12 -64 l12 -17"/></g>`);
+fs.writeFileSync(path.join(local,'ReasonCore.tsx'),core);
+fs.writeFileSync(path.join(local,'Reason.tsx'),`import React from 'react';\nimport {AnchorReason as PreviousReason} from '../landscape-reason-v1/Reason';\nimport {RevisedReason} from './ReasonCore';\nexport function AnchorReason({frame}:{frame:number}){return frame>=60&&frame<105?<RevisedReason frame={frame}/>:<PreviousReason frame={frame}/>;}\n`);
+for(const f of ['entry.tsx','Root.tsx']){let s=fs.readFileSync(path.join(topic,'landscape-decision-v1',f),'utf8');s=s.replace("import {AnchorReason} from '../landscape-reason-v1/Reason';","import {AnchorReason} from './Reason';\nimport {AnchorReason as OriginalReason} from '../landscape-reason-v1/Reason';").replace("import {LiveDecision,validateLiveDecision} from './Decision';","import {LiveDecision,validateLiveDecision} from '../landscape-decision-v1/Decision';");if(f==='entry.tsx')s=s.replace('(window as any).renderLandscape=(f:number)=>','(window as any).renderLandscape=(f:number,baseline=false)=>').replace('<AnchorReason frame={f-600}/>','baseline?<OriginalReason frame={f-600}/>:<AnchorReason frame={f-600}/>');fs.writeFileSync(path.join(local,f),s);}
+for(const f of ['browser.mjs','tsconfig.json'])fs.writeFileSync(path.join(local,f),fs.readFileSync(path.join(topic,'landscape-decision-v1',f),'utf8').replaceAll('landscape-decision-v1/entry.tsx','landscape-label-v1/entry.tsx'));
+fs.writeFileSync(path.join(local,'revision-impact.json'),JSON.stringify({requestedChange:'让主播说的原价变成现成参照的身份转变更可见，增加一次贴合动作的短音效',scopeSeconds:[0,52],visualEditSeconds:[22,23.5],newSoundAt:22+16/30,sourceMusicUnchanged:true,pricesAndItemUnchanged:true,otherSourceFramesUnchanged:true,secondhandExcluded:true,knowledgeContentChanged:false,assistantListening:'not-performed',userApproved:false},null,2)+'\n');
+fs.writeFileSync(path.join(local,'facts.md'),'# 局部强调：报价转成判断参照\n\n知识内容及措辞沿用已认可的landscape-reason-v1/facts.md，仅修改22–23.5秒标签翻出、翻入、放大和短暂强调。图示表现999从主播报出的原价变成现成比较参照，不新增关于脑机制的科学断言。999、199、同一件衣服及后续方法不改变。整条保留0–52秒，二手案例仍排除。02音乐原速与音量、原有音效时刻保留，只增加一段纸张翻动声；未人工试听。\n');console.log('Label revision prepared');

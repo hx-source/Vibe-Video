@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "type": "browser-entry",
+  "entry": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+  "renderFunction": "renderLandscape",
+  "audio": {
+    "planSourceKey": "audioPlan",
+    "assetIndexes": [
+      "projects/thinking-anchors/assets/index.json"
+    ],
+    "eventSources": [
+      {
+        "file": "projects/thinking-anchors/landscape-opening-v9/board.json",
+        "prefix": "opening.",
+        "offset": 0
+      },
+      {
+        "file": "projects/thinking-anchors/landscape-reason-v1/board.json",
+        "prefix": "reason.",
+        "offset": 20
+      },
+      {
+        "file": "projects/thinking-anchors/landscape-decision-v1/board.json",
+        "prefix": "decision.",
+        "offset": 34
+      }
+    ],
+    "eventValues": {
+      "label.turn": {
+        "sourceKey": "board",
+        "pointer": "/labelAnimation/turn"
+      }
+    }
+  }
+}

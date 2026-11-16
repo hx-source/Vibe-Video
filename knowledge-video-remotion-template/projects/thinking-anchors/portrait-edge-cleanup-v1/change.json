@@ -1,0 +1,11 @@
+{
+  "reason": "用户指出左侧露出多余内容：画外窗框装饰",
+  "removedPath": "M-95 439 H65 V1066 H-95 M-95 725 H65 M-15 439 V1066",
+  "scope": [
+    0,
+    38
+  ],
+  "sourceChange": "one decorative SVG path removed; dependent imports redirected to frozen corrected copies",
+  "audio": "unchanged, copy existing encoded AAC streams",
+  "historicalSourcesAndOutputs": "preserved"
+}

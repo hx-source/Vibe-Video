@@ -1,0 +1,23 @@
+{
+  "revision": "landscape-label-v1",
+  "feedback": "还可以",
+  "userApproved": true,
+  "scopeSeconds": [
+    22,
+    23.5
+  ],
+  "scope": "认可原价说明变成现成参照的局部动画及新增短音效，不推断整条最终发布版已验收",
+  "files": [
+    {
+      "file": "outputs/thinking-anchors/landscape-label-v1/video.mp4",
+      "sha256": "bd48c36dd4cdf0e459eab4d47f8eb05d40d5ff8b2ea19cddf29319f054b4e598"
+    },
+    {
+      "file": "outputs/thinking-anchors/landscape-label-v1/focus-20-26.mp4",
+      "sha256": "dc4eb2e1b1c957b8536013770524a70bc21af97729f845cecf045409379a3fd5"
+    }
+  ],
+  "priorUnchangedContentApproval": "landscape-reason-v1-acceptance.json",
+  "assistantListening": "not-performed",
+  "wholeFilmUserApproval": false
+}

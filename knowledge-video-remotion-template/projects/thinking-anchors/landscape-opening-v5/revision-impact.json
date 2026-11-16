@@ -1,0 +1,38 @@
+{
+  "scope": [
+    12,
+    17
+  ],
+  "previousRevision": "landscape-opening-v4",
+  "currentFinalPreserved": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "durationSeconds": 24,
+  "preservedPictureRanges": [
+    [
+      0,
+      12
+    ],
+    [
+      17,
+      38
+    ]
+  ],
+  "sameObjectCount": 1,
+  "beforePrice": 199,
+  "afterPrice": 199,
+  "changed": "人物由有点贵变为挺划算",
+  "compareAfterAt": 13.2,
+  "compareConcludeAt": 14,
+  "musicChanged": false,
+  "encodedAudioChanged": false,
+  "pencilCue": {
+    "at": 12.32,
+    "sourceAndGainUnchanged": true,
+    "purpose": "讲解前售价下划线"
+  },
+  "conceptTitleRange": [
+    19.2,
+    22.4
+  ],
+  "newVideoUserApproved": false,
+  "assistantListening": "not-performed"
+}

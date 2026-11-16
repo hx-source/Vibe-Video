@@ -1,0 +1,13 @@
+{
+ "schemaVersion":1,"id":"used-offer","sceneType":"anchor-landscape-offer",
+ "video":{"width":1920,"height":1080,"fps":30},"rangeSeconds":[52,64],"durationSeconds":12,
+ "events":{"switch":0.3,"reasons":1.3,"offer":2.8,"refusal":5.3,"withdraw":7.3,"choice":8.6},
+ "referenceRange":[620,680],"offer":630,
+ "captions":[
+  {"from":0,"to":2.8,"text":"成交参考620到680；这台有磨损，还缺充电器。先把依据说清楚。"},
+  {"from":2.8,"to":5.3,"text":"结合记录和商品状况，买家提出630元的示例报价。"},
+  {"from":5.3,"to":7.3,"text":"卖家表示：这个价不卖。"},
+  {"from":7.3,"to":8.6,"text":"买家收回报价：那我再看看。"},
+  {"from":8.6,"to":12,"text":"价格不合适，可以不成交。再看看，也可以。"}
+ ],"userApproved":false
+}

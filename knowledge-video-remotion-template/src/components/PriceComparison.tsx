@@ -1,0 +1,8 @@
+import React from 'react';
+import {ease} from './primitives';
+export type PriceComparisonParameters={title:string;before:{label:string;value:number;judgment:string};after:{label:string;value:number;judgment:string};events:{before:number;after:number;conclusion:number};conclusion:string};
+export function PriceComparison({timeSeconds,parameters:p}:{timeSeconds:number;parameters:PriceComparisonParameters}){
+ const times=Object.values(p.events);if(times.some(t=>!Number.isFinite(t)||t<0)||p.events.before>=p.events.after||p.events.after>=p.events.conclusion||[p.before.value,p.after.value].some(v=>!Number.isFinite(v)||v<0))throw Error('Invalid price comparison');
+ const card=(x:number,item:typeof p.before,at:number)=>{const a=ease((timeSeconds-at)/.35);return <g data-comparison-card={item.label} opacity={a} transform={`translate(${x} ${80*(1-a)})`}><rect x="-350" y="265" width="700" height="520" rx="26" fill="#e3f4ec" stroke="#25252b" strokeWidth="6"/><text y="350" fontSize="42">{item.label}</text><text data-comparison-price y="570" fontSize="155">{item.value}</text><text y="705" fontSize="50">{item.judgment}</text></g>;};
+ return <svg width="1920" height="1080" viewBox="0 0 1920 1080" style={{fontFamily:'"Noto Sans SC",sans-serif',fontWeight:700,textAnchor:'middle',fill:'#25252b'}}><rect width="1920" height="1080" fill="#fff8e9"/><text x="960" y="150" fontSize="66">{p.title}</text>{card(510,p.before,p.events.before)}{card(1410,p.after,p.events.after)}<path opacity={ease((timeSeconds-p.events.after)/.4)} d="M900 530 H1020 M990 500 L1020 530 L990 560" stroke="#ed795f" strokeWidth="10" fill="none"/><text x="960" y="960" fontSize="64" opacity={ease((timeSeconds-p.events.conclusion)/.35)}>{p.conclusion}</text></svg>;
+}

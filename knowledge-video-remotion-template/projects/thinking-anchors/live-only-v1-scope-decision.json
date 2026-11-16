@@ -1,0 +1,21 @@
+{
+  "revision": "landscape-live-only-v1",
+  "feedback": "这部分删除感觉也可以，先前的内容感觉够了",
+  "action": "exclude-secondhand-branch",
+  "retainedRangeSeconds": [
+    0,
+    52
+  ],
+  "excludedSegmentIds": [
+    "used-evidence",
+    "used-offer"
+  ],
+  "oldTwoCaseClosingExcluded": true,
+  "retainedEnding": "不合适，就先不买",
+  "newEndingProduced": false,
+  "removedFromActiveTimeline": true,
+  "physicalFilesDeleted": false,
+  "backgroundMusic": "02_情感话题_故事讲述.m4a",
+  "sourceVideo": "outputs/thinking-anchors/landscape-decision-v1/continuity-0-52.mp4",
+  "sourceSha256": "4aeda8c9f5c1e12e6f344c63ce66a9f5c55e583a818beafbcbe45c52edcf9d50"
+}

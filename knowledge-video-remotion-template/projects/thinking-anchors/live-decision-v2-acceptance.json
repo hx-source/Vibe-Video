@@ -1,0 +1,16 @@
+{
+  "status": "user-approved",
+  "rangeSeconds": [
+    24,
+    32
+  ],
+  "revision": "live-decision-v2",
+  "preview": "outputs/thinking-anchors/live-decision-v2/video.mp4",
+  "videoSha256": "ea5f327c866c5df89768c225cbfb6b6230ea84faeb2da2099ffef40a2f825cbe",
+  "continuity": "outputs/thinking-anchors/live-decision-v2/continuity-0-32.mp4",
+  "continuitySha256": "cb013639c2a1071c1e52e7c4bd44e55ebd71c2d51e83de6d205d990930a09548",
+  "feedback": "这部分可以，接下来继续制作32到46秒，注意从前面的直播间查价自然过渡到二手砍价，讲清楚怎么检查商品、查成交记录来减少锚定效应的影响。",
+  "userApproval": true,
+  "viewedAndListenedNotSeparatelyRecorded": true,
+  "scope": "Delivered 24–32s only; subsequent segment and full film remain pending"
+}

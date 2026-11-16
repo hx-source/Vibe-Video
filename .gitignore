@@ -27,6 +27,9 @@ Thumbs.db
 !**/outputs/README.md
 **/output/**
 **/public/prepared/**
+**/production-snapshots/**
+**/assets/pencil-sources/*-page.html
+**/assets/sound-palette-sources/*-page.html
 **/releases/*.zip
 **/releases/*.manifest.json
 

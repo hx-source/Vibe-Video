@@ -1,0 +1,886 @@
+{
+  "schemaVersion": 1,
+  "projectId": "thinking-anchors",
+  "generation": 16,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "durationSeconds": 52,
+  "currentRevision": "landscape-live-final-v1",
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        20
+      ],
+      "source": "projects/thinking-anchors/landscape-opening-v9/Opening.tsx",
+      "approvalReference": "landscape-opening-v9-acceptance.json"
+    },
+    {
+      "id": "anchor-reason",
+      "rangeSeconds": [
+        20,
+        34
+      ],
+      "source": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+      "approvalReference": "landscape-label-v1-acceptance.json"
+    },
+    {
+      "id": "decision",
+      "rangeSeconds": [
+        34,
+        52
+      ],
+      "source": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+      "approvalReference": "landscape-decision-v1-acceptance.json"
+    }
+  ],
+  "excludedSegments": [
+    {
+      "id": "used-evidence",
+      "rangeSeconds": [
+        52,
+        70
+      ],
+      "revision": "landscape-used-v2",
+      "status": "excluded-from-current-scope",
+      "userApproved": false,
+      "pictureSource": "projects/thinking-anchors/landscape-used-v2/Used.tsx",
+      "output": "outputs/thinking-anchors/landscape-used-v2/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-used-v2/review.html",
+      "finalOutput": null,
+      "finalSourceRevision": null,
+      "timelinePlacementPending": false,
+      "contentDirectionApproved": true,
+      "actorSource": "projects/thinking-anchors/landscape-used-v2/Actor.tsx",
+      "request": "landscape-used-v2-request.json",
+      "historicalSourceRangeSeconds": [
+        38,
+        52
+      ],
+      "included": false,
+      "exclusionReason": "这部分删除感觉也可以，先前的内容感觉够了"
+    },
+    {
+      "id": "used-offer",
+      "rangeSeconds": [
+        52,
+        64
+      ],
+      "revision": "landscape-offer-v1",
+      "status": "excluded-from-current-scope",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-offer-v1/Offer.tsx",
+      "output": "outputs/thinking-anchors/landscape-offer-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-offer-v1/review.html",
+      "approval": "landscape-offer-v1-acceptance.json",
+      "feedback": "这部分可以，接下来继续制作64秒之后的收尾，把直播间降价和二手砍价两个案例的方法总结清楚，保持横屏、漫画风格和02背景音乐，减少同屏文字，做好后先给我看一下效果。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1",
+      "sourceRangeSeconds": [
+        52,
+        64
+      ],
+      "timelinePlacementPending": true,
+      "proposedFromSeconds": 70,
+      "included": false,
+      "exclusionReason": "这部分删除感觉也可以，先前的内容感觉够了"
+    },
+    {
+      "id": "closing",
+      "rangeSeconds": [
+        64,
+        74
+      ],
+      "revision": "landscape-ending-v1",
+      "status": "excluded-from-current-scope",
+      "userApproved": true,
+      "pictureSource": "projects/thinking-anchors/landscape-ending-v1/Ending.tsx",
+      "output": "outputs/thinking-anchors/landscape-ending-v1/video.mp4",
+      "review": "outputs/thinking-anchors/landscape-ending-v1/review.html",
+      "approval": "landscape-ending-v1-acceptance.json",
+      "feedback": "这个收尾可以，接下来把整条74秒视频的前后衔接、节奏和音效统一检查一下，保持现在的横屏漫画风格和02背景音乐，导出最终完整视频。",
+      "finalOutput": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+      "finalSourceRevision": "landscape-final-v1",
+      "sourceRangeSeconds": [
+        64,
+        74
+      ],
+      "timelinePlacementPending": true,
+      "included": false,
+      "exclusionReason": "这部分删除感觉也可以，先前的内容感觉够了"
+    }
+  ],
+  "revisions": {
+    "landscape-live-final-v1": {
+      "id": "landscape-live-final-v1",
+      "parent": "landscape-label-v1",
+      "status": "exported",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": null,
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+          "sha256": "fc068240477ed2aafa1bbc165fb3064f601d9417cc97f70fd9c9d578215295e2"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "reason": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+          "sha256": "fccdbcc56c183d4f9b9c5ed9e4aab02e907209101a8817fe1e66db22d8324f0f"
+        },
+        "decision": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+          "sha256": "7ce5eedb735d4b51d6f1df4c18d3a5268163420cbb50364aeb86a38564cefd5f"
+        },
+        "actor": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+          "sha256": "c7462727b96e58cc5165301fb6a4d2f152127573f61d3983126b2dc13cdda0b0"
+        },
+        "audioPlan": {
+          "file": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+          "sha256": "84b1d52fdf5f477b6cb3e7283bf8618e2d5fa2ffaab85dfe2c811244899e7d82"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/landscape-label-v1/board.json",
+          "sha256": "f207ad2a6d7c8e339713cbc80abb5de5929b7c53366de282080eb8985ef24c37"
+        }
+      },
+      "artifacts": {
+        "full": {
+          "file": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+          "sha256": "df29d34712a7e6d081c3c7dbfe3c0ffa409fe97696364c2d90aa031d88b4770d",
+          "rangeSeconds": [
+            0,
+            52
+          ]
+        }
+      },
+      "audioTracks": {
+        "music": [
+          {
+            "file": "outputs/thinking-anchors/landscape-live-final-v1/audio/music.wav",
+            "sha256": "c14cca1e017389bbf799dc476a42fb760b6fd5177773737da568fe495d75063a",
+            "rangeSeconds": [
+              0,
+              52
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "file": "outputs/thinking-anchors/landscape-live-final-v1/audio/effects.wav",
+            "sha256": "f6778255c4f9a68324914355baf1084b016c66db835b69ef356f45e1671b1acc",
+            "rangeSeconds": [
+              0,
+              52
+            ]
+          }
+        ]
+      },
+      "approvals": [
+        {
+          "kind": "visual",
+          "rangeSeconds": [
+            0,
+            52
+          ],
+          "feedback": "目前最终版看着还可以",
+          "artifactSha256": "df29d34712a7e6d081c3c7dbfe3c0ffa409fe97696364c2d90aa031d88b4770d",
+          "recordedAt": "2026-11-16T04:12:56.307Z",
+          "assistantListening": "not-claimed"
+        }
+      ],
+      "review": "outputs/thinking-anchors/landscape-live-final-v1/review.html",
+      "importedFrom": "outputs/thinking-anchors/landscape-live-final-v1/manifest.json",
+      "snapshot": {
+        "file": "projects/thinking-anchors/production-snapshots/blobs/ad1d2613f2391ef46c03dc00801a2b9c1f64e405309791537dcdd081afd653ee.json",
+        "sha256": "ad1d2613f2391ef46c03dc00801a2b9c1f64e405309791537dcdd081afd653ee"
+      }
+    },
+    "landscape-label-v1": {
+      "id": "landscape-label-v1",
+      "parent": "landscape-live-only-v1",
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": [
+        22,
+        23.5
+      ],
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+          "sha256": "fc068240477ed2aafa1bbc165fb3064f601d9417cc97f70fd9c9d578215295e2"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/landscape-label-v1/board.json",
+          "sha256": "f207ad2a6d7c8e339713cbc80abb5de5929b7c53366de282080eb8985ef24c37"
+        },
+        "audioPlan": {
+          "file": "outputs/thinking-anchors/landscape-label-v1/audio-plan.json",
+          "sha256": "03fb98c39dd173bb711b000e0095f1ce89e1183163d3178f99ea1df36ff161c4"
+        }
+      },
+      "artifacts": {
+        "full": {
+          "file": "outputs/thinking-anchors/landscape-label-v1/video.mp4",
+          "sha256": "bd48c36dd4cdf0e459eab4d47f8eb05d40d5ff8b2ea19cddf29319f054b4e598",
+          "rangeSeconds": [
+            0,
+            52
+          ]
+        },
+        "focus": {
+          "file": "outputs/thinking-anchors/landscape-label-v1/focus-20-26.mp4",
+          "sha256": "dc4eb2e1b1c957b8536013770524a70bc21af97729f845cecf045409379a3fd5",
+          "rangeSeconds": [
+            20,
+            26
+          ]
+        }
+      },
+      "audioTracks": {},
+      "approvals": [],
+      "review": null,
+      "importedFrom": "outputs/thinking-anchors/landscape-label-v1/manifest.json"
+    },
+    "landscape-live-only-v1": {
+      "id": "landscape-live-only-v1",
+      "parent": "landscape-decision-v1",
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": null,
+      "sources": {
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Root.tsx",
+          "sha256": "936a3f4ce9130ce224e97fd0066c091985bbccd7ed50992b8e0bfb0c463bcde0"
+        },
+        "audioPlan": {
+          "file": "outputs/thinking-anchors/landscape-decision-v1/audio-plan.json",
+          "sha256": "b93e3d9c31409122bca904219ccba5dcb45a5bcb4a2280b0df5fbed431f76698"
+        }
+      },
+      "artifacts": {
+        "full": {
+          "file": "outputs/thinking-anchors/landscape-live-only-v1/video.mp4",
+          "sha256": "4aeda8c9f5c1e12e6f344c63ce66a9f5c55e583a818beafbcbe45c52edcf9d50",
+          "rangeSeconds": [
+            0,
+            52
+          ]
+        }
+      },
+      "audioTracks": {},
+      "approvals": [],
+      "review": null,
+      "importedFrom": "outputs/thinking-anchors/landscape-live-only-v1/manifest.json"
+    },
+    "landscape-decision-v1": {
+      "id": "landscape-decision-v1",
+      "parent": null,
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": null,
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/entry.tsx",
+          "sha256": "77952780446c103bbc30b7ae05c660e2ff005fbe524434f4760308215a3b6eea"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Root.tsx",
+          "sha256": "936a3f4ce9130ce224e97fd0066c091985bbccd7ed50992b8e0bfb0c463bcde0"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/board.json",
+          "sha256": "557289e45939c14f0b54fd147d2156d4d833fc23840fe9c6dd43b1bada7622e5"
+        },
+        "audioPlan": {
+          "file": "outputs/thinking-anchors/landscape-decision-v1/audio-plan.json",
+          "sha256": "b93e3d9c31409122bca904219ccba5dcb45a5bcb4a2280b0df5fbed431f76698"
+        }
+      },
+      "artifacts": {
+        "full": {
+          "file": "outputs/thinking-anchors/landscape-decision-v1/continuity-0-52.mp4",
+          "sha256": "4aeda8c9f5c1e12e6f344c63ce66a9f5c55e583a818beafbcbe45c52edcf9d50",
+          "rangeSeconds": [
+            0,
+            52
+          ]
+        },
+        "focus": {
+          "file": "outputs/thinking-anchors/landscape-decision-v1/video.mp4",
+          "sha256": "96d9612370717ba58bfc7eb48e3d14c3563b074236e696aded5fdaafdcd3687f",
+          "rangeSeconds": [
+            34,
+            52
+          ]
+        }
+      },
+      "audioTracks": {},
+      "approvals": [],
+      "review": null,
+      "importedFrom": "outputs/thinking-anchors/landscape-decision-v1/manifest.json"
+    },
+    "production-components-v1-1794804040025": {
+      "id": "production-components-v1-1794804040025",
+      "parent": "landscape-live-final-v1",
+      "status": "draft",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": [
+        22,
+        23.5
+      ],
+      "reason": "验证冻结依赖、参数化标签及统一局部渲染；不替换已交付成片",
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+          "sha256": "b4f0c3234983dffefe5ef0ed6546ba7317c4f50a1b8fdae4618dd107b1b2efe8"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "reason": {
+          "file": "projects/thinking-anchors/scenes/LiveReason.tsx",
+          "sha256": "cc470c95f6bda60790396a6193bc72262a66e1120f5e400879fd623fcaaab98a"
+        },
+        "decision": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+          "sha256": "7ce5eedb735d4b51d6f1df4c18d3a5268163420cbb50364aeb86a38564cefd5f"
+        },
+        "actor": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+          "sha256": "c7462727b96e58cc5165301fb6a4d2f152127573f61d3983126b2dc13cdda0b0"
+        },
+        "audioPlan": {
+          "file": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+          "sha256": "84b1d52fdf5f477b6cb3e7283bf8618e2d5fa2ffaab85dfe2c811244899e7d82"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/scenes/label-parameters.json",
+          "sha256": "51acbd57b568332129ce2f73da70864b585d49887da9d661c72d19e2ce72819b"
+        }
+      },
+      "sourceOrigins": {
+        "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+        "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+        "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+        "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+        "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+        "audioPlan": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+        "board": "projects/thinking-anchors/landscape-label-v1/board.json"
+      },
+      "artifacts": {},
+      "audioTracks": {},
+      "approvals": [],
+      "workspace": "projects/thinking-anchors/production-revisions/production-components-v1-1794804040025",
+      "baseFingerprint": "51a62f239cf367153cf283928dddd68b61eebf2e7e4150507f918ca7014da5af",
+      "impact": {
+        "editRangeSeconds": [
+          22,
+          23.5
+        ],
+        "reviewRangeSeconds": [
+          21,
+          24.5
+        ],
+        "affectedSegments": [
+          "anchor-reason"
+        ],
+        "preservedScope": [
+          0,
+          52
+        ],
+        "automaticPatches": [],
+        "notes": "范围描述用于定位与检查，不自动证明任意场景代码只改变了该范围；TSX动画须在独立版本中实现并登记产物。"
+      },
+      "snapshot": {
+        "file": "projects/thinking-anchors/production-snapshots/blobs/50d05ace3e98ac9b507d4e5facba77b0a5996b5c0715e42c3acd2117fd396bc3.json",
+        "sha256": "50d05ace3e98ac9b507d4e5facba77b0a5996b5c0715e42c3acd2117fd396bc3"
+      }
+    },
+    "production-components-v1-1794804169584": {
+      "id": "production-components-v1-1794804169584",
+      "parent": "landscape-live-final-v1",
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": [
+        22,
+        23.5
+      ],
+      "reason": "验证冻结依赖、参数化标签及统一局部渲染；不替换已交付成片",
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+          "sha256": "b4f0c3234983dffefe5ef0ed6546ba7317c4f50a1b8fdae4618dd107b1b2efe8"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "reason": {
+          "file": "projects/thinking-anchors/scenes/LiveReason.tsx",
+          "sha256": "cc470c95f6bda60790396a6193bc72262a66e1120f5e400879fd623fcaaab98a"
+        },
+        "decision": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+          "sha256": "7ce5eedb735d4b51d6f1df4c18d3a5268163420cbb50364aeb86a38564cefd5f"
+        },
+        "actor": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+          "sha256": "c7462727b96e58cc5165301fb6a4d2f152127573f61d3983126b2dc13cdda0b0"
+        },
+        "audioPlan": {
+          "file": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+          "sha256": "84b1d52fdf5f477b6cb3e7283bf8618e2d5fa2ffaab85dfe2c811244899e7d82"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/scenes/label-parameters.json",
+          "sha256": "51acbd57b568332129ce2f73da70864b585d49887da9d661c72d19e2ce72819b"
+        }
+      },
+      "sourceOrigins": {
+        "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+        "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+        "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+        "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+        "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+        "audioPlan": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+        "board": "projects/thinking-anchors/landscape-label-v1/board.json"
+      },
+      "artifacts": {
+        "focus": {
+          "file": "outputs/thinking-anchors/production-components-1794804169584/video.mp4",
+          "sha256": "523174a8b15c74721ee29ec2428f5783defe0c5b345243ec95ea1a08d1512413",
+          "rangeSeconds": [
+            21,
+            24.5
+          ]
+        }
+      },
+      "audioTracks": {
+        "music": [
+          {
+            "file": "outputs/thinking-anchors/production-components-1794804169584/music.wav",
+            "sha256": "a689a91178bf560996d545a66f90b4368d3c5aa687e2e175af2e9a2d1c281d37",
+            "rangeSeconds": [
+              21,
+              24.5
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "file": "outputs/thinking-anchors/production-components-1794804169584/effects.wav",
+            "sha256": "87446f0fb70a4c0ddbb895b564910c32d09636d0a00e1861e5e35641ab436896",
+            "rangeSeconds": [
+              21,
+              24.5
+            ]
+          }
+        ]
+      },
+      "approvals": [],
+      "workspace": "projects/thinking-anchors/production-revisions/production-components-v1-1794804169584",
+      "baseFingerprint": "51a62f239cf367153cf283928dddd68b61eebf2e7e4150507f918ca7014da5af",
+      "impact": {
+        "editRangeSeconds": [
+          22,
+          23.5
+        ],
+        "reviewRangeSeconds": [
+          21,
+          24.5
+        ],
+        "affectedSegments": [
+          "anchor-reason"
+        ],
+        "preservedScope": [
+          0,
+          52
+        ],
+        "automaticPatches": [],
+        "notes": "范围描述用于定位与检查，不自动证明任意场景代码只改变了该范围；TSX动画须在独立版本中实现并登记产物。"
+      },
+      "snapshot": {
+        "file": "projects/thinking-anchors/production-snapshots/blobs/1dc19280e22cc8e139809020c7c3ee67289b3910af7f26513d49fb6eff07e05f.json",
+        "sha256": "1dc19280e22cc8e139809020c7c3ee67289b3910af7f26513d49fb6eff07e05f"
+      }
+    },
+    "production-timing-1794804169584": {
+      "id": "production-timing-1794804169584",
+      "parent": "landscape-live-final-v1",
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": [
+        22,
+        23.5
+      ],
+      "reason": "验证单项事件时间参数同时改变动画与音效，不替换当前成片",
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+          "sha256": "b4f0c3234983dffefe5ef0ed6546ba7317c4f50a1b8fdae4618dd107b1b2efe8"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "reason": {
+          "file": "projects/thinking-anchors/scenes/LiveReason.tsx",
+          "sha256": "cc470c95f6bda60790396a6193bc72262a66e1120f5e400879fd623fcaaab98a"
+        },
+        "decision": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+          "sha256": "7ce5eedb735d4b51d6f1df4c18d3a5268163420cbb50364aeb86a38564cefd5f"
+        },
+        "actor": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+          "sha256": "c7462727b96e58cc5165301fb6a4d2f152127573f61d3983126b2dc13cdda0b0"
+        },
+        "audioPlan": {
+          "file": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+          "sha256": "84b1d52fdf5f477b6cb3e7283bf8618e2d5fa2ffaab85dfe2c811244899e7d82"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/production-revisions/production-timing-1794804169584/sources/board/board.json",
+          "sha256": "b9ea7d9835f8b4362b506b7f1e9840eadf1f137cb03d0f0e86e50138a4a13f08"
+        }
+      },
+      "sourceOrigins": {
+        "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+        "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+        "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+        "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+        "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+        "audioPlan": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+        "board": "projects/thinking-anchors/landscape-label-v1/board.json"
+      },
+      "artifacts": {
+        "focus": {
+          "file": "outputs/thinking-anchors/production-timing-1794804169584/video.mp4",
+          "sha256": "4c3c979ed5790f97379d0314a81b4e36af1b385ec3dc4143de982da7956d89f7",
+          "rangeSeconds": [
+            21,
+            24.5
+          ]
+        }
+      },
+      "audioTracks": {
+        "music": [
+          {
+            "file": "outputs/thinking-anchors/production-timing-1794804169584/music.wav",
+            "sha256": "a689a91178bf560996d545a66f90b4368d3c5aa687e2e175af2e9a2d1c281d37",
+            "rangeSeconds": [
+              21,
+              24.5
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "file": "outputs/thinking-anchors/production-timing-1794804169584/effects.wav",
+            "sha256": "0d3f99977db45133ede4d376f1a175a731ebe3e571c95e1f70697d6880ac82a7",
+            "rangeSeconds": [
+              21,
+              24.5
+            ]
+          }
+        ]
+      },
+      "approvals": [],
+      "workspace": "projects/thinking-anchors/production-revisions/production-timing-1794804169584",
+      "baseFingerprint": "51a62f239cf367153cf283928dddd68b61eebf2e7e4150507f918ca7014da5af",
+      "impact": {
+        "editRangeSeconds": [
+          22,
+          23.5
+        ],
+        "reviewRangeSeconds": [
+          21,
+          24.5
+        ],
+        "affectedSegments": [
+          "anchor-reason"
+        ],
+        "preservedScope": [
+          0,
+          52
+        ],
+        "automaticPatches": [
+          "board"
+        ],
+        "notes": "范围描述用于定位与检查，不自动证明任意场景代码只改变了该范围；TSX动画须在独立版本中实现并登记产物。"
+      },
+      "snapshot": {
+        "file": "projects/thinking-anchors/production-snapshots/blobs/f7a2c1d1025b9f844e7f9e0db3e947a4ddc27d753e334373316e35f3151a1e35.json",
+        "sha256": "f7a2c1d1025b9f844e7f9e0db3e947a4ddc27d753e334373316e35f3151a1e35"
+      }
+    },
+    "production-components-v1-1794804546929": {
+      "id": "production-components-v1-1794804546929",
+      "parent": "landscape-live-final-v1",
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": [
+        22,
+        23.5
+      ],
+      "reason": "验证冻结依赖、参数化标签及统一局部渲染；不替换已交付成片",
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+          "sha256": "b4f0c3234983dffefe5ef0ed6546ba7317c4f50a1b8fdae4618dd107b1b2efe8"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "reason": {
+          "file": "projects/thinking-anchors/scenes/LiveReason.tsx",
+          "sha256": "cc470c95f6bda60790396a6193bc72262a66e1120f5e400879fd623fcaaab98a"
+        },
+        "decision": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+          "sha256": "7ce5eedb735d4b51d6f1df4c18d3a5268163420cbb50364aeb86a38564cefd5f"
+        },
+        "actor": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+          "sha256": "c7462727b96e58cc5165301fb6a4d2f152127573f61d3983126b2dc13cdda0b0"
+        },
+        "audioPlan": {
+          "file": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+          "sha256": "84b1d52fdf5f477b6cb3e7283bf8618e2d5fa2ffaab85dfe2c811244899e7d82"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/scenes/label-parameters.json",
+          "sha256": "51acbd57b568332129ce2f73da70864b585d49887da9d661c72d19e2ce72819b"
+        }
+      },
+      "sourceOrigins": {
+        "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+        "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+        "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+        "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+        "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+        "audioPlan": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+        "board": "projects/thinking-anchors/landscape-label-v1/board.json"
+      },
+      "dependencyUpdates": {},
+      "artifacts": {
+        "focus": {
+          "file": "outputs/thinking-anchors/production-components-1794804546929/video.mp4",
+          "sha256": "523174a8b15c74721ee29ec2428f5783defe0c5b345243ec95ea1a08d1512413",
+          "rangeSeconds": [
+            21,
+            24.5
+          ]
+        }
+      },
+      "audioTracks": {
+        "music": [
+          {
+            "file": "outputs/thinking-anchors/production-components-1794804546929/music.wav",
+            "sha256": "a689a91178bf560996d545a66f90b4368d3c5aa687e2e175af2e9a2d1c281d37",
+            "rangeSeconds": [
+              21,
+              24.5
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "file": "outputs/thinking-anchors/production-components-1794804546929/effects.wav",
+            "sha256": "87446f0fb70a4c0ddbb895b564910c32d09636d0a00e1861e5e35641ab436896",
+            "rangeSeconds": [
+              21,
+              24.5
+            ]
+          }
+        ]
+      },
+      "approvals": [],
+      "workspace": "projects/thinking-anchors/production-revisions/production-components-v1-1794804546929",
+      "baseFingerprint": "51a62f239cf367153cf283928dddd68b61eebf2e7e4150507f918ca7014da5af",
+      "impact": {
+        "editRangeSeconds": [
+          22,
+          23.5
+        ],
+        "reviewRangeSeconds": [
+          21,
+          24.5
+        ],
+        "affectedSegments": [
+          "anchor-reason"
+        ],
+        "preservedScope": [
+          0,
+          52
+        ],
+        "automaticPatches": [],
+        "notes": "范围描述用于定位与检查，不自动证明任意场景代码只改变了该范围；TSX动画须在独立版本中实现并登记产物。"
+      },
+      "snapshot": {
+        "file": "projects/thinking-anchors/production-snapshots/blobs/649272639d864bd2b45e5d4d9d5c2141f0b605aa9bfc772caaf5081fecd7b8c9.json",
+        "sha256": "649272639d864bd2b45e5d4d9d5c2141f0b605aa9bfc772caaf5081fecd7b8c9"
+      }
+    },
+    "production-timing-1794804546929": {
+      "id": "production-timing-1794804546929",
+      "parent": "landscape-live-final-v1",
+      "status": "draft",
+      "rangeSeconds": [
+        0,
+        52
+      ],
+      "editRangeSeconds": [
+        22,
+        23.5
+      ],
+      "reason": "验证单项事件时间参数同时改变动画与音效，不替换当前成片",
+      "sources": {
+        "entry": {
+          "file": "projects/thinking-anchors/scenes/LiveFilm.tsx",
+          "sha256": "b4f0c3234983dffefe5ef0ed6546ba7317c4f50a1b8fdae4618dd107b1b2efe8"
+        },
+        "composition": {
+          "file": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+          "sha256": "fb5261388e72837461aed0b568aaa27d9df4bfba07e32177d8f635150bb46a9d"
+        },
+        "reason": {
+          "file": "projects/thinking-anchors/scenes/LiveReason.tsx",
+          "sha256": "cc470c95f6bda60790396a6193bc72262a66e1120f5e400879fd623fcaaab98a"
+        },
+        "decision": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+          "sha256": "7ce5eedb735d4b51d6f1df4c18d3a5268163420cbb50364aeb86a38564cefd5f"
+        },
+        "actor": {
+          "file": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+          "sha256": "c7462727b96e58cc5165301fb6a4d2f152127573f61d3983126b2dc13cdda0b0"
+        },
+        "audioPlan": {
+          "file": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+          "sha256": "84b1d52fdf5f477b6cb3e7283bf8618e2d5fa2ffaab85dfe2c811244899e7d82"
+        },
+        "board": {
+          "file": "projects/thinking-anchors/production-revisions/production-timing-1794804546929/sources/board/board.json",
+          "sha256": "b9ea7d9835f8b4362b506b7f1e9840eadf1f137cb03d0f0e86e50138a4a13f08"
+        }
+      },
+      "sourceOrigins": {
+        "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+        "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+        "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+        "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+        "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+        "audioPlan": "projects/thinking-anchors/landscape-live-final-v1/audio-plan.json",
+        "board": "projects/thinking-anchors/landscape-label-v1/board.json"
+      },
+      "dependencyUpdates": {},
+      "artifacts": {},
+      "audioTracks": {},
+      "approvals": [],
+      "workspace": "projects/thinking-anchors/production-revisions/production-timing-1794804546929",
+      "baseFingerprint": "51a62f239cf367153cf283928dddd68b61eebf2e7e4150507f918ca7014da5af",
+      "impact": {
+        "editRangeSeconds": [
+          22,
+          23.5
+        ],
+        "reviewRangeSeconds": [
+          21,
+          24.5
+        ],
+        "affectedSegments": [
+          "anchor-reason"
+        ],
+        "preservedScope": [
+          0,
+          52
+        ],
+        "automaticPatches": [
+          "board"
+        ],
+        "notes": "范围描述用于定位与检查，不自动证明任意场景代码只改变了该范围；TSX动画须在独立版本中实现并登记产物。"
+      }
+    }
+  },
+  "reviews": [
+    {
+      "file": "outputs/thinking-anchors/production-review-label-comparison/index.html",
+      "beforeRevision": "landscape-live-only-v1",
+      "afterRevision": "landscape-label-v1",
+      "rangeSeconds": [
+        21.2,
+        24.3
+      ],
+      "sha256": "16b4d25e61b19b71e55b332cbc5fb07f06370e14d42c1b0f0e4ab6491bbc0b98"
+    },
+    {
+      "file": "outputs/thinking-anchors/production-review-label-comparison-v2/index.html",
+      "beforeRevision": "landscape-live-only-v1",
+      "afterRevision": "landscape-label-v1",
+      "rangeSeconds": [
+        21.2,
+        24.3
+      ],
+      "sha256": "1b8c6095f986e0034c17f5dba1b0360209cbd1fe566957563538b7c44e573acd"
+    },
+    {
+      "file": "outputs/thinking-anchors/production-review-components-1794804169584/index.html",
+      "beforeRevision": "landscape-live-final-v1",
+      "afterRevision": "production-components-v1-1794804169584",
+      "rangeSeconds": [
+        21,
+        24.5
+      ],
+      "sha256": "bd82ce6f9059648d418fd0bad66caa589b81be4e341efaa14519099ea34445b1"
+    }
+  ],
+  "migration": {
+    "from": "legacy-current-views",
+    "mediaChanged": false,
+    "legacyApprovalRecordsPreserved": true
+  },
+  "legacyArchive": "projects/thinking-anchors/production-history/legacy-before-init"
+}

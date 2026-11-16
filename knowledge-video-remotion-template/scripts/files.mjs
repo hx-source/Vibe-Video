@@ -26,7 +26,7 @@ export function engineSources(){
   const files={};
   function walk(relative){for(const entry of fs.readdirSync(path.join(ROOT,relative),{withFileTypes:true})){
     const name=`${relative}/${entry.name}`;
-    if(entry.isDirectory())walk(name);else if(/\.(tsx?|mjs|js|json|css|html)$/.test(name))files[name]=sha(path.join(ROOT,name));
+    if(entry.isDirectory())walk(name);else if(/\.(tsx?|mjs|js|json|css|html|html)$/.test(name))files[name]=sha(path.join(ROOT,name));
   }}
   walk('src');walk('scripts');
   for(const name of ['package.json','package-lock.json','tsconfig.json','remotion.config.ts'])files[name]=sha(path.join(ROOT,name));

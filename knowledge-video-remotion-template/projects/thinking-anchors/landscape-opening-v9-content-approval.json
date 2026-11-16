@@ -1,0 +1,29 @@
+{
+  "revision": "landscape-opening-v9",
+  "feedback": "对的",
+  "sourceChoiceConfirmed": true,
+  "existing20SecondStructureRetained": true,
+  "scope": [
+    [
+      17,
+      18
+    ],
+    [
+      18.98,
+      19.22
+    ]
+  ],
+  "productionAuthorized": true,
+  "soundFeedback": "用户确认原17秒声音用于19秒，17秒另配短转场声",
+  "newVideoApproved": false,
+  "nextSegment": {
+    "id": "anchor-reason",
+    "fromSeconds": 20,
+    "toSeconds": null,
+    "status": "planned",
+    "purpose": "解释为什么999成为比较起点，以及比999便宜不等于真实值得买",
+    "durationNotYetSet": true,
+    "followingMethodSourcesPreserved": true
+  },
+  "assistantListening": "not-performed"
+}

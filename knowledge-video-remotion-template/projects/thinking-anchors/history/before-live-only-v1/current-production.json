@@ -1,0 +1,67 @@
+{
+  "format": "landscape",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "reason": "继续保持横屏就可以，你可以将里边的内容少没有关系，主要能突出你的主体，你在讲什么就可以，你能够理解吗？",
+  "trackingFile": "landscape-production.json",
+  "activeSources": "landscape-active-sources.json",
+  "currentSegment": "used-evidence",
+  "currentReview": "outputs/thinking-anchors/landscape-used-v2/review.html",
+  "output": "outputs/thinking-anchors/landscape-used-v2/video.mp4",
+  "rangeSeconds": [
+    52,
+    70
+  ],
+  "userRequested": true,
+  "userApproved": false,
+  "fullFilmProduced": false,
+  "note": "当前新增52–70秒二手实物检查及成交记录段，保留已认可前52秒画面与连续混音；另附前70秒连贯预览。新段待反馈，旧74秒最终版保留，新全片未完成。",
+  "continuityOutput": "outputs/thinking-anchors/landscape-used-v2/continuity-0-70.mp4",
+  "revision": "landscape-used-v2",
+  "revisionReason": "这部分可以，接下来继续制作52秒之后的二手砍价部分，注意和前面自然衔接，讲清楚怎么检查商品、查同款成交记录来判断价格，继续保持横屏漫画风格和02背景音乐，做好后先给我看一下。",
+  "prior0to24UserApproved": true,
+  "prior38to52UserApproved": true,
+  "prior52to64UserApproved": true,
+  "fullContentDraftReady": false,
+  "fullPreviewProduced": true,
+  "fullFilmStatus": "segmented-revision-in-progress",
+  "fullFilmApproval": false,
+  "finalExportProduced": false,
+  "currentStage": "preview-ready",
+  "qualityReview": "outputs/thinking-anchors/landscape-used-v2/quality-review.md",
+  "finalExportAuthorized": true,
+  "assistantListening": "not-performed",
+  "contentApproved": false,
+  "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4",
+  "openingUserApproved": true,
+  "openingApproval": "landscape-opening-v9-acceptance.json",
+  "editRangeSeconds": [
+    52,
+    70
+  ],
+  "newFullFilmProduced": false,
+  "newFullFilmDurationSeconds": null,
+  "plannedNextSegment": {
+    "id": "used-offer",
+    "fromSeconds": 70,
+    "status": "retained-source-awaiting-continuation",
+    "sourceRangeSeconds": [
+      52,
+      64
+    ],
+    "source": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+    "purpose": "衔接参考成交区间和实物状况，解释有依据地出价与价格不合适可以不成交；后续长度待继续制作"
+  },
+  "contentDirectionApproved": true,
+  "prior0to34UserApproved": true,
+  "reasonApproval": "landscape-reason-v1-acceptance.json",
+  "prior0to52UserApproved": true,
+  "decisionApproval": "landscape-decision-v1-acceptance.json"
+}

@@ -1,0 +1,75 @@
+{
+  "facts": {
+    "state": "source-checked",
+    "date": "2026-11-14",
+    "scope": "1974 原论文锚定段落与实验数字；价格案例为虚构"
+  },
+  "visual": {
+    "state": "comic-selected-sample-in-production",
+    "round": 3,
+    "output": "outputs/thinking-anchors/styles-offline-v3/comparison.html",
+    "retainedA": "新旧PNG的SHA256完全相同",
+    "newB": "漫画实验室：转盘、人物、问题气泡与统计结果",
+    "newC": "等距立体展台：转盘装置、同尺度估计柱体和阴影",
+    "checks": "三张关键静帧已查看；每方案5个样片范围时刻的HTML溢出、SVG文字边界与互相重叠检查通过",
+    "scope": "只实现并验证经典实验场景；全片其他段落待选择后适配；无配乐"
+  },
+  "audio": {
+    "state": "candidate-awaiting-listening",
+    "music": "01_认知科普_观点讲述.m4a",
+    "selection": "制作助手选作本期候选，用户尚未试听确认",
+    "effects": "本期原创短噪声瞬态3个，无连续过程音",
+    "timing": "画面和音效共享experiment事件，保留全片时钟"
+  },
+  "approval": {
+    "visualDirection": "comic",
+    "userRequest": "选择新b漫画实验室",
+    "sampleApproved": false,
+    "sampleViewed": false,
+    "sampleListened": false
+  },
+  "runtime": {
+    "defaultRenderer": "localhost connect EACCES; stopped only this task session",
+    "probe": "Bundled Remotion ffprobe crashed; project-local runs use installed alternative via KNOWLEDGE_VIDEO_FFPROBE",
+    "fallback": "Offline Chromium pipe + actual registered React scene; stills only"
+  },
+  "history": [
+    {
+      "visual": {
+        "state": "three-style-stills-inspected",
+        "scope": "同一实验时刻34.5秒的三张实际PNG已查看；各方案28、31.5、32.5、34.5、37.5秒已做文字溢出检查",
+        "output": "outputs/thinking-anchors/styles-offline-v1/comparison.html",
+        "limitation": "未检查全片动作、转场与声音；未获用户选择"
+      },
+      "approval": "No user style choice or sample approval recorded"
+    },
+    {
+      "approval": {
+        "state": "awaiting-new-visual-choice",
+        "userRequest": "先暂时保留A，然后B和C的话进行更换其他的风格类型",
+        "retainedCandidates": [
+          "night"
+        ],
+        "finalSelectedId": null,
+        "sampleApproved": false,
+        "humanListening": "not-performed"
+      },
+      "visual": {
+        "state": "comic-selected-sample-in-production",
+        "round": 3,
+        "output": "outputs/thinking-anchors/styles-offline-v3/comparison.html",
+        "retainedA": "新旧PNG的SHA256完全相同",
+        "newB": "漫画实验室：转盘、人物、问题气泡与统计结果",
+        "newC": "等距立体展台：转盘装置、同尺度估计柱体和阴影",
+        "checks": "三张关键静帧已查看；每方案5个样片范围时刻的HTML溢出、SVG文字边界与互相重叠检查通过",
+        "scope": "只实现并验证经典实验场景；全片其他段落待选择后适配；无配乐"
+      }
+    }
+  ],
+  "validation": {
+    "typecheck": "passed",
+    "unitTests": "33 passed",
+    "layout": "15 frame positions passed",
+    "retainedACheck": "outputs/thinking-anchors/styles-offline-v3/retained-a-check.json"
+  }
+}

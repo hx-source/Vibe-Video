@@ -1,0 +1,45 @@
+{
+  "revision": "landscape-label-v1",
+  "format": "landscape",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "sourceRoot": "projects/thinking-anchors/landscape-label-v1",
+  "decision": "projects/thinking-anchors/landscape-decision-v1/Decision.tsx",
+  "actor": "projects/thinking-anchors/landscape-decision-v1/Actor.tsx",
+  "entry": "projects/thinking-anchors/landscape-label-v1/entry.tsx",
+  "composition": "projects/thinking-anchors/landscape-label-v1/Root.tsx",
+  "opening": "projects/thinking-anchors/landscape-opening-v9/Opening.tsx",
+  "mechanism": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+  "note": "0–52秒直播间案例，只有22–23.5秒标签转换局部修改。入口不含二手；其余源沿用认可版本。",
+  "openingActor": "projects/thinking-anchors/landscape-opening-v6/Actor.tsx",
+  "audioPlan": "outputs/thinking-anchors/landscape-label-v1/audio-plan.json",
+  "host": "projects/thinking-anchors/landscape-opening-v6/Host.tsx",
+  "previewVideo": "outputs/thinking-anchors/landscape-label-v1/video.mp4",
+  "previewContinuity": "outputs/thinking-anchors/landscape-label-v1/video.mp4",
+  "beforeAfter": "projects/thinking-anchors/landscape-opening-v6/BeforeAfter.tsx",
+  "openingAudioPlan": "projects/thinking-anchors/landscape-opening-v9/audio-plan.json",
+  "reason": "projects/thinking-anchors/landscape-label-v1/Reason.tsx",
+  "sourceScopeSeconds": [
+    0,
+    52
+  ],
+  "continuousChapter": "outputs/thinking-anchors/landscape-label-v1/audio/mix.wav",
+  "plannedNextSegment": null,
+  "archivedSources": {
+    "usedEvidence": "projects/thinking-anchors/landscape-used-v2/Used.tsx",
+    "usedActor": "projects/thinking-anchors/landscape-used-v2/Actor.tsx",
+    "offer": "projects/thinking-anchors/landscape-final-v1/Offer.tsx",
+    "offerActor": "projects/thinking-anchors/landscape-offer-v1/Actor.tsx",
+    "ending": "projects/thinking-anchors/landscape-final-v1/Ending.tsx",
+    "endingActor": "projects/thinking-anchors/landscape-ending-v1/Actor.tsx",
+    "previousFinal": "outputs/thinking-anchors/landscape-final-v2/video.mp4"
+  },
+  "previewFocus": "outputs/thinking-anchors/landscape-label-v1/focus-20-26.mp4"
+}

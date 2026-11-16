@@ -1,0 +1,11 @@
+{
+ "schemaVersion":1,"id":"closing","sceneType":"anchor-landscape-ending",
+ "video":{"width":1920,"height":1080,"fps":30},"rangeSeconds":[64,74],"durationSeconds":10,
+ "events":{"switch":0.3,"live":0.7,"conditions":1.9,"used":3.5,"inspect":3.9,"records":4.5,"decision":6.5,"budget":7,"choice":8.2},
+ "captions":[
+  {"from":0,"to":3.5,"text":"直播间降价：查同款、同条件的实际到手价，别只拿原价作比较。"},
+  {"from":3.5,"to":6.5,"text":"二手砍价：检查商品状况，查同款、条件相近的实际成交，带着依据谈价。"},
+  {"from":6.5,"to":8.2,"text":"先找依据，再决定：自己需要吗，预算合适吗？"},
+  {"from":8.2,"to":10,"text":"价格或条件不合适，也可以不买。"}
+ ],"userApproved":false
+}

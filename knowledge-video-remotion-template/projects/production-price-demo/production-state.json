@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "projectId": "production-price-demo",
+  "generation": 2,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "durationSeconds": 6,
+  "currentRevision": "initial",
+  "segments": [
+    {
+      "id": "compare",
+      "rangeSeconds": [
+        0,
+        6
+      ]
+    }
+  ],
+  "revisions": {
+    "initial": {
+      "id": "initial",
+      "parent": null,
+      "status": "preview-ready",
+      "rangeSeconds": [
+        0,
+        6
+      ],
+      "sources": {
+        "entry": {
+          "file": "projects/production-price-demo/entry.tsx",
+          "sha256": "c11d4ddb431595c94aa015c4af971fb2fa6bacfd6c9a6637f5371f935e2c664a"
+        },
+        "parameters": {
+          "file": "projects/production-price-demo/parameters.json",
+          "sha256": "c628362444d197954ac48ec83bd62687cb2c6de68977186638d0065b8f15d0db"
+        }
+      },
+      "artifacts": {
+        "full": {
+          "file": "outputs/production-price-demo/production-compare-1794804169584/video.mp4",
+          "sha256": "b4ef3de49a219e9fa06fc9e937d0d91173b96531e734e03cee3caee5132a29ad",
+          "rangeSeconds": [
+            0,
+            6
+          ]
+        }
+      },
+      "audioTracks": {},
+      "approvals": [],
+      "snapshot": {
+        "file": "projects/production-price-demo/production-snapshots/blobs/1cfddc930936f230a4c2514b98364af778a4fe63dfb38520b4e0cea148997fdb.json",
+        "sha256": "1cfddc930936f230a4c2514b98364af778a4fe63dfb38520b4e0cea148997fdb"
+      }
+    }
+  },
+  "legacyArchive": "projects/production-price-demo/production-history/legacy-before-init"
+}

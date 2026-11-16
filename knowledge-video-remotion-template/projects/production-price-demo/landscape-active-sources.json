@@ -1,0 +1,16 @@
+{
+  "generatedFrom": "production-state.json",
+  "stateGeneration": 2,
+  "stateFingerprint": "a529fe69fab02d6bbecf4caa9d622dab6a1f9fa7975fa6e2707d9da2c6c5140d",
+  "revision": "initial",
+  "sourceScopeSeconds": [
+    0,
+    6
+  ],
+  "entry": "projects/production-price-demo/entry.tsx",
+  "parameters": "projects/production-price-demo/parameters.json",
+  "finalVideo": null,
+  "previewVideo": "outputs/production-price-demo/production-compare-1794804169584/video.mp4",
+  "currentReview": null,
+  "plannedNextSegment": null
+}

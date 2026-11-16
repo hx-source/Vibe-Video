@@ -1,0 +1,101 @@
+{
+  "specification": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "segments": [
+    {
+      "id": "opening",
+      "rangeSeconds": [
+        0,
+        12
+      ],
+      "revision": "portrait-opening-v2",
+      "status": "approved",
+      "userApproved": true,
+      "approval": "portrait-opening-v2-acceptance.json",
+      "feedback": "现在目前看着还可以，可以继续制作了",
+      "pictureRevision": "portrait-edge-cleanup-v1",
+      "pictureSource": "projects/thinking-anchors/portrait-edge-cleanup-v1/Opening.tsx"
+    },
+    {
+      "id": "mechanism",
+      "rangeSeconds": [
+        12,
+        24
+      ],
+      "revision": "portrait-mechanism-v1",
+      "status": "approved",
+      "userApproved": true,
+      "review": "outputs/thinking-anchors/portrait-mechanism-v1/review.html",
+      "approval": "portrait-mechanism-v1-acceptance.json",
+      "feedback": "这部分可以，接下来继续制作24秒之后的内容，衔接“该拿什么比”的问题，讲清楚生活中怎么减少锚定效应的影响，继续保持现在的竖屏漫画风格和动态效果。",
+      "pictureRevision": "portrait-edge-cleanup-v1",
+      "pictureSource": "projects/thinking-anchors/portrait-edge-cleanup-v1/Mechanism.tsx"
+    },
+    {
+      "id": "decision",
+      "rangeSeconds": [
+        24,
+        38
+      ],
+      "revision": "portrait-decision-v1",
+      "status": "preview-ready",
+      "userApproved": false,
+      "review": "outputs/thinking-anchors/portrait-character-motion-v1/compare.html",
+      "pictureRevision": "portrait-character-motion-v1",
+      "pictureSource": "projects/thinking-anchors/portrait-character-motion-v1/Decision.tsx"
+    }
+  ],
+  "currentSegment": "decision",
+  "currentReview": "outputs/thinking-anchors/portrait-character-motion-v1/compare.html",
+  "continuityOutput": "outputs/thinking-anchors/portrait-character-motion-v1/continuity-0-38.mp4",
+  "remainingTopics": [
+    "二手商品检查和成交核查",
+    "依据状况出价、可不成交",
+    "方法总结"
+  ],
+  "fullFilmApproval": false,
+  "fullFilmProduced": false,
+  "visualRevision": {
+    "revision": "portrait-character-motion-v1",
+    "reason": "用户指出右下角人物动作少、呆滞，增加跟随内容的手势、视线和姿态",
+    "rangeSeconds": [
+      24,
+      38
+    ],
+    "output": "outputs/thinking-anchors/portrait-character-motion-v1/video.mp4",
+    "continuityOutput": "outputs/thinking-anchors/portrait-character-motion-v1/continuity-0-38.mp4",
+    "review": "outputs/thinking-anchors/portrait-character-motion-v1/compare.html",
+    "sourceRoot": "projects/thinking-anchors/portrait-character-motion-v1",
+    "all1140FramesWindowAbsent": true,
+    "otherSvgContentsUnchangedAtSamples": 22,
+    "audioPacketsUnchanged": true,
+    "userRequested": true,
+    "userApproved": false
+  },
+  "activeSources": "portrait-active-sources.json",
+  "visualRevisionHistory": [
+    {
+      "revision": "portrait-edge-cleanup-v1",
+      "reason": "用户指出左侧多出的背景窗框，统一移除",
+      "rangeSeconds": [
+        0,
+        38
+      ],
+      "output": "outputs/thinking-anchors/portrait-edge-cleanup-v1/video.mp4",
+      "continuityOutput": "outputs/thinking-anchors/portrait-edge-cleanup-v1/continuity-0-38.mp4",
+      "review": "outputs/thinking-anchors/portrait-edge-cleanup-v1/review.html",
+      "sourceRoot": "projects/thinking-anchors/portrait-edge-cleanup-v1",
+      "all1140FramesWindowAbsent": true,
+      "otherSvgContentsUnchangedAt17Samples": true,
+      "audioPacketsUnchanged": true,
+      "userRequested": true,
+      "userApproved": false
+    }
+  ]
+}

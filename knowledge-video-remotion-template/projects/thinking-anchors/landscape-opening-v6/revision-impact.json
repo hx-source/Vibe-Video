@@ -1,0 +1,71 @@
+{
+  "previousRevision": "landscape-opening-v5",
+  "editRangeSeconds": [
+    17,
+    22.4
+  ],
+  "preservedRanges": [
+    [
+      0,
+      17
+    ],
+    [
+      22.4,
+      38
+    ]
+  ],
+  "openingDurationSeconds": 24,
+  "newOrder": [
+    {
+      "scene": "直播间心动",
+      "range": [
+        0,
+        12
+      ]
+    },
+    {
+      "scene": "同衣同价、判断改变",
+      "range": [
+        12,
+        17
+      ]
+    },
+    {
+      "scene": "正式点题锚定效应",
+      "range": [
+        17,
+        20
+      ]
+    },
+    {
+      "scene": "解释999成为参照",
+      "range": [
+        20,
+        22.4
+      ]
+    },
+    {
+      "scene": "该拿什么比",
+      "range": [
+        22.4,
+        24
+      ]
+    }
+  ],
+  "audioPacketsUnchanged": true,
+  "soundRebindings": [
+    {
+      "id": "hook-explain",
+      "at": 17.14,
+      "purpose": "点题纸卡进入"
+    },
+    {
+      "id": "hook-question",
+      "at": 21.18,
+      "purpose": "相对999显得划算的气泡落定"
+    }
+  ],
+  "musicChanged": false,
+  "newVideoApproved": false,
+  "assistantListening": "not-performed"
+}

@@ -1,0 +1,15 @@
+{
+  "revision": "landscape-opening-v4",
+  "rangeSeconds": [
+    0,
+    24
+  ],
+  "status": "user-approved",
+  "feedback": "可以",
+  "context": "针对概念点题版0–24秒开头预览的确认",
+  "userApproved": true,
+  "video": "outputs/thinking-anchors/landscape-opening-v4/video.mp4",
+  "videoSha256": "be6acdd543007b1663590fe86b15ab74ebb1915e2c675e0964e6c125c49e42b3",
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "认可本次开头预览；不推断新版74秒成片已获用户完整观看或人工试听。"
+}

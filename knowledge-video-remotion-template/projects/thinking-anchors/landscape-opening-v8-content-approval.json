@@ -1,0 +1,22 @@
+{
+  "revision": "landscape-opening-v8",
+  "feedback": "第19秒附近，4那个锚定效应音效没有对上",
+  "existing20SecondStructureRetained": true,
+  "scope": [
+    18.98,
+    19.22
+  ],
+  "productionAuthorized": true,
+  "soundFeedback": "19秒锚定效应下强调线音效未对上",
+  "newVideoApproved": false,
+  "nextSegment": {
+    "id": "anchor-reason",
+    "fromSeconds": 20,
+    "toSeconds": null,
+    "status": "planned",
+    "purpose": "解释为什么999成为比较起点，以及比999便宜不等于真实值得买",
+    "durationNotYetSet": true,
+    "followingMethodSourcesPreserved": true
+  },
+  "assistantListening": "not-performed"
+}

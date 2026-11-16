@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "accent": 1,
+    "transition": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 1,
+    "maxProcessSeconds": 1
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:anchors-bed",
+      "at": 0,
+      "sourceIn": 0,
+      "sourceOut": 52,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.45,
+      "fadeOut": 1.2
+    },
+    {
+      "id": "hook-price",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "opening.price",
+        "offset": 0.2
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.25,
+      "fadeOut": 0.012,
+      "purpose": "199价格标签进入并落定",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-reference",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "opening.reference",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.43045351473922905,
+      "speed": 1,
+      "gain": 0.7,
+      "fadeOut": 0.012,
+      "purpose": "商家原价999纸签翻出",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-delight",
+      "source": "asset:regroup-contact-v2",
+      "role": "accent",
+      "at": {
+        "event": "opening.delight",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.11,
+      "speed": 1,
+      "gain": 1.7,
+      "fadeOut": 0.012,
+      "purpose": "人物心动，向商品伸手",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "hook-reality",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "opening.reality",
+        "offset": 0.32
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.85,
+      "fadeOut": 0.012,
+      "purpose": "回看讲解前199元售价，在价格下划线强调，之后讲解后仍显示199",
+      "musicFit": "沿用02原素材0–38秒、原速与音量；沿用本期纸张、界面接触和铅笔素材，只对应报价揭示、心动、付款金额强调、参照和问题转换；不添加持续音，听感待反馈。"
+    },
+    {
+      "id": "topic-transition",
+      "source": "asset:palette-quiet-sweep",
+      "role": "transition",
+      "at": {
+        "event": "opening.topicLead"
+      },
+      "sourceIn": 0.03,
+      "sourceOut": 0.28,
+      "speed": 1,
+      "gain": 0.45,
+      "fadeIn": 0.018,
+      "fadeOut": 0.035,
+      "purpose": "17秒今天我们讲界面出现时，单次柔和短掠过转场；不再用纸张刷声配概念词落定",
+      "musicFit": "无音高的已有衣料掠过录音，截取单次主体避开后段第二次起伏，配02原速音乐；听感待用户播放确认"
+    },
+    {
+      "id": "topic-underline",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "opening.topicUnderline",
+        "offset": 0.18
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.02,
+      "purpose": "把原17秒纸张刷声用于19秒横线，保留原录音与增益，取前0.23秒一次刷过，18.98–19.21秒随线条绘制",
+      "musicFit": "用户明确选择原17秒声音用于19秒，替换铅笔声；不增加重复音，不变速，不添加混响，实际混合听感待用户反馈"
+    },
+    {
+      "id": "reason-switch",
+      "source": "asset:palette-quiet-sweep",
+      "role": "transition",
+      "at": {
+        "event": "reason.switch",
+        "offset": 0
+      },
+      "sourceIn": 0.03,
+      "sourceOut": 0.28,
+      "speed": 1,
+      "gain": 0.45,
+      "fadeIn": 0.018,
+      "fadeOut": 0.035,
+      "purpose": "20.3秒从点题进入原因讲解，沿用认可的短掠过转场质感",
+      "musicFit": "保留已认可的02原速与0–20秒混音，新增声音只对应原因段的界面进入、参照纸签、思考气泡翻转、判断强调线及问题衔接；不添加持续声或新旋律。实际听感待用户播放确认。"
+    },
+    {
+      "id": "reason-anchor",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "reason.anchor",
+        "offset": 0
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.02,
+      "purpose": "999纸签进入比较位置，纸签移动0.23秒与刷声同长",
+      "musicFit": "保留已认可的02原速与0–20秒混音，新增声音只对应原因段的界面进入、参照纸签、思考气泡翻转、判断强调线及问题衔接；不添加持续声或新旋律。实际听感待用户播放确认。"
+    },
+    {
+      "id": "reason-question",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "reason.question",
+        "offset": 0.08
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "思考气泡从值不值199翻成比999便宜多少",
+      "musicFit": "保留已认可的02原速与0–20秒混音，新增声音只对应原因段的界面进入、参照纸签、思考气泡翻转、判断强调线及问题衔接；不添加持续声或新旋律。实际听感待用户播放确认。"
+    },
+    {
+      "id": "reason-judgment",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "reason.judgment",
+        "offset": 0
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.025,
+      "purpose": "同样199显得划算，气泡下强调线0.4秒绘制与一次纸张刷声同长",
+      "musicFit": "保留已认可的02原速与0–20秒混音，新增声音只对应原因段的界面进入、参照纸签、思考气泡翻转、判断强调线及问题衔接；不添加持续声或新旋律。实际听感待用户播放确认。"
+    },
+    {
+      "id": "reason-bridge",
+      "source": "asset:palette-paper-short",
+      "role": "transition",
+      "at": {
+        "event": "reason.bridge",
+        "offset": 0.12
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "回到商品值多少与该拿什么比的问题",
+      "musicFit": "保留已认可的02原速与0–20秒混音，新增声音只对应原因段的界面进入、参照纸签、思考气泡翻转、判断强调线及问题衔接；不添加持续声或新旋律。实际听感待用户播放确认。"
+    },
+    {
+      "id": "decision-history",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "decision.history",
+        "offset": 0
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "近期实际到手价纸条开始进入，单次短纸张声",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-other",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "decision.other",
+        "offset": 0
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "其他店到手价替换近期记录，单次纸张声",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-compare",
+      "source": "asset:pencil-underline-recorded-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.compare",
+        "offset": 0.05
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.235,
+      "speed": 1,
+      "gain": 0.65,
+      "fadeOut": 0.012,
+      "purpose": "199与189之间比较线绘制，强调仅相差10元",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-condition-0",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.conditions",
+        "offset": 0.1
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.4,
+      "fadeOut": 0.012,
+      "purpose": "同款勾选开始出现，对应三个勾选各一次短触碰声",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-condition-1",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.conditions",
+        "offset": 0.23333333333333334
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.4,
+      "fadeOut": 0.012,
+      "purpose": "运费勾选开始出现，对应三个勾选各一次短触碰声",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-condition-2",
+      "source": "asset:opening-ui-contact-v1",
+      "role": "accent",
+      "at": {
+        "event": "decision.conditions",
+        "offset": 0.3666666666666667
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "speed": 1,
+      "gain": 1.4,
+      "fadeOut": 0.012,
+      "purpose": "售后勾选开始出现，对应三个勾选各一次短触碰声",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-need",
+      "source": "asset:palette-quiet-sweep",
+      "role": "transition",
+      "at": {
+        "event": "decision.need",
+        "offset": 0
+      },
+      "sourceIn": 0.03,
+      "sourceOut": 0.28,
+      "speed": 1,
+      "gain": 0.45,
+      "fadeIn": 0.018,
+      "fadeOut": 0.035,
+      "purpose": "由可比商品条件转向个人需求，短掠过转场",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-budget",
+      "source": "asset:palette-paper-short",
+      "role": "accent",
+      "at": {
+        "event": "decision.budget",
+        "offset": 0
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.23061224489795917,
+      "speed": 1,
+      "gain": 0.55,
+      "fadeOut": 0.012,
+      "purpose": "钱包和事先150元预算出现，提示199超出个人约束",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "decision-choice",
+      "source": "asset:palette-paper-long",
+      "role": "accent",
+      "at": {
+        "event": "decision.choice",
+        "offset": 0
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.4,
+      "speed": 1,
+      "gain": 0.6,
+      "fadeOut": 0.025,
+      "purpose": "人物收手，划算也可以不买下方一次刷线，强调保留选择",
+      "musicFit": "保留认可的02原速、音量与前34秒混音，短事件声配合查价、价格比较、逐个条件勾选、钱包与收手动作；不加持续声或新旋律。实际混合听感待用户播放确认。"
+    },
+    {
+      "id": "reason-label-turn",
+      "source": "asset:record-paper-2-v1",
+      "role": "accent",
+      "at": {
+        "event": "label.turn",
+        "offset": 0.13333333333333333
+      },
+      "sourceIn": 0,
+      "sourceOut": 0.18034013605442178,
+      "speed": 1,
+      "gain": 1.2,
+      "fadeOut": 0.012,
+      "purpose": "旧原价说明翻出、现成参照标签放大落下时一次短纸张声，22.53秒随新标签落入",
+      "musicFit": "保持02原速、原音量和全部原有声音；新增一段无音高短纸张录音，不加持续声或混响，实际搭配待用户试听确认"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": []
+}

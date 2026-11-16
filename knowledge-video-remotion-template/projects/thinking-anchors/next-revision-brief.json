@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "stage": "full-film-rendered-awaiting-feedback",
+  "userRequest": "可以将内容换成生活中比较常见的问题，而不是书中描述的问题，可以先讨论一下可以有哪些问题，同时音频选择D:\\Documents\\dy\\音频\\02_情感话题_故事讲述.m4a",
+  "visualDirection": "comic",
+  "content": {
+    "direction": "改为生活中常见问题",
+    "selectedScenario": "二手砍价主故事 + 网购折扣延伸",
+    "bookExperiment": "不作为下一版的主讲解案例",
+    "note": "用户已回复可以；进入新版分镜与代表样片制作，尚未批准新样片",
+    "preferredScenarios": [
+      "二手砍价",
+      "网购划线价/折扣"
+    ],
+    "requiredOutcome": "既展示生活中常见现象，也根据《思考，快与慢》相关内容解释如何减少锚定影响",
+    "structureProposal": "二手砍价主故事 + 网购折扣迁移案例；现象→机制→应对→回到场景实践；仍在讨论，未获新分镜认可",
+    "methods": [
+      {
+        "principle": "主动寻找反对当前锚点的理由（consider the opposite）",
+        "basis": "书中Anchors一章有直接讨论；Mussweiler等2000研究支持在所测条件下减轻影响",
+        "adaptation": "检查商品成色、配件、替代商品和实际成交价中不支持高报价的证据"
+      },
+      {
+        "principle": "对明显离谱的报价，不继续围绕该数字展开讨价还价",
+        "basis": "书中谈判建议",
+        "adaptation": "平静要求报价依据，提出基于同成色成交记录的讨论区间，必要时离开交易；不是照搬书中戏剧化表达"
+      },
+      {
+        "principle": "将注意力转向自己的目标和交易替代选择",
+        "basis": "Galinsky与Mussweiler2001的谈判研究",
+        "adaptation": "在比折扣前核对同款常态价和实际到手价，建立有外部证据的可接受范围"
+      }
+    ],
+    "boundaries": "生活案例为原创情境；金额为剧情设定，不伪装成实验数据或当前市场报价。查价、预算等为书中原则的生活化应用，不声称书中提供该购物操作清单；方法帮助减少影响，不保证消除所有偏差。"
+  },
+  "music": {
+    "state": "user-selected",
+    "path": "D:/Documents/dy/音频/02_情感话题_故事讲述.m4a",
+    "durationSeconds": 91.52,
+    "sourceRange": [
+      0,
+      88
+    ],
+    "gain": "待新内容确定后重新测量和配置",
+    "humanListening": "not-recorded"
+  },
+  "previousSample": "outputs/thinking-anchors/sample-comic-v1/video.mp4",
+  "nextStep": "用户观看88秒动作表达完整版，后续按具体反馈修改；不需要再次选择风格或重复确认已认可样片。",
+  "research": {
+    "checked": "2026-11-14",
+    "sources": [
+      {
+        "title": "Daniel Kahneman, Thinking, Fast and Slow, chapter 11 Anchors；本PDF第133页的谈判与反向思考段落",
+        "url": "https://cpcglobal.org/publications/Thinking%20Fast%20and%20Slow.pdf"
+      },
+      {
+        "title": "Mussweiler, Strack & Pfeiffer (2000), Overcoming the Inevitable Anchoring Effect",
+        "url": "https://journals.sagepub.com/doi/10.1177/01461672002611010"
+      },
+      {
+        "title": "Galinsky & Mussweiler (2001), First offers as anchors",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11642352/"
+      }
+    ]
+  }
+}

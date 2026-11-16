@@ -1,0 +1,42 @@
+{
+  "previousCandidate": {
+    "plan": "audio-action-candidate.json",
+    "output": "outputs/thinking-anchors/action-sfx-v1",
+    "userApproval": "rejected",
+    "feedback": "所有的音效都太单调，类似蹦崩，内容和风格不符合"
+  },
+  "currentCandidate": {
+    "plan": "audio-palette-b-record-entries-v1.json",
+    "output": "outputs/thinking-anchors/b-record-entries-v1",
+    "range": [
+      32,
+      46
+    ],
+    "review": "outputs/thinking-anchors/b-record-entries-v1/review.html"
+  },
+  "pictureUnchanged": true,
+  "musicUnchangedAcrossCandidates": true,
+  "formalPlanUnchanged": true,
+  "humanListening": "not-performed",
+  "userApproval": "pending-three-record-listening",
+  "feedback": {
+    "text": "第5秒左右三条同款成色相近的记录逐个出现，音效感觉只有一个，应与三次出现相对应",
+    "resolution": "替换原滑动与翻页为三次独立短纸张声，不改画面与其他音效"
+  },
+  "feedbackHistory": [
+    {
+      "text": "第8秒附近的那个动画效果的音效不太合适，其他的还可以勉强接受",
+      "palette": "c-sparse",
+      "otherSounds": "tentatively-tolerated; do not polish or replace without further feedback"
+    },
+    {
+      "text": "总感觉不太符合这部分知识的讲解风格",
+      "base": "b-comic",
+      "preference": "保留B整体动作感，声音气质需要适合知识讲解"
+    },
+    {
+      "text": "第四秒放大镜到少配件那里没有音效吗？",
+      "interpretation": "在B知识讲解候选上补回轻微动作拟音，保持其余声音"
+    }
+  ]
+}

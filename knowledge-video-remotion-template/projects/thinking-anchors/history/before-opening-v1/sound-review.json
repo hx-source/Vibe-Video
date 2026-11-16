@@ -1,0 +1,137 @@
+{
+  "previousCandidate": {
+    "plan": "audio-action-candidate.json",
+    "output": "outputs/thinking-anchors/action-sfx-v1",
+    "userApproval": "rejected",
+    "feedback": "所有的音效都太单调，类似蹦崩，内容和风格不符合"
+  },
+  "currentCandidate": {
+    "plan": "audio-palette-b-pencil-follow-through-v1.json",
+    "output": "outputs/thinking-anchors/b-pencil-follow-through-v1",
+    "range": [
+      32,
+      46
+    ],
+    "review": "outputs/thinking-anchors/b-pencil-follow-through-v1/review.html"
+  },
+  "pictureUnchanged": true,
+  "musicUnchangedAcrossCandidates": true,
+  "formalPlanUnchanged": true,
+  "humanListening": "not-performed",
+  "userApproval": "pending-two-second-pencil-follow-through-listening",
+  "feedback": {
+    "text": "要求第8秒开始同一次划线，随着移动缓缓展开，到第10秒结束",
+    "resolution": "换用真实长铅笔录音的原速连续两秒片段，8–10秒贯穿，起止平滑、轻微力度变化，无短音重复或完成后补声"
+  },
+  "feedbackHistory": [
+    {
+      "text": "第8秒附近的那个动画效果的音效不太合适，其他的还可以勉强接受",
+      "palette": "c-sparse",
+      "otherSounds": "tentatively-tolerated; do not polish or replace without further feedback"
+    },
+    {
+      "text": "总感觉不太符合这部分知识的讲解风格",
+      "base": "b-comic",
+      "preference": "保留B整体动作感，声音气质需要适合知识讲解"
+    },
+    {
+      "text": "第四秒放大镜到少配件那里没有音效吗？",
+      "interpretation": "在B知识讲解候选上补回轻微动作拟音，保持其余声音"
+    },
+    {
+      "text": "第5秒左右三条同款成色相近的记录逐个出现，音效感觉只有一个，应与三次出现相对应",
+      "resolution": "替换原滑动与翻页为三次独立短纸张声，不改画面与其他音效"
+    },
+    {
+      "text": "第9秒左右三个标签向下移动，音效不太合适",
+      "resolution": "去掉提前结束的短纸张声，改为8.85–10秒随整体下移速度变化的一次轻扫，保留落定轻响"
+    },
+    {
+      "text": "标签下移扫动声有空旷感，仍不合适",
+      "resolution": "换原速短纸张材质，保持主体与细节，不做拉伸或空间处理，配在9.2秒附近最明显的下移动作"
+    },
+    {
+      "text": "短纸卡滑动与前面重复，需要其他音效",
+      "resolution": "同画面比较短机械滑扣和电子收拢短音，仅更换第9.2秒附近的归组声"
+    },
+    {
+      "text": "有没有其他平滑的音乐，然后展现这个动态的变化",
+      "interpretation": "局部标签下移动作使用短动作配乐，沿用明确指定的02主配乐",
+      "resolution": "两种原创合成乐音：柔和连续下行滑音与圆润下行琶音，先做混合试听"
+    },
+    {
+      "text": "用户明确选择短纸卡摩擦（此前说与前面重复的那版），认为比后续音乐化尝试合适",
+      "selectedCue": "b-comic-5",
+      "selectedSource": "asset:group-down-dry-v1",
+      "decision": "restore exact existing short dry paper candidate, with no further processing"
+    },
+    {
+      "text": "摩擦声感觉从中间加进来，需要从头到尾的一个音效",
+      "resolution": "以明确选定的短纸卡材质延续连续摩擦，8–10秒覆盖完整标签移动，保留其他声音"
+    },
+    {
+      "text": "现在有多次唰唰唰，需要一次完整的刷声",
+      "resolution": "采用单次起音与收尾的频谱重建纹理，去除短片段循环；继续覆盖8–10秒，其他声音保留"
+    },
+    {
+      "text": "缺少开始和结尾的轻重音效",
+      "resolution": "单次刷声主体保持原样，补轻接触起头与稍重干接触落定，独立试听也包含完整起止；替代原玻璃落定提示"
+    },
+    {
+      "text": "起止接触声与整体滑动音效不符合",
+      "resolution": "撤掉外加接触音与落定音，沿用同一摩擦载波，只以平滑力度包络体现起止；实际融合感待用户听辨"
+    },
+    {
+      "text": "第7–10秒需要由轻到重缓缓变化，体现开始、中间和结尾，避免死硬",
+      "resolution": "同一摩擦声提前到第7秒，三秒连续渐强、细节渐变，最后柔和收住，无额外敲击或重复刷动"
+    },
+    {
+      "text": "不再使用3秒持续音，只使用开始或者结束的单个音效",
+      "resolution": "撤掉持续滑动，推荐先试听只在第10秒落定时给一个短结束音的版本，用户尚未正式选择起点或终点"
+    },
+    {
+      "text": "试试铅笔短划线声",
+      "resolution": "第10秒短结束提示改为真实铅笔单笔划线录音的0.24秒片段；其余声音及画面保留，待混合试听"
+    },
+    {
+      "text": "铅笔声应随着移动产生，原来像移动完成后突然补上一道",
+      "resolution": "同一笔触提前0.9秒，放在9.10–9.34秒实际下移过程中，声音能量中心与最大下移速度对齐；音色与其他声音保留"
+    }
+  ],
+  "localSelection": {
+    "cue": "b-comic-5",
+    "source": "asset:group-down-dry-v1",
+    "previewSeconds": [
+      9.2,
+      9.630453514739228
+    ],
+    "status": "user-selected-to-retain",
+    "scope": "this movement cue only; full-film sound approval not implied"
+  },
+  "regroupRevision": {
+    "status": "awaiting-user-viewing-and-listening",
+    "userRequest": "将8秒动画换一种形式，再配适合的短声；保留02背景音乐",
+    "review": "outputs/thinking-anchors/regroup-motion-v1/review.html",
+    "preview": "outputs/thinking-anchors/regroup-motion-v1/outline/preview.mp4",
+    "variants": [
+      {
+        "id": "ruler",
+        "label": "A · 三点落尺",
+        "description": "三个价格逐个落到同一把尺上，再标出区间。三个短接触音对应落点。"
+      },
+      {
+        "id": "outline",
+        "label": "B · 圈定区间",
+        "description": "成交记录留在原位，一笔框出可比价格，再呈现区间。短铅笔录音只随框线绘制。"
+      },
+      {
+        "id": "summary",
+        "label": "C · 合拢成卡",
+        "description": "三个价格汇入同一张汇总卡，区间接着出现。一次短翻纸声对应汇入动作。"
+      }
+    ],
+    "selected": null,
+    "assistantListening": "not-performed",
+    "previousSelectionScope": "Historical movement selection; does not approve these redesigned variants"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "draft",
+  "id": "thinking-anchors",
+  "title": "你真的买便宜了吗？｜锚定效应",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "砍价成功和大幅打折，为什么仍可能买贵？",
+    "takeaway": "问报价依据，主动找反证，再用可比信息和自己的目标作判断。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-ending-v1.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json",
+    "visualPlan": "visual-plan.json",
+    "productionPlan": "production-plan.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scopeSeconds": [
+    24,
+    38
+  ],
+  "changed": "foreground character acting only",
+  "preserved": [
+    "all text and UI",
+    "scene timing",
+    "left window cleanup",
+    "02 music and sound effects"
+  ],
+  "actions": [
+    "look-up",
+    "point-history",
+    "follow-comparison",
+    "indicate-conditions",
+    "think-at-chin",
+    "withdraw-and-relax"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "revision": "portrait-mechanism-v1",
+  "rangeSeconds": [
+    12,
+    24
+  ],
+  "status": "user-approved",
+  "feedback": "这部分可以，接下来继续制作24秒之后的内容，衔接“该拿什么比”的问题，讲清楚生活中怎么减少锚定效应的影响，继续保持现在的竖屏漫画风格和动态效果。",
+  "video": "outputs/thinking-anchors/portrait-mechanism-v1/video.mp4",
+  "sha256": "1a558ef7fd3b3f9656c8bae5f3494e9536f0b835cb29daf449315f1858385ef2",
+  "userApproved": true,
+  "viewingAndListeningNotSeparatelyRecorded": true,
+  "scope": "仅认可12–24秒机制段，授权继续制作生活化方法段；不推断新片段已获认可"
+}

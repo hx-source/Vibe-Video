@@ -1,0 +1,10 @@
+import React from 'react';
+import {createRoot} from 'react-dom/client';
+import {flushSync} from 'react-dom';
+import {AnchorLandscapeOpening,validateOpening} from '../landscape-opening-v2/Opening';
+import {AnchorLandscapeFocus,validateLandscapeFocus} from '../landscape-focus-v1/Decision';
+import {usedScenes,validateUsed} from './Used';
+import board from './board.json';
+validateOpening();validateLandscapeFocus();validateUsed();
+const Scene=usedScenes[board.sceneType as keyof typeof usedScenes],root=createRoot(document.getElementById('root')!);
+(window as any).renderLandscape=(f:number)=>{if(!Number.isInteger(f)||f<0||f>=1560)throw Error('Full landscape frame outside 0–1559');flushSync(()=>root.render(<div style={{width:1920,height:1080,overflow:'hidden',fontFamily:'"Noto Sans SC",sans-serif'}}>{f<720?<AnchorLandscapeOpening frame={f}/>:f<1140?<AnchorLandscapeFocus frame={f-720}/>:<Scene frame={f-1140}/>}</div>));};

@@ -1,0 +1,48 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import vm from 'node:vm';
+import {ROOT,json,sha,writeJson} from '../../scripts/files.mjs';
+
+const name=process.argv[2]??'opening-live-v2';
+if(!/^[a-z0-9-]+$/.test(name))throw Error('Invalid revision');
+const dir=path.join(ROOT,'projects/thinking-anchors'),out=path.join(ROOT,'outputs/thinking-anchors',name),history=path.join(dir,'history/before-live-opening-v1');
+const manifest=json(path.join(out,'manifest.json')),plan=json(path.join(out,'opening-plan.json'));
+if(manifest.status!=='rendered-and-decoded'||plan.kind!=='live-sale')throw Error('Complete the live opening first');
+const group=path.join(ROOT,'outputs/thinking-anchors/regroup-motion-v1'),protectedHashes=json(path.join(group,'manifest.json')).protectedHashes;
+for(const f of ['audio-plan.json','approved-sample.json','scenes/AnchorEvidenceMotion.tsx','scenes/AnchorLifeScene.tsx'])if(sha(path.join(dir,f))!==protectedHashes[f])throw Error('Protected source changed: '+f);
+const oldStory=fs.readFileSync(path.join(history,'AnchorStoryMotion.tsx'),'utf8').replace(/\r\n/g,'\n');
+const currentStory=fs.readFileSync(path.join(dir,'scenes/AnchorStoryMotion.tsx'),'utf8').replace(/\r\n/g,'\n').replace("import {AnchorLiveOpening as AnchorOpening} from './AnchorLiveOpening';","import {AnchorOpening} from './AnchorOpening';");
+if(oldStory!==currentStory)throw Error('Unrelated story implementation changed');
+for(const file of ['storyboard.json','captions.json']){
+ const key=file==='storyboard.json'?'segments':'items',a=json(path.join(history,file))[key].filter(s=>(s.segmentId??s.id)!=='deal'),b=json(path.join(dir,file))[key].filter(s=>(s.segmentId??s.id)!=='deal');
+ if(JSON.stringify(a)!==JSON.stringify(b))throw Error('Another chapter changed: '+file);
+}
+if(sha(path.join(out,'A/music.wav'))!==sha(path.join(group,'outline/mix/music.wav')))throw Error('Music changed');
+const mix=fs.readFileSync(path.join(out,'A/mix.wav')),oldMix=fs.readFileSync(path.join(group,'outline/mix/mix.wav')),afterOpening=44+14*44100*4;
+if(!mix.subarray(afterOpening).equals(oldMix.subarray(afterOpening)))throw Error('Another chapter audio changed');
+const priorVideo=path.join(ROOT,'outputs/thinking-anchors/opening-v4/video.mp4');
+if(sha(priorVideo)!==json(path.join(ROOT,'outputs/thinking-anchors/opening-v4/manifest.json')).videoOutput.sha256)throw Error('Previous preview overwritten');
+const quality=json(path.join(out,'A/audio-quality.json'));
+const intro=quality.eventLevels.find(e=>e.id==='live-quote');
+let peak=0;for(let i=44+Math.round(.08*44100)*4;i<44+Math.round(.32*44100)*4;i+=2)peak=Math.max(peak,Math.abs(mix.readInt16LE(i))/32768);
+const introPeakDb=20*Math.log10(peak);
+const warnings=quality.warnings.filter(w=>!(w.code==='effect-dominance-candidate'&&w.id==='live-quote'&&intro.musicRmsDb<-50&&intro.effectsRmsDb<-23&&introPeakDb<-10));
+if(warnings.length)throw Error('Unresolved audio warning: '+JSON.stringify(warnings));
+const html=fs.readFileSync(path.join(out,'review.html'),'utf8');new vm.Script(html.match(/<script>([\s\S]*?)<\/script>/)[1]);
+for(const m of html.matchAll(/(?:href|src|poster)="([^"]+)"/g))if(!fs.existsSync(path.join(out,m[1])))throw Error('Missing review media: '+m[1]);
+if(html.includes('砍掉400')||html.includes('报价2000'))throw Error('Review page still describes old content');
+const revision={kind:'live-sale',status:'ready-for-user-review',segmentId:'deal',rangeSeconds:[0,14],frames:420,fps:30,resolution:[1920,1080],preview:`outputs/thinking-anchors/${name}/video.mp4`,review:`outputs/thinking-anchors/${name}/review.html`,audioPlan:`audio-${name}.json`,source:'scenes/AnchorLiveOpening.tsx',userChoice:plan.userChoice,musicUnchanged:true,otherChapterAudioPcmIdentical:true,previousOpeningPreserved:true,otherSceneModesUnchanged:true,userViewed:null,userListened:null,userApproved:false,assistantAudioListening:'not-performed',nextSegmentNeedsContinuityReview:true};
+const status=json(path.join(dir,'delivery-status.json'));
+Object.assign(status,{state:'live-opening-ready-for-review',previousPreview:status.preview,preview:revision.preview,review:revision.review,opening:revision,currentSegment:'deal',soundCueCount:6,userSoundApproval:false,soundReview:revision.review,formalAudioPlan:`audio-plan.json unchanged; ${revision.audioPlan} is the current candidate`,nextSegmentNote:plan.nextSegmentNote});
+writeJson(path.join(dir,'delivery-status.json'),status);
+const sound=json(path.join(dir,'sound-review.json'));sound.openingRevision=revision;writeJson(path.join(dir,'sound-review.json'),sound);
+const ledger=json(path.join(dir,'segment-production.json'));
+Object.assign(ledger.segments.find(s=>s.id==='deal'),{status:'preview-ready',revision:name,userApproved:false,kind:'live-sale'});
+Object.assign(ledger.segments.find(s=>s.id==='trap'),{status:'existing-draft-needs-new-opening-bridge',note:plan.nextSegmentNote});
+ledger.nextContinuityReview=plan.nextSegmentNote;writeJson(path.join(dir,'segment-production.json'),ledger);
+const readme=path.join(dir,'README.md'),heading='## 直播间开头：999→599→199';
+if(!fs.readFileSync(readme,'utf8').includes(heading))fs.appendFileSync(readme,`\n\n${heading}\n\n用户选择直播间报价作生活化开头。本轮交付 ${revision.preview}，审片页 ${revision.review}。AnchorLiveOpening.tsx 经原 deal 模式调用；原 AnchorOpening.tsx 和 opening-v4 视频保留。前3.6秒展示999、599、199三个报价；观众觉得少花800、准备下单；第10秒停住，第10.5秒遮住原价，第11.3秒引出查同款、比到手价。02音乐保持原PCM，后续章节音频逐字节保持。六处短声只跟随可见动作。\n\n开头原音乐淡入和源片段很安静，纸张起音相对配乐的RMS比较触发提示；已记录绝对电平与峰值，未把近静音下的相对比值当作需要压到不可闻的依据，听感仍待用户反馈。未声称已经人工试听或会成为爆款。\n\n下一段制作须承接本段999/199，再介绍二手砍价；现有整片尚未完成这种衔接。准备：node projects/thinking-anchors/prepare-live-opening.mjs 新修订名；导出：node projects/thinking-anchors/render-opening-offline.mjs 新修订名 --render。完成的视频不覆盖。\n`);
+manifest.liveOpeningVerification={...revision,layoutSamples:'0.1 seconds, keyframes and next-scene reference',visualKeyframesInspected:true,rewindDeterministic:true,sourceTypecheck:'passed',originalMusicPcmIdentical:true,otherChapterVisualSourcePreserved:true,reviewLinksExist:true,reviewScriptParses:true,introAudioAssessment:{status:'relative-dominance-warning-explained-not-listening-approved',musicRmsDb:intro.musicRmsDb,effectRmsDb:intro.effectsRmsDb,introPeakDb,reason:'Music source and fade-in are near silent at first cue; assessed absolute level and PCM headroom instead of attenuating cue into silence',humanListening:'pending'}};
+manifest.rendererSources=Object.fromEntries(['scenes/AnchorLiveOpening.tsx','scenes/OpeningActors.tsx','scenes/AnchorStoryMotion.tsx','prepare-live-opening.mjs','render-opening-offline.mjs','style-entry.tsx'].map(f=>[f,sha(path.join(dir,f))]));
+writeJson(path.join(out,'manifest.json'),manifest);writeJson(path.join(out,'review-status.json'),revision);
+console.log(JSON.stringify({revision,introPeakDb,qualityWarningsExplained:quality.warnings.length}));

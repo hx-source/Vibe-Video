@@ -1,0 +1,225 @@
+{
+  "state": "used-offer-46to58-ready-for-review",
+  "output": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "review": "outputs/thinking-anchors/used-offer-v1/review.html",
+  "storyboard": "outputs/thinking-anchors/full-motion-v1/storyboard.html",
+  "durationSeconds": 88,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "frames": 2640,
+  "style": "comic",
+  "music": "02_情感话题_故事讲述.m4a",
+  "fixedBottomExplanations": false,
+  "approvedSamplePreserved": true,
+  "fullFilmUserApproval": false,
+  "assistantHumanListening": "not-performed",
+  "previousOutput": "outputs/thinking-anchors/full-motion-v1/video.mp4",
+  "preview": "outputs/thinking-anchors/used-offer-v1/video.mp4",
+  "pictureUnchanged": false,
+  "soundCueCount": 5,
+  "formalAudioPlan": "audio-plan.json unchanged; audio-used-offer-v1.json is this candidate",
+  "userSoundApproval": false,
+  "previousSoundCandidate": "outputs/thinking-anchors/action-sfx-v1",
+  "soundReview": "outputs/thinking-anchors/used-offer-v1/review.html",
+  "soundPaletteManifest": "outputs/thinking-anchors/b-pencil-follow-through-v1/manifest.json",
+  "candidateSoundAssetCount": 12,
+  "selectedSoundPalette": "B as preferred base; explainer candidate pending",
+  "selectedMotionSound": null,
+  "selectedMotionPlan": null,
+  "userMotionCueSelection": false,
+  "changedPicture": "Only evidence chapter from local 8s onward: three regroup alternatives; final speech stays on left to preserve evidence visibility",
+  "musicUnchanged": true,
+  "unrelatedCuesUnchanged": true,
+  "selectedRegroupVariant": null,
+  "regroupChoicePending": true,
+  "regroupAlternatives": [
+    {
+      "id": "ruler",
+      "label": "A · 三点落尺",
+      "description": "三个价格逐个落到同一把尺上，再标出区间。三个短接触音对应落点。"
+    },
+    {
+      "id": "outline",
+      "label": "B · 圈定区间",
+      "description": "成交记录留在原位，一笔框出可比价格，再呈现区间。短铅笔录音只随框线绘制。"
+    },
+    {
+      "id": "summary",
+      "label": "C · 合拢成卡",
+      "description": "三个价格汇入同一张汇总卡，区间接着出现。一次短翻纸声对应汇入动作。"
+    }
+  ],
+  "previousPreview": "outputs/thinking-anchors/used-evidence-v1/video.mp4",
+  "currentSegment": "reprice",
+  "currentScopeSeconds": [
+    46,
+    58
+  ],
+  "opening": {
+    "kind": "live-sale",
+    "status": "user-approved",
+    "segmentId": "deal",
+    "rangeSeconds": [
+      0,
+      14
+    ],
+    "frames": 420,
+    "fps": 30,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "preview": "outputs/thinking-anchors/opening-live-v2/video.mp4",
+    "review": "outputs/thinking-anchors/opening-live-v2/review.html",
+    "audioPlan": "audio-opening-live-v2.json",
+    "source": "scenes/AnchorLiveOpening.tsx",
+    "userChoice": "直播间报价：从“原价999”一路降到199，为什么会心动",
+    "musicUnchanged": true,
+    "otherChapterAudioPcmIdentical": true,
+    "previousOpeningPreserved": true,
+    "otherSceneModesUnchanged": true,
+    "userViewed": null,
+    "userListened": null,
+    "userApproved": true,
+    "assistantAudioListening": "not-performed",
+    "nextSegmentNeedsContinuityReview": true,
+    "userFeedback": "这个开头可以，接下来继续制作14到24秒的部分，注意和前面直播间降价的内容衔接起来。",
+    "approvalRecord": "opening-live-v2-acceptance.json"
+  },
+  "nextSegmentNote": "58秒以后需从保留替代选择继续衔接，仍待逐段制作。",
+  "continuityPreview": "outputs/thinking-anchors/used-offer-v1/continuity-0-58.mp4",
+  "mechanism": {
+    "segmentId": "trap",
+    "status": "user-approved",
+    "revision": "live-mechanism-v1",
+    "rangeSeconds": [
+      14,
+      24
+    ],
+    "frames": 300,
+    "durationSeconds": 10,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "preview": "outputs/thinking-anchors/live-mechanism-v1/video.mp4",
+    "review": "outputs/thinking-anchors/live-mechanism-v1/review.html",
+    "continuity": "outputs/thinking-anchors/live-mechanism-v1/continuity-0-24.mp4",
+    "audioPlan": "audio-live-mechanism-v1.json",
+    "openingApprovalPreserved": true,
+    "openingContentUnchanged": true,
+    "openingDecodedPixelsInJoinedVideoUnchanged": true,
+    "musicPcmUnchanged": true,
+    "mixOutside14to24PcmIdentical": true,
+    "otherChaptersUnchanged": true,
+    "userApproved": true,
+    "userViewed": null,
+    "userListened": null,
+    "assistantListening": "not-performed",
+    "nextSegmentNeedsProduction": true,
+    "userFeedback": "这部分可以，接下来继续制作24到32秒，注意衔接前面“该用什么作依据”的问题，讲清楚生活中怎么避免锚定效应。",
+    "approvalRecord": "live-mechanism-v1-acceptance.json"
+  },
+  "decision": {
+    "segmentId": "rewind",
+    "status": "user-approved",
+    "revision": "live-decision-v2",
+    "rangeSeconds": [
+      24,
+      32
+    ],
+    "frames": 240,
+    "durationSeconds": 8,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "preview": "outputs/thinking-anchors/live-decision-v2/video.mp4",
+    "review": "outputs/thinking-anchors/live-decision-v2/review.html",
+    "continuity": "outputs/thinking-anchors/live-decision-v2/continuity-0-32.mp4",
+    "audioPlan": "audio-live-decision-v2.json",
+    "prior0to24ApprovalPreserved": true,
+    "prior0to24DecodedPixelsInJoinedVideoUnchanged": true,
+    "musicPcmUnchanged": true,
+    "mixOutside24to32PcmIdentical": true,
+    "otherChaptersUnchanged": true,
+    "method": "主动找反证→核对同款同条件到手价→结合需求预算决定；只能帮助减少影响",
+    "allPricesFictional": true,
+    "userApproved": true,
+    "userViewed": null,
+    "userListened": null,
+    "assistantListening": "not-performed",
+    "userFeedback": "这部分可以，接下来继续制作32到46秒，注意从前面的直播间查价自然过渡到二手砍价，讲清楚怎么检查商品、查成交记录来减少锚定效应的影响。",
+    "approvalRecord": "live-decision-v2-acceptance.json"
+  },
+  "usedEvidence": {
+    "segmentId": "evidence",
+    "status": "user-approved",
+    "revision": "used-evidence-v1",
+    "rangeSeconds": [
+      32,
+      46
+    ],
+    "durationSeconds": 14,
+    "frames": 420,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "preview": "outputs/thinking-anchors/used-evidence-v1/video.mp4",
+    "review": "outputs/thinking-anchors/used-evidence-v1/review.html",
+    "continuity": "outputs/thinking-anchors/used-evidence-v1/continuity-0-46.mp4",
+    "audioPlan": "audio-used-evidence-v1.json",
+    "caseTransition": "直播间查价→二手咖啡机开价2000→检查磨损和配件→查同款成色相近的成交→形成可比区间",
+    "groupingVariant": "outline",
+    "allPricesFictional": true,
+    "prior0to32ApprovalPreserved": true,
+    "prior0to32DecodedPixelsInJoinedVideoUnchanged": true,
+    "musicPcmUnchanged": true,
+    "mixOutside32to46PcmIdentical": true,
+    "otherChaptersUnchanged": true,
+    "userApproved": true,
+    "userViewed": null,
+    "userListened": null,
+    "assistantListening": "not-performed",
+    "userFeedback": "这部分可以，接下来继续制作46到58秒，注意衔接前面的成交区间和商品状况，讲清楚怎么依据这些信息出价，以及价格不合适时可以不成交。",
+    "approvalRecord": "used-evidence-v1-acceptance.json"
+  },
+  "usedOffer": {
+    "segmentId": "reprice",
+    "status": "ready-for-user-review",
+    "revision": "used-offer-v1",
+    "rangeSeconds": [
+      46,
+      58
+    ],
+    "durationSeconds": 12,
+    "frames": 360,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "preview": "outputs/thinking-anchors/used-offer-v1/video.mp4",
+    "review": "outputs/thinking-anchors/used-offer-v1/review.html",
+    "continuity": "outputs/thinking-anchors/used-offer-v1/continuity-0-58.mp4",
+    "audioPlan": "audio-used-offer-v1.json",
+    "prior0to46ApprovalPreserved": true,
+    "prior0to46DecodedPixelsInJoinedVideoUnchanged": true,
+    "musicPcmUnchanged": true,
+    "mixOutside46to58PcmIdentical": true,
+    "otherChaptersUnchanged": true,
+    "offerIsIllustrativeNotFormula": true,
+    "dealCompleted": false,
+    "userApproved": false,
+    "userViewed": null,
+    "userListened": null,
+    "assistantListening": "not-performed"
+  }
+}

@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {ROOT,json,sha,writeJson} from '../../../scripts/files.mjs';
+const local=path.join(ROOT,'projects/thinking-anchors/landscape-ending-v1'),out=path.join(ROOT,'outputs/thinking-anchors/landscape-ending-v1'),render=path.join(local,'render.mjs'),archived=path.join(out,'render-before-keyframe-time-fix.mjs');
+if(fs.existsSync(archived))throw Error('Timing correction already applied');
+fs.copyFileSync(render,archived);const executedSha256=sha(archived);
+fs.writeFileSync(render,fs.readFileSync(render,'utf8').replaceAll('time:52+f/30','time:64+f/30'));
+const visual=json(path.join(out,'visual-checks.json'));for(const f of visual.keyframes)f.time=64+f.frame/30;writeJson(path.join(out,'visual-checks.json'),visual);
+const manifest=json(path.join(out,'manifest.json'));manifest.renderAttemptSource={file:'render-before-keyframe-time-fix.mjs',sha256:executedSha256};manifest.metadataCorrection={field:'visual-checks.keyframes.time',fromOffset:52,toOffset:64,reason:'Correct global timestamps in keyframe descriptions; movie timestamps, frame rendering and sound were already correct',movieAndAudioUnchanged:true};manifest.sources['render.mjs']=sha(render);manifest.sources['fix-keyframe-times.mjs']=sha(path.join(local,'fix-keyframe-times.mjs'));writeJson(path.join(out,'manifest.json'),manifest);
+console.log(JSON.stringify({correctedKeyframeDescriptions:visual.keyframes.length,movieAndAudioUnchanged:true}));

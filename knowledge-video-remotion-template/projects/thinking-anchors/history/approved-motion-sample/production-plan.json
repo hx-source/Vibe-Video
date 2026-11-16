@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "narration": false,
+    "captions": "zh-CN",
+    "targetDurationSeconds": 88
+  },
+  "topic": {
+    "title": "你真的买便宜了吗？｜锚定效应",
+    "audience": "普通消费者，无心理学专业背景",
+    "question": "砍价成功和大幅打折，为什么仍可能买贵？",
+    "takeaway": "问报价依据，主动找反证，再用可比信息和自己的目标作判断。"
+  },
+  "research": {
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Daniel Kahneman, Thinking, Fast and Slow, chapter 11 Anchors；本PDF第133页的谈判与反向思考段落",
+        "reference": "https://cpcglobal.org/publications/Thinking%20Fast%20and%20Slow.pdf"
+      },
+      {
+        "title": "Mussweiler, Strack & Pfeiffer (2000), Overcoming the Inevitable Anchoring Effect",
+        "reference": "https://journals.sagepub.com/doi/10.1177/01461672002611010"
+      },
+      {
+        "title": "Galinsky & Mussweiler (2001), First offers as anchors",
+        "reference": "https://pubmed.ncbi.nlm.nih.gov/11642352/"
+      }
+    ],
+    "boundaries": "生活案例为原创情境；金额为剧情设定，不伪装成实验数据或当前市场报价。查价、预算等为书中原则的生活化应用，不声称书中提供该购物操作清单；方法帮助减少影响，不保证消除所有偏差。"
+  },
+  "outline": [
+    {
+      "segmentId": "deal",
+      "point": "砍掉 400 元，真的省了吗？"
+    },
+    {
+      "segmentId": "trap",
+      "point": "第一个数字，成了你的起点"
+    },
+    {
+      "segmentId": "rewind",
+      "point": "换一种谈法，再来一次"
+    },
+    {
+      "segmentId": "evidence",
+      "point": "先找不支持这个报价的证据"
+    },
+    {
+      "segmentId": "reprice",
+      "point": "按查到的依据出价"
+    },
+    {
+      "segmentId": "shop",
+      "point": "“原价 999”，让 199 显得便宜"
+    },
+    {
+      "segmentId": "compare",
+      "point": "把折扣，换成真实价格来比"
+    },
+    {
+      "segmentId": "close",
+      "point": "下一次，先检查那个数字"
+    }
+  ],
+  "scenePlan": [
+    {
+      "segmentId": "deal",
+      "sceneType": "anchor-life",
+      "purpose": "砍掉 400 元，真的省了吗？",
+      "change": "同一台二手咖啡机，卖家2000元、买家1600元的气泡依次出现；庆祝后出现疑问。"
+    },
+    {
+      "segmentId": "trap",
+      "sceneType": "anchor-life",
+      "purpose": "第一个数字，成了你的起点",
+      "change": "同一个2000元标签变成固定起点，买家的1600估计沿尺移动，关系线保留参照。"
+    },
+    {
+      "segmentId": "rewind",
+      "sceneType": "anchor-life",
+      "purpose": "换一种谈法，再来一次",
+      "change": "对话倒回开价前，买家取出检查清单，提出对报价依据的疑问。"
+    },
+    {
+      "segmentId": "evidence",
+      "sceneType": "anchor-evidence-motion",
+      "purpose": "先找不支持这个报价的证据",
+      "change": "底部大字字幕和小字说明改为人物动作与场内表达：放大镜移动检查、发现磨损和缺少配件、人物表情/手势、滑看成交记录、三个价格从记录中取出归到比较线，人物形成新判断。先只改本代表场景。"
+    },
+    {
+      "segmentId": "reprice",
+      "sceneType": "anchor-life",
+      "purpose": "按查到的依据出价",
+      "change": "买家展示成色和成交依据，再提出1200元的剧情报价；显示另一家和离开交易的选择。"
+    },
+    {
+      "segmentId": "shop",
+      "sceneType": "anchor-life",
+      "purpose": "“原价 999”，让 199 显得便宜",
+      "change": "同一外套先出现999划线价，再出现199到手价；买家暂停，检查原价依据。"
+    },
+    {
+      "segmentId": "compare",
+      "sceneType": "anchor-life",
+      "purpose": "把折扣，换成真实价格来比",
+      "change": "收起划线价，改看剧情中的近期常态价与其他店到手价；再和需求、预算比较。"
+    },
+    {
+      "segmentId": "close",
+      "sceneType": "anchor-life",
+      "purpose": "下一次，先检查那个数字",
+      "change": "把问依据、找反证、再比较三个动作落成便签，人物带着清单离开。"
+    }
+  ],
+  "representative": {
+    "from": 34,
+    "to": 44,
+    "stillTime": 43,
+    "reason": "同一34–44秒范围验证底部说明转为人物行动：发现商品问题、滑看成交记录、把价格归到比较线上；音乐保持全片时钟。"
+  }
+}

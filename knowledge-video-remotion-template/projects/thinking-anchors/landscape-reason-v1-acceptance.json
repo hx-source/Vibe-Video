@@ -1,0 +1,14 @@
+{
+  "revision": "landscape-reason-v1",
+  "rangeSeconds": [
+    20,
+    34
+  ],
+  "userApproved": true,
+  "feedback": "这部分可以，接下来继续制作34秒之后的内容，衔接“该拿什么比”的问题，讲清楚在直播间购物时怎么通过查同款实际价格、结合自己的需求和预算来减少锚定效应的影响，保持横屏漫画风格和02背景音乐，做好后先给我看一下。",
+  "scope": "明确认可20–34秒原因段，并授权继续制作34秒之后的方法段；不推断新方法段已认可",
+  "video": "outputs/thinking-anchors/landscape-reason-v1/video.mp4",
+  "videoSha256": "f450f4f778b5271155d9294a0d8cbb2109bc978618fe8c3a3ca738f9bc527740",
+  "continuity": "outputs/thinking-anchors/landscape-reason-v1/continuity-0-34.mp4",
+  "assistantListening": "not-performed"
+}

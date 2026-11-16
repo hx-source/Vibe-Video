@@ -1,0 +1,19 @@
+{
+  "editRangeSeconds": [
+    22,
+    23.5
+  ],
+  "reviewRangeSeconds": [
+    21,
+    24.5
+  ],
+  "affectedSegments": [
+    "anchor-reason"
+  ],
+  "preservedScope": [
+    0,
+    52
+  ],
+  "automaticPatches": [],
+  "notes": "范围描述用于定位与检查，不自动证明任意场景代码只改变了该范围；TSX动画须在独立版本中实现并登记产物。"
+}

@@ -1,0 +1,60 @@
+{
+  "strategy": "Complete and review each segment, then join and review continuity",
+  "currentSegment": "deal",
+  "segments": [
+    {
+      "id": "deal",
+      "from": 0,
+      "to": 14,
+      "status": "preview-ready",
+      "revision": "opening-live-v2",
+      "userApproved": false,
+      "kind": "live-sale"
+    },
+    {
+      "id": "trap",
+      "from": 14,
+      "to": 24,
+      "status": "existing-draft-needs-new-opening-bridge",
+      "note": "旧14–24秒仍用咖啡机2000/1600展示机制；下一段制作需先承接本段999/199，再引入二手砍价实例，避免无解释切换商品。"
+    },
+    {
+      "id": "rewind",
+      "from": 24,
+      "to": 32,
+      "status": "existing-draft"
+    },
+    {
+      "id": "evidence",
+      "from": 32,
+      "to": 46,
+      "status": "prior-local-revision-preserved"
+    },
+    {
+      "id": "reprice",
+      "from": 46,
+      "to": 58,
+      "status": "existing-draft"
+    },
+    {
+      "id": "shop",
+      "from": 58,
+      "to": 70,
+      "status": "existing-draft"
+    },
+    {
+      "id": "compare",
+      "from": 70,
+      "to": 82,
+      "status": "existing-draft"
+    },
+    {
+      "id": "close",
+      "from": 82,
+      "to": 88,
+      "status": "existing-draft"
+    }
+  ],
+  "fullFilmApproval": false,
+  "nextContinuityReview": "旧14–24秒仍用咖啡机2000/1600展示机制；下一段制作需先承接本段999/199，再引入二手砍价实例，避免无解释切换商品。"
+}

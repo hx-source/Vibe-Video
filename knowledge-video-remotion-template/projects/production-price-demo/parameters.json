@@ -1,0 +1,7 @@
+{
+ "title":"同一件衣服，讲解前后",
+ "before":{"label":"讲解前","value":199,"judgment":"觉得贵"},
+ "after":{"label":"听到“原价999”后","value":199,"judgment":"觉得划算"},
+ "events":{"before":0,"after":1.5,"conclusion":3.6},
+ "conclusion":"价格没变，判断变了"
+}
