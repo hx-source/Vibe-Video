@@ -1,0 +1,45 @@
+{
+  "sample": {
+    "from": 35,
+    "to": 45
+  },
+  "music": {
+    "asset": "endowment-bed",
+    "source": "02_情感话题_故事讲述.m4a",
+    "speed": 1,
+    "fullClock": true,
+    "arrangement": "0–91.5秒连续音乐，最后2秒淡出；94秒初稿末尾2.5秒暂留白，待全片节奏设计再复核"
+  },
+  "events": [
+    {
+      "event": "mechanism.own",
+      "globalAction": 36.5,
+      "globalSound": 37.05,
+      "anchor": "接近落定",
+      "motion": "我的标签下降、关系线接入、人物出现",
+      "sound": "短接触声",
+      "sourceIn": 0
+    },
+    {
+      "event": "mechanism.loss",
+      "globalAction": 39.5,
+      "globalSound": 39.6,
+      "anchor": "变化启动后0.1秒",
+      "motion": "微笑转为担忧，双臂收拢",
+      "sound": "短布料声",
+      "sourceIn": 0
+    },
+    {
+      "event": "mechanism.result",
+      "globalAction": 43,
+      "globalSound": 43.25,
+      "anchor": "结论进入",
+      "motion": "比较曲线与一句结论淡入并落定",
+      "sound": "轻敲",
+      "sourceIn": 0
+    }
+  ],
+  "assistantListening": "not-performed",
+  "userSampleApproval": "pending",
+  "musicBeatSync": "not-requested; content events determine timing; no claim of manually verified beat alignment"
+}

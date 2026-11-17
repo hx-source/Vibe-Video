@@ -6,7 +6,8 @@ from pathlib import Path
 import sys
 
 NEW_NAME = "knowledge-video-remotion-template"
-KNOWN_ROOT = Path("D:/Documents/dy/Vibe-Knowledge-Video") / NEW_NAME
+ENGINE_DIR = "video-remotion-template"
+KNOWN_ROOT = Path("D:/Documents/dy/Vibe-Video") / ENGINE_DIR
 ENGINES = {
     NEW_NAME: ("0.1.0", "remotion", ("src/index.ts", "scripts/cli.mjs", "src/timeline/compile.mjs", "docs/AUDIO-WORKFLOW.md")),
     "knowledge-video-template": ("0.3.0", "canvas-legacy", ("scripts/cli.mjs", "engine/film.js", "engine/audio-plan.js", "docs/AUDIO-WORKFLOW-v0.3.md")),
@@ -46,7 +47,7 @@ def discover(explicit=None, cwd=None, environ=None):
     here = Path(cwd or Path.cwd()).resolve()
     candidates = {}
     for base in (here, *here.parents):
-        for candidate in (base, base / NEW_NAME):
+        for candidate in (base, base / ENGINE_DIR):
             package = candidate / "package.json"
             if not package.is_file():
                 continue
@@ -54,7 +55,7 @@ def discover(explicit=None, cwd=None, environ=None):
                 candidates[os.path.normcase(str(candidate.resolve()))] = candidate.resolve()
     if not candidates:
         for base in Path(__file__).resolve().parents:
-            candidate = base / NEW_NAME
+            candidate = base / ENGINE_DIR
             if (candidate / "package.json").is_file():
                 candidates[os.path.normcase(str(candidate.resolve()))] = candidate.resolve()
         if not candidates and KNOWN_ROOT.is_dir():

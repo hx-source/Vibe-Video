@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 2,
+  "sampleRate": 44100,
+  "masterGain": 0.9,
+  "buses": {
+    "music": 1,
+    "start": 1,
+    "end": 1,
+    "transition": 1,
+    "process": 0.5,
+    "accent": 1
+  },
+  "reviewPolicy": {
+    "maxConcurrentEffects": 2,
+    "maxProcessSeconds": 1.5
+  },
+  "qualityPolicy": {
+    "targetLufs": -18,
+    "lufsTolerance": 3,
+    "maxTruePeakDb": -1,
+    "minEffectRelativeDb": -12,
+    "maxEffectRelativeDb": 8
+  },
+  "clips": [
+    {
+      "id": "continuous-bed",
+      "role": "music",
+      "source": "asset:endowment-bed",
+      "sourceIn": 0,
+      "sourceOut": 91.5,
+      "at": 0,
+      "speed": 1,
+      "gain": 0.64,
+      "fadeIn": 0.5,
+      "fadeOut": 2
+    },
+    {
+      "id": "ownership-land",
+      "role": "accent",
+      "source": "asset:opening-ui-contact-v1",
+      "sourceIn": 0,
+      "sourceOut": 0.095,
+      "at": {
+        "event": "mechanism.own",
+        "offset": 0.55
+      },
+      "gain": 1.2,
+      "fadeOut": 0.012,
+      "purpose": "我的标签下落后接近落定，短接触音提醒杯子归属发生改变",
+      "musicFit": "固定02故事配乐原速、原时钟；采用无持续音高的短物件音效，避免增加旋律。当前仅完成技术检查，搭配与可辨认性待用户观看试听。"
+    },
+    {
+      "id": "protect-cup",
+      "role": "transition",
+      "source": "asset:palette-cloth-two",
+      "sourceIn": 0,
+      "sourceOut": 0.4150793650793651,
+      "at": {
+        "event": "mechanism.loss",
+        "offset": 0.1
+      },
+      "gain": 0.52,
+      "fadeOut": 0.035,
+      "purpose": "右侧人物嘴角改变、双臂开始向内护住，短布料声对应这一可见动作",
+      "musicFit": "固定02故事配乐原速、原时钟；采用无持续音高的短物件音效，避免增加旋律。当前仅完成技术检查，搭配与可辨认性待用户观看试听。"
+    },
+    {
+      "id": "meaning-settles",
+      "role": "end",
+      "source": "asset:result-land",
+      "sourceIn": 0,
+      "sourceOut": 0.23,
+      "at": {
+        "event": "mechanism.result",
+        "offset": 0.25
+      },
+      "gain": 0.7,
+      "fadeOut": 0.025,
+      "purpose": "得失比较的结论落定，以轻敲收束，保留随后阅读时间",
+      "musicFit": "固定02故事配乐原速、原时钟；采用无持续音高的短物件音效，避免增加旋律。当前仅完成技术检查，搭配与可辨认性待用户观看试听。"
+    }
+  ],
+  "cues": [],
+  "rhythms": [],
+  "ducking": [
+    {
+      "id": "ownership-local-space",
+      "at": {
+        "event": "mechanism.own",
+        "offset": 0.55
+      },
+      "attack": 0.06,
+      "hold": 0.1,
+      "release": 0.22,
+      "gain": 0.5
+    }
+  ]
+}

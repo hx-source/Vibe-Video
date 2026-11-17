@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "revision": "landscape-live-final-v1",
+  "source": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+  "archivePath": "D:/Documents/dy/视频成片/锚定效应_52秒_横屏最终版.mp4",
+  "sha256": "df29d34712a7e6d081c3c7dbfe3c0ffa409fe97696364c2d90aa031d88b4770d",
+  "bytes": 4396587,
+  "verifiedDate": "2026-11-17",
+  "originalPreserved": true,
+  "completionFeedback": "completion-feedback-2026-11-17.json",
+  "approvalRecord": "production-state.json"
+}

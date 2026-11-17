@@ -5,12 +5,10 @@
 将下面的 Skill 路径替换为本次实际安装位置；脚本只读取信息，不创建或改动工程。
 
 ```powershell
-python -X utf8 C:/Users/hx/.codex/skills/knowledge-video/scripts/locate_engine.py --root D:/Documents/dy/knowledge-video-template
-# 用户指定其他工程时
-python -X utf8 C:/Users/hx/.codex/skills/knowledge-video/scripts/locate_engine.py --root D:/Documents/dy/knowledge-video-template
+python -X utf8 <Skill安装目录>/scripts/locate_engine.py --root <旧Canvas工程绝对路径>
 ```
 
-优先使用显式路径，其次环境变量，再检查当前目录及父目录中的工程。多份本地工程同时匹配时脚本报出候选，不静默挑选。当前环境的已知工程位置只是最后回退，不能覆盖用户指定的错误路径。
+以上为路径占位示例，执行前替换为实际路径。本仓库只附带 Remotion 工程，旧 Canvas 工程需另外提供；本机原 `D:/Documents/dy/knowledge-video-template` 目录已不存在。旧工程必须显式传入 `--root` 或设置 `KNOWLEDGE_VIDEO_ENGINE`，不参与默认自动发现。错误显式路径不会回退到其他工程。
 
 从定位结果读取 engineRoot；后续命令的工作目录均为该路径。读取其 README.md 和 package.json，以及所选项目的配置。工程声音详情以 `docs/AUDIO-WORKFLOW-v0.3.md` 为准，结构说明为 `docs/ENGINE-REVIEW-v0.3.md`，避免把这些文件复制进 Skill 形成另一份规范。
 

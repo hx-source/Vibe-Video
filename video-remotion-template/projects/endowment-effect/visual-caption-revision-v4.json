@@ -1,0 +1,14 @@
+{
+  "request": "取消下面的一些字幕，将这些字幕转换为一些动态可视化",
+  "previous": "outputs/endowment-effect/representative-a-v3",
+  "next": "outputs/endowment-effect/representative-a-v4",
+  "range": [
+    35,
+    45
+  ],
+  "removedBurnedInCaptions": true,
+  "optionalSrtPreserved": true,
+  "musicAndEffects": "unchanged",
+  "viewedByUser": false,
+  "approvedByUser": false
+}

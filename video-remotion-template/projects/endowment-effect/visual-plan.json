@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "activeRound": 2,
+  "selectedId": "night",
+  "rounds": [
+    {
+      "id": 1,
+      "createdAt": "2026-11-16T05:44:50.552Z",
+      "candidates": [
+        {
+          "id": "night",
+          "styleId": "night-story",
+          "label": "夜空叙事",
+          "rationale": "用人物与关系变化解释“为什么同一件东西，买时嫌贵，到手后却舍不得卖？”，兼顾故事氛围和重点。"
+        },
+        {
+          "id": "clear",
+          "styleId": "clear-diagram",
+          "label": "清晰图解",
+          "rationale": "突出“为什么同一件东西，买时嫌贵，到手后却舍不得卖？”中的步骤和状态，适合优先检验机制是否讲清楚。"
+        },
+        {
+          "id": "paper",
+          "styleId": "paper-sketch",
+          "label": "纸本手绘",
+          "rationale": "用纸本示意讲述“为什么同一件东西，买时嫌贵，到手后却舍不得卖？”，弱化装饰，保留可读的关系变化。"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "createdAt": "2026-11-16T05:45:03.180Z",
+      "candidates": [
+        {
+          "id": "night",
+          "styleId": "night-story",
+          "label": "A · 聚光叙事",
+          "rationale": "深蓝空间聚焦同一只杯子，左右人物呈现得到与失去，适合突出“舍不得”的心理变化。",
+          "motion": "杯子保持原位，归属标签落下，右侧人物与放弃关系出现，最后结论落定。"
+        },
+        {
+          "id": "clear",
+          "styleId": "clear-diagram",
+          "label": "B · 清晰图解",
+          "rationale": "两块浅色网格面板固定拥有前后的参照，编号式身份节点突出机制，适合快速读懂因果。",
+          "motion": "未拥有节点先出现，关系线连接杯子，已拥有节点接入，红色损失解释随后出现。"
+        },
+        {
+          "id": "paper",
+          "styleId": "paper-sketch",
+          "label": "C · 纸本手绘",
+          "rationale": "暖纸双页配简笔人物，像翻开读书笔记；朱红下划线把注意力留在“我的”与“失去”。",
+          "motion": "同杯连接两张纸页，我的标签落定后呈现右侧表情与朱红划线，保留足够阅读停留。"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "action": "new-round",
+      "round": 2,
+      "createdAt": "2026-11-16T05:45:03.182Z"
+    },
+    {
+      "action": "select",
+      "round": 2,
+      "candidateId": "night",
+      "note": "用户原话：选A",
+      "createdAt": "2026-11-16T06:01:35.315Z"
+    }
+  ]
+}

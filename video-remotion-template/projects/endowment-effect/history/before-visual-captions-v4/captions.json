@@ -1,0 +1,123 @@
+{
+  "items": [
+    {
+      "id": "question-0",
+      "segmentId": "question",
+      "start": 0,
+      "end": 4.6,
+      "text": "买杯子时，30 元你嫌贵。"
+    },
+    {
+      "id": "question-1",
+      "segmentId": "question",
+      "start": 5,
+      "end": 9.6,
+      "text": "可它刚变成你的，60 元你也舍不得卖。"
+    },
+    {
+      "id": "question-2",
+      "segmentId": "question",
+      "start": 10,
+      "end": 15.8,
+      "text": "杯子没变，为什么心理价变了？"
+    },
+    {
+      "id": "experiment-0",
+      "segmentId": "experiment",
+      "start": 0,
+      "end": 4.6,
+      "text": "研究者把学生随机分组，其中一组得到杯子。"
+    },
+    {
+      "id": "experiment-1",
+      "segmentId": "experiment",
+      "start": 5,
+      "end": 9.6,
+      "text": "买者与卖者，对同类杯子给出了不同估值。"
+    },
+    {
+      "id": "experiment-2",
+      "segmentId": "experiment",
+      "start": 10,
+      "end": 17.7,
+      "text": "还有一组，只需要在杯子和现金之间选择。"
+    },
+    {
+      "id": "mechanism-0",
+      "segmentId": "mechanism",
+      "start": 0,
+      "end": 4.8,
+      "text": "还没拥有时，你想的是：得到一只杯子。"
+    },
+    {
+      "id": "mechanism-1",
+      "segmentId": "mechanism",
+      "start": 5.5,
+      "end": 10.5,
+      "text": "已经拥有时，卖掉就成了：失去我的杯子。"
+    },
+    {
+      "id": "mechanism-2",
+      "segmentId": "mechanism",
+      "start": 11,
+      "end": 17.7,
+      "text": "损失厌恶，是解释这种估值变化的经典思路。"
+    },
+    {
+      "id": "name-0",
+      "segmentId": "name",
+      "start": 0,
+      "end": 4.6,
+      "text": "仅仅拥有，就可能让你更不愿意放手。"
+    },
+    {
+      "id": "name-1",
+      "segmentId": "name",
+      "start": 5,
+      "end": 9.6,
+      "text": "这种现象，被称为禀赋效应。"
+    },
+    {
+      "id": "name-2",
+      "segmentId": "name",
+      "start": 10,
+      "end": 15.7,
+      "text": "它可以很快出现，不必等到物品积累了回忆。"
+    },
+    {
+      "id": "boundary-0",
+      "segmentId": "boundary",
+      "start": 0,
+      "end": 4.6,
+      "text": "但好用、有回忆，也确实是价值。"
+    },
+    {
+      "id": "boundary-1",
+      "segmentId": "boundary",
+      "start": 5,
+      "end": 11.7,
+      "text": "不能把每次舍不得卖，都归结为禀赋效应。"
+    },
+    {
+      "id": "reset-0",
+      "segmentId": "reset",
+      "start": 0,
+      "end": 4.6,
+      "text": "试着问：如果还没拥有，我愿意花多少买它？"
+    },
+    {
+      "id": "reset-1",
+      "segmentId": "reset",
+      "start": 5,
+      "end": 8.7,
+      "text": "再把功能、回忆和交易成本分开想。"
+    },
+    {
+      "id": "reset-2",
+      "segmentId": "reset",
+      "start": 9,
+      "end": 13.7,
+      "text": "从今天的需要出发，重新决定去留。"
+    }
+  ]
+}

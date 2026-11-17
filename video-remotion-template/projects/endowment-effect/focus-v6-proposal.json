@@ -1,0 +1,409 @@
+{
+  "storyboard": {
+    "segments": [
+      {
+        "id": "question",
+        "durationSeconds": 16,
+        "intent": "先让同杯不同身份的矛盾发生；金额为虚构示例。",
+        "sceneType": "cards",
+        "events": {
+          "step-0": 0,
+          "step-1": 5,
+          "step-2": 10
+        },
+        "props": {
+          "title": "买的时候嫌贵，卖的时候舍不得。",
+          "note": "生活情境示意 · 金额为虚构，不是实验数据",
+          "cards": [
+            {
+              "title": "还没拥有",
+              "body": "30 元？有点贵。",
+              "event": "step-0"
+            },
+            {
+              "title": "刚刚到手",
+              "body": "60 元？也不想卖。",
+              "event": "step-1"
+            },
+            {
+              "title": "同一只杯子",
+              "body": "为什么一变成“我的”，心理价就变了？",
+              "event": "step-2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "experiment",
+        "durationSeconds": 18,
+        "intent": "用经典实验说明，差异可以在没有长期使用回忆时出现。",
+        "sceneType": "cards",
+        "events": {
+          "step-0": 0,
+          "step-1": 5,
+          "step-2": 10
+        },
+        "props": {
+          "title": "随机分到杯子的人，估值更高。",
+          "note": "Kahneman、Knetsch、Thaler，1990，实验 6 · 77 名学生 · 美元",
+          "cards": [
+            {
+              "title": "买者",
+              "body": "$2.87\n最高愿付价格的中位数",
+              "event": "step-0"
+            },
+            {
+              "title": "卖者",
+              "body": "$7.12\n最低愿售价格的中位数",
+              "event": "step-1"
+            },
+            {
+              "title": "选择者",
+              "body": "$3.12\n在杯子与现金之间选择",
+              "event": "step-2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "mechanism",
+        "durationSeconds": 18,
+        "intent": "一个持续情境中，先嫌30元贵，免费获赠后却舍不得以30元卖出。聚焦同一人物与同一杯子的互动，每次只给一个问题和一个反应。",
+        "sceneType": "endowment",
+        "events": {
+          "reveal": 0,
+          "buy-refusal": 1.2,
+          "own": 4,
+          "loss": 6,
+          "sale-refusal": 6.8,
+          "result": 8.3
+        },
+        "props": {
+          "title": "买时嫌贵，卖时舍不得。",
+          "mode": "ownership",
+          "layout": "fullbleed",
+          "captionPlacement": "scene",
+          "note": "30元，买它？免费送给你 30元，卖它？嫌贵 我的 舍不得 禀赋效应"
+        }
+      },
+      {
+        "id": "name",
+        "durationSeconds": 16,
+        "intent": "在机制之后给术语，区分拥有与长期感情，避免把使用价值全部当作偏差。",
+        "sceneType": "cards",
+        "events": {
+          "step-0": 0,
+          "step-1": 5,
+          "step-2": 10
+        },
+        "props": {
+          "title": "这就是“禀赋效应”。",
+          "note": "损失厌恶是经典解释；效应强弱受情境与实验程序影响",
+          "cards": [
+            {
+              "title": "拥有改变估值",
+              "body": "同类物品，拥有者可能更不愿放手。",
+              "event": "step-0"
+            },
+            {
+              "title": "一种经典解释",
+              "body": "放弃已有之物，被体验为损失。",
+              "event": "step-1"
+            },
+            {
+              "title": "不必相处很多年",
+              "body": "随机刚拿到的杯子，也可能出现差异。",
+              "event": "step-2"
+            }
+          ]
+        }
+      },
+      {
+        "id": "boundary",
+        "durationSeconds": 12,
+        "intent": "限定解释范围；不把真实情感价值或所有买卖价差诊断为偏差。",
+        "sceneType": "cards",
+        "events": {
+          "step-0": 0,
+          "step-1": 5
+        },
+        "props": {
+          "title": "“不想卖”，也可能有好理由。",
+          "note": "买卖价差本身不足以单独证明禀赋效应",
+          "cards": [
+            {
+              "title": "真实价值",
+              "body": "好用、有回忆，都可以成为保留的理由。",
+              "event": "step-0"
+            },
+            {
+              "title": "识别边界",
+              "body": "交易成本、信息和报价规则，也会影响买卖价差。",
+              "event": "step-1"
+            }
+          ]
+        }
+      },
+      {
+        "id": "reset",
+        "durationSeconds": 14,
+        "intent": "给出从未拥有角度的思考提示，以当下价值收束。",
+        "sceneType": "cards",
+        "events": {
+          "step-0": 0,
+          "step-1": 5,
+          "step-2": 9
+        },
+        "props": {
+          "title": "换个位置，重新问自己。",
+          "note": "这是一种重新审视的提示，不保证消除偏差",
+          "cards": [
+            {
+              "title": "假设它还不是我的",
+              "body": "今天，我愿意花多少钱买回来？",
+              "event": "step-0"
+            },
+            {
+              "title": "把理由说具体",
+              "body": "我需要它的功能，还是它承载的回忆？",
+              "event": "step-1"
+            },
+            {
+              "title": "重新决定去留",
+              "body": "用今天的使用价值与情感价值来判断。",
+              "event": "step-2"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "captions": {
+    "items": [
+      {
+        "id": "question-0",
+        "segmentId": "question",
+        "start": 0,
+        "end": 4.6,
+        "text": "买杯子时，30 元你嫌贵。"
+      },
+      {
+        "id": "question-1",
+        "segmentId": "question",
+        "start": 5,
+        "end": 9.6,
+        "text": "可它刚变成你的，60 元你也舍不得卖。"
+      },
+      {
+        "id": "question-2",
+        "segmentId": "question",
+        "start": 10,
+        "end": 15.8,
+        "text": "杯子没变，为什么心理价变了？"
+      },
+      {
+        "id": "experiment-0",
+        "segmentId": "experiment",
+        "start": 0,
+        "end": 4.6,
+        "text": "研究者把学生随机分组，其中一组得到杯子。"
+      },
+      {
+        "id": "experiment-1",
+        "segmentId": "experiment",
+        "start": 5,
+        "end": 9.6,
+        "text": "买者与卖者，对同类杯子给出了不同估值。"
+      },
+      {
+        "id": "experiment-2",
+        "segmentId": "experiment",
+        "start": 10,
+        "end": 17.7,
+        "text": "还有一组，只需要在杯子和现金之间选择。"
+      },
+      {
+        "id": "name-0",
+        "segmentId": "name",
+        "start": 0,
+        "end": 4.6,
+        "text": "仅仅拥有，就可能让你更不愿意放手。"
+      },
+      {
+        "id": "name-1",
+        "segmentId": "name",
+        "start": 5,
+        "end": 9.6,
+        "text": "这种现象，被称为禀赋效应。"
+      },
+      {
+        "id": "name-2",
+        "segmentId": "name",
+        "start": 10,
+        "end": 15.7,
+        "text": "它可以很快出现，不必等到物品积累了回忆。"
+      },
+      {
+        "id": "boundary-0",
+        "segmentId": "boundary",
+        "start": 0,
+        "end": 4.6,
+        "text": "但好用、有回忆，也确实是价值。"
+      },
+      {
+        "id": "boundary-1",
+        "segmentId": "boundary",
+        "start": 5,
+        "end": 11.7,
+        "text": "不能把每次舍不得卖，都归结为禀赋效应。"
+      },
+      {
+        "id": "reset-0",
+        "segmentId": "reset",
+        "start": 0,
+        "end": 4.6,
+        "text": "试着问：如果还没拥有，我愿意花多少买它？"
+      },
+      {
+        "id": "reset-1",
+        "segmentId": "reset",
+        "start": 5,
+        "end": 8.7,
+        "text": "再把功能、回忆和交易成本分开想。"
+      },
+      {
+        "id": "reset-2",
+        "segmentId": "reset",
+        "start": 9,
+        "end": 13.7,
+        "text": "从今天的需要出发，重新决定去留。"
+      },
+      {
+        "id": "mechanism-0",
+        "segmentId": "mechanism",
+        "start": 0,
+        "end": 3.8,
+        "text": "同一个人，30元买这只杯子，他嫌贵。"
+      },
+      {
+        "id": "mechanism-1",
+        "segmentId": "mechanism",
+        "start": 4,
+        "end": 5.9,
+        "text": "现在，这只杯子免费送给他。"
+      },
+      {
+        "id": "mechanism-2",
+        "segmentId": "mechanism",
+        "start": 6,
+        "end": 8.2,
+        "text": "有人出30元收购，他却不愿卖。"
+      },
+      {
+        "id": "mechanism-3",
+        "segmentId": "mechanism",
+        "start": 8.3,
+        "end": 17.7,
+        "text": "成为“我的”之后，放弃就更难。"
+      }
+    ]
+  },
+  "audioPlan": {
+    "schemaVersion": 2,
+    "sampleRate": 44100,
+    "masterGain": 0.9,
+    "buses": {
+      "music": 1,
+      "start": 1,
+      "end": 1,
+      "transition": 1,
+      "process": 0.5,
+      "accent": 1
+    },
+    "reviewPolicy": {
+      "maxConcurrentEffects": 2,
+      "maxProcessSeconds": 1.5
+    },
+    "qualityPolicy": {
+      "targetLufs": -18,
+      "lufsTolerance": 3,
+      "maxTruePeakDb": -1,
+      "minEffectRelativeDb": -12,
+      "maxEffectRelativeDb": 8
+    },
+    "clips": [
+      {
+        "id": "continuous-bed",
+        "role": "music",
+        "source": "asset:endowment-bed",
+        "sourceIn": 0,
+        "sourceOut": 91.5,
+        "at": 0,
+        "speed": 1,
+        "gain": 0.64,
+        "fadeIn": 0.5,
+        "fadeOut": 2
+      },
+      {
+        "id": "ownership-land",
+        "role": "accent",
+        "source": "asset:opening-ui-contact-v1",
+        "sourceIn": 0,
+        "sourceOut": 0.095,
+        "at": {
+          "event": "mechanism.own",
+          "offset": 0.55
+        },
+        "gain": 1.2,
+        "fadeOut": 0.012,
+        "purpose": "免费获赠后杯子靠近身体，我的标签落在杯身，提示归属变化",
+        "musicFit": "固定02故事配乐原速、原时钟；采用无持续音高的短物件音效，避免增加旋律。当前仅完成技术检查，搭配与可辨认性待用户观看试听。"
+      },
+      {
+        "id": "protect-cup",
+        "role": "transition",
+        "source": "asset:palette-cloth-two",
+        "sourceIn": 0,
+        "sourceOut": 0.4150793650793651,
+        "at": {
+          "event": "mechanism.sale-refusal",
+          "offset": 0
+        },
+        "gain": 0.52,
+        "fadeOut": 0.035,
+        "purpose": "同一人拒绝30元收购并把杯子收回，短布料声跟随手臂回收",
+        "musicFit": "固定02故事配乐原速、原时钟；采用无持续音高的短物件音效，避免增加旋律。当前仅完成技术检查，搭配与可辨认性待用户观看试听。"
+      },
+      {
+        "id": "meaning-settles",
+        "role": "end",
+        "source": "asset:result-land",
+        "sourceIn": 0,
+        "sourceOut": 0.23,
+        "at": {
+          "event": "mechanism.result",
+          "offset": 0.25
+        },
+        "gain": 0.7,
+        "fadeOut": 0.025,
+        "purpose": "收回杯子的动作完成后，禀赋效应术语轻落定；不新增解释面板",
+        "musicFit": "固定02故事配乐原速、原时钟；采用无持续音高的短物件音效，避免增加旋律。当前仅完成技术检查，搭配与可辨认性待用户观看试听。"
+      }
+    ],
+    "cues": [],
+    "rhythms": [],
+    "ducking": [
+      {
+        "id": "ownership-local-space",
+        "at": {
+          "event": "mechanism.own",
+          "offset": 0.55
+        },
+        "attack": 0.06,
+        "hold": 0.1,
+        "release": 0.22,
+        "gain": 0.5
+      }
+    ]
+  }
+}

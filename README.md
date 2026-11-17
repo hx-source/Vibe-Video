@@ -1,4 +1,4 @@
-# Vibe Knowledge Video
+# Vibe Video
 
 内容驱动的知识讲解视频制作工程：**Remotion 模板工程 + 单期项目配置 + knowledge-video Skill**。
 
@@ -23,7 +23,7 @@ GitHub同步工程源码、Skill维护源、配置、文档和历史制作记录
 使用 Node.js 22.12 或更新版本；当前验证环境是 Windows、Node.js 24。
 
 ```sh
-cd knowledge-video-remotion-template
+cd video-remotion-template
 npm ci
 npx remotion browser ensure
 npm run demo:assets
@@ -43,16 +43,21 @@ new 创建可渲染的静音结构，正式制作前需填写本期内容。旧 
 
 ## 目录与说明
 
+工程目录已统一为 `video-remotion-template`。包标识 `knowledge-video-remotion-template` 保持不变，用于版本与兼容性检查，不是待修复的目录路径。
+
+- [项目分类与当前状态](video-remotion-template/projects/README.md)
+- [工程、Skill 维护与 GitHub 同步说明](MAINTENANCE.md)
+
 | 目录 | 用途 |
 | --- | --- |
-| knowledge-video-remotion-template | 运行工程、单期模板、示例、工具和验证 |
+| video-remotion-template | 运行工程、单期模板、示例、工具和验证 |
 | skills/knowledge-video | Skill 维护源；默认调用新工程，显式指定时处理旧工程 |
 | .github/workflows | 配置、类型与单元测试工作流；不在云端自动发布影片 |
 
-- [工程操作手册](knowledge-video-remotion-template/README.md)
-- [各模块职责](knowledge-video-remotion-template/docs/ARCHITECTURE.md)
-- [逐项完成清单](knowledge-video-remotion-template/docs/MIGRATION.md)
-- [验证与限制](knowledge-video-remotion-template/docs/VERIFICATION-v0.1.md)
+- [工程操作手册](video-remotion-template/README.md)
+- [各模块职责](video-remotion-template/docs/ARCHITECTURE.md)
+- [逐项完成清单](video-remotion-template/docs/MIGRATION.md)
+- [验证与限制](video-remotion-template/docs/VERIFICATION-v0.1.md)
 - [Skill 说明](skills/README.md)
 
 ## 版本与素材管理

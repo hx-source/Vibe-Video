@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "endowment-bed",
+      "path": "storytelling.m4a",
+      "type": "audio",
+      "source": "用户本地现有素材 D:/Documents/dy/音频/02_情感话题_故事讲述.m4a；本期由助手选作样片候选，未记录用户对本期音乐的认可",
+      "license": "用户现有素材，用于本地制作；沿用来源记录，不对外发布"
+    },
+    {
+      "id": "opening-ui-contact-v1",
+      "path": "opening-ui-contact-v1.wav",
+      "type": "audio",
+      "source": "Kenney Interface Sounds, Audio/click_001.ogg; https://kenney.nl/assets/interface-sounds; source SHA256=ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9; native-speed 0.10s excerpt, 250–4500Hz filtering, release fade; no reverb or synthesized notes; 本期复用已登记素材，自 thinking-anchors/assets 复制，保留原始来源和许可",
+      "license": "Creative Commons Zero, CC0; source pack License.txt retained"
+    },
+    {
+      "id": "palette-cloth-two",
+      "path": "cloth-two.wav",
+      "type": "audio",
+      "source": "Kenney / rpg-audio / Audio/cloth2.ogg; https://kenney.nl/assets/rpg-audio; original SHA256=8a7451193c38bc05483aec25dd193e163a15d44cf7fff04ac7912573231b0201; active-RMS gain and gentle peak control; 本期复用已登记素材，自 thinking-anchors/assets 复制，保留原始来源和许可",
+      "license": "CC0 / Kenney",
+      "sound": {
+        "instrument": "cloth-friction",
+        "pitches": [],
+        "durationSeconds": 0.4150793650793651,
+        "tags": [
+          "cloth",
+          "friction",
+          "nonmelodic"
+        ],
+        "roles": [
+          "accent",
+          "transition",
+          "process",
+          "end"
+        ]
+      }
+    },
+    {
+      "id": "result-land",
+      "path": "result-land.wav",
+      "type": "audio",
+      "source": "本期 build-sample-assets.py 生成的短噪声瞬态；用途：统计结果落定；不是配乐或AI作曲; 本期复用已登记素材，自 thinking-anchors/assets 复制，保留原始来源和许可",
+      "license": "本期原创程序音效，无第三方采样",
+      "sound": {
+        "instrument": "soft-noise-tap",
+        "pitches": [],
+        "durationSeconds": 0.23,
+        "attackSeconds": 0.0025,
+        "tailSeconds": 0.2275,
+        "tags": [
+          "short",
+          "nonmusical",
+          "original"
+        ],
+        "roles": [
+          "accent",
+          "end"
+        ]
+      }
+    }
+  ]
+}

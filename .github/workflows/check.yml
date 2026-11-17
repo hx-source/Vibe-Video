@@ -5,14 +5,14 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        working-directory: knowledge-video-remotion-template
+        working-directory: video-remotion-template
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
           cache: npm
-          cache-dependency-path: knowledge-video-remotion-template/package-lock.json
+          cache-dependency-path: video-remotion-template/package-lock.json
       - run: npm ci
       - run: npm run demo:assets
       - run: npm run check:scaffold

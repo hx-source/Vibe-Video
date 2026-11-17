@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "facts": {
+    "state": "sources-checked",
+    "note": "原始论文与后续方法研究已核实，详见 facts.md；未逐页核对中文版书籍。"
+  },
+  "visual": {
+    "state": "pending",
+    "note": "用户选定A聚光叙事（原话：选A）。仅记录方向选择，十秒动画样片待观看反馈。"
+  },
+  "audio": {
+    "state": "pending",
+    "note": "样片采用现有02故事配乐与三处短音效；助手未实际听音，用户尚未试听认可。"
+  }
+}

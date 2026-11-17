@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "narration": false,
+    "captions": "zh-CN",
+    "targetDurationSeconds": 94
+  },
+  "topic": {
+    "title": "为什么一到手，就舍不得？｜禀赋效应",
+    "audience": "读过或没读过原书的普通中文观众",
+    "question": "为什么同一件东西，买时嫌贵，到手后却舍不得卖？",
+    "takeaway": "拥有会改变得失的参照点；判断去留时，试着从尚未拥有的角度重新估值，并保留真实的使用与情感价值。"
+  },
+  "research": {
+    "status": "verified",
+    "sources": [
+      {
+        "title": "Kahneman, Knetsch & Thaler (1990), Experimental Tests of the Endowment Effect and the Coase Theorem",
+        "reference": "https://www.journals.uchicago.edu/doi/abs/10.1086/261737"
+      },
+      {
+        "title": "原始研究全文，实验 6，印刷页 1339",
+        "reference": "https://econreadinggroup.github.io/assets/Kahneman%20et%20al.%20(1990,%20JPE).pdf"
+      },
+      {
+        "title": "Plott & Zeiler (2011), 方法研究回复及实验程序影响",
+        "reference": "https://authors.library.caltech.edu/records/vs51x-4fg90"
+      }
+    ],
+    "boundaries": "依据《思考，快与慢》禀赋效应主题作原创解释；未声称逐字引用或逐页核对中译本。生活开头为虚构示例，实验数据为第6组77名学生、美元中位数；损失厌恶为经典解释，并非唯一已证实机制；不将所有不愿出售视为偏差。"
+  },
+  "outline": [
+    {
+      "segmentId": "question",
+      "point": "先让同杯不同身份的矛盾发生；金额为虚构示例。"
+    },
+    {
+      "segmentId": "experiment",
+      "point": "用经典实验说明，差异可以在没有长期使用回忆时出现。"
+    },
+    {
+      "segmentId": "mechanism",
+      "point": "保持同一只杯子，展示归属改变参照点，得到变成失去。"
+    },
+    {
+      "segmentId": "name",
+      "point": "在机制之后给术语，区分拥有与长期感情，避免把使用价值全部当作偏差。"
+    },
+    {
+      "segmentId": "boundary",
+      "point": "限定解释范围；不把真实情感价值或所有买卖价差诊断为偏差。"
+    },
+    {
+      "segmentId": "reset",
+      "point": "给出从未拥有角度的思考提示，以当下价值收束。"
+    }
+  ],
+  "scenePlan": [
+    {
+      "segmentId": "question",
+      "purpose": "先让同杯不同身份的矛盾发生；金额为虚构示例。",
+      "change": "保持杯子外形：买者拒绝 30 元 → 归属交接 → 拥有者拒绝 60 元；不得画成市场涨价。",
+      "sceneType": "cards",
+      "implementation": "内容结构已填写，专属画面待风格选择后实现",
+      "reading": "金额、物品与关键身份保持；字幕动作错开，最后结论在动作落定后稳定呈现。"
+    },
+    {
+      "segmentId": "experiment",
+      "purpose": "用经典实验说明，差异可以在没有长期使用回忆时出现。",
+      "change": "随机分组 → 同类杯子 → 三组估值分别出现；横条从同一零点按金额比例绘制，单位美元，中位数标签常驻。",
+      "sceneType": "cards",
+      "implementation": "内容结构已填写，专属画面待风格选择后实现",
+      "reading": "金额、物品与关键身份保持；字幕动作错开，最后结论在动作落定后稳定呈现。"
+    },
+    {
+      "segmentId": "mechanism",
+      "purpose": "保持同一只杯子，展示归属改变参照点，得到变成失去。",
+      "change": "未拥有的得到 → 同一只杯子被标为我的 → 拥有者面对放弃；人物/节点、关系线与杯子同步，而非只换字幕。",
+      "sceneType": "endowment",
+      "implementation": "三种实际风格已实现，动作待十秒样片验证",
+      "reading": "金额、物品与关键身份保持；字幕动作错开，最后结论在动作落定后稳定呈现。"
+    },
+    {
+      "segmentId": "name",
+      "purpose": "在机制之后给术语，区分拥有与长期感情，避免把使用价值全部当作偏差。",
+      "change": "沿用我的杯子与得失关系 → 给出禀赋效应术语 → 补充无需长期回忆；不重复第二个同构案例。",
+      "sceneType": "cards",
+      "implementation": "内容结构已填写，专属画面待风格选择后实现",
+      "reading": "金额、物品与关键身份保持；字幕动作错开，最后结论在动作落定后稳定呈现。"
+    },
+    {
+      "segmentId": "boundary",
+      "purpose": "限定解释范围；不把真实情感价值或所有买卖价差诊断为偏差。",
+      "change": "杯子延续 → 分出功能、回忆、交易成本 → 说明高报价并非自动等于偏差；不使用对错印章。",
+      "sceneType": "cards",
+      "implementation": "内容结构已填写，专属画面待风格选择后实现",
+      "reading": "金额、物品与关键身份保持；字幕动作错开，最后结论在动作落定后稳定呈现。"
+    },
+    {
+      "segmentId": "reset",
+      "purpose": "给出从未拥有角度的思考提示，以当下价值收束。",
+      "change": "我的标签暂时移开 → 假设尚未拥有 → 回看功能与回忆 → 自己作去留判断。",
+      "sceneType": "cards",
+      "implementation": "内容结构已填写，专属画面待风格选择后实现",
+      "reading": "金额、物品与关键身份保持；字幕动作错开，最后结论在动作落定后稳定呈现。"
+    }
+  ],
+  "representative": {
+    "from": 35,
+    "to": 45,
+    "stillTime": 44,
+    "reason": "全片 34–52 秒是核心机制段。35–45 秒覆盖杯子归属、得到到失去的视角变化与结论落定，能验证关键美术、主体连续性和后续音效。"
+  },
+  "preflight": {
+    "core": "从同杯、同人拥有前后的矛盾切入；实验用随机分组检验拥有影响，不声称对同一个人作了反复测量。",
+    "progression": "生活问题→实验→参照点与得失→术语→边界→重新审视；不堆砌多种商品重复同一机制。",
+    "focus": "核心始终是杯子及归属，颜色固定区分得到与失去，物体形状和大小不随估值改变。",
+    "transitions": "由问题追问证据，再由证据追问原因，机制落定后命名，边界回应是否都不理性，最后给提示。",
+    "scope": "本轮只比较核心机制的三种静帧；全片场景与声音仍待后续制作，不登记用户认可。"
+  }
+}

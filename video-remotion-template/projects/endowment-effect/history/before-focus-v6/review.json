@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "facts": {
+    "state": "sources-checked",
+    "note": "原始论文与后续方法研究已核实，详见 facts.md；未逐页核对中文版书籍。"
+  },
+  "visual": {
+    "state": "pending",
+    "note": "用户选择A后要求减少底部字幕并转换为动态可视化；当前更新为杯子靠近、归属、尝试移出与伸手拉回，未登记该版认可。"
+  },
+  "audio": {
+    "state": "pending",
+    "note": "样片采用现有02故事配乐与三处短音效；助手未实际听音，用户尚未试听认可。"
+  }
+}

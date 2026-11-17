@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "projects": [
+    {
+      "id": "starter-demo",
+      "path": "starter-demo",
+      "kind": "engineering-validation",
+      "status": "ready"
+    },
+    {
+      "id": "audio-demo",
+      "path": "audio-demo",
+      "kind": "engineering-validation",
+      "status": "needs-listening"
+    },
+    {
+      "id": "tcp-handshake",
+      "path": "tcp-handshake",
+      "kind": "topic-example",
+      "status": "migration-validation"
+    },
+    {
+      "id": "anchoring-effect",
+      "path": "anchoring-effect",
+      "kind": "topic",
+      "status": "draft"
+    },
+    {
+      "id": "moon-match-sample",
+      "path": "moon-match-sample",
+      "kind": "topic-example",
+      "status": "draft"
+    },
+    {
+      "id": "thinking-anchors",
+      "path": "thinking-anchors",
+      "kind": "topic",
+      "status": "completed",
+      "stateFile": "thinking-anchors/production-state.json"
+    },
+    {
+      "id": "endowment-effect",
+      "path": "endowment-effect",
+      "kind": "topic",
+      "status": "draft"
+    },
+    {
+      "id": "production-price-demo",
+      "path": "production-price-demo",
+      "kind": "engineering-validation",
+      "status": "preview-ready",
+      "stateFile": "production-price-demo/production-state.json"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "generatedFrom": "production-state.json",
+  "stateGeneration": 20,
+  "stateFingerprint": "ed296a8feb66d8e1582eb9fd7436e78fa21a6c9a77722484d56b057e4dc6a5ea",
+  "currentRevision": "landscape-live-final-v1",
+  "currentState": "exported",
+  "currentOutput": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+  "currentReview": "outputs/thinking-anchors/landscape-live-final-v1/review.html",
+  "durationSeconds": 52,
+  "videoSha256": "df29d34712a7e6d081c3c7dbfe3c0ffa409fe97696364c2d90aa031d88b4770d",
+  "finalExportProduced": true,
+  "legacyArchive": "projects/thinking-anchors/production-history/legacy-before-init"
+}

@@ -1,0 +1,175 @@
+{
+  "segments": [
+    {
+      "id": "question",
+      "durationSeconds": 16,
+      "intent": "先让同杯不同身份的矛盾发生；金额为虚构示例。",
+      "sceneType": "cards",
+      "events": {
+        "step-0": 0,
+        "step-1": 5,
+        "step-2": 10
+      },
+      "props": {
+        "title": "买的时候嫌贵，卖的时候舍不得。",
+        "note": "生活情境示意 · 金额为虚构，不是实验数据",
+        "cards": [
+          {
+            "title": "还没拥有",
+            "body": "30 元？有点贵。",
+            "event": "step-0"
+          },
+          {
+            "title": "刚刚到手",
+            "body": "60 元？也不想卖。",
+            "event": "step-1"
+          },
+          {
+            "title": "同一只杯子",
+            "body": "为什么一变成“我的”，心理价就变了？",
+            "event": "step-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "experiment",
+      "durationSeconds": 18,
+      "intent": "用经典实验说明，差异可以在没有长期使用回忆时出现。",
+      "sceneType": "cards",
+      "events": {
+        "step-0": 0,
+        "step-1": 5,
+        "step-2": 10
+      },
+      "props": {
+        "title": "随机分到杯子的人，估值更高。",
+        "note": "Kahneman、Knetsch、Thaler，1990，实验 6 · 77 名学生 · 美元",
+        "cards": [
+          {
+            "title": "买者",
+            "body": "$2.87\n最高愿付价格的中位数",
+            "event": "step-0"
+          },
+          {
+            "title": "卖者",
+            "body": "$7.12\n最低愿售价格的中位数",
+            "event": "step-1"
+          },
+          {
+            "title": "选择者",
+            "body": "$3.12\n在杯子与现金之间选择",
+            "event": "step-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mechanism",
+      "durationSeconds": 18,
+      "intent": "保持同一只杯子，展示归属改变参照点，得到变成失去。",
+      "sceneType": "endowment",
+      "events": {
+        "reveal": 0,
+        "own": 2.5,
+        "loss": 5.5,
+        "result": 9
+      },
+      "props": {
+        "title": "杯子没变，“我的”改变了判断。",
+        "mode": "ownership",
+        "layout": "fullbleed"
+      }
+    },
+    {
+      "id": "name",
+      "durationSeconds": 16,
+      "intent": "在机制之后给术语，区分拥有与长期感情，避免把使用价值全部当作偏差。",
+      "sceneType": "cards",
+      "events": {
+        "step-0": 0,
+        "step-1": 5,
+        "step-2": 10
+      },
+      "props": {
+        "title": "这就是“禀赋效应”。",
+        "note": "损失厌恶是经典解释；效应强弱受情境与实验程序影响",
+        "cards": [
+          {
+            "title": "拥有改变估值",
+            "body": "同类物品，拥有者可能更不愿放手。",
+            "event": "step-0"
+          },
+          {
+            "title": "一种经典解释",
+            "body": "放弃已有之物，被体验为损失。",
+            "event": "step-1"
+          },
+          {
+            "title": "不必相处很多年",
+            "body": "随机刚拿到的杯子，也可能出现差异。",
+            "event": "step-2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "boundary",
+      "durationSeconds": 12,
+      "intent": "限定解释范围；不把真实情感价值或所有买卖价差诊断为偏差。",
+      "sceneType": "cards",
+      "events": {
+        "step-0": 0,
+        "step-1": 5
+      },
+      "props": {
+        "title": "“不想卖”，也可能有好理由。",
+        "note": "买卖价差本身不足以单独证明禀赋效应",
+        "cards": [
+          {
+            "title": "真实价值",
+            "body": "好用、有回忆，都可以成为保留的理由。",
+            "event": "step-0"
+          },
+          {
+            "title": "识别边界",
+            "body": "交易成本、信息和报价规则，也会影响买卖价差。",
+            "event": "step-1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reset",
+      "durationSeconds": 14,
+      "intent": "给出从未拥有角度的思考提示，以当下价值收束。",
+      "sceneType": "cards",
+      "events": {
+        "step-0": 0,
+        "step-1": 5,
+        "step-2": 9
+      },
+      "props": {
+        "title": "换个位置，重新问自己。",
+        "note": "这是一种重新审视的提示，不保证消除偏差",
+        "cards": [
+          {
+            "title": "假设它还不是我的",
+            "body": "今天，我愿意花多少钱买回来？",
+            "event": "step-0"
+          },
+          {
+            "title": "把理由说具体",
+            "body": "我需要它的功能，还是它承载的回忆？",
+            "event": "step-1"
+          },
+          {
+            "title": "重新决定去留",
+            "body": "用今天的使用价值与情感价值来判断。",
+            "event": "step-2"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "contract": "knowledge-video-remotion",
+  "contractVersion": 1,
+  "templateVersion": "0.1.0",
+  "status": "draft",
+  "id": "endowment-effect",
+  "title": "为什么一到手，就舍不得？｜禀赋效应",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "timelineBasis": "final-seconds",
+  "themeId": "paper",
+  "content": {
+    "question": "为什么同一件东西，买时嫌贵，到手后却舍不得卖？",
+    "takeaway": "拥有会改变得失的参照点；判断去留时，试着从尚未拥有的角度重新估值，并保留真实的使用与情感价值。"
+  },
+  "files": {
+    "storyboard": "storyboard.json",
+    "captions": "captions.json",
+    "audioPlan": "audio-plan.json",
+    "facts": "facts.md",
+    "review": "review.json",
+    "assets": "assets/index.json",
+    "visualPlan": "visual-plan.json",
+    "productionPlan": "production-plan.json"
+  },
+  "narration": {
+    "enabled": false
+  }
+}

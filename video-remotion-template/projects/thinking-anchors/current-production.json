@@ -1,0 +1,29 @@
+{
+  "generatedFrom": "production-state.json",
+  "stateGeneration": 20,
+  "stateFingerprint": "ed296a8feb66d8e1582eb9fd7436e78fa21a6c9a77722484d56b057e4dc6a5ea",
+  "revision": "landscape-live-final-v1",
+  "specification": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "style": "comic",
+    "music": "02_情感话题_故事讲述.m4a",
+    "noNarration": true
+  },
+  "rangeSeconds": [
+    0,
+    52
+  ],
+  "editRangeSeconds": null,
+  "currentStage": "exported",
+  "output": "outputs/thinking-anchors/landscape-live-final-v1/video.mp4",
+  "currentReview": "outputs/thinking-anchors/landscape-live-final-v1/review.html",
+  "finalExportProduced": true,
+  "fullFilmProduced": true,
+  "newFullFilmDurationSeconds": 52,
+  "fullFilmApproval": true,
+  "plannedNextSegment": null,
+  "historyArchive": "projects/thinking-anchors/production-history/legacy-before-init"
+}
